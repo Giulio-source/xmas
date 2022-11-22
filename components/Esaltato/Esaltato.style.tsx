@@ -35,15 +35,15 @@ export const StyledEsaltato = styled.div`
   width: 500px;
   margin: auto;
 
-  #esaltato #bocca-wide,
-  #esaltato #bocca_small,
+  #bocca-wide,
+  #bocca_small,
   #indifferente #bocca-smile,
-  #esaltato #occhio_3,
-  #esaltato #occhio_4,
-  #esaltato #braccio-dex-2,
-  #esaltato #braccio-six-2,
-  #esaltato #coriandoli .linea,
-  #esaltato #coriandoli .stella {
+  #occhio_3,
+  #occhio_4,
+  #braccio-dex-2,
+  #braccio-six-2,
+  #coriandoli .linea,
+  #coriandoli .stella {
     visibility: hidden;
     opacity: 0;
   }
@@ -56,17 +56,17 @@ export const StyledEsaltato = styled.div`
     animation: ${glowYellow} 0.4s 0.2s linear infinite alternate-reverse;
   }
 
-  #esaltato {
+  #folletto-full {
     cursor: pointer;
   }
 
-  #esaltato #occhio_3 .glitter {
+  #occhio_3 .glitter {
     transform-box: fill-box;
     transform-origin: center center;
     animation: ${glitteryEyes} 0.1s linear infinite alternate-reverse;
   }
 
-  #esaltato #occhio_4 .glitter {
+  #occhio_4 .glitter {
     transform-box: fill-box;
     transform-origin: center center;
     animation: ${glitteryEyes} 0.1s 0.05s linear infinite alternate-reverse;
