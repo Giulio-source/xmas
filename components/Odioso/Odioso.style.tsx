@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledOdioso = styled.div`
-  width: 500px;
+  max-width: 500px;
   margin: auto;
 
   #braccio-dex-alto,

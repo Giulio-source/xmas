@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledIndifferente = styled.div`
-  width: 500px;
+  max-width: 500px;
   margin: auto;
 
   #bocca-smile, #bocca-neutra {

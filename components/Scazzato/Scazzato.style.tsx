@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledScazzato = styled.div`
-  width: 500px;
+  max-width: 500px;
   margin: auto;
 
   #braccio-dex-basso,

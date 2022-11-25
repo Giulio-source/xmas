@@ -29,6 +29,9 @@ export default function Home() {
           <Link href="/risultati/scazzato" className={styles.card}>
             <h2>Odioso 😒</h2>
           </Link>
+          <Link href="/risultati/ansioso" className={styles.card}>
+            <h2>Ansioso 😰</h2>
+          </Link>
         </div>
       </main>
     </div>
