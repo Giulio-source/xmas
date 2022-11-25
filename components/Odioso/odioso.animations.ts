@@ -67,3 +67,6 @@ export const odiosoDefault = () =>
       },
       "back"
     );
+
+export const odiosoSingleClick = () =>
+  gsap.timeline({ paused: true }).add("start");

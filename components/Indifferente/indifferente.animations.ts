@@ -6,7 +6,7 @@ export const initialStyles = () => {
 
 export const indifferenteDefault = () =>
   gsap
-    .timeline({ repeat: -1, repeatRefresh: true })
+    .timeline({ repeat: -1, paused: true, repeatRefresh: true })
     .add("start")
     .to(
       "#sopracciglio_dex, #sopracciglio_six, #occhio_six, #occhio_dex",

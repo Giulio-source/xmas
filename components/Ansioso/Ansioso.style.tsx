@@ -10,4 +10,10 @@ export const StyledAnsioso = styled.div`
     visibility: hidden;
     opacity: 0;
   }
+
+  #palla1,
+  #palla2,
+  #palla3 {
+    transform: translateY(-100%);
+  }
 `;

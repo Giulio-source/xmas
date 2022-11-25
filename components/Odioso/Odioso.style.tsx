@@ -15,4 +15,8 @@ export const StyledOdioso = styled.div`
     visibility: hidden;
     opacity: 0;
   }
+
+  #elfo-intero {
+    cursor: pointer;
+  }
 `;
