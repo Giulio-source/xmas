@@ -4,13 +4,18 @@ export const StyledFelice = styled.div`
   width: 500px;
   margin: auto;
 
-  #occhi_sorridenti,
-  #bocca-2,
+  #gruppo {
+    cursor: pointer;
+  }
+
+  #occhio-dex-2,
+  #occhio-six-2,
+  #bocca_2,
+  #bocca_small,
   #cuore1,
   #cuore2,
   #bacio,
-  #braccio-dex-alto,
-  #braccio-six-alto,
+  #sopracciglia-2,
   #vischio {
     visibility: hidden;
     opacity: 0;

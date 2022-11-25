@@ -1,23 +1,40 @@
-import { StyledFelice } from "./Felice.style";
-import { useEffect, useRef } from "react";
 import gsap from "gsap";
-import MorphSVGPlugin from "gsap/dist/MorphSVGPlugin";
 import DrawSVGPlugin from "gsap/dist/DrawSVGPlugin";
-import { feliceDefault, pallineDiNatale } from "./felice.animations";
+import MorphSVGPlugin from "gsap/dist/MorphSVGPlugin";
+import { useEffect, useRef } from "react";
+import {
+  feliceDefault,
+  feliceSingleClick,
+  pallineDiNatale,
+  resetElfo,
+} from "./felice.animations";
+import { StyledFelice } from "./Felice.style";
 
 export const Felice = () => {
   const svgRef = useRef(null);
   const tl = useRef<any>({});
   const singleClick = useRef(true);
 
+  function handleOnClick() {
+    tl.current.defaultAnim.pause();
+    tl.current.singleClickAnim
+      .invalidate()
+      .restart()
+      .then(() => {
+        tl.current.resetAnim
+          .invalidate()
+          .restart()
+          .then(() => tl.current.defaultAnim.restart());
+      });
+  }
+
   useEffect(() => {
     gsap.registerPlugin(MorphSVGPlugin, DrawSVGPlugin);
 
     tl.current.defaultAnim = feliceDefault();
     tl.current.pallineAnim = pallineDiNatale();
-    // tl.current.singleClickAnim = esaltatoSingleClick();
-    // tl.current.doubleClickAnim = esaltatoDoubleClick();
-    // tl.current.resetFaceAnim = esaltatoResetFace();
+    tl.current.singleClickAnim = feliceSingleClick();
+    tl.current.resetAnim = resetElfo();
     tl.current.defaultAnim.play();
   }, []);
 
@@ -144,11 +161,11 @@ export const Felice = () => {
           rx="65.3"
           ry="3.4"
         />
-        <g id="gruppo">
+        <g id="gruppo" onClick={handleOnClick}>
           <g id="braccio-six-basso">
             <path
               fill="none"
-              className="braccio"
+              className="braccio green"
               stroke="#009488"
               strokeMiterlimit="10"
               strokeWidth="10"
@@ -156,12 +173,24 @@ export const Felice = () => {
             />
             <path
               fill="none"
-              className="braccio"
+              className="braccio mint"
               stroke="#6CF7C6"
               strokeDasharray="22"
               strokeMiterlimit="10"
               strokeWidth="10"
               d="M235.9,452.9c1.3-10.8,2.7-35.7-9.9-63 c-10.2-22.1-24.9-35.7-33.3-42.3"
+            />
+            <path
+              fill="none"
+              className="ref"
+              stroke="none"
+              d="M235.9,452.9c1.3-10.8,2.7-35.7-9.9-63 c-10.2-22.1-24.9-35.7-33.3-42.3"
+            />
+            <path
+              fill="none"
+              className="braccio-concavo"
+              stroke="none"
+              d="M235.9,452.9c-2-0.7-43.5-15.6-51.5-56c-4.7-23.9,4.9-43.2,8.3-49.3"
             />
             <path
               className="mano"
@@ -172,7 +201,7 @@ export const Felice = () => {
           <g id="braccio-dex-basso">
             <path
               fill="none"
-              className="braccio"
+              className="braccio green"
               stroke="#009488"
               strokeMiterlimit="10"
               strokeWidth="10"
@@ -180,60 +209,29 @@ export const Felice = () => {
             />
             <path
               fill="none"
-              className="braccio"
+              className="ref"
+              stroke="none"
+              d="M127.1,363.5c0,0-41.2,12.3-38.3,90.4"
+            />
+            <path
+              fill="none"
+              className="braccio mint"
               stroke="#6CF7C6"
               strokeDasharray="22"
               strokeMiterlimit="10"
               strokeWidth="10"
               d="M127.1,363.5c0,0-41.2,12.3-38.3,90.4"
+            />
+            <path
+              fill="none"
+              className="braccio-concavo"
+              stroke="none"
+              d="M127.1,363.5c0,0,32.2,47.5-38.7,90.4"
             />
             <path
               fill="#FDB9D1"
               className="mano"
               d="M93.6 453.2H84s-3.5 11.2-1.2 11.2 3.5-5.6 3.5-5.6-.8 8.9 1.6 8.7 2.4-8.2 2.4-8.2.6 5.1 3.4 4.8c2.7-.3-.1-10.9-.1-10.9z"
-            />
-          </g>
-          <g id="braccio-dex-alto">
-            <path
-              fill="none"
-              stroke="#009488"
-              strokeMiterlimit="10"
-              strokeWidth="10"
-              d="M50.3 303.6s26.7 68.9 71.6 65.9"
-            />
-            <path
-              fill="none"
-              stroke="#6CF7C6"
-              strokeDasharray="22"
-              strokeMiterlimit="10"
-              strokeWidth="10"
-              d="M50.3 303.9s26.7 68.9 71.6 65.9"
-            />
-            <path
-              fill="#FDB9D1"
-              d="m55 302.2-8.8 4s-7.8-8.7-5.8-9.6 5.5 3.6 5.5 3.6-4.4-7.8-2.1-8.6c2.3-.8 5.6 6.5 5.6 6.5s-1.6-4.9 1.1-5.8c2.7-1 4.5 9.9 4.5 9.9z"
-            />
-          </g>
-          <g id="braccio-six-alto">
-            <path
-              fill="none"
-              stroke="#009488"
-              strokeMiterlimit="10"
-              strokeWidth="10"
-              d="M185.8 364.3s52.4 5 87.4-69.3"
-            />
-            <path
-              fill="none"
-              stroke="#6CF7C6"
-              strokeDasharray="22"
-              strokeMiterlimit="10"
-              strokeWidth="10"
-              d="M185.6 364.5s52.4 5 87.4-69.3"
-            />
-            <path
-              id="mano_six_2_"
-              fill="#FDB9D1"
-              d="m268 293.4 8.5 4.5s8.3-8.2 6.3-9.3-5.7 3.3-5.7 3.3 4.9-7.5 2.6-8.4c-2.2-.9-6 6.2-6 6.2s1.9-4.8-.8-5.9c-2.4-1.1-4.9 9.6-4.9 9.6z"
             />
           </g>
           <g id="gamba_x5F_dex_1_" strokeMiterlimit="10">
@@ -282,144 +280,219 @@ export const Felice = () => {
               d="M158.3 398.3c-4.5-1-6.7 4.1-6.3 5.3.4 1.3.9 4.6 3.6 4.7 2.8 0 5.8-1.7 5.8-4.7s-.2-4.7-3.1-5.3zM158.4 380.2c-4.5-1-6.7 4.1-6.3 5.3.4 1.3.9 4.6 3.6 4.7s5.8-1.7 5.8-4.7c-.1-3-.3-4.7-3.1-5.3z"
             />
           </g>
-          <g id="cappello">
-            <path
-              fill="#002764"
-              d="M274.3 251.8c-11.3-2.3-16.8 9.4-15.8 12.4s2.1 10.7 9.1 10.8c6.9.1 14.4-3.9 14.4-10.8s-.5-10.9-7.7-12.4z"
-            />
-            <path
-              fill="#009488"
-              d="M100.2 272.8s4.4-74 35.2-92.3 46.3-22 64.4-22 49 17.6 59.7 32.7c10.7 15.1 12.7 57.9 10.7 60.5s-13.4-50.4-35.6-51c-22.1-.6-24.8 20.2-26.2 25.8-1.3 5.7-3.3 38.7-3.3 38.7l-104.9 7.6z"
-            />
-            <path
-              fill="#002764"
-              d="M99.8 272.8s2-35.6 12.6-61.7c0 0 17.3 48.1 19.6 56.2 0 0 20.4-60.8 23.3-64.1 2.9-3.4 23.7 61.2 23.7 61.2s33.7-55.1 35.7-56.4c2-1.3-4 57-4 56.8s-110.9 8-110.9 8z"
-            />
-          </g>
-          <path
-            fill="#FDB9D1"
-            d="M100.5 272.8c-.3 22-7.3 73.8 26.6 90.7 27.3 10.1 54.2 6.8 70.4-12.5 17.3-22.3 15.6-65.9 13.9-86.2-.7-3.3-39.7.3-55.4 1-15.6.7-53.5 3.2-55.5 7z"
-          />
-          <g id="orecchio_dex">
+          <g id="faccia-e-cappello">
+            <g id="cappello">
+              <path
+                fill="#002764"
+                d="M274.3 251.8c-11.3-2.3-16.8 9.4-15.8 12.4s2.1 10.7 9.1 10.8c6.9.1 14.4-3.9 14.4-10.8s-.5-10.9-7.7-12.4z"
+              />
+              <path
+                fill="#009488"
+                d="M100.2 272.8s4.4-74 35.2-92.3 46.3-22 64.4-22 49 17.6 59.7 32.7c10.7 15.1 12.7 57.9 10.7 60.5s-13.4-50.4-35.6-51c-22.1-.6-24.8 20.2-26.2 25.8-1.3 5.7-3.3 38.7-3.3 38.7l-104.9 7.6z"
+              />
+
+              <path
+                fill="#002764"
+                d="M99.8 272.8s2-35.6 12.6-61.7c0 0 17.3 48.1 19.6 56.2 0 0 20.4-60.8 23.3-64.1 2.9-3.4 23.7 61.2 23.7 61.2s33.7-55.1 35.7-56.4c2-1.3-4 57-4 56.8s-110.9 8-110.9 8z"
+              />
+            </g>
             <path
               fill="#FDB9D1"
-              d="M210.4 315.9s2.4-26.8 12.3-40A85.5 85.5 0 0 1 240 257s2.7 18.3-9.3 37.2-20.3 21.7-20.3 21.7z"
+              d="M100.5 272.8c-.3 22-7.3 73.8 26.6 90.7 27.3 10.1 54.2 6.8 70.4-12.5 17.3-22.3 15.6-65.9 13.9-86.2-.7-3.3-39.7.3-55.4 1-15.6.7-53.5 3.2-55.5 7z"
             />
-            <path
-              fill="none"
-              stroke="#DE8BB5"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeMiterlimit="10"
-              strokeWidth="3"
-              d="m211.8 307.1 13.2-20.8"
-            />
-          </g>
-          <g id="orecchio_dex_1_">
-            <path
-              fill="#FDB9D1"
-              d="M68.6 277.2s12.6 4.4 21.9 21.4c9.3 17 9.3 16.6 12.6 28.1 0 0-19.1-9.4-27.2-24.8-7.9-15.2-7.3-24.7-7.3-24.7z"
-            />
-            <path
-              fill="none"
-              stroke="#DE8BB5"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeMiterlimit="10"
-              strokeWidth="3"
-              d="m99 317.3-18.4-17.2"
-            />
-          </g>
-          <g id="facce">
-            <path
-              fill="none"
-              stroke="#11142A"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeMiterlimit="10"
-              strokeWidth="3"
-              d="M187.4 281.7s4.6 1.9 5.9 3.8M117.9 284.5s4.5-2.1 6.8-1.8"
-            />
-            <path
-              id="bocca"
-              fill="none"
-              stroke="#11142A"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeMiterlimit="10"
-              strokeWidth="3"
-              d="M148.1 332.6s3 4.1 6.5 3.9c3.5-.2 3.4-5.2 3.4-5.2"
-            />
-            <circle cx="121.8" cy="300.7" r="9.2" fill="#FFF" />
-            <circle cx="186.5" cy="300.7" r="9.2" fill="#FFF" />
-            <circle
-              id="Occhio_Dex_4_"
-              cx="122.3"
-              cy="300.5"
-              r="2.5"
-              fill="#11142A"
-            />
-            <circle
-              id="Occhio_six_4_"
-              cx="187"
-              cy="300.5"
-              r="2.5"
-              fill="#11142A"
-            />
-            <path
-              id="bocca-2"
-              fill="none"
-              stroke="#11142A"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeMiterlimit="10"
-              strokeWidth="3"
-              d="M151.9 327.7s-4.5.8-4.7 2.9 4.6 3.2 4.6 3.2-4.7.6-4.6 3.4c.1 2.7 5.5 1.2 5.5 1.2"
-            />
-            <path
-              fill="#FDB9D1"
-              d="M122.6 329.9c5 0 9-4.2 9-9.3 0-5.1-4-9.3-9-9.3s-9 4.2-9 9.3a9 9 0 0 0 9 9.3zM187 329.9c5 0 9-4.2 9-9.3 0-5.1-4-9.3-9-9.3s-9 4.2-9 9.3a9 9 0 0 0 9 9.3z"
-            />
-            <path
-              id="Guancia_9_"
-              fill="#F05"
-              stroke="#F05"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeMiterlimit="10"
-              strokeWidth="2"
-              d="M195 317.2c-6.3-1.4-9.3 5.6-8.7 7.4.6 1.8 1.2 6.4 5 6.5 3.9.1 8-2.3 8-6.5s-.3-6.5-4.3-7.4z"
-            />
-            <path
-              id="Guancia_8_"
-              fill="#F05"
-              stroke="#F05"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeMiterlimit="10"
-              strokeWidth="2"
-              d="M118.6 320.3c2.4.3 5.9 1 4.7 7.7-1.2 6.9-4.1 5.1-6.5 5.1s-4.1-3.7-4.4-6.3c-.3-2.6 3.3-6.9 6.2-6.5z"
-            />
-            <path
-              id="Naso_4_"
-              fill="none"
-              stroke="#11142A"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeMiterlimit="10"
-              strokeWidth="3"
-              d="M149.9 308.9s.5 5.6 3 5.6 3-5.6 3-6.6"
-            />
-            <path
-              id="occhi_sorridenti"
-              fill="none"
-              stroke="#11142A"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeMiterlimit="10"
-              strokeWidth="3"
-              d="M116.3 303s5.5-6 12.3 0M180.3 303.3s5.5-6 12.3 0"
-            />
+            <g id="orecchio_dex">
+              <path
+                fill="#FDB9D1"
+                d="M210.4 315.9s2.4-26.8 12.3-40A85.5 85.5 0 0 1 240 257s2.7 18.3-9.3 37.2-20.3 21.7-20.3 21.7z"
+              />
+              <path
+                fill="none"
+                stroke="#DE8BB5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeMiterlimit="10"
+                strokeWidth="3"
+                d="m211.8 307.1 13.2-20.8"
+              />
+            </g>
+            <g id="orecchio_dex_1_">
+              <path
+                fill="#FDB9D1"
+                d="M68.6 277.2s12.6 4.4 21.9 21.4c9.3 17 9.3 16.6 12.6 28.1 0 0-19.1-9.4-27.2-24.8-7.9-15.2-7.3-24.7-7.3-24.7z"
+              />
+              <path
+                fill="none"
+                stroke="#DE8BB5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeMiterlimit="10"
+                strokeWidth="3"
+                d="m99 317.3-18.4-17.2"
+              />
+            </g>
+            <g id="facce">
+              <g id="sopracciglia-2">
+                <path
+                  className="six"
+                  fill="none"
+                  stroke="#111428"
+                  strokeWidth="3"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeMiterlimit="10"
+                  d="M117.9,284.6c0,0,2.6-3.7,6.8-0.8"
+                />
+                <path
+                  className="dex"
+                  fill="none"
+                  stroke="#111428"
+                  strokeWidth="3"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeMiterlimit="10"
+                  d="M182.9,281.9c0,0,4.1-2.5,7,0.6"
+                />
+              </g>
+              <g id="sopracciglia">
+                <path
+                  className="dex"
+                  fill="none"
+                  stroke="#11142A"
+                  strokeWidth="3"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeMiterlimit="10"
+                  d="M187.4,281.7c0,0,4.6,1.9,5.9,3.8"
+                />
+                <path
+                  className="six"
+                  fill="none"
+                  stroke="#11142A"
+                  strokeWidth="3"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeMiterlimit="10"
+                  d="M117.9,284.5c0,0,4.5-2.1,6.8-1.8"
+                />
+              </g>
+              <path
+                id="bocca_small"
+                fill="none"
+                stroke="#111428"
+                strokeWidth="3"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeMiterlimit="10"
+                d="
+			M151.2,332c0,0,0.5,0.2,2,0.2c1,0,1.5-0.2,1.5-0.2"
+              />
+              <path
+                id="bocca"
+                fill="none"
+                stroke="#11142A"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeMiterlimit="10"
+                strokeWidth="3"
+                d="M158,331.3c0,0,0.1,5-3.4,5.2s-6.5-3.9-6.5-3.9"
+              />
+              <circle
+                className="bianco-occhio"
+                cx="121.8"
+                cy="300.7"
+                r="9.2"
+                fill="#FFF"
+              />
+              <circle
+                className="bianco-occhio"
+                cx="186.5"
+                cy="300.7"
+                r="9.2"
+                fill="#FFF"
+              />
+              <circle
+                id="occhio-dex"
+                cx="122.3"
+                cy="300.5"
+                r="2.5"
+                fill="#11142A"
+              />
+              <circle
+                id="occhio-six"
+                cx="187"
+                cy="300.5"
+                r="2.5"
+                fill="#11142A"
+              />
+              <path
+                id="bocca_2"
+                fill="none"
+                stroke="#11142A"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeMiterlimit="10"
+                strokeWidth="3"
+                d="
+              M151.9,327.7c-3.5,0.6-4.7,1.9-4.7,3.2c0,1,1.6,2.1,4.5,2.8c-4.5,1.4-4.8,2.8-4.6,3.9c0.3,1,1.3,1.2,5.6,0.8"
+              />
+              <path
+                fill="#FDB9D1"
+                d="M122.6 329.9c5 0 9-4.2 9-9.3 0-5.1-4-9.3-9-9.3s-9 4.2-9 9.3a9 9 0 0 0 9 9.3zM187 329.9c5 0 9-4.2 9-9.3 0-5.1-4-9.3-9-9.3s-9 4.2-9 9.3a9 9 0 0 0 9 9.3z"
+              />
+              <path
+                id="Guancia_9_"
+                fill="#F05"
+                stroke="#F05"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeMiterlimit="10"
+                strokeWidth="2"
+                d="M195 317.2c-6.3-1.4-9.3 5.6-8.7 7.4.6 1.8 1.2 6.4 5 6.5 3.9.1 8-2.3 8-6.5s-.3-6.5-4.3-7.4z"
+              />
+              <path
+                id="Guancia_8_"
+                fill="#F05"
+                stroke="#F05"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeMiterlimit="10"
+                strokeWidth="2"
+                d="M118.6 320.3c2.4.3 5.9 1 4.7 7.7-1.2 6.9-4.1 5.1-6.5 5.1s-4.1-3.7-4.4-6.3c-.3-2.6 3.3-6.9 6.2-6.5z"
+              />
+              <path
+                id="Naso_4_"
+                fill="none"
+                stroke="#11142A"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeMiterlimit="10"
+                strokeWidth="3"
+                d="M149.9 308.9s.5 5.6 3 5.6 3-5.6 3-6.6"
+              />
+              <path
+                id="occhio-dex-2"
+                fill="none"
+                stroke="#11142A"
+                strokeWidth="3"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeMiterlimit="10"
+                d="
+			M116.3,303c0,0,5.5-6,12.3,0"
+              />
+
+              <path
+                id="occhio-six-2"
+                fill="none"
+                stroke="#11142A"
+                strokeWidth="3"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeMiterlimit="10"
+                d="
+			M180.3,303.3c0,0,5.5-6,12.3,0"
+              />
+            </g>
           </g>
           <g id="bacio">
             <path
