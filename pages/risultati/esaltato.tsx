@@ -1,10 +1,10 @@
 import { Esaltato } from "../../components/Esaltato/Esaltato";
-import { PageWrapper } from "../../page-styles/esaltato-page.style";
+import { EsaltatoPageWrapper } from "../../page-styles/esaltato-page.style";
 
-export default function() {
+export default function EsaltatoPage() {
   return (
-    <PageWrapper>
+    <EsaltatoPageWrapper>
       <Esaltato />
-    </PageWrapper>
+    </EsaltatoPageWrapper>
   );
 }

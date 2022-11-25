@@ -1,10 +1,10 @@
-import { Indifferente } from "../../components/Indifferente/Indifferente";
+import { Scazzato } from "../../components/Scazzato/Scazzato";
 import { ScazzatoPageWrapper } from "../../page-styles/scazzato-page.style";
 
-export default function ScazzatoPage() {
+export default function () {
   return (
     <ScazzatoPageWrapper>
-      <Indifferente />
+      <Scazzato />
     </ScazzatoPageWrapper>
   );
 }

@@ -1,11 +1,10 @@
-import { Esaltato } from "../../components/Esaltato/Esaltato";
 import { Felice } from "../../components/Felice/Felice";
-import { PageWrapper } from "../../page-styles/felice-page.style";
+import { FelicePageWrapper } from "../../page-styles/felice-page.style";
 
-export default function() {
+export default function FelicePage() {
   return (
-    <PageWrapper>
+    <FelicePageWrapper>
       <Felice />
-    </PageWrapper>
+    </FelicePageWrapper>
   );
 }
