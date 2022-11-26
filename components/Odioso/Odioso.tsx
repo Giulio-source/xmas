@@ -3,7 +3,11 @@ import { useRef, useEffect } from "react";
 import gsap from "gsap";
 import DrawSVGPlugin from "gsap/dist/DrawSVGPlugin";
 import MorphSVGPlugin from "gsap/dist/MorphSVGPlugin";
-import { odiosoDefault, odiosoSingleClick } from "./odioso.animations";
+import {
+  odiosoDefault,
+  odiosoSingleClick,
+  resetElfo,
+} from "./odioso.animations";
 
 export const Odioso = () => {
   const svgRef = useRef(null);
@@ -11,7 +15,20 @@ export const Odioso = () => {
   // const singleClick = useRef(true);
 
   function handleOnClick() {
-    
+    tl.current.defaultAnim.pause();
+    tl.current.singleClickAnim
+      .invalidate()
+      .restart()
+      .then(() =>
+        tl.current.resetAnim
+          .invalidate()
+          .restart()
+          .then(() => {
+            setTimeout(() => {
+              tl.current.defaultAnim.invalidate().restart();
+            }, 500);
+          })
+      );
   }
 
   useEffect(() => {
@@ -20,7 +37,8 @@ export const Odioso = () => {
     tl.current.defaultAnim = odiosoDefault();
     // tl.current.pallineAnim = pallineDiNatale();
     tl.current.singleClickAnim = odiosoSingleClick();
-    // tl.current.resetAnim = resetElfo();
+    tl.current.resetAnim = resetElfo();
+
     tl.current.defaultAnim.play();
   }, []);
 
@@ -78,36 +96,22 @@ export const Odioso = () => {
 		s10.4-6.7,10.4-6.7l0.5,6.7h5L129.7,490.7L129.7,490.7z"
             />
           </g>
-          <g id="braccio-six-alto">
-            <path
-              fill="none"
-              stroke="#021732"
-              strokeWidth="10"
-              strokeMiterlimit="10"
-              d="M189.7,359.5c0,0,70.4-7.5,79.7,43.8"
-            />
-            <path
-              id="mano_six_00000056402586640819907410000007600002714325836217_"
-              fill="#F8CEDE"
-              d="M264.6,401l9.6-0.7
-		c0,0,4.4,10.9,2.1,11c-2.3,0.2-3.9-5.3-3.9-5.3s1.4,8.8-0.9,8.8s-3-8-3-8s-0.2,5.1-3.1,5.1C262.5,411.7,264.6,401,264.6,401
-		L264.6,401z"
-            />
-          </g>
-          <g id="braccio-dex-alto">
-            <path
-              fill="none"
-              stroke="#021732"
-              strokeWidth="10"
-              strokeMiterlimit="10"
-              d="M62.8,406.8c0,0,1.1-44.3,65.1-42.9"
-            />
-            <path
-              fill="#F8CEDE"
-              d="M67.4,406.5h-9.6c0,0-3.5,11.2-1.2,11.2s3.5-5.6,3.5-5.6s-0.8,8.9,1.6,8.7c2.4-0.2,2.4-8.2,2.4-8.2
-		s0.6,5.1,3.4,4.8C70.3,417.1,67.4,406.5,67.4,406.5z"
-            />
-          </g>
+          <path
+            id="braccio-six-alto"
+            fill="none"
+            stroke="#021732"
+            strokeWidth="10"
+            strokeMiterlimit="10"
+            d="M189.7,359.5c0,0,70.4-7.5,79.7,43.8"
+          />
+          <path
+            id="braccio-dex-alto"
+            fill="none"
+            stroke="#021732"
+            strokeWidth="10"
+            strokeMiterlimit="10"
+            d="M62.8,406.8c0,0,1.1-44.3,65.1-42.9"
+          />
           <g id="gamba-six">
             <path
               fill="none"
@@ -130,6 +134,7 @@ export const Odioso = () => {
           </g>
           <g id="braccio-six-basso">
             <path
+              className="braccio"
               fill="none"
               stroke="#021732"
               strokeWidth="10"
@@ -137,15 +142,16 @@ export const Odioso = () => {
               d="M188.4,350.4c0,0,48.6,20.1,44.7,102.1"
             />
             <path
-              id="mano_six_00000066501172287882276840000015814349863448262827_"
+              className="mano"
               fill="#F8CEDE"
               d="M227.9,451.6h9.6
 		c0,0,3.5,11.2,1.2,11.2s-3.5-5.6-3.5-5.6s0.8,8.9-1.6,8.7s-2.4-8.2-2.4-8.2s-0.6,5.1-3.4,4.8C225,462.2,227.9,451.6,227.9,451.6
 		L227.9,451.6z"
             />
           </g>
-          <g id="braccio-six-basso">
+          <g id="braccio-dex-basso">
             <path
+              className="braccio"
               fill="none"
               stroke="#021732"
               strokeWidth="10"
@@ -153,6 +159,7 @@ export const Odioso = () => {
               d="M86,453.5c0,0-4.3-73.8,37.8-89.6"
             />
             <path
+              className="mano"
               fill="#F8CEDE"
               d="M90.8,452.8h-9.6c0,0-3.5,11.2-1.2,11.2s3.5-5.6,3.5-5.6s-0.8,8.9,1.6,8.7s2.4-8.2,2.4-8.2s0.6,5.1,3.4,4.8
 		C93.7,463.4,90.8,452.8,90.8,452.8z"
@@ -177,6 +184,7 @@ export const Odioso = () => {
           </g>
           <g id="testa">
             <path
+              id="testa-shape"
               fill="#F8CEDE"
               d="M100,274.4c-0.3,22-7.3,73.8,26.6,90.7c27.3,10.1,54.2,6.8,70.4-12.5c17.3-22.3,15.6-65.9,13.9-86.2
 	c-0.7-3.3-39.7,0.3-55.4,1S102,270.6,100,274.4L100,274.4z"
@@ -195,35 +203,38 @@ export const Odioso = () => {
               />
             </g>
             <g id="facce_4_">
-              <circle
-                id="bianco-dex-small"
-                fill="#FFFFFF"
-                cx="122"
-                cy="303.7"
-                r="9.2"
-              />
-              <circle
-                id="bianco-six-small"
-                fill="#FFFFFF"
-                cx="186.7"
-                cy="303.7"
-                r="9.2"
-              />
-              <circle
-                id="Occhio_Dex_3_"
-                fill="#11142A"
-                cx="122.5"
-                cy="303.5"
-                r="2.5"
-              />
-              <circle
-                id="Occhio_six_3_"
-                fill="#11142A"
-                cx="187.2"
-                cy="303.5"
-                r="2.5"
-              />
-
+              <g id="occhio-dex-small">
+                <circle
+                  id="bianco-dex-small"
+                  fill="#FFFFFF"
+                  cx="122"
+                  cy="303.7"
+                  r="9.2"
+                />
+                <circle
+                  id="pupilla-dex"
+                  fill="#11142A"
+                  cx="122.5"
+                  cy="303.5"
+                  r="2.5"
+                />
+              </g>
+              <g id="occhio-six-small">
+                <circle
+                  id="bianco-six-small"
+                  fill="#FFFFFF"
+                  cx="186.7"
+                  cy="303.7"
+                  r="9.2"
+                />
+                <circle
+                  id="pupilla-six"
+                  fill="#11142A"
+                  cx="187.2"
+                  cy="303.5"
+                  r="2.5"
+                />
+              </g>
               <path
                 id="Naso_5_"
                 fill="none"
@@ -293,7 +304,7 @@ export const Odioso = () => {
                 cy="303.4"
                 r="10.5"
               />
-              <circle
+              {/* <circle
                 id="Occhio_Dex_00000153699917376862847910000012354680460649255568_"
                 fill="#11142A"
                 cx="122.5"
@@ -306,7 +317,7 @@ export const Odioso = () => {
                 cx="187.3"
                 cy="303.4"
                 r="2.5"
-              />
+              /> */}
               <g id="vene-six">
                 <g>
                   <defs>
@@ -586,13 +597,15 @@ export const Odioso = () => {
               />
             </g>
 
-            <g id="orecchio_dex_9_">
+            <g id="orecchio-six">
               <path
+                className="fuori"
                 fill="#F8CEDE"
                 d="M209.9,317.5c0,0,2.4-26.8,12.3-40s15.3-17.6,17.3-18.9c0,0,2.7,18.3-9.3,37.2
 		C218.3,314.7,209.9,317.5,209.9,317.5L209.9,317.5z"
               />
               <path
+                className="dentro"
                 fill="none"
                 stroke="#DE8BB5"
                 strokeWidth="3"
@@ -603,13 +616,15 @@ export const Odioso = () => {
 		M211.3,308.7l13.2-20.8"
               />
             </g>
-            <g id="orecchio_dex_8_">
+            <g id="orecchio-dex">
               <path
+                className="fuori"
                 fill="#F8CEDE"
                 d="M68.1,278.8c0,0,12.6,4.4,21.9,21.4s9.3,16.6,12.6,28.1c0,0-19.1-9.4-27.2-24.8
 		C67.5,288.2,68.1,278.8,68.1,278.8z"
               />
               <path
+                className="dentro"
                 fill="none"
                 stroke="#DE8BB5"
                 strokeWidth="3"
@@ -893,74 +908,69 @@ export const Odioso = () => {
           <path
             fill="none"
             stroke="#FF0055"
-            strokeWidth="4"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeMiterlimit="10"
+            stroke-width="4"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-miterlimit="10"
             d="
-		M276.9,295l-0.2-0.3l-0.3-0.6l-0.2-0.3l-0.2-0.4l-0.3-1.2c0-0.1-0.1-0.6-0.1-0.2l-0.1-1v-1.5l0.2-0.7l0.3-1.1l0.2-0.7
-		c0.2-0.5-0.1,0.2,0.2-0.3c0.8-1.8,1.6-2.8,3.1-4.1l0.1-0.1l0.6-0.4l1-0.6l0.3-0.1l0.7-0.2l0.6-0.2l0.6-0.1
-		c3.8-0.4,7.5,1.1,10.2,3.9c3,3,4.3,7.1,4,11.4c-0.5,9.5-7.7,16.6-15.7,20.9c-19,9.1-41.2,8.3-59.5-2.1"
+			M222.4,315c18.3,10.4,40.5,11.2,59.5,2.1c8-4.3,15.2-11.4,15.7-20.9c0.3-4.3-1-8.4-4-11.4c-2.7-2.8-6.4-4.3-10.2-3.9l-0.6,0.1
+			l-0.6,0.2l-0.7,0.2l-0.3,0.1l-1,0.6l-0.6,0.4l-0.1,0.1c-1.5,1.3-2.3,2.3-3.1,4.1c-0.3,0.5,0-0.2-0.2,0.3l-0.2,0.7l-0.3,1.1
+			l-0.2,0.7v1.5l0.1,1c0-0.4,0.1,0.1,0.1,0.2l0.3,1.2l0.2,0.4l0.2,0.3l0.3,0.6l0.2,0.3"
           />
-
           <path
             fill="none"
             stroke="#FF0055"
-            strokeWidth="4"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeMiterlimit="10"
+            stroke-width="4"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-miterlimit="10"
             d="
-		M218.6,320.7L218.6,320.7c18.2,1.8,36,6.1,53,12.7c7.1,2.6,13.6,6.5,19.2,11.5c4.9,4.4,8.1,10.4,8.9,17c0.4,3.7,0.2,6.9-1,10.3
-		c-1,2.9-3,5.9-5.3,7.7"
+			M218.6,320.7L218.6,320.7c18.2,1.8,36,6.1,53,12.7c7.1,2.6,13.6,6.5,19.2,11.5c4.9,4.4,8.1,10.4,8.9,17c0.4,3.7,0.2,6.9-1,10.3
+			c-1,2.9-3,5.9-5.3,7.7"
           />
-
           <path
             fill="none"
             stroke="#FF0055"
-            strokeWidth="4"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeMiterlimit="10"
+            stroke-width="4"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-miterlimit="10"
             d="
-		M252,315.8L252,315.8c14.8,5.1,31-2.4,36.7-17"
+			M252,315.8L252,315.8c14.8,5.1,31-2.4,36.7-17"
           />
-
           <path
             fill="none"
             stroke="#FF0055"
-            strokeWidth="4"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeMiterlimit="10"
+            stroke-width="4"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-miterlimit="10"
             d="
-		M87.1,315.1c-9.5,5.6-20.4,8.5-31.4,8.5c-9.7,0.1-19.5-1.9-28.1-6.4c-8-4.3-15.2-11.4-15.7-20.9c-0.2-4.3,1-8.4,4-11.4
-		c2.7-2.7,6.4-4.3,10.2-3.9l0.6,0.1l0.6,0.2l0.7,0.2l0.3,0.1c0.3,0.2,0.7,0.3,1,0.6c0.2,0.2,0.5,0.2,0.6,0.4l0.1,0.1
-		c1.5,1.3,2.3,2.3,3.1,4.1c0.2,0.5,0-0.2,0.2,0.3l0.2,0.7c0.2,0.3,0.2,0.7,0.3,1.1l0.2,0.7v1.5l-0.1,1c0-0.5-0.1,0.1-0.1,0.2
-		l-0.3,1.2l-0.2,0.4l-0.2,0.3l-0.3,0.6l-0.2,0.3"
+			M87.1,315.1c-9.5,5.6-20.4,8.5-31.4,8.5c-9.7,0.1-19.5-1.9-28.1-6.4c-8-4.3-15.2-11.4-15.7-20.9c-0.2-4.3,1-8.4,4-11.4
+			c2.7-2.7,6.4-4.3,10.2-3.9l0.6,0.1l0.6,0.2l0.7,0.2l0.3,0.1c0.3,0.2,0.7,0.3,1,0.6c0.2,0.2,0.5,0.2,0.6,0.4l0.1,0.1
+			c1.5,1.3,2.3,2.3,3.1,4.1c0.2,0.5,0-0.2,0.2,0.3l0.2,0.7c0.2,0.3,0.2,0.7,0.3,1.1l0.2,0.7v1.5l-0.1,1c0-0.5-0.1,0.1-0.1,0.2
+			l-0.3,1.2l-0.2,0.4l-0.2,0.3l-0.3,0.6l-0.2,0.3"
           />
-
           <path
             fill="none"
             stroke="#FF0055"
-            strokeWidth="4"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeMiterlimit="10"
+            stroke-width="4"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-miterlimit="10"
             d="
-		M16.5,380.4c-2.4-2-4.3-4.7-5.3-7.7c-1.2-3.3-1.5-6.8-1-10.3c0.8-6.6,4-12.6,8.9-17c5.6-5,12.1-9,19.2-11.5
-		c17-6.6,34.8-10.9,53-12.7l0,0"
+			M91.3,321.2L91.3,321.2c-18.2,1.8-36,6.1-53,12.7c-7.1,2.5-13.6,6.5-19.2,11.5c-4.9,4.4-8.1,10.4-8.9,17c-0.5,3.5-0.2,7,1,10.3
+			c1,3,2.9,5.7,5.3,7.7"
           />
-
           <path
             fill="none"
             stroke="#FF0055"
-            strokeWidth="4"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeMiterlimit="10"
+            stroke-width="4"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-miterlimit="10"
             d="
-		M21,299.1c5.7,14.6,21.9,22.1,36.7,17l0,0"
+			M57.7,316.1L57.7,316.1c-14.8,5.1-31-2.4-36.7-17"
           />
         </g>
       </svg>

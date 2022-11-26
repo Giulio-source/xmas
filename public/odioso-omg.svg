@@ -1,52 +1,237 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 27.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Livello_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 339.5 915.5" enable-background="new 0 0 339.5 915.5" xml:space="preserve">
-<path fill="#002764" d="M-0.6-0.1h340v1047.8h-340V-0.1z"/>
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 339.5 600" enable-background="new 0 0 339.5 600" xml:space="preserve">
+<path fill="#002764" d="M-0.6-0.1h340v1047.8h-340C-0.6,1047.7-0.6-0.1-0.6-0.1z"/>
 <path fill="#FFFFFF" d="M428.8,595.6c0-73.7-120.6-133.4-269.5-133.4s-269.5,59.7-269.5,133.4c0,43.5,42.2,82.2,107.4,106.6v345.3
 	h342.3V694.7C394.3,670.3,428.8,634.9,428.8,595.6L428.8,595.6z"/>
 <ellipse opacity="0.5" fill="#C1D1D6" stroke="#C1D1D6" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" enable-background="new    " cx="157.5" cy="509.4" rx="65.3" ry="3.4"/>
-<g id="gamba_x5F_dex_00000137094450778982632820000018397342211108701855_">
-	<path fill="none" stroke="#021732" stroke-width="10" stroke-miterlimit="10" d="M125.2,441.3v49.2"/>
-	
-		<path id="Scarpa_dex_00000145050843037930707490000007793094744171910571_" fill="#021732" stroke="#021732" stroke-width="2" stroke-miterlimit="10" d="
-		M129.7,490.7l-7.9-0.5c0,0-1.2,10.4-6.1,11s-7.4-1.4-8.7-5.5c-1.3-4-1-7.3-3.5-7.3c-3,0-3.1,5.3-1.8,9.8c1.2,4.3,5.5,9.8,12.2,9.8
-		s10.4-6.7,10.4-6.7l0.5,6.7h5L129.7,490.7L129.7,490.7z"/>
-</g>
-<g id="braccio-six-alto">
-	<path fill="none" stroke="#021732" stroke-width="10" stroke-miterlimit="10" d="M189.7,359.5c0,0,70.4-7.5,79.7,43.8"/>
-	<path id="mano_six_00000056402586640819907410000007600002714325836217_" fill="#F8CEDE" d="M264.6,401l9.6-0.7
-		c0,0,4.4,10.9,2.1,11c-2.3,0.2-3.9-5.3-3.9-5.3s1.4,8.8-0.9,8.8s-3-8-3-8s-0.2,5.1-3.1,5.1C262.5,411.7,264.6,401,264.6,401
-		L264.6,401z"/>
-</g>
-<g id="braccio-dex-alto">
-	<path fill="none" stroke="#021732" stroke-width="10" stroke-miterlimit="10" d="M62.8,406.8c0,0,1.1-44.3,65.1-42.9"/>
-	<path fill="#F8CEDE" d="M67.4,406.5h-9.6c0,0-3.5,11.2-1.2,11.2s3.5-5.6,3.5-5.6s-0.8,8.9,1.6,8.7c2.4-0.2,2.4-8.2,2.4-8.2
-		s0.6,5.1,3.4,4.8C70.3,417.1,67.4,406.5,67.4,406.5z"/>
-</g>
-<g id="gamba_x5F_six_00000123443255414137224150000013632820225399389887_">
-	<path fill="none" stroke="#021732" stroke-width="10" stroke-miterlimit="10" d="M188.8,443.3v49.2"/>
-	
-		<path id="Scarpa_six_00000148619417099307885650000012939927578238555546_" fill="#021732" stroke="#021732" stroke-width="2" stroke-miterlimit="10" d="
-		M184.4,491.9l7.9-0.5c0,0,1.5,9.2,6.1,11c4,1.5,7.1-1.3,8.1-5.5c1.3-5.2,1-7.9,3.5-7.9c3,0,3.7,5.9,2.4,10.4
-		c-1.2,4.3-5.5,9.8-12.2,9.8s-10.4-6.7-10.4-6.7l-0.5,6.7h-5L184.4,491.9L184.4,491.9z"/>
-</g>
-<g id="braccio-dex-alto_00000062162406209563220080000003529556284469127585_">
-	<path fill="none" stroke="#021732" stroke-width="10" stroke-miterlimit="10" d="M188.4,350.4c0,0,48.6,20.1,44.7,102.1"/>
-	<path id="mano_six_00000066501172287882276840000015814349863448262827_" fill="#F8CEDE" d="M227.9,451.6h9.6
-		c0,0,3.5,11.2,1.2,11.2s-3.5-5.6-3.5-5.6s0.8,8.9-1.6,8.7s-2.4-8.2-2.4-8.2s-0.6,5.1-3.4,4.8C225,462.2,227.9,451.6,227.9,451.6
-		L227.9,451.6z"/>
-</g>
-<g id="braccio-six-basso">
-	<path fill="none" stroke="#021732" stroke-width="10" stroke-miterlimit="10" d="M86,453.5c0,0-4.3-73.8,37.8-89.6"/>
-	<path fill="#F8CEDE" d="M90.8,452.8h-9.6c0,0-3.5,11.2-1.2,11.2s3.5-5.6,3.5-5.6s-0.8,8.9,1.6,8.7s2.4-8.2,2.4-8.2s0.6,5.1,3.4,4.8
-		C93.7,463.4,90.8,452.8,90.8,452.8z"/>
-</g>
-<g id="Corpo_00000044856005998392278640000008266036666772470933_">
-	<path fill="#0C45CA" d="M196.2,340.1c0,0-2.1,108.3-2.1,102.7c0-0.2-73.3,2.7-74.4,0c-1.2-2.7-0.7-76.4,0-84.4"/>
-	<path fill="#021732" stroke="#002764" stroke-miterlimit="10" d="M194.5,414.9v11l-74.9,2.1l-0.4-10.7L194.5,414.9z"/>
-	<path fill="#021732" d="M156.2,398.6c-4.5-1-6.7,4.1-6.3,5.3c0.4,1.3,0.9,4.6,3.6,4.7s5.8-1.7,5.8-4.7S159.1,399.2,156.2,398.6z
-		 M156.3,380.5c-4.5-1-6.7,4.1-6.3,5.3c0.4,1.3,0.9,4.6,3.6,4.7c2.8,0,5.8-1.7,5.8-4.7S159.2,381.1,156.3,380.5z"/>
+<g id="elfo-intero">
+	<g id="gamba-dex">
+		<path fill="none" stroke="#021732" stroke-width="10" stroke-miterlimit="10" d="M125.2,441.3v49.2"/>
+		
+			<path id="Scarpa_dex_00000145050843037930707490000007793094744171910571_" fill="#021732" stroke="#021732" stroke-width="2" stroke-miterlimit="10" d="
+			M129.7,490.7l-7.9-0.5c0,0-1.2,10.4-6.1,11s-7.4-1.4-8.7-5.5c-1.3-4-1-7.3-3.5-7.3c-3,0-3.1,5.3-1.8,9.8c1.2,4.3,5.5,9.8,12.2,9.8
+			s10.4-6.7,10.4-6.7l0.5,6.7h5L129.7,490.7L129.7,490.7z"/>
+	</g>
+	<path id="braccio-six-alto" fill="none" stroke="#021732" stroke-width="10" stroke-miterlimit="10" d="M189.7,359.5
+		c0,0,70.4-7.5,79.7,43.8"/>
+	<path id="braccio-dex-alto" fill="none" stroke="#021732" stroke-width="10" stroke-miterlimit="10" d="M62.8,406.8
+		c0,0,1.1-44.3,65.1-42.9"/>
+	<g id="gamba-six">
+		<path fill="none" stroke="#021732" stroke-width="10" stroke-miterlimit="10" d="M188.8,443.3v49.2"/>
+		
+			<path id="Scarpa_six_00000148619417099307885650000012939927578238555546_" fill="#021732" stroke="#021732" stroke-width="2" stroke-miterlimit="10" d="
+			M184.4,491.9l7.9-0.5c0,0,1.5,9.2,6.1,11c4,1.5,7.1-1.3,8.1-5.5c1.3-5.2,1-7.9,3.5-7.9c3,0,3.7,5.9,2.4,10.4
+			c-1.2,4.3-5.5,9.8-12.2,9.8s-10.4-6.7-10.4-6.7l-0.5,6.7h-5L184.4,491.9L184.4,491.9z"/>
+	</g>
+	<g id="braccio-six-basso" transform="matrix(1,0,0,1,0,-10)">
+		<path fill="none" stroke="#021732" stroke-width="10" stroke-miterlimit="10" d="M189.7,359.5c0,0,70.4-7.5,79.7,43.8"/>
+		<path fill="#F8CEDE" d="M263.9,401.6h9.6c0,0,3.5,11.2,1.2,11.2c-2.3,0-3.5-5.6-3.5-5.6s0.8,8.9-1.6,8.7c-2.4-0.2-2.4-8.2-2.4-8.2
+			s-0.6,5.1-3.4,4.8C261,412.2,263.9,401.6,263.9,401.6L263.9,401.6z"/>
+	</g>
+	<g id="braccio-dex-basso" transform="matrix(1,0,0,1,0,-10)">
+		<path fill="none" stroke="#021732" stroke-width="10" stroke-miterlimit="10" d="M62.8,406.8c0,0,1.1-44.3,65.1-42.9"/>
+		<path fill="#F8CEDE" d="M67.8,406.8h-9.6c0,0-3.5,11.2-1.2,11.2s3.5-5.6,3.5-5.6s-0.8,8.9,1.6,8.7s2.4-8.2,2.4-8.2
+			s0.6,5.1,3.4,4.8C70.7,417.4,67.8,406.8,67.8,406.8z"/>
+	</g>
+	<g id="Corpo_00000044856005998392278640000008266036666772470933_">
+		<path fill="#0C45CA" d="M196.2,340.1c0,0-2.1,108.3-2.1,102.7c0-0.2-73.3,2.7-74.4,0c-1.2-2.7-0.7-76.4,0-84.4"/>
+		<path fill="#021732" stroke="#002764" stroke-miterlimit="10" d="M194.5,414.9v11l-74.9,2.1l-0.4-10.7L194.5,414.9z"/>
+		<path fill="#021732" d="M156.2,398.6c-4.5-1-6.7,4.1-6.3,5.3c0.4,1.3,0.9,4.6,3.6,4.7s5.8-1.7,5.8-4.7S159.1,399.2,156.2,398.6z
+			 M156.3,380.5c-4.5-1-6.7,4.1-6.3,5.3c0.4,1.3,0.9,4.6,3.6,4.7c2.8,0,5.8-1.7,5.8-4.7S159.2,381.1,156.3,380.5z"/>
+	</g>
+	<g id="testa" transform="matrix(1,0,0,1,0,10)">
+		<path id="testa-shape" fill="#FF0055" d="M100,274.4c-0.3,22-7.3,73.8,26.6,90.7c27.3,10.1,54.2,6.8,70.4-12.5
+			c17.3-22.3,15.6-65.9,13.9-86.2c-0.7-3.3-39.7,0.3-55.4,1S102,270.6,100,274.4L100,274.4z"/>
+		<g id="cappello_4_">
+			<path fill="#021732" d="M100.4,275.8c0,0,4.4-74,35.2-92.3s46.3-22,64.4-22s49,17.6,59.7,32.7c10.7,15.1,12.7,57.9,10.7,60.5
+				s-13.4-50.4-35.6-51s-24.8,20.2-26.2,25.8c-1.3,5.7-3.3,38.7-3.3,38.7L100.4,275.8L100.4,275.8z"/>
+			<path fill="#0C45CA" d="M100.1,275.8c0,0,2-35.6,12.6-61.7c0,0,17.3,48.1,19.6,56.2c0,0,20.4-60.8,23.3-64.1
+				c2.9-3.4,23.7,61.2,23.7,61.2S213,212.3,215,211s-4,57-4,56.8S100.1,275.8,100.1,275.8z M274.5,254.8
+				c-11.3-2.3-16.8,9.4-15.8,12.4c1.1,3,2.1,10.7,9.1,10.8c6.9,0.1,14.4-3.9,14.4-10.8S281.7,256.3,274.5,254.8L274.5,254.8z"/>
+		</g>
+		<g id="facce_4_">
+			<g id="occhio-dex-small" transform="matrix(1,0,0,0.1,0,273.33)">
+				<ellipse id="bianco-dex-small" fill="#FFFFFF" cx="122" cy="303.7" rx="9.2" ry="0.9"/>
+				<ellipse id="pupilla-dex" fill="#11142A" cx="122.5" cy="303.5" rx="2.5" ry="0.2"/>
+			</g>
+			<g id="occhio-six-small" transform="matrix(1,0,0,0.1,0,273.33)">
+				<ellipse id="bianco-six-small" fill="#FFFFFF" cx="186.7" cy="303.7" rx="9.2" ry="0.9"/>
+				<ellipse id="pupilla-six" fill="#11142A" cx="187.2" cy="303.5" rx="2.5" ry="0.2"/>
+			</g>
+			
+				<path id="Naso_5_" fill="none" stroke="#11142A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+				M150.1,311.9c0,0,0.5,5.6,3,5.6s3-5.6,3-6.6"/>
+			
+				<path id="bocca" fill="none" stroke="#11142A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+				M165.2,333.4c0,0-1.8-5.6-10.7-5.6s-10.7,5.6-10.7,6.6"/>
+			
+				<path id="bocca2" fill="none" stroke="#11142A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+				M165.2,333.4c0,0-1.8-5.6-10.7-5.6s-10.7,5.6-10.7,6.6"/>
+			
+				<path id="guancia-dex" fill="#FF0055" stroke="#FF0055" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="14" d="
+				M196.3,314c-8.8-2-13,7.8-12.2,10.4c0.8,2.5,1.7,9,7,9.1c5.5,0.1,11.2-3.2,11.2-9.1C202.3,318.4,201.9,315.2,196.3,314z"/>
+			
+				<path id="guancia-six" fill="#FF0055" stroke="#FF0055" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="14" d="
+				M119.3,317.2c3.4,0.4,8.3,1.4,6.6,10.8c-1.7,9.7-5.7,7.1-9.1,7.1s-5.7-5.2-6.2-8.8C110.2,322.7,115.2,316.6,119.3,317.2
+				L119.3,317.2z"/>
+			<circle id="bianco-dex-big" fill="#FFFFFF" cx="122.5" cy="303.4" r="10.5"/>
+			<circle id="bianco-six-big" fill="#FFFFFF" cx="187.3" cy="303.4" r="10.5"/>
+			<g id="vene-six">
+				<g>
+					<g>
+						<defs>
+							<circle id="SVGID_1_" cx="187.3" cy="303.4" r="10.5"/>
+						</defs>
+						<clipPath id="SVGID_00000132771594931393723960000006979402391986185909_">
+							<use xlink:href="#SVGID_1_"  overflow="visible"/>
+						</clipPath>
+						
+							<path clip-path="url(#SVGID_00000132771594931393723960000006979402391986185909_)" fill="none" stroke="#FF0055" stroke-width="0.8" stroke-miterlimit="10" d="
+							M177.9,298.7l2.6,1.6"/>
+					</g>
+				</g>
+				<g>
+					<g>
+						<defs>
+							<circle id="SVGID_00000116930994697329799730000017395024845419382156_" cx="187.3" cy="303.4" r="10.5"/>
+						</defs>
+						<clipPath id="SVGID_00000035515475355281121850000008065275268483287191_">
+							<use xlink:href="#SVGID_00000116930994697329799730000017395024845419382156_"  overflow="visible"/>
+						</clipPath>
+						
+							<path clip-path="url(#SVGID_00000035515475355281121850000008065275268483287191_)" fill="none" stroke="#FF0055" stroke-width="0.8" stroke-miterlimit="10" d="
+							M177.8,308.7l1.9-2.3"/>
+					</g>
+				</g>
+				<g>
+					<g>
+						<defs>
+							<circle id="SVGID_00000161619555133754107130000001892834588117226923_" cx="187.3" cy="303.4" r="10.5"/>
+						</defs>
+						<clipPath id="SVGID_00000120534877521378479100000017500136056783353751_">
+							<use xlink:href="#SVGID_00000161619555133754107130000001892834588117226923_"  overflow="visible"/>
+						</clipPath>
+						
+							<path clip-path="url(#SVGID_00000120534877521378479100000017500136056783353751_)" fill="none" stroke="#FF0055" stroke-width="0.8" stroke-miterlimit="10" d="
+							M194.8,310.9l-1.9-2.4"/>
+					</g>
+				</g>
+				<g>
+					<g>
+						<defs>
+							<circle id="SVGID_00000139990398053856507710000016323630999202222215_" cx="187.3" cy="303.4" r="10.5"/>
+						</defs>
+						<clipPath id="SVGID_00000159454310709816735040000007248326535782812063_">
+							<use xlink:href="#SVGID_00000139990398053856507710000016323630999202222215_"  overflow="visible"/>
+						</clipPath>
+						
+							<path clip-path="url(#SVGID_00000159454310709816735040000007248326535782812063_)" fill="none" stroke="#FF0055" stroke-width="0.8" stroke-miterlimit="10" d="
+							M197.8,303.2l-3-0.1"/>
+					</g>
+				</g>
+				<g>
+					<g>
+						<defs>
+							<circle id="SVGID_00000076567216859333450930000010518289285119310993_" cx="187.3" cy="303.4" r="10.5"/>
+						</defs>
+						<clipPath id="SVGID_00000062187737524439816630000002600033588632457137_">
+							<use xlink:href="#SVGID_00000076567216859333450930000010518289285119310993_"  overflow="visible"/>
+						</clipPath>
+						
+							<path clip-path="url(#SVGID_00000062187737524439816630000002600033588632457137_)" fill="none" stroke="#FF0055" stroke-width="0.8" stroke-miterlimit="10" d="
+							M183.7,293.4l1,2.8"/>
+					</g>
+				</g>
+			</g>
+			<g id="vene-dex">
+				<g>
+					<g>
+						<defs>
+							<circle id="SVGID_00000137099144709883993670000011107954246407728524_" cx="122.5" cy="303.4" r="10.5"/>
+						</defs>
+						<clipPath id="SVGID_00000080206913323290794360000005147518745311748747_">
+							<use xlink:href="#SVGID_00000137099144709883993670000011107954246407728524_"  overflow="visible"/>
+						</clipPath>
+						
+							<path clip-path="url(#SVGID_00000080206913323290794360000005147518745311748747_)" fill="none" stroke="#FF0055" stroke-width="0.8" stroke-miterlimit="10" d="
+							M132.9,304.5l-3-0.5"/>
+					</g>
+				</g>
+				<g>
+					<g>
+						<defs>
+							<circle id="SVGID_00000026847873566358520690000016021981188688194702_" cx="122.5" cy="303.4" r="10.5"/>
+						</defs>
+						<clipPath id="SVGID_00000056420341894731913890000004893224698183644577_">
+							<use xlink:href="#SVGID_00000026847873566358520690000016021981188688194702_"  overflow="visible"/>
+						</clipPath>
+						
+							<path clip-path="url(#SVGID_00000056420341894731913890000004893224698183644577_)" fill="none" stroke="#FF0055" stroke-width="0.8" stroke-miterlimit="10" d="
+							M129.6,295.1l-1,2.8"/>
+					</g>
+				</g>
+				<g>
+					<g>
+						<defs>
+							<circle id="SVGID_00000101801046849034113740000012388584120829565365_" cx="122.5" cy="303.4" r="10.5"/>
+						</defs>
+						<clipPath id="SVGID_00000064334032811155017880000012647020764021602961_">
+							<use xlink:href="#SVGID_00000101801046849034113740000012388584120829565365_"  overflow="visible"/>
+						</clipPath>
+						
+							<path clip-path="url(#SVGID_00000064334032811155017880000012647020764021602961_)" fill="none" stroke="#FF0055" stroke-width="0.8" stroke-miterlimit="10" d="
+							M112.9,298.9l2.6,1.6"/>
+					</g>
+				</g>
+				<g>
+					<g>
+						<defs>
+							<circle id="SVGID_00000111890173815381768780000018223458948022465686_" cx="122.5" cy="303.4" r="10.5"/>
+						</defs>
+						<clipPath id="SVGID_00000152945534174621133820000006259655839701997465_">
+							<use xlink:href="#SVGID_00000111890173815381768780000018223458948022465686_"  overflow="visible"/>
+						</clipPath>
+						
+							<path clip-path="url(#SVGID_00000152945534174621133820000006259655839701997465_)" fill="none" stroke="#FF0055" stroke-width="0.8" stroke-miterlimit="10" d="
+							M112.8,307.2l2.8-0.9"/>
+					</g>
+				</g>
+				<g>
+					<g>
+						<defs>
+							<circle id="SVGID_00000063632097314302460940000010007924338202697610_" cx="122.5" cy="303.4" r="10.5"/>
+						</defs>
+						<clipPath id="SVGID_00000175295558615153480760000014829002312745498010_">
+							<use xlink:href="#SVGID_00000063632097314302460940000010007924338202697610_"  overflow="visible"/>
+						</clipPath>
+						
+							<path clip-path="url(#SVGID_00000175295558615153480760000014829002312745498010_)" fill="none" stroke="#FF0055" stroke-width="0.8" stroke-miterlimit="10" d="
+							M129.4,311.5l-2-2.3"/>
+					</g>
+				</g>
+			</g>
+			
+				<path id="sopracciglio-1" fill="none" stroke="#111428" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="4" stroke-dasharray="6.7487,4.5991" d="
+				M128.7,297.5c-2.1,0.6-5.8-6.6-9.3-5.3"/>
+			
+				<path id="sopracciglio-2" fill="none" stroke="#11142A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+				M178.7,296.5c2.2,1.3,5.5-3.3,6-4.2"/>
+		</g>
+		<g id="orecchio-six" transform="matrix(1,0,0,1,0,0)">
+			<path fill="#FF0055" d="M209.9,317.5c0,0,2.4-26.8,12.3-40s15.3-17.6,17.3-18.9c0,0,2.7,18.3-9.3,37.2
+				C218.3,314.7,209.9,317.5,209.9,317.5L209.9,317.5z"/>
+			<path fill="none" stroke="#DB1D41" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+				M211.3,308.7l13.2-20.8"/>
+		</g>
+		<g id="orecchio-dex" transform="matrix(0.98481,0.17365,-0.17365,0.98481,58.04357,-11.83688)">
+			<path fill="#FF0055" d="M68.1,278.8c0,0,12.6,4.4,21.9,21.4s9.3,16.6,12.6,28.1c0,0-19.1-9.4-27.2-24.8
+				C67.5,288.2,68.1,278.8,68.1,278.8z"/>
+			<path fill="none" stroke="#DB1D41" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+				M98.5,318.9l-18.4-17.2"/>
+		</g>
+	</g>
 </g>
 <g>
 	<path id="pino_x5F_1_7_" fill="#021F45" stroke="#021F45" stroke-width="3" stroke-miterlimit="10" d="M178.1,15.4
@@ -208,160 +393,6 @@
 		l6.2,11c-4.2,7.5-6.5,15.8-6.9,24.4c-0.1,1.9,2.9,2,3,0.1c0.3-7.6,2.2-14.9,5.7-21.6l3.7,6.1v0.1c-3,8.3-4.5,16.9-4.5,25.7
 		c0,1.9,3,2,3,0.1c0-7.8,1.2-15.3,3.6-22.7l5.8,8.6L35,84.8c-1.7,6.7-2,13.7-0.8,20.5C34.5,107.2,37.4,106.5,37,104.6L37,104.6z"/>
 </g>
-<path fill="#F8CEDE" d="M100,274.4c-0.3,22-7.3,73.8,26.6,90.7c27.3,10.1,54.2,6.8,70.4-12.5c17.3-22.3,15.6-65.9,13.9-86.2
-	c-0.7-3.3-39.7,0.3-55.4,1S102,270.6,100,274.4L100,274.4z"/>
-<g id="cappello_4_">
-	<path fill="#021732" d="M100.4,275.8c0,0,4.4-74,35.2-92.3s46.3-22,64.4-22s49,17.6,59.7,32.7c10.7,15.1,12.7,57.9,10.7,60.5
-		s-13.4-50.4-35.6-51s-24.8,20.2-26.2,25.8c-1.3,5.7-3.3,38.7-3.3,38.7L100.4,275.8L100.4,275.8z"/>
-	<path fill="#0C45CA" d="M100.1,275.8c0,0,2-35.6,12.6-61.7c0,0,17.3,48.1,19.6,56.2c0,0,20.4-60.8,23.3-64.1
-		c2.9-3.4,23.7,61.2,23.7,61.2S213,212.3,215,211s-4,57-4,56.8S100.1,275.8,100.1,275.8z M274.5,254.8c-11.3-2.3-16.8,9.4-15.8,12.4
-		c1.1,3,2.1,10.7,9.1,10.8c6.9,0.1,14.4-3.9,14.4-10.8S281.7,256.3,274.5,254.8L274.5,254.8z"/>
-</g>
-<g id="facce_4_">
-	<circle id="bianco-dex-small" fill="#FFFFFF" cx="122" cy="303.7" r="9.2"/>
-	<circle id="bianco-six-small" fill="#FFFFFF" cx="186.7" cy="303.7" r="9.2"/>
-	<circle id="Occhio_Dex_3_" fill="#11142A" cx="122.5" cy="303.5" r="2.5"/>
-	<circle id="Occhio_six_3_" fill="#11142A" cx="187.2" cy="303.5" r="2.5"/>
-	
-		<path id="Naso_5_" fill="none" stroke="#11142A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
-		M150.1,311.9c0,0,0.5,5.6,3,5.6s3-5.6,3-6.6"/>
-	
-		<path id="bocca_00000136373771803425844590000010975261171736714160_" fill="none" stroke="#11142A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
-		M169.8,341.3c0,0-0.5-5.6-3-5.6s-3,5.6-3,6.6"/>
-	
-		<path id="bocca2" fill="none" stroke="#11142A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
-		M165.2,333.4c0,0-1.8-5.6-10.7-5.6s-10.7,5.6-10.7,6.6"/>
-	
-		<path id="Guancia_12_" fill="#FF0055" stroke="#FF0055" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
-		M195.4,316.7c-6.3-1.4-9.3,5.6-8.7,7.4s1.2,6.4,5,6.5c3.9,0.1,8-2.3,8-6.5S199.4,317.6,195.4,316.7z"/>
-	
-		<path id="Guancia_11_" fill="#FF0055" stroke="#FF0055" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
-		M119,319.8c2.4,0.3,5.9,1,4.7,7.7c-1.2,6.9-4.1,5.1-6.5,5.1s-4.1-3.7-4.4-6.3C112.5,323.7,116.1,319.4,119,319.8L119,319.8z"/>
-	<circle id="bianco-dex-big" fill="#FFFFFF" cx="122.5" cy="303.4" r="10.5"/>
-	<circle id="bianco-six-big" fill="#FFFFFF" cx="187.3" cy="303.4" r="10.5"/>
-	<circle id="Occhio_Dex_00000153699917376862847910000012354680460649255568_" fill="#11142A" cx="122.5" cy="303.4" r="2.5"/>
-	<circle id="Occhio_six_00000176000985351923514300000006350075730086649754_" fill="#11142A" cx="187.3" cy="303.4" r="2.5"/>
-	<g id="vene-six">
-		<g>
-			<defs>
-				<circle id="SVGID_1_" cx="187.3" cy="303.4" r="10.5"/>
-			</defs>
-			<clipPath id="SVGID_00000080929612974980390880000002574980030817600167_">
-				<use xlink:href="#SVGID_1_"  overflow="visible"/>
-			</clipPath>
-			
-				<path clip-path="url(#SVGID_00000080929612974980390880000002574980030817600167_)" fill="none" stroke="#FF0055" stroke-width="0.8" stroke-miterlimit="10" d="
-				M177.9,298.7l2.6,1.6"/>
-		</g>
-		<g>
-			<defs>
-				<circle id="SVGID_00000172405616021302341240000006143233734294477467_" cx="187.3" cy="303.4" r="10.5"/>
-			</defs>
-			<clipPath id="SVGID_00000109749738859248448650000002921223282912113035_">
-				<use xlink:href="#SVGID_00000172405616021302341240000006143233734294477467_"  overflow="visible"/>
-			</clipPath>
-			
-				<path clip-path="url(#SVGID_00000109749738859248448650000002921223282912113035_)" fill="none" stroke="#FF0055" stroke-width="0.8" stroke-miterlimit="10" d="
-				M177.8,308.7l1.9-2.3"/>
-		</g>
-		<g>
-			<defs>
-				<circle id="SVGID_00000070115619158500601200000011855903972111723936_" cx="187.3" cy="303.4" r="10.5"/>
-			</defs>
-			<clipPath id="SVGID_00000109710793339934981950000003021954902949872308_">
-				<use xlink:href="#SVGID_00000070115619158500601200000011855903972111723936_"  overflow="visible"/>
-			</clipPath>
-			
-				<path clip-path="url(#SVGID_00000109710793339934981950000003021954902949872308_)" fill="none" stroke="#FF0055" stroke-width="0.8" stroke-miterlimit="10" d="
-				M194.8,310.9l-1.9-2.4"/>
-		</g>
-		<g>
-			<defs>
-				<circle id="SVGID_00000131359948850746285010000013218436373577372339_" cx="187.3" cy="303.4" r="10.5"/>
-			</defs>
-			<clipPath id="SVGID_00000065780164984193861100000007155019167682688180_">
-				<use xlink:href="#SVGID_00000131359948850746285010000013218436373577372339_"  overflow="visible"/>
-			</clipPath>
-			
-				<path clip-path="url(#SVGID_00000065780164984193861100000007155019167682688180_)" fill="none" stroke="#FF0055" stroke-width="0.8" stroke-miterlimit="10" d="
-				M197.8,303.2l-3-0.1"/>
-		</g>
-		<g>
-			<defs>
-				<circle id="SVGID_00000108310811636757225040000017619936505735815089_" cx="187.3" cy="303.4" r="10.5"/>
-			</defs>
-			<clipPath id="SVGID_00000157279542658315247870000013658910226472818366_">
-				<use xlink:href="#SVGID_00000108310811636757225040000017619936505735815089_"  overflow="visible"/>
-			</clipPath>
-			
-				<path clip-path="url(#SVGID_00000157279542658315247870000013658910226472818366_)" fill="none" stroke="#FF0055" stroke-width="0.8" stroke-miterlimit="10" d="
-				M183.7,293.4l1,2.8"/>
-		</g>
-	</g>
-	<g id="vene-dex">
-		<g>
-			<defs>
-				<circle id="SVGID_00000062893156867206574880000011793423479186905251_" cx="122.5" cy="303.4" r="10.5"/>
-			</defs>
-			<clipPath id="SVGID_00000005966327662971699790000008090822538596812948_">
-				<use xlink:href="#SVGID_00000062893156867206574880000011793423479186905251_"  overflow="visible"/>
-			</clipPath>
-			
-				<path clip-path="url(#SVGID_00000005966327662971699790000008090822538596812948_)" fill="none" stroke="#FF0055" stroke-width="0.8" stroke-miterlimit="10" d="
-				M132.9,304.5l-3-0.5"/>
-		</g>
-		<g>
-			<defs>
-				<circle id="SVGID_00000097467445117879938020000007252702696668213148_" cx="122.5" cy="303.4" r="10.5"/>
-			</defs>
-			<clipPath id="SVGID_00000037690287344303996610000009486480460241198758_">
-				<use xlink:href="#SVGID_00000097467445117879938020000007252702696668213148_"  overflow="visible"/>
-			</clipPath>
-			
-				<path clip-path="url(#SVGID_00000037690287344303996610000009486480460241198758_)" fill="none" stroke="#FF0055" stroke-width="0.8" stroke-miterlimit="10" d="
-				M129.6,295.1l-1,2.8"/>
-		</g>
-		<g>
-			<defs>
-				<circle id="SVGID_00000033364177043852442750000005981999241532105357_" cx="122.5" cy="303.4" r="10.5"/>
-			</defs>
-			<clipPath id="SVGID_00000167380545328779547650000002052084863860417981_">
-				<use xlink:href="#SVGID_00000033364177043852442750000005981999241532105357_"  overflow="visible"/>
-			</clipPath>
-			
-				<path clip-path="url(#SVGID_00000167380545328779547650000002052084863860417981_)" fill="none" stroke="#FF0055" stroke-width="0.8" stroke-miterlimit="10" d="
-				M112.9,298.9l2.6,1.6"/>
-		</g>
-		<g>
-			<defs>
-				<circle id="SVGID_00000079445931784781295670000015567769323702283139_" cx="122.5" cy="303.4" r="10.5"/>
-			</defs>
-			<clipPath id="SVGID_00000033332762708417728650000009553472421234824844_">
-				<use xlink:href="#SVGID_00000079445931784781295670000015567769323702283139_"  overflow="visible"/>
-			</clipPath>
-			
-				<path clip-path="url(#SVGID_00000033332762708417728650000009553472421234824844_)" fill="none" stroke="#FF0055" stroke-width="0.8" stroke-miterlimit="10" d="
-				M112.8,307.2l2.8-0.9"/>
-		</g>
-		<g>
-			<defs>
-				<circle id="SVGID_00000106868807226808185730000006467919706765361851_" cx="122.5" cy="303.4" r="10.5"/>
-			</defs>
-			<clipPath id="SVGID_00000091694572057164166830000014375224626135442359_">
-				<use xlink:href="#SVGID_00000106868807226808185730000006467919706765361851_"  overflow="visible"/>
-			</clipPath>
-			
-				<path clip-path="url(#SVGID_00000091694572057164166830000014375224626135442359_)" fill="none" stroke="#FF0055" stroke-width="0.8" stroke-miterlimit="10" d="
-				M129.4,311.5l-2-2.3"/>
-		</g>
-	</g>
-	
-		<path id="sopracciglio-2" fill="none" stroke="#11142A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
-		M178.7,296.5c2.2,1.3,5.5-3.3,6-4.2"/>
-	
-	<path id="sopracciglio-1" fill="none" stroke="#111428" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" d="M130.8,290.8
-		c-2.1,0.7-6.1-6.3-9.6-4.8"/>
-</g>
 <g id="Neve_4_" opacity="0.3">
 	<path fill="#FFFFFF" d="M270.4,143.6c-3-0.6-4.4,2.5-4.2,3.3c0.3,0.8,0.6,2.9,2.4,2.9s3.8-1,3.8-2.9S272.3,144,270.4,143.6
 		L270.4,143.6z M320,164.4c-3-0.6-4.4,2.5-4.2,3.3c0.3,0.8,0.6,2.9,2.4,2.9s3.8-1,3.8-2.9S321.9,164.8,320,164.4L320,164.4z
@@ -389,43 +420,26 @@
 		c0.3,0.8,0.6,2.9,2.4,2.9s3.8-1,3.8-2.9S72.9,360.2,71,359.8z M38.4,354.2c-3-0.6-4.4,2.5-4.2,3.3c0.3,0.8,0.6,2.9,2.4,2.9
 		c1.8,0,3.8-1,3.8-2.9S40.3,354.6,38.4,354.2z"/>
 </g>
-<g id="orecchio_dex_9_">
-	<path fill="#F8CEDE" d="M209.9,317.5c0,0,2.4-26.8,12.3-40s15.3-17.6,17.3-18.9c0,0,2.7,18.3-9.3,37.2
-		C218.3,314.7,209.9,317.5,209.9,317.5L209.9,317.5z"/>
-	<path fill="none" stroke="#DE8BB5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
-		M211.3,308.7l13.2-20.8"/>
-</g>
-<g id="orecchio_dex_8_">
-	<path fill="#F8CEDE" d="M68.1,278.8c0,0,12.6,4.4,21.9,21.4s9.3,16.6,12.6,28.1c0,0-19.1-9.4-27.2-24.8
-		C67.5,288.2,68.1,278.8,68.1,278.8z"/>
-	<path fill="none" stroke="#DE8BB5" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
-		M98.5,318.9l-18.4-17.2"/>
-</g>
-<g id="coriandoli_00000105390586035973520580000015483189476846614193_">
-	
-		<path id="linea_x5F_6_00000154390140977465020100000002278277690346015107_" fill="none" stroke="#FF0055" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
-		M276.9,295l-0.2-0.3l-0.3-0.6l-0.2-0.3l-0.2-0.4l-0.3-1.2c0-0.1-0.1-0.6-0.1-0.2l-0.1-1v-1.5l0.2-0.7l0.3-1.1l0.2-0.7
-		c0.2-0.5-0.1,0.2,0.2-0.3c0.8-1.8,1.6-2.8,3.1-4.1l0.1-0.1l0.6-0.4l1-0.6l0.3-0.1l0.7-0.2l0.6-0.2l0.6-0.1
-		c3.8-0.4,7.5,1.1,10.2,3.9c3,3,4.3,7.1,4,11.4c-0.5,9.5-7.7,16.6-15.7,20.9c-19,9.1-41.2,8.3-59.5-2.1"/>
-	
-		<path id="linea_x5F_5_00000032626663322570556100000000936049350245710766_" fill="none" stroke="#FF0055" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
-		M218.6,320.7L218.6,320.7c18.2,1.8,36,6.1,53,12.7c7.1,2.6,13.6,6.5,19.2,11.5c4.9,4.4,8.1,10.4,8.9,17c0.4,3.7,0.2,6.9-1,10.3
-		c-1,2.9-3,5.9-5.3,7.7"/>
-	
-		<path id="linea_x5F_4_00000130634984118899255710000006102322361464345482_" fill="none" stroke="#FF0055" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
-		M252,315.8L252,315.8c14.8,5.1,31-2.4,36.7-17"/>
-	
-		<path id="linea_x5F_3_00000135649663863203492080000009207594848444704142_" fill="none" stroke="#FF0055" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
-		M87.1,315.1c-9.5,5.6-20.4,8.5-31.4,8.5c-9.7,0.1-19.5-1.9-28.1-6.4c-8-4.3-15.2-11.4-15.7-20.9c-0.2-4.3,1-8.4,4-11.4
-		c2.7-2.7,6.4-4.3,10.2-3.9l0.6,0.1l0.6,0.2l0.7,0.2l0.3,0.1c0.3,0.2,0.7,0.3,1,0.6c0.2,0.2,0.5,0.2,0.6,0.4l0.1,0.1
-		c1.5,1.3,2.3,2.3,3.1,4.1c0.2,0.5,0-0.2,0.2,0.3l0.2,0.7c0.2,0.3,0.2,0.7,0.3,1.1l0.2,0.7v1.5l-0.1,1c0-0.5-0.1,0.1-0.1,0.2
-		l-0.3,1.2l-0.2,0.4l-0.2,0.3l-0.3,0.6l-0.2,0.3"/>
-	
-		<path id="linea_x5F_2_00000098910485638405485200000005533306153400494758_" fill="none" stroke="#FF0055" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
-		M16.5,380.4c-2.4-2-4.3-4.7-5.3-7.7c-1.2-3.3-1.5-6.8-1-10.3c0.8-6.6,4-12.6,8.9-17c5.6-5,12.1-9,19.2-11.5
-		c17-6.6,34.8-10.9,53-12.7l0,0"/>
-	
-		<path id="linea_x5F_1_00000180356615849979772990000012128101281354204827_" fill="none" stroke="#FF0055" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
-		M21,299.1c5.7,14.6,21.9,22.1,36.7,17l0,0"/>
+<g id="coriandoli">
+		<path fill="none" stroke="#FF0055" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+			M222.4,315c18.3,10.4,40.5,11.2,59.5,2.1c8-4.3,15.2-11.4,15.7-20.9c0.3-4.3-1-8.4-4-11.4c-2.7-2.8-6.4-4.3-10.2-3.9l-0.6,0.1
+			l-0.6,0.2l-0.7,0.2l-0.3,0.1l-1,0.6l-0.6,0.4l-0.1,0.1c-1.5,1.3-2.3,2.3-3.1,4.1c-0.3,0.5,0-0.2-0.2,0.3l-0.2,0.7l-0.3,1.1
+			l-0.2,0.7v1.5l0.1,1c0-0.4,0.1,0.1,0.1,0.2l0.3,1.2l0.2,0.4l0.2,0.3l0.3,0.6l0.2,0.3"/>
+		<path fill="none" stroke="#FF0055" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+			M218.6,320.7L218.6,320.7c18.2,1.8,36,6.1,53,12.7c7.1,2.6,13.6,6.5,19.2,11.5c4.9,4.4,8.1,10.4,8.9,17c0.4,3.7,0.2,6.9-1,10.3
+			c-1,2.9-3,5.9-5.3,7.7"/>
+		<path fill="none" stroke="#FF0055" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+			M252,315.8L252,315.8c14.8,5.1,31-2.4,36.7-17"/>
+		<path fill="none" stroke="#FF0055" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+			M87.1,315.1c-9.5,5.6-20.4,8.5-31.4,8.5c-9.7,0.1-19.5-1.9-28.1-6.4c-8-4.3-15.2-11.4-15.7-20.9c-0.2-4.3,1-8.4,4-11.4
+			c2.7-2.7,6.4-4.3,10.2-3.9l0.6,0.1l0.6,0.2l0.7,0.2l0.3,0.1c0.3,0.2,0.7,0.3,1,0.6c0.2,0.2,0.5,0.2,0.6,0.4l0.1,0.1
+			c1.5,1.3,2.3,2.3,3.1,4.1c0.2,0.5,0-0.2,0.2,0.3l0.2,0.7c0.2,0.3,0.2,0.7,0.3,1.1l0.2,0.7v1.5l-0.1,1c0-0.5-0.1,0.1-0.1,0.2
+			l-0.3,1.2l-0.2,0.4l-0.2,0.3l-0.3,0.6l-0.2,0.3"/>
+		<path fill="none" stroke="#FF0055" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+			M91.3,321.2L91.3,321.2c-18.2,1.8-36,6.1-53,12.7c-7.1,2.5-13.6,6.5-19.2,11.5c-4.9,4.4-8.1,10.4-8.9,17c-0.5,3.5-0.2,7,1,10.3
+			c1,3,2.9,5.7,5.3,7.7"/>
+		<path fill="none" stroke="#FF0055" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+			M57.7,316.1L57.7,316.1c-14.8,5.1-31-2.4-36.7-17"/>
+
 </g>
 </svg>

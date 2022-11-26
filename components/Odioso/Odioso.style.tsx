@@ -11,7 +11,7 @@ export const StyledOdioso = styled.div`
   #bianco-six-big,
   #bianco-dex-big,
   #bocca2,
-  #coriandoli {
+  #coriandoli path {
     visibility: hidden;
     opacity: 0;
   }
