@@ -24,7 +24,7 @@ export default function Elfo() {
         <h1 style={{ marginTop: "64px" }}>
           Immagini ritagliate a mano senza clipping mask
         </h1>
-        <h3>🔥 L'importante é che le proporzioni siano piú o meno 2x3 🔥</h3>
+        <h3>🔥 L&apos;importante é che le proporzioni siano piú o meno 2x3 🔥</h3>
         <div className={styles.grid}>
           <ElfoHinto imgUrl="/giulio-clip.png" noClip />
           <ElfoHinto imgUrl="/ester-clip.png" noClip />
