@@ -27,7 +27,7 @@ export default function Home() {
             <h2>Odioso 🤬</h2>
           </Link>
           <Link href="/risultati/scazzato" className={styles.card}>
-            <h2>Indifferente 😒</h2>
+            <h2>Scazzato 😒</h2>
           </Link>
           <Link href="/risultati/ansioso" className={styles.card}>
             <h2>Ansioso 😰</h2>

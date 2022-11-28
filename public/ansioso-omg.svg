@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 27.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="Livello_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 339.5 915.5" enable-background="new 0 0 339.5 915.5" xml:space="preserve">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 339.5 600" enable-background="new 0 0 339.5 600" xml:space="preserve">
 <path fill="#43EFBB" d="M-0.5,0.1h340v1032.6h-340V0.1z"/>
 <path id="bg" fill="#FFFFFF" d="M427.9,595.8c0-73.7-120.6-133.4-269.5-133.4S-111,522.1-111,595.8c0,43.5,42.2,82.2,107.4,106.6
 	v334.3h342.3V694.9C393.4,670.5,427.9,635.1,427.9,595.8L427.9,595.8z"/>
@@ -76,8 +76,14 @@
 </g>
 <path id="viso" fill="#F8CEDE" d="M100.8,276c-0.3,22-7.3,73.8,26.6,90.7c27.3,10.1,54.2,6.8,70.4-12.5
 	c17.3-22.3,15.6-65.9,13.9-86.2c-0.7-3.3-39.7,0.3-55.4,1C140.7,269.7,102.8,272.2,100.8,276L100.8,276z"/>
-<path id="sopracciglia_00000161604010669950067670000010984130064246410889_" fill="none" stroke="#11142A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
-	M182.2,277.8c0,0,2.6-3.5,6.8,0 M126.4,279c0,0-3.8-3-6.8,0.6"/>
+<path id="sopracciglio-six-2" fill="none" stroke="#111428" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" d="
+	M182.5,282.1c0,0,1.8,1.9,6.8,0"/>
+<path id="sopracciglio-dex-2" fill="none" stroke="#111428" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" d="
+	M126.8,283.4c0,0-2.9,2.1-6.8,0.6"/>
+<path id="sopracciglio-six-1" fill="none" stroke="#11142A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+	M182.2,277.8c0,0,2.6-3.5,6.8,0"/>
+<path id="sopracciglio-dex-1" fill="none" stroke="#11142A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+	M126.4,279c0,0-3.8-3-6.8,0.6"/>
 <g id="orecchio_dex_7_">
 	<path fill="#F8CEDE" d="M210.7,319.1c0,0,2.4-26.8,12.3-40s15.3-17.6,17.3-18.9c0,0,2.7,18.3-9.3,37.2S210.7,319.1,210.7,319.1
 		L210.7,319.1z"/>
@@ -92,10 +98,10 @@
 </g>
 <g id="facce_3_">
 	
-		<ellipse id="pupilla1" transform="matrix(0.9804 -0.1969 0.1969 0.9804 -57.4423 29.9861)" fill="#FFFFFF" cx="122.1" cy="303.9" rx="9.2" ry="9.2"/>
-	<circle id="pupilla" fill="#FFFFFF" cx="186.8" cy="303.9" r="9.2"/>
-	<circle id="Occhio_Dex_2_" fill="#11142A" cx="122.6" cy="303.7" r="2.5"/>
-	<circle id="Occhio_six_2_" fill="#11142A" cx="187.3" cy="303.7" r="2.5"/>
+		<ellipse id="bianco-dex" transform="matrix(0.9951 -9.853766e-02 9.853766e-02 0.9951 -29.3514 13.5104)" fill="#FFFFFF" cx="122.1" cy="303.9" rx="9.2" ry="9.2"/>
+	<circle id="bianco-six" fill="#FFFFFF" cx="186.8" cy="303.9" r="9.2"/>
+	<circle id="occhio-dex" fill="#11142A" cx="117.6" cy="303.7" r="2.5"/>
+	<circle id="occhio-six" fill="#11142A" cx="182.3" cy="303.7" r="2.5"/>
 	<ellipse id="guancia-dex" fill="#F8CEDE" cx="122.9" cy="323.8" rx="9" ry="9.3"/>
 	<ellipse id="guancia-six" fill="#F8CEDE" cx="187.3" cy="323.8" rx="9" ry="9.3"/>
 	
@@ -108,10 +114,10 @@
 		<path id="Naso_3_" fill="none" stroke="#11142A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
 		M150.2,312.1c0,0,0.5,5.6,3,5.6s3-5.6,3-6.6"/>
 </g>
-<g id="palla3_00000072247628281172191410000002514316008260975246_">
+<g id="palla3">
 	<path fill="#F8CEDE" d="M274.8,110.5c-10.2-5.2-9.9-11.5-9.9-11.5h-7.8c0,0,0.4,6.3-10.5,11.5s-18.2,9.7-17.8,19.4
 		s10.5,13.8,19.5,17.2c9,3.4,12.7,13.2,12.7,13.2h0.2c0,0,3.5-9.8,11.9-13.2s17.9-7.5,18.3-17.2S285,115.7,274.8,110.5z"/>
-	<g id="fiore_x5F_1_00000008122654561130254000000007464364449878058158_">
+	<g>
 		<path fill="#FF0055" d="M258.1,130.6l-13,3.4c-3,0.8-6-1.5-6-4.7c0-2.8,2.3-5,5.1-4.9c0.4,0,0.8,0.1,1.1,0.1l12.8,3.3V130.6z
 			 M262.1,130.6l13,3.4c3,0.8,6-1.5,6-4.7c0-2.8-2.3-5-5.1-4.9c-0.4,0-0.8,0.1-1.1,0.1l-12.8,3.3V130.6z M261.1,131.6l3.4,13
 			c0.8,3-1.5,6-4.7,6c-2.8,0-5-2.3-4.9-5.1c0-0.4,0.1-0.8,0.1-1.1l3.3-12.8H261.1L261.1,131.6z M261.1,127.7l3.4-13
@@ -124,14 +130,14 @@
 		C266.1,97.3,265.3,96.4,264.2,96.4L264.2,96.4z"/>
 	<path fill="none" stroke="#003580" stroke-width="3" stroke-miterlimit="10" d="M260.4,96.4l-0.6-94.3"/>
 </g>
-<g id="palla1_00000097480054335190640480000016587025789635407244_">
+<g id="palla1">
 	<path fill="#FF0055" d="M81.9,144.8c-8.3-6.8-8-15.1-8-15.1h-6.3c0,0,0.3,8.3-8.5,15.1c-8.9,6.8-14.7,12.7-14.4,25.5
 		c0.3,12.7,8.5,18.2,15.8,22.6c7.3,4.4,10.3,17.3,10.3,17.3H71c0,0,2.8-12.9,9.6-17.3s14.5-9.8,14.8-22.6
 		C95.6,157.6,90.2,151.6,81.9,144.8z"/>
 	<path fill="#FFF6C9" d="M74,125.7h-6.7c-1,0-1.9,0.9-1.9,2v0.1c0,1.1,0.9,2,1.9,2H74c1,0,1.9-0.9,1.9-2v-0.1
 		C75.9,126.6,75,125.7,74,125.7z"/>
 	<path fill="none" stroke="#003580" stroke-width="3" stroke-miterlimit="10" d="M70.6,125.7L70-128.6"/>
-	<g id="fiore_x5F_1_00000170262435626706833100000007852553967236660376_">
+	<g>
 		<path fill="#FFF6C9" d="M67.7,170.2l-13,3.4c-3,0.8-6-1.5-6-4.7c0-2.8,2.3-5,5.1-4.9c0.4,0,0.8,0.1,1.1,0.1l12.8,3.3V170.2z
 			 M71.6,170.3l13,3.4c3,0.8,6-1.5,6-4.7c0-2.8-2.3-5-5.1-4.9c-0.4,0-0.8,0.1-1.1,0.1l-12.8,3.3V170.3z M70.6,171.3l3.4,13
 			c0.8,3-1.5,6-4.7,6c-2.8,0-5-2.3-4.9-5.1c0-0.4,0.1-0.8,0.1-1.1l3.3-12.8C67.8,171.3,70.6,171.3,70.6,171.3z M70.6,167.3l3.4-13
@@ -141,14 +147,14 @@
 			l-28.4-24.9 M55.2,181.4l28.4-24.9"/>
 	</g>
 </g>
-<g id="palla2_00000045599983772305653770000001294867625005027970_">
+<g id="palla2">
 	<path fill="#009488" d="M181.4,96.5c-8.3-5.5-8-12.3-8-12.3h-6.3c0,0,0.3,6.8-8.5,12.3c-8.9,5.5-14.7,10.4-14.4,20.8
 		s8.5,14.8,15.8,18.4c7.3,3.6,10.3,14.1,10.3,14.1h0.2c0,0,2.8-10.5,9.6-14.1s14.5-8,14.8-18.4C195.1,106.9,189.6,102,181.4,96.5
 		L181.4,96.5z"/>
 	<path fill="#FFF6C9" d="M173.5,80.9h-6.7c-1,0-1.9,0.7-1.9,1.7v0.1c0,0.9,0.9,1.7,1.9,1.7h6.8c1,0,1.9-0.7,1.9-1.7v-0.1
 		C175.4,81.6,174.5,80.9,173.5,80.9z"/>
 	<path fill="none" stroke="#003580" stroke-width="3" stroke-miterlimit="10" d="M170.1,80.9l-0.6-101.4"/>
-	<g id="fiore_x5F_1_00000131355601476782554000000005850773989523354786_">
+	<g>
 		<path fill="#FFF6C9" d="M167.1,117.2l-13,2.7c-3,0.6-6-1.2-6-3.8c0-2.6,3.1-4.6,6.2-3.9l12.8,2.7
 			C167.1,114.9,167.1,117.2,167.1,117.2z M171.1,117.3l13,2.7c3,0.6,6-1.2,6-3.8c0-2.6-3.1-4.6-6.2-3.9l-12.8,2.7
 			C171.1,115,171.1,117.3,171.1,117.3z M170.1,118.1l3.4,10.6c0.8,2.5-1.5,4.9-4.7,4.9s-5.6-2.5-4.8-5.1l3.3-10.4L170.1,118.1
@@ -326,10 +332,10 @@
 		c0,1.9,3,2,3,0.1c0-7.8,1.2-15.3,3.6-22.7l5.8,8.6L35,85c-1.7,6.7-2,13.7-0.8,20.5C34.6,107.4,37.5,106.7,37.1,104.8L37.1,104.8z"
 		/>
 </g>
-<path id="bocca_00000026151296663786634490000000998165523456444601_" fill="none" stroke="#11142A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
+<path id="bocca" fill="none" stroke="#11142A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="
 	M157,334.2h-4.7"/>
 <ellipse id="bocca2" fill="none" stroke="#11142A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" cx="155.3" cy="334.4" rx="3.8" ry="2.9"/>
-<g id="braccio_x5F_s_x5F_1_00000048475393622404230390000004845236253772300452_">
+<g id="braccio-six-conserto">
 	<path fill="none" stroke="#5347FF" stroke-width="10" stroke-miterlimit="10" d="M130.8,404.4c52.4,4.5,73.4,2.7,81-5.4
 		c2.3-2.5,3.4-6,2.4-9.3c-2.1-6.9-8.5-11.6-15.7-11.6"/>
 	<path fill="none" stroke="#0C45CA" stroke-width="10" stroke-miterlimit="10" stroke-dasharray="22" d="M130.8,404.4
@@ -338,7 +344,7 @@
 		c0,0-11.7,0.4-11.1-1.8c0.6-2.2,6.3-1.8,6.3-1.8s-8.8-1.6-7.9-3.8c0.9-2.2,8.6-0.1,8.6-0.1s-4.7-1.9-3.7-4.6
 		C123.4,393.9,132.9,399.5,132.9,399.5z"/>
 </g>
-<g id="braccio_x5F_d_x5F_1_00000105405168790394722100000008060938994088980109_">
+<g id="braccio-dex-conserto">
 	<path fill="none" stroke="#5347FF" stroke-width="10" stroke-miterlimit="10" d="M187.3,407.3c-52.4,4.5-73.4,2.7-81-5.4
 		c-2.4-2.5-3.3-6-2.4-9.3c1.2-4,4.6-12.1,17.7-12.1"/>
 	<path fill="none" stroke="#0C45CA" stroke-width="10" stroke-miterlimit="10" stroke-dasharray="22" d="M187.3,407.3

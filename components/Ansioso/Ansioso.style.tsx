@@ -6,6 +6,8 @@ export const StyledAnsioso = styled.div`
 
   #braccio-six-conserto,
   #braccio-dex-conserto,
+  #sopracciglio-six-2,
+  #sopracciglio-dex-2,
   #bocca2 {
     visibility: hidden;
     opacity: 0;
@@ -15,5 +17,9 @@ export const StyledAnsioso = styled.div`
   #palla2,
   #palla3 {
     transform: translateY(-100%);
+  }
+
+  #elfo-intero {
+    cursor: pointer
   }
 `;
