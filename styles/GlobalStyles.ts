@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import { Colors } from "../components/commons/Theme";
 
 export const GlobalStyle = createGlobalStyle`
   * {
@@ -18,4 +19,13 @@ export const GlobalStyle = createGlobalStyle`
   color: inherit;
   text-decoration: none;
   } 
+
+  button {
+    background: white;
+    padding: 16px 32px;
+    border: 1px solid ${Colors.darkBlue};
+    border-radius: 16px;
+    font-family: inherit;
+    cursor: pointer;
+  }
 `;
