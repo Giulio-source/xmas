@@ -15,7 +15,7 @@ export const neveOptions: ISourceOptions = {
       value: { min: 0.5, max: 1 },
     },
     size: {
-      value: { min: 1, max: 5 },
+      value: { min: 4, max: 8 },
     },
     wobble: {
       distance: 20,
