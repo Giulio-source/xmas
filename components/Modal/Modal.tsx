@@ -20,7 +20,7 @@ export const Modal = ({ id, question, onChange }: ModalProps) => {
     <StyledModal id={id}>
       {question ? (
         <>
-          <h1>{question.question}</h1>
+          <h3 style={{marginBottom: '16px'}}>{question.question}</h3>
           <button onClick={() => handleOnClick(question.answer1.next)}>
             {question.answer1.text}
           </button>

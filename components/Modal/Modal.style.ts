@@ -6,7 +6,7 @@ export const StyledModal = styled.div<any>`
   bottom: 0;
   right: 0;
   left: 0;
-  padding: 32px 32px 128px;
+  padding: 32px 32px 64px;
   border-radius: 32px 32px 0 0;
 
   background: white;

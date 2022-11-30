@@ -27,5 +27,6 @@ export const GlobalStyle = createGlobalStyle`
     border-radius: 16px;
     font-family: inherit;
     cursor: pointer;
+    margin: 16px 8px 0;
   }
 `;

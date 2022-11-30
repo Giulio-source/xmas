@@ -1,13 +1,14 @@
 import gsap from "gsap";
 import { useEffect, useState } from "react";
 import { Modal } from "../components/Modal/Modal";
+import { Neve } from "../components/Neve/Neve";
 import { Villaggio } from "../components/Villaggio/Villaggio";
-import { MappaPageWrapper } from "../page-styles/mappa-page.style";
 import {
+  QuestionIds,
   QuestionType,
   villaggioData,
-  QuestionIds,
 } from "../components/Villaggio/villaggioData";
+import { MappaPageWrapper } from "../page-styles/mappa-page.style";
 
 export function openModal() {
   console.log("Open modal");
@@ -31,7 +32,6 @@ function goToStep(id: string) {
   if (!el) return;
 
   const BBox = el.getBBox();
-  console.log(BBox);
 
   gsap.to("#villaggio-elfo", {
     attr: {
@@ -44,34 +44,35 @@ function goToStep(id: string) {
 }
 
 export default function Mappa() {
+  const [questionId, setQuestionId] = useState<QuestionIds>();
   const [question, setQuestion] = useState<QuestionType>();
 
   useEffect(() => {
-    console.log(
-      "%c HERE",
-      "background: dodgerblue; color: white; padding: 6px 8px 4px 2px; border-radius: 999px",
-      question
-    );
-    if (!question) {
+    if (!questionId) {
       setTimeout(() => {
         openModal();
       }, 500);
+    } else {
+      closeModal();
+      goToStep(questionId);
+      setTimeout(() => {
+        //@ts-ignore
+        setQuestion(villaggioData[questionId]);
+        openModal();
+      }, 1000);
     }
-
-    closeModal();
-    goToStep(question?.name || "");
-    setTimeout(() => openModal(), 1000);
-  }, [question]);
+  }, [questionId]);
 
   return (
     <MappaPageWrapper>
       <Villaggio />
+      <Neve />
       <Modal
         id="dialog-modal"
         question={question}
         onChange={(questionId: QuestionIds) => {
           //@ts-ignore
-          villaggioData[questionId] && setQuestion(villaggioData[questionId]);
+          villaggioData[questionId] && setQuestionId(questionId);
         }}
       />
     </MappaPageWrapper>
