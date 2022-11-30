@@ -264,7 +264,7 @@ export const Villaggio = () => {
           </g>
           <path fill="none" d="M233.8 120.7h34v39.7h-34v-39.7z" />
         </g>
-        <g>
+        <g id="q3">
           <ellipse
             cx="305.5"
             cy="111.3"
@@ -454,7 +454,7 @@ export const Villaggio = () => {
           </g>
           <path fill="none" d="M289 90.9h34v39.7h-34V90.9z" />
         </g>
-        <g>
+        <g id="q6">
           <ellipse
             cx="358.7"
             cy="83.5"
@@ -650,7 +650,7 @@ export const Villaggio = () => {
           </g>
           <path fill="none" d="M342.1 63h34v39.7h-34V63z" />
         </g>
-        <g>
+        <g id="q11">
           <ellipse
             cx="314.9"
             cy="53.5"
@@ -840,7 +840,7 @@ export const Villaggio = () => {
           </g>
           <path fill="none" d="M298.3 33h34v39.7h-34V33z" />
         </g>
-        <g>
+        <g id="q18">
           <ellipse
             cx="249.4"
             cy="25.5"
@@ -1051,7 +1051,7 @@ export const Villaggio = () => {
             </g>
           </g>
         </g>
-        <g>
+        <g id="q12">
           <ellipse
             cx="402.9"
             cy="53.2"
@@ -1241,7 +1241,7 @@ export const Villaggio = () => {
           </g>
           <path fill="none" d="M386.3 32.7h34v39.7h-34V32.7z" />
         </g>
-        <g>
+        <g id="q17">
           <ellipse
             cx="477.5"
             cy="26.6"
@@ -1431,7 +1431,7 @@ export const Villaggio = () => {
           </g>
           <path fill="none" d="M460.9 6.1h34v39.7h-34V6.1z" />
         </g>
-        <g>
+        <g id="q14">
           <ellipse
             cx="479.1"
             cy="108.9"
@@ -1621,7 +1621,7 @@ export const Villaggio = () => {
           </g>
           <path fill="none" d="M462.5 88.5h34v39.7h-34V88.5z" />
         </g>
-        <g>
+        <g id="q7">
           <ellipse
             cx="361.8"
             cy="137.6"
@@ -1843,7 +1843,7 @@ export const Villaggio = () => {
             </g>
           </g>
         </g>
-        <g>
+        <g id="q13">
           <ellipse
             cx="421.8"
             cy="149.2"
@@ -2054,7 +2054,7 @@ export const Villaggio = () => {
             </g>
           </g>
         </g>
-        <g>
+        <g id="q9">
           <ellipse
             cx="335.2"
             cy="166.8"
@@ -2250,7 +2250,7 @@ export const Villaggio = () => {
             </g>
           </g>
         </g>
-        <g>
+        <g id="q15">
           <ellipse
             cx="294.2"
             cy="217.4"
@@ -2456,7 +2456,7 @@ export const Villaggio = () => {
             />
           </g>
         </g>
-        <g>
+        <g id="q19">
           <ellipse
             cx="422.8"
             cy="208.5"
@@ -2646,7 +2646,7 @@ export const Villaggio = () => {
           </g>
           <path fill="none" d="M406.2 188.1h34v39.7h-34v-39.7z" />
         </g>
-        <g>
+        <g id="q10">
           <ellipse
             cx="102.7"
             cy="231"
@@ -2836,7 +2836,7 @@ export const Villaggio = () => {
           </g>
           <path fill="none" d="M86.1 210.6h34v39.7h-34v-39.7z" />
         </g>
-        <g>
+        <g id="q5">
           <ellipse
             cx="139.5"
             cy="199.6"
@@ -3026,7 +3026,7 @@ export const Villaggio = () => {
           </g>
           <path fill="none" d="M122.9 179.1h34v39.7h-34v-39.7z" />
         </g>
-        <g>
+        <g id="q16">
           <ellipse
             cx="45.6"
             cy="186.9"
@@ -3216,7 +3216,7 @@ export const Villaggio = () => {
           </g>
           <path fill="none" d="M29 166.5h34v39.7H29v-39.7z" />
         </g>
-        <g>
+        <g id="q2">
           <ellipse
             cx="191.7"
             cy="170.1"
@@ -3409,7 +3409,7 @@ export const Villaggio = () => {
             d="M192.8 158.3s.2-.2.4 0m-3.4.1s-.2-.2-.4 0"
           />
         </g>
-        <g>
+        <g id="q4">
           <ellipse
             cx="131.1"
             cy="153.1"
@@ -3598,7 +3598,7 @@ export const Villaggio = () => {
           </g>
           <path fill="none" d="M114.5 132.7h34v39.7h-34v-39.7z" />
         </g>
-        <g>
+        <g id="q8">
           <ellipse
             cx="151.7"
             cy="121.7"
