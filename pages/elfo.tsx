@@ -26,10 +26,12 @@ export default function Elfo() {
           🔥 L&apos;importante é che le proporzioni siano piú o meno 2x3 🔥
         </h3>
         <Grid>
-          <ElfoHinto imgUrl="/giulio-clip.png" noClip />
+          {/* <ElfoHinto imgUrl="/giulio-clip.png" noClip />
           <ElfoHinto imgUrl="/ester-clip.png" noClip />
           <ElfoHinto imgUrl="/matteo-clip.png" noClip />
-          <ElfoHinto imgUrl="/irene-clip.png" noClip />
+          <ElfoHinto imgUrl="/irene-clip.png" noClip /> */}
+          <ElfoHinto imgUrl="/irene-fano.png" noClip />
+          <ElfoHinto imgUrl="/roberta-antonini.png" noClip />
         </Grid>
       </main>
     </div>

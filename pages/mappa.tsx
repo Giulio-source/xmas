@@ -1,5 +1,5 @@
 import gsap from "gsap";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Modal } from "../components/Modal/Modal";
 import { Neve } from "../components/Neve/Neve";
 import { Villaggio } from "../components/Villaggio/Villaggio";
@@ -9,6 +9,8 @@ import {
   villaggioData,
 } from "../components/Villaggio/villaggioData";
 import { MappaPageWrapper } from "../page-styles/mappa-page.style";
+import DrawSVGPlugin from "gsap/dist/DrawSVGPlugin";
+import MorphSVGPlugin from "gsap/dist/MorphSVGPlugin";
 
 export function openModal() {
   console.log("Open modal");
@@ -26,26 +28,77 @@ export function closeModal() {
   });
 }
 
-function goToStep(id: string) {
-  const el = document.getElementById(id) as SVGGraphicsElement | null;
+function goToStep(fromId: string | undefined, toId: string) {
+  const svg: any = document.getElementById("villaggio-elfo");
+  const el = document.getElementById(toId) as SVGGraphicsElement | null;
 
   if (!el) return;
 
   const BBox = el.getBBox();
+  const currentBBox = svg?.viewBox.baseVal;
 
-  gsap.to("#villaggio-elfo", {
-    attr: {
-      viewBox: `${BBox.x - 8} ${BBox.y - 16} ${BBox.width + 16} ${
-        BBox.height + 16
-      }`,
-    },
-    duration: 1,
-  });
+  if (fromId) {
+    gsap
+      .timeline()
+      .add("start")
+      .to(
+        "#villaggio-elfo",
+        {
+          attr: {
+            viewBox: `${currentBBox.x - 64} ${currentBBox.y - 64} ${
+              currentBBox.width + 128
+            } ${currentBBox.height + 128}`,
+          },
+          duration: 0.5
+        },
+        "start"
+      )
+      .to(
+        "#villaggio-elfo",
+        {
+          attr: {
+            viewBox: `${BBox.x - 16} ${BBox.y - 8} ${BBox.width + 32} ${
+              BBox.height + 16
+            }`,
+          },
+          duration: 1,
+        },
+        "start+=0.5"
+      )
+      .to(
+        `#${fromId}-${toId}`,
+        { drawSVG: "100%", autoAlpha: 1, duration: 1 },
+        "start+=0.5"
+      );
+  } else {
+    gsap
+      .timeline()
+      .add("start")
+      .to(
+        "#villaggio-elfo",
+        {
+          attr: {
+            viewBox: `${BBox.x - 16} ${BBox.y - 8} ${BBox.width + 32} ${
+              BBox.height + 16
+            }`,
+          },
+          duration: 1,
+        },
+        "start"
+      );
+  }
 }
 
 export default function Mappa() {
   const [questionId, setQuestionId] = useState<QuestionIds>();
   const [question, setQuestion] = useState<QuestionType>();
+
+  const prevQuestion = useRef<string>();
+
+  useEffect(() => {
+    gsap.registerPlugin(MorphSVGPlugin, DrawSVGPlugin);
+    gsap.set("#righe polyline", { drawSVG: 0 });
+  }, []);
 
   useEffect(() => {
     if (!questionId) {
@@ -54,10 +107,11 @@ export default function Mappa() {
       }, 500);
     } else {
       closeModal();
-      goToStep(questionId);
+      goToStep(prevQuestion.current, questionId);
       setTimeout(() => {
         //@ts-ignore
         setQuestion(villaggioData[questionId]);
+        prevQuestion.current = questionId;
         openModal();
       }, 1000);
     }
@@ -70,9 +124,9 @@ export default function Mappa() {
       <Modal
         id="dialog-modal"
         question={question}
-        onChange={(questionId: QuestionIds) => {
+        onChange={(newId: QuestionIds) => {
           //@ts-ignore
-          villaggioData[questionId] && setQuestionId(questionId);
+          villaggioData[newId] && setQuestionId(newId);
         }}
       />
     </MappaPageWrapper>
