@@ -24,9 +24,9 @@ export const StyledModal = styled.div<any>`
       width: 100%;
       max-width: 100%;
       top: unset;
-      bottom: 24px;
+      bottom: 0;
       left: 50%;
-      padding: 16px 28px;
+      padding: 16px 28px 40px;
       border-radius: 4px;
 
       background: rgba(190, 252, 223, 0);
@@ -34,7 +34,7 @@ export const StyledModal = styled.div<any>`
       box-shadow: none;
 
       @media screen and (min-width: 1024px) {
-        bottom: 120px;
+        padding: 16px 28px 148px;
         top: unset;
       }
     `}
@@ -57,7 +57,7 @@ export const StyledAnswerButtons = styled.div`
   flex-direction: column;
   gap: inherit;
   flex: 1;
-  width: auto;
+  width: 100%;
 
   div {
     flex: 1;
@@ -66,5 +66,6 @@ export const StyledAnswerButtons = styled.div`
   @media screen and (min-width: 1024px) {
     flex-direction: row;
     align-items: space-between;
+    width: auto;
   }
 `;

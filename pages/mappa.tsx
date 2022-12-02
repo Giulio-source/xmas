@@ -18,7 +18,7 @@ export function openModal() {
   console.log("Open modal");
   return gsap.to("#dialog-modal", {
     y: "0%",
-    duration: 0.5,
+    duration: 0.8,
   });
 }
 
@@ -26,7 +26,7 @@ export function closeModal() {
   console.log("Close modal");
   return gsap.to("#dialog-modal", {
     y: "100vh",
-    duration: 0.5,
+    duration: 0.8,
   });
 }
 
@@ -115,7 +115,7 @@ export default function Mappa() {
         setQuestion(villaggioData[questionId]);
         prevQuestion.current = questionId;
         openModal();
-      }, 1200);
+      }, 1500);
     }
   }, [questionId]);
 
