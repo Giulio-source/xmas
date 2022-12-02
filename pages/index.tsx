@@ -2,6 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import { Card } from "../components/commons/Card";
 import { Grid } from "../components/commons/Grid";
+import { notoFont } from "../components/commons/Theme";
 import { IndexPageWrapper } from "../page-styles/index-page.style";
 
 export default function Home() {
@@ -13,7 +14,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <IndexPageWrapper>
+      <IndexPageWrapper className={notoFont.className}>
         <Grid>
           <Card>
             <Link href="/risultati/esaltato">

@@ -1,4 +1,22 @@
+import { useEffect, useState } from "react";
+
 export const Villaggio = () => {
+  const [isMobile, setIsMobile] = useState(true);
+
+  useEffect(() => {
+    const isMobileMedia = window.matchMedia("(max-width: 1023px)");
+
+    function handleOnResize() {
+      setIsMobile(isMobileMedia.matches);
+    }
+
+    handleOnResize();
+
+    isMobileMedia.addEventListener("change", handleOnResize);
+
+    return () => isMobileMedia.removeEventListener("change", handleOnResize);
+  }, []);
+
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -10,7 +28,7 @@ export const Villaggio = () => {
       viewBox="0 0 1683.8 841.9"
       height="100%"
       width="100%"
-      preserveAspectRatio="xMidYMin slice"
+      preserveAspectRatio={`${isMobile ? "xMidYMin slice" : "xMidYMid meet"}`}
     >
       <path fill="#BEFCDF" d="M0 0h1683.8v841.9H0V0z" />
       <g
@@ -22,32 +40,95 @@ export const Villaggio = () => {
         strokeMiterlimit="12.7"
         strokeWidth="3.2"
       >
-        <polyline id="q3-q7" points="599.5,528.8 559.4,552 415.3,469"/>
-        <polyline id="q12-q18" points="496.1,372.9 849.9,577.2 809.5,600.4 931,670.7"/>
-        <polyline id="q11-q18" points="337,723.5 486.9,810.1 757,654.2 875,722.3 944.1,682.2"/>
-        <polyline id="q11-q17" points="315,706.7 230.1,657.7 255.9,643 153.4,583.9"/>
-        <polyline id="q13-q18" points="1081.2,516.1 1140.7,550.4 941.5,665.3"/>
-        <polyline id="q13-q19" points="1081.2,516.1 1193.8,581 1219.3,566.4 1344.3,638.6"/>
-        <polyline id="q7-q13" points="429.6,468.7 666,605.2 755.4,553.6 877.6,624.3 1071.3,512.6"/>
-        <polyline id="q7-q12" points="429.6,455.9 533.9,395.8 491.9,371.6"/>
-        <polyline id="q6-q12" points="433.7,609.9 312.2,539.6 359.6,512.3 297.2,476.3 483.7,368.8"/>
-        <polyline id="q6-q11" points="433.7,622.7 372.3,658.3 388.9,667.8 321.4,706.7"/>
-        <polyline id="q3-q6" points="599.5,530.1 539.7,564.8 533.6,561.3 445.2,612.5"/>
-        <polyline id="q5-q10" points="1164.2,408.2 1211.3,381.2 1332.6,451.2"/>
-        <polyline id="q2-q5" points="984.2,338.5 1052.6,378 1068.8,368.4 1142.3,410.8"/>
-        <polyline id="q9-q16" points="1293.7,157.5 1419.1,229.7 1385.7,249.1 1511.7,322"/>
-        <polyline id="q9-q15" points="1293.7,143.2 1366.6,101.2 1415.3,129.2 1519.3,69"/>
-        <polyline id="q4-q9" points="1152.8,238 1208.8,205.9 1198.6,200.1 1274.3,155.9"/>
-        <polyline id="q8-q15" points="1016,143.2 1098.4,95.5 1285.8,203.6 1517.1,70"/>
-        <polyline id="q8-q14" points="994,143.2 931.7,107.2 897.9,126.6 795.5,67.5"/>
-        <polyline id="q4-q8" points="1130.8,238 1080.9,209.4 1089.5,204.6 1008.3,157.5"/>
-        <polyline id="q2-q4" points="983.8,324.5 1047.5,287.9 1061.5,295.9 1135.9,252.9"/>
-        <polyline id="q1-q3" points="789.4,435.9 727.4,471.5 707.7,460.1 607.1,518"/>
-        <polyline id="q1-q2" points="811.1,421.6 888.1,377 891.9,379.3 969.2,334.7"/>
-        <polyline id="q5-q11" points="1130.6,427.6 672.1,692 528.1,609.9 349.8,712.6"/>
-        <polyline id="q12-q17" points="461.7,386.9 167.8,555.5"/>
-        <polyline id="q10-q16" points="1506.9,343.2 1433.1,385.5 1451.5,396.4 1367.7,444.7"/>
-        <polyline id="q10-q17" points="1321.2,470.1 846,743.5 340.6,450.8 163.9,553.3\"/>
+        <polyline id="q3-q7" points="599.5,528.8 559.4,552 415.3,469" />
+        <polyline
+          id="q12-q18"
+          points="496.1,372.9 849.9,577.2 809.5,600.4 931,670.7"
+        />
+        <polyline
+          id="q11-q18"
+          points="337,723.5 486.9,810.1 757,654.2 875,722.3 944.1,682.2"
+        />
+        <polyline
+          id="q11-q17"
+          points="315,706.7 230.1,657.7 255.9,643 153.4,583.9"
+        />
+        <polyline id="q13-q18" points="1081.2,516.1 1140.7,550.4 941.5,665.3" />
+        <polyline
+          id="q13-q19"
+          points="1081.2,516.1 1193.8,581 1219.3,566.4 1344.3,638.6"
+        />
+        <polyline
+          id="q7-q13"
+          points="429.6,468.7 666,605.2 755.4,553.6 877.6,624.3 1071.3,512.6"
+        />
+        <polyline id="q7-q12" points="429.6,455.9 533.9,395.8 491.9,371.6" />
+        <polyline
+          id="q6-q12"
+          points="433.7,609.9 312.2,539.6 359.6,512.3 297.2,476.3 483.7,368.8"
+        />
+        <polyline
+          id="q6-q11"
+          points="433.7,622.7 372.3,658.3 388.9,667.8 321.4,706.7"
+        />
+        <polyline
+          id="q3-q6"
+          points="599.5,530.1 539.7,564.8 533.6,561.3 445.2,612.5"
+        />
+        <polyline id="q5-q10" points="1164.2,408.2 1211.3,381.2 1332.6,451.2" />
+        <polyline
+          id="q2-q5"
+          points="984.2,338.5 1052.6,378 1068.8,368.4 1142.3,410.8"
+        />
+        <polyline
+          id="q9-q16"
+          points="1293.7,157.5 1419.1,229.7 1385.7,249.1 1511.7,322"
+        />
+        <polyline
+          id="q9-q15"
+          points="1293.7,143.2 1366.6,101.2 1415.3,129.2 1519.3,69"
+        />
+        <polyline
+          id="q4-q9"
+          points="1152.8,238 1208.8,205.9 1198.6,200.1 1274.3,155.9"
+        />
+        <polyline
+          id="q8-q15"
+          points="1016,143.2 1098.4,95.5 1285.8,203.6 1517.1,70"
+        />
+        <polyline
+          id="q8-q14"
+          points="994,143.2 931.7,107.2 897.9,126.6 795.5,67.5"
+        />
+        <polyline
+          id="q4-q8"
+          points="1130.8,238 1080.9,209.4 1089.5,204.6 1008.3,157.5"
+        />
+        <polyline
+          id="q2-q4"
+          points="983.8,324.5 1047.5,287.9 1061.5,295.9 1135.9,252.9"
+        />
+        <polyline
+          id="q1-q3"
+          points="789.4,435.9 727.4,471.5 707.7,460.1 607.1,518"
+        />
+        <polyline
+          id="q1-q2"
+          points="811.1,421.6 888.1,377 891.9,379.3 969.2,334.7"
+        />
+        <polyline
+          id="q5-q11"
+          points="1130.6,427.6 672.1,692 528.1,609.9 349.8,712.6"
+        />
+        <polyline id="q12-q17" points="461.7,386.9 167.8,555.5" />
+        <polyline
+          id="q10-q16"
+          points="1506.9,343.2 1433.1,385.5 1451.5,396.4 1367.7,444.7"
+        />
+        <polyline
+          id="q10-q17"
+          points="1321.2,470.1 846,743.5 340.6,450.8 163.9,553.3\"
+        />
       </g>
       <g id="q1">
         <ellipse

@@ -11,20 +11,22 @@ import {
 import { MappaPageWrapper } from "../page-styles/mappa-page.style";
 import DrawSVGPlugin from "gsap/dist/DrawSVGPlugin";
 import MorphSVGPlugin from "gsap/dist/MorphSVGPlugin";
+import {notoFont} from '../components/commons/Theme';
+import { HintoIcon } from "../components/Icons/HintoIcon";
 
 export function openModal() {
   console.log("Open modal");
   return gsap.to("#dialog-modal", {
     y: "0%",
-    duration: 0.3,
+    duration: 0.5,
   });
 }
 
 export function closeModal() {
   console.log("Close modal");
   return gsap.to("#dialog-modal", {
-    y: "100%",
-    duration: 0.3,
+    y: "100vh",
+    duration: 0.5,
   });
 }
 
@@ -61,13 +63,13 @@ function goToStep(fromId: string | undefined, toId: string) {
               BBox.height + 16
             }`,
           },
-          duration: 1,
+          duration: 1.5,
         },
         "start+=0.5"
       )
       .to(
         `#${fromId}-${toId}`,
-        { drawSVG: "100%", autoAlpha: 1, duration: 1 },
+        { drawSVG: "100%", autoAlpha: 1, duration: 1.5 },
         "start+=0.5"
       );
   } else {
@@ -113,12 +115,13 @@ export default function Mappa() {
         setQuestion(villaggioData[questionId]);
         prevQuestion.current = questionId;
         openModal();
-      }, 1000);
+      }, 1200);
     }
   }, [questionId]);
 
   return (
-    <MappaPageWrapper>
+    <MappaPageWrapper className={notoFont.className}>
+      <HintoIcon />
       <Villaggio />
       <Neve />
       <Modal
