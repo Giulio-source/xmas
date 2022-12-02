@@ -46,7 +46,7 @@ export const Modal = ({ id, question, onChange }: ModalProps) => {
       ) : (
         <StyledModalBody>
           <Titolo>
-            Scopri l&apos;elfo che c&apos;è in te!
+            Scopri l'elfo che c'è in te!
           </Titolo>
           <Testo size={16}>
             Fai il test e misura il tuo spirito natalizio.

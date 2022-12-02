@@ -23,15 +23,15 @@ export default function Elfo() {
           Immagini ritagliate a mano senza clipping mask
         </h1>
         <h3>
-          🔥 L&apos;importante é che le proporzioni siano piú o meno 2x3 🔥
+          🔥 L'importante é che le proporzioni siano piú o meno 2x3 🔥
         </h3>
         <Grid>
-          {/* <ElfoHinto imgUrl="/giulio-clip.png" noClip />
-          <ElfoHinto imgUrl="/ester-clip.png" noClip />
-          <ElfoHinto imgUrl="/matteo-clip.png" noClip />
-          <ElfoHinto imgUrl="/irene-clip.png" noClip /> */}
-          <ElfoHinto imgUrl="/irene-fano.png" noClip />
-          <ElfoHinto imgUrl="/roberta-antonini.png" noClip />
+          {/* <ElfoHinto imgUrl="/giulio-clip.png"  />
+          <ElfoHinto imgUrl="/ester-clip.png"  />
+          <ElfoHinto imgUrl="/matteo-clip.png"  />
+          <ElfoHinto imgUrl="/irene-clip.png"  /> */}
+          <ElfoHinto imgUrl="/irene-fano.png"  />
+          <ElfoHinto imgUrl="/roberta-antonini.png"  />
         </Grid>
       </main>
     </div>
