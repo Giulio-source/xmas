@@ -11,7 +11,7 @@ import {
 import { MappaPageWrapper } from "../page-styles/mappa-page.style";
 import DrawSVGPlugin from "gsap/dist/DrawSVGPlugin";
 import MorphSVGPlugin from "gsap/dist/MorphSVGPlugin";
-import {notoFont} from '../components/commons/Theme';
+import { notoFont } from "../components/commons/Theme";
 import { HintoIcon } from "../components/Icons/HintoIcon";
 
 export function openModal() {
@@ -51,7 +51,7 @@ function goToStep(fromId: string | undefined, toId: string) {
               currentBBox.width + 128
             } ${currentBBox.height + 128}`,
           },
-          duration: 0.5
+          duration: 0.5,
         },
         "start"
       )
@@ -67,8 +67,9 @@ function goToStep(fromId: string | undefined, toId: string) {
         },
         "start+=0.5"
       )
-      .to(
+      .fromTo(
         `#${fromId}-${toId}`,
+        { stroke: "white" },
         { drawSVG: "100%", autoAlpha: 1, duration: 1.5 },
         "start+=0.5"
       );

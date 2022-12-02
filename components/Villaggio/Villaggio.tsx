@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 export const Villaggio = () => {
-  const [isMobile, setIsMobile] = useState(true);
+  const [isMobile, setIsMobile] = useState<boolean>();
 
   useEffect(() => {
     const isMobileMedia = window.matchMedia("(max-width: 1023px)");
@@ -34,7 +34,7 @@ export const Villaggio = () => {
       <g
         id="righe"
         fill="none"
-        stroke="#FFF"
+        stroke="none"
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeMiterlimit="12.7"
