@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 const StyledHintoIcon = styled.div`
-  position: fixed;
+  position: absolute;
+  z-index: 1;
   top: 24px;
   right: 16px;
 

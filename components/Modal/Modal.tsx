@@ -1,7 +1,6 @@
 import { useRouter } from "next/router";
 import {
   AnswerButton,
-  loraFont,
   PurpleButton,
   Row,
   Testo,
@@ -34,7 +33,7 @@ export const Modal = ({ id, question, onChange }: ModalProps) => {
     <StyledModal id={id} typeQuestion={!!question}>
       {question ? (
         <StyledModalBody gap={20}>
-          <Titolo className={loraFont.className}>{question.question}</Titolo>
+          <Titolo>{question.question}</Titolo>
           <StyledAnswerButtons>
             <AnswerButton onClick={() => handleOnClick(question.answer1.next)}>
               {question.answer1.text}
@@ -46,7 +45,7 @@ export const Modal = ({ id, question, onChange }: ModalProps) => {
         </StyledModalBody>
       ) : (
         <StyledModalBody>
-          <Titolo className={loraFont.className}>
+          <Titolo>
             Scopri l&apos;elfo che c&apos;è in te!
           </Titolo>
           <Testo size={16}>

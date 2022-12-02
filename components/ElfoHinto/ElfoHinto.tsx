@@ -1,10 +1,12 @@
-import { StyledElfoHinto } from "./ElfoHinto.style";
+import { StyledElfoHinto, StyledNome } from "./ElfoHinto.style";
 export const ElfoHinto = ({
   imgUrl,
-  noClip = false,
+  nome,
+  cognome,
 }: {
   imgUrl: string;
-  noClip?: boolean;
+  nome?: string;
+  cognome?: string;
 }) => {
   return (
     <StyledElfoHinto>
@@ -16,7 +18,7 @@ export const ElfoHinto = ({
         x="0"
         y="0"
         version="1.1"
-        viewBox="0 0 339.5 405.4"
+        viewBox="50 15 219.5 380"
       >
         <ellipse
           cx="161.6"
@@ -128,34 +130,13 @@ export const ElfoHinto = ({
           />
           <path d="M161.3 264.7c-4.5-1-6.7 4.1-6.3 5.3.4 1.3.9 4.6 3.6 4.7 2.8 0 5.8-1.7 5.8-4.7s-.2-4.7-3.1-5.3zM161.4 246.6c-4.5-1-6.7 4.1-6.3 5.3.4 1.3.9 4.6 3.6 4.7s5.8-1.7 5.8-4.7-.2-4.7-3.1-5.3z" />
         </g>
-        <defs>
-          <path
-            id="forma-faccia"
-            d="M192.9 97.7c-28.3-9.4-56.4-7.3-73.8 8.7a57.4 57.4 0 0 0-14.1 28.5v.1c-3.7 16.4-3 33.9-2.3 44.4.1.4.9.7 2.3.9 2.1 20 8.8 39.9 27.7 49.3 28.5 10.6 56.6 7.1 73.5-13 8.1-10.5 11.2-25.4 12-40.7l.4-.4c.9-18.6 9.2-62.5-25.7-77.8z"
-          />
-        </defs>
-        <clipPath id="forma-faccia-clip">
-          <use xlinkHref="#forma-faccia" overflow="visible" />
-        </clipPath>
-        {noClip ? (
-          <image
-            overflow="visible"
-            width="150"
-            height="230"
-            xlinkHref={imgUrl}
-            transform="matrix(0.7824 0 0 0.7824 99.6579 64.3706)"
-          ></image>
-        ) : (
-          <g clip-path="url(#forma-faccia-clip">
-            <image
-              overflow="visible"
-              width="150"
-              height="230"
-              xlinkHref={imgUrl}
-              transform="matrix(0.7824 0 0 0.7824 99.6579 64.3706)"
-            ></image>
-          </g>
-        )}
+        <image
+          overflow="visible"
+          width="150"
+          height="230"
+          xlinkHref={imgUrl}
+          transform="matrix(0.7824 0 0 0.7824 99.6579 64.3706)"
+        ></image>
         <g id="orecchio_dex">
           <path
             fill="#F8CEDE"
@@ -189,6 +170,12 @@ export const ElfoHinto = ({
         <path d="M116.7 107.1s3.2-53.7 25.6-67 33.6-16 46.7-16 35.5 12.8 43.3 23.8 9.3 42.1 7.8 43.9-9.7-36.6-25.8-37-18 14.6-19 18.7-2.4 28.1-2.4 28.1l-76.2 5.5z" />
         <path d="M116.5 107.1s4.8-34.7 9.2-44.8c0 0 12.5 35 14.2 40.8 0 0 14.8-44.1 16.9-46.6C158.9 54.1 174 101 174 101s24.5-40 25.9-40.9-2.9 41.4-2.9 41.3c0-.2-80.5 5.7-80.5 5.7zM243.1 91.9c-8.2-1.7-12.2 6.8-11.5 9 .8 2.2 1.6 7.8 6.6 7.8 5 .1 10.5-2.8 10.5-7.8s-.4-7.9-5.6-9z" />
       </svg>
+      {nome && cognome && (
+        <StyledNome>
+          <p>{nome}</p>
+          <p>{cognome}</p>
+        </StyledNome>
+      )}
     </StyledElfoHinto>
   );
 };

@@ -121,7 +121,7 @@ export default function Mappa() {
   }, [questionId]);
 
   return (
-    <MappaPageWrapper className={notoFont.className}>
+    <MappaPageWrapper>
       <HintoIcon />
       <Villaggio />
       <Neve />

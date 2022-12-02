@@ -12,21 +12,50 @@ export const Colors = {
   pink: "#F8CEDE",
   darkPink: "#DE8BB5",
   lightMint: "#BEFCDF",
+  lightGrey: "#C5D2D6",
 };
 
 // UI
 
-export const Titolo = styled.div`
+export const StyledTitolo = styled.div<any>`
   font-weight: 700;
-  font-size: 30px;
+  font-size: ${({ size }) => size}px;
   line-height: 38px;
   text-align: center;
+  color: ${({ color }) => color};
+  text-align: ${({ align }) => align};
+
+  @media screen and (min-width: 1024px) {
+    color: ${({ desktopColor }) => desktopColor};
+  }
 `;
 
-export const Testo = styled.div<any>`
+export const Titolo = ({
+  children,
+  color = "black",
+  desktopColor = "black",
+  size = 30,
+  align = "center",
+}: TitoloProps) => (
+  <StyledTitolo
+    className={loraFont.className}
+    color={color}
+    desktopColor={desktopColor}
+    size={size}
+    align={align}
+  >
+    {children}
+  </StyledTitolo>
+);
+
+export const Testo = styled.div<{
+  size?: number;
+  italic?: boolean;
+  align?: "right" | "left" | "center";
+}>`
   font-size: ${({ size }) => (size ? size : "16")}px;
   line-height: 24px;
-  text-align: center;
+  text-align: ${({ align }) => (align ? align : "center")};
   letter-spacing: 0.02em;
   font-style: ${({ italic }) => (italic ? "italic" : "normal")};
 `;
@@ -67,11 +96,16 @@ export const AnswerButton = styled.div`
   }
 `;
 
-export const Row = styled.div`
+export const Row = styled.div<{
+  justify?: "center" | "flex-start" | "flex-end";
+  gap?: number;
+  margin?: string;
+}>`
   display: flex;
-  justify-content: center;
+  justify-content: ${({ justify }) => (justify ? justify : "center")};
   align-items: center;
-  gap: 4px;
+  gap: ${({ gap }) => (gap ? gap : 4)}px;
+  margin: ${({ margin }) => margin};
 `;
 
 // FONTS
@@ -85,5 +119,13 @@ export const loraFont = Lora({
 export const notoFont = Noto_Sans({
   subsets: ["latin"],
   style: ["normal", "italic"],
-  weight: ["400"],
+  weight: ["400", "700"],
 });
+
+type TitoloProps = {
+  children: React.ReactNode;
+  color?: string;
+  desktopColor?: string;
+  align?: "right" | "left" | "center";
+  size?: number;
+};
