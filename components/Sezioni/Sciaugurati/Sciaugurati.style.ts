@@ -1,8 +1,9 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 export const StyledSciaugurati = styled.div`
   display: grid;
   grid-template-columns: 1fr;
+  justify-items: center;
   gap: 20px;
 
   @media screen and (min-width: 1023px) {
@@ -23,11 +24,27 @@ export const StyledSciauguratiContent = styled.div`
   }
 `;
 
+const spriteAnim = keyframes`
+  0% {
+  background-position: center left;
+  }
+  100% {
+  background-position: center right;
+  }
+`;
+
 export const StyledSciauguratiImage = styled.div`
   position: relative;
   height: 182px;
+  width: 187px;
+  background-image: url("/sciaugurati-sprite.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center left;
+  animation: ${spriteAnim} 1s steps(5) infinite alternate;
 
   @media screen and (min-width: 1023px) {
     height: 350px;
+    width: 359px;
   }
 `;

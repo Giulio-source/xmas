@@ -55,7 +55,6 @@ export const Odioso = () => {
         enableBackground="new 0 0 339.5 915.5"
         xmlSpace="preserve"
       >
-        <path fill="#002764" d="M-0.6-0.1h340v1047.8h-340V-0.1z" />
         <path
           fill="#FFFFFF"
           d="M428.8,595.6c0-73.7-120.6-133.4-269.5-133.4s-269.5,59.7-269.5,133.4c0,43.5,42.2,82.2,107.4,106.6v345.3

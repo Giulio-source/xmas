@@ -1,18 +1,43 @@
-import styled, { keyframes } from "styled-components";
-
-export const EsaltatoPageWrapper = styled.div`
-  min-height: 100vh;
-`;
-
+import styled from "styled-components";
+import { keyframes } from "styled-components";
 export const HeroWrapper = styled.div`
   display: grid;
   align-items: flex-end;
   width: 100%;
-  max-width: 950px;
   margin: auto;
 
   @media screen and (min-width: 1024px) {
+    max-width: 950px;
     grid-template-columns: 400px 1fr;
+  }
+`;
+
+export const pointDown = keyframes`
+  0% {
+    transform: translateY(-5px);
+    opacity: 0
+  }
+  80% {
+    transform: translateY(5px);
+    opacity: 1
+  }
+  100% {
+    transform: translateY(5px);
+    opacity: 1
+  }
+`;
+
+export const StyledChevronDown = styled.div`
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+
+  svg {
+    animation: ${pointDown} 1s ease infinite;
+  }
+
+  @media screen and (min-width: 1024px) {
+    display: none;
   }
 `;
 
@@ -62,31 +87,29 @@ export const StyledCopyCta = styled.div`
   }
 `;
 
-export const pointDown = keyframes`
-  0% {
-    transform: translateY(-5px);
-    opacity: 0
-  }
-  80% {
-    transform: translateY(5px);
-    opacity: 1
-  }
-  100% {
-    transform: translateY(5px);
-    opacity: 1
-  }
+export const StyledSection = styled.div<any>`
+  position: relative;
 `;
 
-export const StyledChevronDown = styled.div`
-  display: flex;
-  justify-content: center;
-  margin: 50px 0;
+export const StyledBackground = styled.div<any>`
+  background-color: ${({ color }) => color};
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+`;
 
-  svg {
-    animation: ${pointDown} 1s ease infinite;
-  }
+export const StyledSnowHill = styled.div`
+  display: none;
 
   @media screen and (min-width: 1024px) {
-    display: none;
+    display: initial;
+    background: white;
+    height: 300px;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    bottom: 0%;
+    left: 0;
+    clip-path: ellipse(85% 100% at 60% 100%);
   }
 `;

@@ -51,7 +51,6 @@ export const Ansioso = () => {
         viewBox="0 0 339.5 600"
         ref={svgRef}
       >
-        <path fill="#43EFBB" d="M-.5.1h340v1032.6H-.5z" />
         <path
           id="bg"
           fill="#FFF"

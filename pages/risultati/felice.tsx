@@ -1,10 +1,35 @@
+import { Colors, Container } from "../../components/commons/Theme";
 import { Felice } from "../../components/Felice/Felice";
-import { FelicePageWrapper } from "../../page-styles/felice-page.style";
+import { HintoIcon } from "../../components/Icons/HintoIcon";
+import { AltriHinto } from "../../components/Sezioni/AltriHinto/AltriHinto";
+import { Hero } from "../../components/Sezioni/Hero/Hero";
+import { Sciaugurati } from "../../components/Sezioni/Sciaugurati/Sciaugurati";
+import { RisultatoPageWrapper } from "../../page-styles/risultato-page.style";
 
 export default function FelicePage() {
   return (
-    <FelicePageWrapper>
-      <Felice />
-    </FelicePageWrapper>
+    <RisultatoPageWrapper>
+      <HintoIcon theme="light" />
+      <Hero
+        title="Saresti un ottimo aiutante di Babbo Natale! "
+        background={Colors.deepBlue}
+        testo={
+          <>
+            Natale per te significa festa, compagnia e tradizione.
+            <br />
+            L'idea di condividere momenti indimenticabili con gli affetti più
+            cari ti riempie il cuore e pensare ai regali è sempre una gioia.
+            <br />
+            L'albero addobbato illumina le tue giornate, donando a questo
+            periodo un senso di pace in grado di rigenerarti per l'anno nuovo.
+          </>
+        }
+        Elfo={Felice}
+      />
+      <Container>
+        <AltriHinto persone={["ester-barbato", "irene-fano"]} />
+        <Sciaugurati />
+      </Container>
+    </RisultatoPageWrapper>
   );
 }

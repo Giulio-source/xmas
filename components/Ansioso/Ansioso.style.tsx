@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledAnsioso = styled.div`
-  max-width: 500px;
+  width: 100%;
   margin: auto;
 
   #braccio-six-conserto,

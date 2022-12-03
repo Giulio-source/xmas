@@ -53,7 +53,6 @@ export const Scazzato = () => {
         // viewBox="0 0 339.5 915.5"
         viewBox="0 0 339.5 600"
       >
-        <path fill="#5347FF" d="M-.7-.9h340v1032.6H-.7z" />
         <path
           id="br"
           fill="#FFF"

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledFelice = styled.div`
-  max-width: 500px;
+  width: 100%;
   margin: auto;
 
   #gruppo {

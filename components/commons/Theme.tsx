@@ -108,6 +108,13 @@ export const Row = styled.div<{
   margin: ${({ margin }) => margin};
 `;
 
+export const Container = styled.div`
+  width: 100%;
+  max-width: 950px;
+  margin: auto;
+  padding: 0 16px;
+`;
+
 // FONTS
 
 export const loraFont = Lora({
