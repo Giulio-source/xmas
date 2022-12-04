@@ -1,18 +1,20 @@
 import gsap from "gsap";
+import DrawSVGPlugin from "gsap/dist/DrawSVGPlugin";
+import MorphSVGPlugin from "gsap/dist/MorphSVGPlugin";
 import { useEffect, useRef, useState } from "react";
+import { HintoIcon } from "../components/Icons/HintoIcon";
 import { Modal } from "../components/Modal/Modal";
 import { Neve } from "../components/Neve/Neve";
 import { Villaggio } from "../components/Villaggio/Villaggio";
 import {
   QuestionIds,
   QuestionType,
+  resultsHandler,
+  ResultsIds,
   villaggioData,
 } from "../components/Villaggio/villaggioData";
 import { MappaPageWrapper } from "../page-styles/mappa-page.style";
-import DrawSVGPlugin from "gsap/dist/DrawSVGPlugin";
-import MorphSVGPlugin from "gsap/dist/MorphSVGPlugin";
-import { notoFont } from "../components/commons/Theme";
-import { HintoIcon } from "../components/Icons/HintoIcon";
+import { useRouter } from "next/router";
 
 export function openModal() {
   console.log("Open modal");
@@ -92,11 +94,35 @@ function goToStep(fromId: string | undefined, toId: string) {
   }
 }
 
+function showEntireMap() {
+  gsap.to("#villaggio-elfo", {
+    attr: {
+      viewBox: "0 0 1683.8 841.9",
+    },
+    duration: 1,
+  });
+}
+
 export default function Mappa() {
   const [questionId, setQuestionId] = useState<QuestionIds>();
   const [question, setQuestion] = useState<QuestionType>();
 
   const prevQuestion = useRef<string>();
+  const router = useRouter();
+
+  function handleOnChange(id: QuestionIds | ResultsIds) {
+    if (id.includes("q")) {
+      //@ts-ignore
+      setQuestionId(id);
+    } else {
+      closeModal();
+      showEntireMap();
+      setTimeout(() => {
+        //@ts-ignore
+        router.push(`/risultati/${resultsHandler[id]}`);
+      }, 1500);
+    }
+  }
 
   useEffect(() => {
     gsap.registerPlugin(MorphSVGPlugin, DrawSVGPlugin);
@@ -128,10 +154,7 @@ export default function Mappa() {
       <Modal
         id="dialog-modal"
         question={question}
-        onChange={(newId: QuestionIds) => {
-          //@ts-ignore
-          villaggioData[newId] && setQuestionId(newId);
-        }}
+        onChange={handleOnChange}
       />
     </MappaPageWrapper>
   );

@@ -78,8 +78,9 @@ export const AnswerButton = styled.div`
   border: 2px solid ${Colors.violet};
   padding: 16px 40px;
   border-radius: 2px;
-  color: black;
+  color: ${Colors.violet};
   font-size: 14px;
+  font-weight: 700;
   line-height: 24px;
   letter-spacing: 0.02em;
   text-align: center;
@@ -92,7 +93,7 @@ export const AnswerButton = styled.div`
   transition: all 0.3s;
 
   &:hover {
-    background: rgba(108, 247, 198, 0.54);
+    background: rgba(255, 255, 255, 0.45);
   }
 `;
 

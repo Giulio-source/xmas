@@ -1,4 +1,3 @@
-import { useRouter } from "next/router";
 import {
   AnswerButton,
   PurpleButton,
@@ -11,43 +10,32 @@ import { HintoFullIcon } from "../Icons/HintoFullIcon";
 import {
   QuestionIds,
   QuestionType,
-  resultsHandler,
   ResultsIds,
 } from "../Villaggio/villaggioData";
-import { StyledAnswerButtons, StyledModal, StyledModalBody } from "./Modal.style";
+import {
+  StyledAnswerButtons,
+  StyledModal,
+  StyledModalBody,
+} from "./Modal.style";
 
 export const Modal = ({ id, question, onChange }: ModalProps) => {
-  const router = useRouter();
-
-  function handleOnClick(id: QuestionIds | ResultsIds) {
-    if (id.includes("q")) {
-      //@ts-ignore
-      onChange(id);
-    } else {
-      //@ts-ignore
-      router.push(`/risultati/${resultsHandler[id]}`);
-    }
-  }
-
   return (
     <StyledModal id={id} typeQuestion={!!question}>
       {question ? (
         <StyledModalBody gap={20}>
           <Titolo>{question.question}</Titolo>
           <StyledAnswerButtons>
-            <AnswerButton onClick={() => handleOnClick(question.answer1.next)}>
+            <AnswerButton onClick={() => onChange(question.answer1.next)}>
               {question.answer1.text}
             </AnswerButton>
-            <AnswerButton onClick={() => handleOnClick(question.answer2.next)}>
+            <AnswerButton onClick={() => onChange(question.answer2.next)}>
               {question.answer2.text}
             </AnswerButton>
           </StyledAnswerButtons>
         </StyledModalBody>
       ) : (
         <StyledModalBody>
-          <Titolo>
-            Scopri l'elfo che c'è in te!
-          </Titolo>
+          <Titolo>Scopri l'elfo che c'è in te!</Titolo>
           <Testo size={16}>
             Fai il test e misura il tuo spirito natalizio.
           </Testo>
@@ -71,5 +59,5 @@ export const Modal = ({ id, question, onChange }: ModalProps) => {
 type ModalProps = {
   id: string;
   question: QuestionType | undefined;
-  onChange: (questionId: QuestionIds) => void;
+  onChange: (questionId: QuestionIds | ResultsIds) => void;
 };
