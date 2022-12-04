@@ -4,12 +4,14 @@ import { Odioso } from "../../components/Odioso/Odioso";
 import { AltriHinto } from "../../components/Sezioni/AltriHinto/AltriHinto";
 import { Hero } from "../../components/Sezioni/Hero/Hero";
 import { Sciaugurati } from "../../components/Sezioni/Sciaugurati/Sciaugurati";
+import { Trees } from "../../components/Trees/Trees";
 import { RisultatoPageWrapper } from "../../page-styles/risultato-page.style";
 
 export default function OdiosoPage() {
   return (
     <RisultatoPageWrapper>
       <HintoIcon theme="light" />
+      <Trees />
       <Hero
         title="Qui siamo ai livelli del Grinch!"
         background={Colors.darkBlue}
