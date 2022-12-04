@@ -111,17 +111,19 @@ export default function Mappa() {
   const router = useRouter();
 
   function handleOnChange(id: QuestionIds | ResultsIds) {
-    if (id.includes("q")) {
-      //@ts-ignore
-      setQuestionId(id);
-    } else {
-      closeModal();
-      showEntireMap();
-      setTimeout(() => {
-        //@ts-ignore
-        router.push(`/risultati/${resultsHandler[id]}`);
-      }, 1500);
-    }
+    router.push(`/risultati/odioso`);
+
+    // if (id.includes("q")) {
+    //   //@ts-ignore
+    //   setQuestionId(id);
+    // } else {
+    //   closeModal();
+    //   showEntireMap();
+    //   setTimeout(() => {
+    //     //@ts-ignore
+    //     router.push(`/risultati/${resultsHandler[id]}`);
+    //   }, 1500);
+    // }
   }
 
   useEffect(() => {

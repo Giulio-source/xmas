@@ -7,6 +7,17 @@ import { Sciaugurati } from "../../components/Sezioni/Sciaugurati/Sciaugurati";
 import { Trees } from "../../components/Trees/Trees";
 import { RisultatoPageWrapper } from "../../page-styles/risultato-page.style";
 
+export function wait(sec: number) {
+  return new Promise((resolve) => setTimeout(resolve, sec * 1000));
+}
+
+export async function getServerSideProps() {
+  await wait(2);
+  return {
+    props: {},
+  };
+}
+
 export default function AnsiosoPage() {
   return (
     <RisultatoPageWrapper>
