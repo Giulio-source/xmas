@@ -2,7 +2,9 @@ import { MouseEvent, useRef, useState } from "react";
 import { Button } from "../../Button/Button";
 import { SmallDivider } from "../../commons/Divider";
 import { Testo, Titolo } from "../../commons/Theme";
+import { CloseIcon } from "../../Icons/CloseIcon";
 import {
+  StyledCloseIcon,
   StyledDarkBackground,
   StyledRisultatoModal,
 } from "./RisultatoModal.style";
@@ -39,13 +41,15 @@ export const RisultatoModal = ({
       }
     >
       <StyledRisultatoModal open={open} ref={modalRef} tabIndex={open ? 0 : -1}>
+        <StyledCloseIcon onClick={resetDataAndClose}>
+          <CloseIcon />
+        </StyledCloseIcon>
         {activeStep === "email" && (
           <EmailStep
             email={email}
             onChange={(e: any) => setEmail(e.target.value)}
             goBack={() => setActiveStep("default")}
             goToTYP={() => setActiveStep("typ")}
-            onClose={resetDataAndClose}
           />
         )}
         {activeStep === "typ" && <SimpleTYP onClose={resetDataAndClose} />}

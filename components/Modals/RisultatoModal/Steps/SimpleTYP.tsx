@@ -7,9 +7,6 @@ import { TestaElfoVerde } from "../../../Icons/TestaElfoVerde";
 export const SimpleTYP = ({ onClose }: { onClose: () => void }) => {
   return (
     <>
-      <StyledCloseIcon onClick={onClose}>
-        <CloseIcon />
-      </StyledCloseIcon>
       <StyledTesta>
         <TestaElfoVerde />
       </StyledTesta>

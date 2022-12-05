@@ -6,20 +6,15 @@ export const EmailStep = ({
   email,
   onChange,
   goBack,
-  onClose,
   goToTYP,
 }: {
   email: string;
   onChange: (e: any) => void;
   goBack: () => void;
-  onClose: () => void;
   goToTYP: () => void;
 }) => {
   return (
     <>
-      <StyledCloseIcon onClick={onClose}>
-        <CloseIcon />
-      </StyledCloseIcon>
       <Titolo>Ottima scelta!</Titolo>
       <Testo>
         Inserisci la tua email <br /> per essere contattato

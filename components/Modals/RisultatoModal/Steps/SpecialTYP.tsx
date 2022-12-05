@@ -5,14 +5,11 @@ import { Facebook } from "../../../Icons/Facebook";
 import { Instagram } from "../../../Icons/Instagram";
 import { LinkedIn } from "../../../Icons/LinkedIn";
 import { TestaElfoRossa } from "../../../Icons/TestaElfoRossa";
-import { StyledCloseIcon, StyledTesta } from "../RisultatoModal.style";
+import { StyledTesta } from "../RisultatoModal.style";
 
 export const SpecialTYP = ({ onClose }: { onClose: () => void }) => {
   return (
     <>
-      <StyledCloseIcon onClick={onClose}>
-        <CloseIcon />
-      </StyledCloseIcon>
       <StyledTesta>
         <TestaElfoRossa />
       </StyledTesta>
@@ -26,13 +23,25 @@ export const SpecialTYP = ({ onClose }: { onClose: () => void }) => {
         benefica e non perderti aggiornamenti.
       </Testo>
       <Row gap={40} margin="8px 0">
-        <a href="https://www.instagram.com/wearehinto/" target="_blank" rel="noreferrer">
+        <a
+          href="https://www.instagram.com/wearehinto/"
+          target="_blank"
+          rel="noreferrer"
+        >
           <Instagram />
         </a>
-        <a href="https://www.facebook.com/wearehinto/" target="_blank" rel="noreferrer">
+        <a
+          href="https://www.facebook.com/wearehinto/"
+          target="_blank"
+          rel="noreferrer"
+        >
           <Facebook />
         </a>
-        <a href="https://www.linkedin.com/company/wearehinto/" target="_blank" rel="noreferrer">
+        <a
+          href="https://www.linkedin.com/company/wearehinto/"
+          target="_blank"
+          rel="noreferrer"
+        >
           <LinkedIn />
         </a>
       </Row>

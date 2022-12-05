@@ -1,12 +1,20 @@
 import styled, { keyframes } from "styled-components";
 
-const slideUp = keyframes`
+const slideUpDesktop = keyframes`
   0% {
     transform: translateX(-50%) translateY(50vh)
-
   }
   100% {
     transform: translateX(-50%) translateY(-50%)
+  }
+`;
+
+const slideUpMobile = keyframes`
+  0% {
+    transform: translateY(50vh)
+  }
+  100% {
+    transform: translateY(0%)
   }
 `;
 
@@ -21,9 +29,9 @@ const fadeIn = keyframes`
 
 export const StyledRisultatoModal = styled.div<any>`
   position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 513px;
+  top: 16px;
+  left: 16px;
+  right: 16px;
 
   background: #ffffff;
   box-shadow: 0px 0px 80px #111428;
@@ -36,7 +44,14 @@ export const StyledRisultatoModal = styled.div<any>`
   padding: 36px 24px;
   gap: 16px;
 
-  animation: ${slideUp} 0.4s both;
+  animation: ${slideUpMobile} 0.4s both;
+
+  @media screen and (min-width: 1024px) {
+    top: 50%;
+    left: 50%;
+    width: 513px;
+    animation: ${slideUpDesktop} 0.4s both;
+  }
 `;
 
 export const StyledDarkBackground = styled.div<any>`
