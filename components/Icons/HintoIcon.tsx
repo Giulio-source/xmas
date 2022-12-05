@@ -14,7 +14,7 @@ const StyledHintoIcon = styled.div`
 
 export const HintoIcon = ({ theme = "dark" }: { theme?: "dark" | "light" }) => {
   return (
-    <a href="https://www.hinto.com/" target="_blank">
+    <a href="https://www.hinto.com/" target="_blank" rel="noreferrer">
       <StyledHintoIcon>
         <svg
           xmlns="http://www.w3.org/2000/svg"

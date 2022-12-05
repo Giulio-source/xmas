@@ -26,13 +26,13 @@ export const SpecialTYP = ({ onClose }: { onClose: () => void }) => {
         benefica e non perderti aggiornamenti.
       </Testo>
       <Row gap={40} margin="8px 0">
-        <a href="https://www.instagram.com/wearehinto/" target="_blank">
+        <a href="https://www.instagram.com/wearehinto/" target="_blank" rel="noreferrer">
           <Instagram />
         </a>
-        <a href="https://www.facebook.com/wearehinto/" target="_blank">
+        <a href="https://www.facebook.com/wearehinto/" target="_blank" rel="noreferrer">
           <Facebook />
         </a>
-        <a href="https://www.linkedin.com/company/wearehinto/" target="_blank">
+        <a href="https://www.linkedin.com/company/wearehinto/" target="_blank" rel="noreferrer">
           <LinkedIn />
         </a>
       </Row>
