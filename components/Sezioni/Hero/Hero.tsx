@@ -16,7 +16,13 @@ import {
   StyledSnowHill,
 } from "./Hero.style";
 
-export const Hero = ({ title, background, testo, Elfo }: HeroProps) => {
+export const Hero = ({
+  title,
+  background,
+  testo,
+  Elfo,
+  onShowAnteprima,
+}: HeroProps) => {
   const [open, setOpen] = useState(false);
 
   return (
@@ -35,7 +41,11 @@ export const Hero = ({ title, background, testo, Elfo }: HeroProps) => {
               {testo}
             </Testo>
             <StyledCtaWrapper>
-              <Button label="Condividi auguri personalizzati" type="outline" />
+              <Button
+                label="Condividi auguri personalizzati"
+                type="outline"
+                onClick={onShowAnteprima}
+              />
               <Button
                 label="Scarta il tuo regalo"
                 fill
@@ -59,4 +69,5 @@ type HeroProps = {
   background: string;
   testo: React.ReactNode;
   Elfo: React.FC;
+  onShowAnteprima: () => void;
 };

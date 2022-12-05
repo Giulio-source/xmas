@@ -1,16 +1,13 @@
-import { Ansioso } from "../Ansioso/Ansioso";
-import {
-  StyledCartolinaContent,
-  StyledCartolinaPage,
-} from "../../page-styles/cartolina-page.style";
-import { HintoIcon } from "../Icons/HintoIcon";
-import { Trees } from "../Trees/Trees";
-import { StyledBackground } from "../Sezioni/Hero/Hero.style";
-import { Colors, Titolo } from "../commons/Theme";
-import { Button } from "../Button/Button";
-import { Neve } from "../Neve/Neve";
-import { Credits } from "../Credits/Credits";
 import Link from "next/link";
+import { StyledCartolinaContent } from "../../page-styles/cartolina-page.style";
+import { Button } from "../Button/Button";
+import { Titolo } from "../commons/Theme";
+import { Credits } from "../Credits/Credits";
+import { HintoIcon } from "../Icons/HintoIcon";
+import { Neve } from "../Neve/Neve";
+import { StyledBackground } from "../Sezioni/Hero/Hero.style";
+import { Trees } from "../Trees/Trees";
+import { StyledCartolina } from "./Cartolina.style";
 
 export const Cartolina = ({
   message,
@@ -19,7 +16,7 @@ export const Cartolina = ({
   CTA,
 }: CartolinaProps) => {
   return (
-    <StyledCartolinaPage>
+    <StyledCartolina>
       <HintoIcon theme="light" />
       <Neve />
       <Trees />
@@ -41,7 +38,7 @@ export const Cartolina = ({
         )}
         <Credits />
       </StyledCartolinaContent>
-    </StyledCartolinaPage>
+    </StyledCartolina>
   );
 };
 

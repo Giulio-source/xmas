@@ -15,14 +15,14 @@ export const Button = ({
 }: {
   label: string | React.ReactNode;
   type?: "outline" | "full" | "ghost";
-  color?: "purple" | "grey";
+  color?: "purple" | "grey" | "white";
   fill?: boolean;
   onClick?: () => void;
   style?: any;
   disabled?: boolean;
 }) => {
   if (type === "ghost") {
-    return (  
+    return (
       <StyledGhostButton onClick={onClick} style={style}>
         {label}
       </StyledGhostButton>

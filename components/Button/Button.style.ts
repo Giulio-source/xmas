@@ -33,6 +33,16 @@ export const StyledButton = styled.div<any>`
       font-weight: 400;
     `}
 
+    ${({ color }) =>
+    color === "white" &&
+    css`
+      color: ${Colors.violet};
+      background-color: white;
+      border-color: white;
+      font-weight: 700;
+      padding: 12px 36px;
+    `}
+
   ${({ fullWidth }) =>
     fullWidth &&
     css`
