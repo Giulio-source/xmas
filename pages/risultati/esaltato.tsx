@@ -2,7 +2,10 @@ import { useEffect, useState } from "react";
 import { Button } from "../../components/Button/Button";
 import { Cartolina } from "../../components/Cartolina/Cartolina";
 import { Colors, Container } from "../../components/commons/Theme";
-import { getRandomNames } from "../../components/commons/utils";
+import {
+  getRandomNames,
+  handleOnCondividi,
+} from "../../components/commons/utils";
 import { Esaltato } from "../../components/Esaltato/Esaltato";
 import { HintoIcon } from "../../components/Icons/HintoIcon";
 import { AltriHinto } from "../../components/Sezioni/AltriHinto/AltriHinto";
@@ -28,7 +31,11 @@ export default function EsaltatoPage() {
       {showAnteprima ? (
         <>
           <StyledCondividiCTA>
-            <Button label="Condividi" color="white" />
+            <Button
+              label="Condividi"
+              color="white"
+              onClick={() => handleOnCondividi("cartolina/elfo-esaltato")}
+            />
           </StyledCondividiCTA>
           <Cartolina
             message="Ti auguro un Natale splendente e un meraviglioso anno nuovo ricco di gioia!"

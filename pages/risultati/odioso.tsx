@@ -2,7 +2,10 @@ import { useEffect, useState } from "react";
 import { Button } from "../../components/Button/Button";
 import { Cartolina } from "../../components/Cartolina/Cartolina";
 import { Colors, Container } from "../../components/commons/Theme";
-import { getRandomNames } from "../../components/commons/utils";
+import {
+  getRandomNames,
+  handleOnCondividi,
+} from "../../components/commons/utils";
 import { HintoIcon } from "../../components/Icons/HintoIcon";
 import { Odioso } from "../../components/Odioso/Odioso";
 import { AltriHinto } from "../../components/Sezioni/AltriHinto/AltriHinto";
@@ -28,7 +31,11 @@ export default function OdiosoPage() {
       {showAnteprima ? (
         <>
           <StyledCondividiCTA>
-            <Button label="Condividi" color="white" />
+            <Button
+              label="Condividi"
+              color="white"
+              onClick={() => handleOnCondividi("cartolina/elfo-odioso")}
+            />
           </StyledCondividiCTA>
           <Cartolina
             message="E anche sto Natale..."

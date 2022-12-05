@@ -1,3 +1,5 @@
+import { BASE_URL } from "./constants";
+
 export const risultatiTestHandler = {
   ansioso: ["fabiano-roberto", "tiziano-tremolada", "matteo-dario"],
   scazzato: ["manuel-bosi", "antonio-bitonti"],
@@ -76,5 +78,24 @@ export function getRandomNames(categoria: keyof typeof risultatiTestHandler) {
     risultatiTestHandler[categoria][randomNumberOne],
     risultatiTestHandler[categoria][randomNumberTwo],
   ];
+}
 
+export function handleOnCondividi(pageRoute: string) {
+  if (navigator.share) {
+    navigator
+      .share({
+        title: "Xmas Hinto",
+        url: BASE_URL + pageRoute,
+      })
+      .then(() => {
+        console.log("Thanks for sharing!");
+      })
+      .catch((err) => {
+        console.log("Error while using Web share API:");
+        console.log(err);
+      });
+  } else {
+    alert("Link copied to clipboard!");
+    navigator.clipboard.writeText(BASE_URL + pageRoute);
+  }
 }
