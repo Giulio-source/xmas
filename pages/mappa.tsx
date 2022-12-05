@@ -3,7 +3,7 @@ import DrawSVGPlugin from "gsap/dist/DrawSVGPlugin";
 import MorphSVGPlugin from "gsap/dist/MorphSVGPlugin";
 import { useEffect, useRef, useState } from "react";
 import { HintoIcon } from "../components/Icons/HintoIcon";
-import { Modal } from "../components/Modal/Modal";
+import { Modal } from "../components/Modals/MappaModal/Modal";
 import { Neve } from "../components/Neve/Neve";
 import { Villaggio } from "../components/Villaggio/Villaggio";
 import {
@@ -151,11 +151,7 @@ export default function Mappa() {
       <HintoIcon />
       <Villaggio />
       <Neve />
-      <Modal
-        id="dialog-modal"
-        question={question}
-        onChange={handleOnChange}
-      />
+      <Modal id="dialog-modal" question={question} onChange={handleOnChange} />
     </MappaPageWrapper>
   );
 }

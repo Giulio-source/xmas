@@ -1,4 +1,4 @@
-import { StyledIllustrazioneElfo } from "../Modal/Modal.style";
+import { StyledIllustrazioneElfo } from "../Modals/MappaModal/Modal.style";
 
 export const IllustrazioneElfo = () => {
   return (

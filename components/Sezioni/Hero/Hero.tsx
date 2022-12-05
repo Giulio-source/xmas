@@ -1,7 +1,9 @@
+import { useState } from "react";
 import { Button } from "../../Button/Button";
 import { loraFont, Testo } from "../../commons/Theme";
 import { Esaltato } from "../../Esaltato/Esaltato";
 import { ChevronDownIcon } from "../../Icons/ChevronDownIcon";
+import { RisultatoModal } from "../../Modals/RisultatoModal/RisultatoModal";
 import {
   HeroWrapper,
   StyledBackground,
@@ -15,6 +17,8 @@ import {
 } from "./Hero.style";
 
 export const Hero = ({ title, background, testo, Elfo }: HeroProps) => {
+  const [open, setOpen] = useState(false);
+
   return (
     <StyledSection>
       <HeroWrapper>
@@ -32,13 +36,20 @@ export const Hero = ({ title, background, testo, Elfo }: HeroProps) => {
             </Testo>
             <StyledCtaWrapper>
               <Button label="Condividi auguri personalizzati" type="outline" />
-              <Button label="Scarta il tuo regalo" fill />
+              <Button
+                label="Scarta il tuo regalo"
+                fill
+                onClick={() => {
+                  setOpen(true);
+                }}
+              />
             </StyledCtaWrapper>
           </StyledCopyCta>
         </StyledContent>
       </HeroWrapper>
       <StyledBackground color={background} />
       <StyledSnowHill />
+      <RisultatoModal open={open} onClose={() => setOpen(false)} />
     </StyledSection>
   );
 };

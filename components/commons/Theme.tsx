@@ -25,6 +25,10 @@ export const StyledTitolo = styled.div<any>`
   color: ${({ color }) => color};
   text-align: ${({ align }) => align};
 
+  span {
+    font-weight: 400;
+  }
+
   @media screen and (min-width: 1024px) {
     color: ${({ desktopColor }) => desktopColor};
   }
@@ -58,6 +62,17 @@ export const Testo = styled.div<{
   text-align: ${({ align }) => (align ? align : "center")};
   letter-spacing: 0.02em;
   font-style: ${({ italic }) => (italic ? "italic" : "normal")};
+`;
+
+export const Input = styled.input`
+  height: 56px;
+  border: 1px solid #111428;
+  border-radius: 2px;
+  padding: 16px;
+  font-size: 14px;
+  font-family: inherit;
+  text-align: center;
+  outline: none;
 `;
 
 export const PurpleButton = styled.div`
@@ -122,6 +137,7 @@ export const loraFont = Lora({
   subsets: ["latin"],
   style: ["normal"],
   weight: ["700"],
+  // weight: ["400", "700"],
 });
 
 export const notoFont = Noto_Sans({

@@ -17,7 +17,7 @@ export const Sciaugurati = () => {
             Ora che conosci il tuo spirito natalizio, non ti resta che scoprire
             chi tra <b>gli SciaUgurati</b> siederà accanto a te quest'anno.
           </Testo>
-          <a href="https://www.sciaugurati.christmas/">
+          <a href="https://www.sciaugurati.christmas/" target="_blank">
             <Button label="Scoprilo ora" type="outline" />
           </a>
         </StyledSciauguratiContent>

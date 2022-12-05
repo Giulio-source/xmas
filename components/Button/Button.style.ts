@@ -16,6 +16,23 @@ export const StyledButton = styled.div<any>`
   text-align: center;
   letter-spacing: 0.02em;
 
+  ${({ disabled }) =>
+    disabled &&
+    css`
+      pointer-events: none;
+      background: ${Colors.lightGrey};
+      border-color: ${Colors.lightGrey};
+    `}
+
+  ${({ color }) =>
+    color === "grey" &&
+    css`
+      color: black;
+      background-color: rgba(197, 210, 214, 0.35);
+      border-color: rgba(197, 210, 214, 0.35);
+      font-weight: 400;
+    `}
+
   ${({ fill }) =>
     fill &&
     css`
@@ -27,4 +44,22 @@ export const StyledOutlineButton = styled(StyledButton)`
   color: ${Colors.violet};
   background: white;
   border: 2px solid ${Colors.violet};
+
+  ${({ color }) =>
+    color === "grey" &&
+    css`
+      color: black;
+      border-color: ${Colors.lightGrey};
+      font-weight: 400;
+    `}
+`;
+
+export const StyledGhostButton = styled.div`
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  color: ${Colors.violet};
+  cursor: pointer;
+  width: fit-content;
 `;

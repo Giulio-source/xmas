@@ -4,14 +4,14 @@ import {
   Row,
   Testo,
   Titolo,
-} from "../commons/Theme";
-import { IllustrazioneElfo } from "../Icons/ElfoModale";
-import { HintoFullIcon } from "../Icons/HintoFullIcon";
+} from "../../commons/Theme";
+import { IllustrazioneElfo } from "../../Icons/ElfoModale";
+import { HintoFullIcon } from "../../Icons/HintoFullIcon";
 import {
   QuestionIds,
   QuestionType,
   ResultsIds,
-} from "../Villaggio/villaggioData";
+} from "../../Villaggio/villaggioData";
 import {
   StyledAnswerButtons,
   StyledModal,

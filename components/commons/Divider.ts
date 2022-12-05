@@ -7,3 +7,11 @@ export const Divider = styled.div`
   background: ${Colors.lightGrey};
   margin: 16px 0;
 `;
+
+export const SmallDivider = styled.div`
+  max-width: 292px;
+  width: 100%;
+  height: 1px;
+  background: ${Colors.lightGrey};
+  margin: auto;
+`;

@@ -639,10 +639,10 @@ export const Odioso = () => {
           <path
             fill="none"
             stroke="#FF0055"
-            stroke-width="4"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-miterlimit="10"
+            strokeWidth="4"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeMiterlimit="10"
             d="
 			M222.4,315c18.3,10.4,40.5,11.2,59.5,2.1c8-4.3,15.2-11.4,15.7-20.9c0.3-4.3-1-8.4-4-11.4c-2.7-2.8-6.4-4.3-10.2-3.9l-0.6,0.1
 			l-0.6,0.2l-0.7,0.2l-0.3,0.1l-1,0.6l-0.6,0.4l-0.1,0.1c-1.5,1.3-2.3,2.3-3.1,4.1c-0.3,0.5,0-0.2-0.2,0.3l-0.2,0.7l-0.3,1.1
@@ -651,10 +651,10 @@ export const Odioso = () => {
           <path
             fill="none"
             stroke="#FF0055"
-            stroke-width="4"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-miterlimit="10"
+            strokeWidth="4"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeMiterlimit="10"
             d="
 			M218.6,320.7L218.6,320.7c18.2,1.8,36,6.1,53,12.7c7.1,2.6,13.6,6.5,19.2,11.5c4.9,4.4,8.1,10.4,8.9,17c0.4,3.7,0.2,6.9-1,10.3
 			c-1,2.9-3,5.9-5.3,7.7"
@@ -662,20 +662,20 @@ export const Odioso = () => {
           <path
             fill="none"
             stroke="#FF0055"
-            stroke-width="4"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-miterlimit="10"
+            strokeWidth="4"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeMiterlimit="10"
             d="
 			M252,315.8L252,315.8c14.8,5.1,31-2.4,36.7-17"
           />
           <path
             fill="none"
             stroke="#FF0055"
-            stroke-width="4"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-miterlimit="10"
+            strokeWidth="4"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeMiterlimit="10"
             d="
 			M87.1,315.1c-9.5,5.6-20.4,8.5-31.4,8.5c-9.7,0.1-19.5-1.9-28.1-6.4c-8-4.3-15.2-11.4-15.7-20.9c-0.2-4.3,1-8.4,4-11.4
 			c2.7-2.7,6.4-4.3,10.2-3.9l0.6,0.1l0.6,0.2l0.7,0.2l0.3,0.1c0.3,0.2,0.7,0.3,1,0.6c0.2,0.2,0.5,0.2,0.6,0.4l0.1,0.1
@@ -685,10 +685,10 @@ export const Odioso = () => {
           <path
             fill="none"
             stroke="#FF0055"
-            stroke-width="4"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-miterlimit="10"
+            strokeWidth="4"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeMiterlimit="10"
             d="
 			M91.3,321.2L91.3,321.2c-18.2,1.8-36,6.1-53,12.7c-7.1,2.5-13.6,6.5-19.2,11.5c-4.9,4.4-8.1,10.4-8.9,17c-0.5,3.5-0.2,7,1,10.3
 			c1,3,2.9,5.7,5.3,7.7"
@@ -696,10 +696,10 @@ export const Odioso = () => {
           <path
             fill="none"
             stroke="#FF0055"
-            stroke-width="4"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-miterlimit="10"
+            strokeWidth="4"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeMiterlimit="10"
             d="
 			M57.7,316.1L57.7,316.1c-14.8,5.1-31-2.4-36.7-17"
           />

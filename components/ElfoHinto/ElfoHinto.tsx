@@ -25,10 +25,10 @@ export const ElfoHinto = ({
           cy="378.7"
           fill="#C1D1D6"
           stroke="#C1D1D6"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-miterlimit="10"
-          stroke-width="3"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeMiterlimit="10"
+          strokeWidth="3"
           opacity=".5"
           rx="65.3"
           ry="3.4"
@@ -37,16 +37,16 @@ export const ElfoHinto = ({
           <path
             fill="none"
             stroke="#009488"
-            stroke-miterlimit="10"
-            stroke-width="10"
+            strokeMiterlimit="10"
+            strokeWidth="10"
             d="M194.2 217.2s48.6 20.1 44.7 102.1"
           />
           <path
             fill="none"
             stroke="#6CF7C6"
-            stroke-dasharray="22"
-            stroke-miterlimit="10"
-            stroke-width="10"
+            strokeDasharray="22"
+            strokeMiterlimit="10"
+            strokeWidth="10"
             d="M194.1 217s48.6 20.1 44.7 102.1"
           />
           <path
@@ -59,16 +59,16 @@ export const ElfoHinto = ({
           <path
             fill="none"
             stroke="#009488"
-            stroke-miterlimit="10"
-            stroke-width="10"
+            strokeMiterlimit="10"
+            strokeWidth="10"
             d="M91.8 320.3s-4.3-73.8 37.8-89.6"
           />
           <path
             fill="none"
             stroke="#6CF7C6"
-            stroke-dasharray="22"
-            stroke-miterlimit="10"
-            stroke-width="10"
+            strokeDasharray="22"
+            strokeMiterlimit="10"
+            strokeWidth="10"
             d="M91.6 320s-4.3-73.8 37.8-89.6"
           />
           <path
@@ -76,47 +76,47 @@ export const ElfoHinto = ({
             d="M96.6 319.7H87s-3.5 11.2-1.2 11.2 3.5-5.6 3.5-5.6-.8 8.9 1.6 8.7 2.4-8.2 2.4-8.2.6 5.1 3.4 4.8c2.7-.3-.1-10.9-.1-10.9z"
           />
         </g>
-        <g id="gamba_x5F_dex_1_" stroke-miterlimit="10">
+        <g id="gamba_x5F_dex_1_" strokeMiterlimit="10">
           <path
             fill="none"
             stroke="#009488"
-            stroke-width="10"
+            strokeWidth="10"
             d="M130.4 307.6v49.2"
           />
           <path
             fill="none"
             stroke="#6CF7C6"
-            stroke-dasharray="22"
-            stroke-width="10"
+            strokeDasharray="22"
+            strokeWidth="10"
             d="M130.3 307.4v49.2"
           />
           <path
             id="Scarpa_dex_4_"
             fill="#002764"
             stroke="#002764"
-            stroke-width="2"
+            strokeWidth="2"
             d="m133.8 356.8-7.9-.5s-1.2 10.4-6.1 11-7.4-1.4-8.7-5.5c-1.3-4-1-7.3-3.5-7.3-3 0-3.1 5.3-1.8 9.8 1.2 4.3 5.5 9.8 12.2 9.8s10.4-6.7 10.4-6.7l.5 6.7h5l-.1-17.3z"
           />
         </g>
-        <g id="gamba_x5F_six_1_" stroke-miterlimit="10">
+        <g id="gamba_x5F_six_1_" strokeMiterlimit="10">
           <path
             fill="none"
             stroke="#009488"
-            stroke-width="10"
+            strokeWidth="10"
             d="M193.9 309.4v49.2"
           />
           <path
             fill="none"
             stroke="#6CF7C6"
-            stroke-dasharray="22"
-            stroke-width="10"
+            strokeDasharray="22"
+            strokeWidth="10"
             d="M193.7 309.1v49.2"
           />
           <path
             id="Scarpa_six_4_"
             fill="#002764"
             stroke="#002764"
-            stroke-width="2"
+            strokeWidth="2"
             d="m190.5 358 7.9-.5s1.5 9.2 6.1 11c4 1.5 7.1-1.3 8.1-5.5 1.3-5.2 1-7.9 3.5-7.9 3 0 3.7 5.9 2.4 10.4-1.2 4.3-5.5 9.8-12.2 9.8s-10.4-6.7-10.4-6.7l-.5 6.7h-5l.1-17.3z"
           />
         </g>
@@ -125,7 +125,7 @@ export const ElfoHinto = ({
           <path
             fill="#002764"
             stroke="#002764"
-            stroke-miterlimit="10"
+            strokeMiterlimit="10"
             d="M199.6 281v11l-74.9 2.1-.4-10.7z"
           />
           <path d="M161.3 264.7c-4.5-1-6.7 4.1-6.3 5.3.4 1.3.9 4.6 3.6 4.7 2.8 0 5.8-1.7 5.8-4.7s-.2-4.7-3.1-5.3zM161.4 246.6c-4.5-1-6.7 4.1-6.3 5.3.4 1.3.9 4.6 3.6 4.7s5.8-1.7 5.8-4.7-.2-4.7-3.1-5.3z" />
@@ -145,10 +145,10 @@ export const ElfoHinto = ({
           <path
             fill="none"
             stroke="#DE8BB5"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-miterlimit="10"
-            stroke-width="3"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeMiterlimit="10"
+            strokeWidth="3"
             d="m208.8 172.6 13.2-20.8"
           />
         </g>
@@ -160,10 +160,10 @@ export const ElfoHinto = ({
           <path
             fill="none"
             stroke="#DE8BB5"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-miterlimit="10"
-            stroke-width="3"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeMiterlimit="10"
+            strokeWidth="3"
             d="m106 169.8-18.4-17.2"
           />
         </g>
