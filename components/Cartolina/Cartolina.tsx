@@ -1,13 +1,16 @@
 import Link from "next/link";
-import { StyledCartolinaContent } from "../../page-styles/cartolina-page.style";
 import { Button } from "../Button/Button";
 import { Titolo } from "../commons/Theme";
 import { Credits } from "../Credits/Credits";
 import { HintoIcon } from "../Icons/HintoIcon";
 import { Neve } from "../Neve/Neve";
-import { StyledBackground } from "../Sezioni/Hero/Hero.style";
+import { StyledBackground, StyledSnowHill } from "../Sezioni/Hero/Hero.style";
 import { Trees } from "../Trees/Trees";
-import { StyledCartolina } from "./Cartolina.style";
+import {
+  StyledCartolina,
+  StyledCartolinaContent,
+  StyledCartolinaDesktop,
+} from "./Cartolina.style";
 
 export const Cartolina = ({
   message,
@@ -38,6 +41,10 @@ export const Cartolina = ({
         )}
         <Credits />
       </StyledCartolinaContent>
+      <StyledCartolinaDesktop>
+        <StyledBackground color={backgroundColor} />
+        <StyledSnowHill />
+      </StyledCartolinaDesktop>
     </StyledCartolina>
   );
 };
