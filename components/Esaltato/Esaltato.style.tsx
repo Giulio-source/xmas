@@ -71,4 +71,8 @@ export const StyledEsaltato = styled.div`
     transform-origin: center center;
     animation: ${glitteryEyes} 0.1s 0.05s linear infinite alternate-reverse;
   }
+
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 60px;
+  }
 `;

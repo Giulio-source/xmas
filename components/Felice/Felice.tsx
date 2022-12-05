@@ -47,7 +47,8 @@ export const Felice = () => {
         x="0"
         y="0"
         version="1.1"
-        viewBox="0 0 340 580"
+        // viewBox="0 0 340 580"
+        viewBox="0 0 340 520"
       >
         <g id="palla2">
           <path
@@ -85,7 +86,6 @@ export const Felice = () => {
           id="BG_x5F_2"
           fill="#FFF"
           d="M427.3 605.2c0-73.7-120.6-133.4-269.5-133.4s-269.5 59.7-269.5 133.4c0 43.5 42.2 82.2 107.4 106.6v334.3H338V704.4c54.9-24.5 89.3-59.8 89.3-99.2z"
-          opacity=".9"
         />
         <ellipse
           cx="158.5"

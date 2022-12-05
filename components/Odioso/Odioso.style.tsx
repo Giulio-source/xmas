@@ -19,4 +19,8 @@ export const StyledOdioso = styled.div`
   #elfo-intero {
     cursor: pointer;
   }
+
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 80px;
+  }
 `;

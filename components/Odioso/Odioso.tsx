@@ -51,7 +51,8 @@ export const Odioso = () => {
         x="0px"
         y="0px"
         // viewBox="0 0 339.5 915.5"
-        viewBox="0 0 340 600"
+        // viewBox="0 0 340 600"
+        viewBox="0 0 340 520"
         xmlSpace="preserve"
       >
         <path

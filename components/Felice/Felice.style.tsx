@@ -20,4 +20,8 @@ export const StyledFelice = styled.div`
     visibility: hidden;
     opacity: 0;
   }
+
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 60px;
+  }
 `;

@@ -62,7 +62,8 @@ export const Esaltato = () => {
         xmlns="http://www.w3.org/2000/svg"
         ref={svgRef}
         id="esaltato"
-        viewBox="0 0 340 580"
+        // viewBox="0 0 340 580"
+        viewBox="0 0 340 520"
       >
         <defs>
           <path

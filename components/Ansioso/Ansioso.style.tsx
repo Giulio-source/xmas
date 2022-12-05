@@ -20,6 +20,10 @@ export const StyledAnsioso = styled.div`
   }
 
   #elfo-intero {
-    cursor: pointer
+    cursor: pointer;
+  }
+
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 80px;
   }
 `;

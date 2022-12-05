@@ -31,7 +31,7 @@ export const Button = ({
   if (type === "outline") {
     return (
       <StyledOutlineButton
-        fill={fill}
+        fullWidth={fill}
         color={color}
         onClick={onClick}
         style={style}
@@ -42,7 +42,7 @@ export const Button = ({
   }
   return (
     <StyledButton
-      fill={fill}
+      fullWidth={fill}
       color={color}
       onClick={onClick}
       style={style}

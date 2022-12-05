@@ -51,7 +51,8 @@ export const Scazzato = () => {
         ref={svgRef}
         xmlns="http://www.w3.org/2000/svg"
         // viewBox="0 0 339.5 915.5"
-        viewBox="0 0 340 600"
+        // viewBox="0 0 340 600"
+        viewBox="0 0 340 520"
       >
         <path
           id="br"

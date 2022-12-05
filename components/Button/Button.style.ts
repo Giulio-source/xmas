@@ -33,8 +33,8 @@ export const StyledButton = styled.div<any>`
       font-weight: 400;
     `}
 
-  ${({ fill }) =>
-    fill &&
+  ${({ fullWidth }) =>
+    fullWidth &&
     css`
       flex: 1;
     `}
