@@ -16,6 +16,7 @@ import {
   RisultatoPageWrapper,
   StyledCondividiCTA,
 } from "../../page-styles/risultato-page.style";
+import { Neve } from "../../components/Neve/Neve";
 
 export default function AnsiosoPage() {
   const [names, setNames] = useState<string[]>();
@@ -55,6 +56,7 @@ export default function AnsiosoPage() {
         <>
           <HintoIcon theme="light" />
           <Trees />
+          <Neve />
           <Hero
             title="Lo spirito c'è, ma non è troppo convinto!"
             background={Colors.mintGreen}

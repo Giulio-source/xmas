@@ -16,6 +16,7 @@ import {
   RisultatoPageWrapper,
   StyledCondividiCTA,
 } from "../../page-styles/risultato-page.style";
+import {Neve} from '../../components/Neve/Neve';
 
 export default function OdiosoPage() {
   const [names, setNames] = useState<string[]>();
@@ -55,6 +56,7 @@ export default function OdiosoPage() {
         <>
           <HintoIcon theme="light" />
           <Trees />
+          <Neve />
           <Hero
             title="Qui siamo ai livelli del Grinch!"
             background={Colors.darkBlue}

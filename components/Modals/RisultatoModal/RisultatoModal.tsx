@@ -61,7 +61,7 @@ export const RisultatoModal = ({
         {activeStep === "default" && (
           <>
             <Titolo>
-              <b>Oh oh oh...</b>
+              Oh oh oh...
               <br />
               <span>
                 Hinto ha una

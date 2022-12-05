@@ -16,6 +16,7 @@ import {
   RisultatoPageWrapper,
   StyledCondividiCTA,
 } from "../../page-styles/risultato-page.style";
+import { Neve } from "../../components/Neve/Neve";
 
 export default function FelicePage() {
   const [names, setNames] = useState<string[]>();
@@ -55,6 +56,7 @@ export default function FelicePage() {
         <>
           <HintoIcon theme="light" />
           <Trees />
+          <Neve />
           <Hero
             title="Saresti un ottimo aiutante di Babbo Natale! "
             background={Colors.deepBlue}

@@ -16,6 +16,7 @@ import {
   RisultatoPageWrapper,
   StyledCondividiCTA,
 } from "../../page-styles/risultato-page.style";
+import {Neve} from '../../components/Neve/Neve';
 
 export default function IndifferentePage() {
   const [names, setNames] = useState<string[]>();
@@ -55,6 +56,7 @@ export default function IndifferentePage() {
         <>
           <HintoIcon theme="light" />
           <Trees />
+          <Neve />
           <Hero
             title="Uno spirito natalizio piuttosto neutrale!"
             background={Colors.mintGreen}

@@ -53,6 +53,8 @@ export const StyledContent = styled.div`
 `;
 
 export const StyledContentTitolo = styled.div`
+  font-family: "Lora", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 700;
   font-size: 30px;
   line-height: 38px;

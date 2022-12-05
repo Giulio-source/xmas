@@ -18,6 +18,8 @@ export const Colors = {
 // UI
 
 export const StyledTitolo = styled.div<any>`
+  font-family: "Lora", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: 700;
   font-size: ${({ size }) => size}px;
   line-height: 38px;
@@ -27,6 +29,7 @@ export const StyledTitolo = styled.div<any>`
 
   span {
     font-weight: 400;
+    font-family: inherit;
   }
 
   @media screen and (min-width: 1024px) {
@@ -42,7 +45,6 @@ export const Titolo = ({
   align = "center",
 }: TitoloProps) => (
   <StyledTitolo
-    className={loraFont.className}
     color={color}
     desktopColor={desktopColor}
     size={size}
@@ -130,21 +132,6 @@ export const Container = styled.div`
   margin: auto;
   padding: 0 16px;
 `;
-
-// FONTS
-
-export const loraFont = Lora({
-  subsets: ["latin"],
-  style: ["normal"],
-  weight: ["700"],
-  // weight: ["400", "700"],
-});
-
-export const notoFont = Noto_Sans({
-  subsets: ["latin"],
-  style: ["normal", "italic"],
-  weight: ["400", "700"],
-});
 
 type TitoloProps = {
   children: React.ReactNode;

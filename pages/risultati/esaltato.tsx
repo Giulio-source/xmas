@@ -8,6 +8,7 @@ import {
 } from "../../components/commons/utils";
 import { Esaltato } from "../../components/Esaltato/Esaltato";
 import { HintoIcon } from "../../components/Icons/HintoIcon";
+import { Neve } from "../../components/Neve/Neve";
 import { AltriHinto } from "../../components/Sezioni/AltriHinto/AltriHinto";
 import { Hero } from "../../components/Sezioni/Hero/Hero";
 import { Sciaugurati } from "../../components/Sezioni/Sciaugurati/Sciaugurati";
@@ -55,6 +56,7 @@ export default function EsaltatoPage() {
         <>
           <HintoIcon theme="light" />
           <Trees />
+          <Neve />
           <Hero
             title="Hai spaccato il natalometro!"
             background={Colors.darkGreen}

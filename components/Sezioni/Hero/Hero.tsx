@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Button } from "../../Button/Button";
-import { loraFont, Testo } from "../../commons/Theme";
-import { Esaltato } from "../../Esaltato/Esaltato";
+import { Testo } from "../../commons/Theme";
 import { ChevronDownIcon } from "../../Icons/ChevronDownIcon";
 import { RisultatoModal } from "../../Modals/RisultatoModal/RisultatoModal";
 import {
@@ -30,9 +29,7 @@ export const Hero = ({
       <HeroWrapper>
         <Elfo />
         <StyledContent>
-          <StyledContentTitolo className={loraFont.className}>
-            {title}
-          </StyledContentTitolo>
+          <StyledContentTitolo>{title}</StyledContentTitolo>
           <StyledChevronDown>
             <ChevronDownIcon />
           </StyledChevronDown>
