@@ -99,3 +99,7 @@ export function handleOnCondividi(pageRoute: string) {
     navigator.clipboard.writeText(BASE_URL + pageRoute);
   }
 }
+
+export function isValidEmail(value: string) {
+  return /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(value);
+}

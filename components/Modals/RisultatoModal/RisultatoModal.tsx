@@ -22,6 +22,7 @@ export const RisultatoModal = ({
     "default" | "email" | "typ" | "special-typ"
   >("default");
   const [email, setEmail] = useState("");
+  const [regalo, setRegalo] = useState<number>(1);
 
   const modalRef = useRef<HTMLDivElement>(null);
 
@@ -47,6 +48,7 @@ export const RisultatoModal = ({
         {activeStep === "email" && (
           <EmailStep
             email={email}
+            regalo={regalo}
             onChange={(e: any) => setEmail(e.target.value)}
             goBack={() => setActiveStep("default")}
             goToTYP={() => setActiveStep("typ")}
@@ -76,20 +78,29 @@ export const RisultatoModal = ({
               }
               type="outline"
               color="grey"
-              onClick={() => setActiveStep("email")}
+              onClick={() => {
+                setActiveStep("email");
+                setRegalo(1);
+              }}
             />
             <Button
               label="Analisi dell'ottimizzazione del tuo sito
           per il posizionamento sui motori di ricerca"
               type="outline"
               color="grey"
-              onClick={() => setActiveStep("email")}
+              onClick={() => {
+                setActiveStep("email");
+                setRegalo(2);
+              }}
             />
             <Button
               label="Analisi di sicurezza e performance della tua infrastruttura in cloud"
               type="outline"
               color="grey"
-              onClick={() => setActiveStep("email")}
+              onClick={() => {
+                setActiveStep("email");
+                setRegalo(3);
+              }}
             />
             <SmallDivider />
             <Button

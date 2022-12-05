@@ -1,18 +1,31 @@
 import { Button } from "../../../Button/Button";
-import { Testo, Titolo, Input } from "../../../commons/Theme";
-import { StyledCloseIcon } from "../RisultatoModal.style";
-import { CloseIcon } from "../../../Icons/CloseIcon";
+import { BACKEND_URL } from "../../../commons/constants";
+import { Input, Testo, Titolo } from "../../../commons/Theme";
+import { isValidEmail } from "../../../commons/utils";
 export const EmailStep = ({
   email,
   onChange,
   goBack,
   goToTYP,
+  regalo,
 }: {
   email: string;
   onChange: (e: any) => void;
   goBack: () => void;
   goToTYP: () => void;
+  regalo: number;
 }) => {
+  function handleOnSubmitEmail() {
+    fetch(`${BACKEND_URL}api/v1/presents`, {
+      method: "POST",
+      body: JSON.stringify({
+        choiceID: regalo,
+        email: email,
+      }),
+    }).catch((err) => console.log(err));
+    goToTYP();
+  }
+
   return (
     <>
       <Titolo>Ottima scelta!</Titolo>
@@ -29,8 +42,8 @@ export const EmailStep = ({
       <Button
         label="Prosegui"
         style={{ alignSelf: "flex-end" }}
-        onClick={goToTYP}
-        disabled={!email}
+        onClick={handleOnSubmitEmail}
+        disabled={!email || !isValidEmail(email)}
       />
       <Button
         label="Indietro"
