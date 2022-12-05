@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Lora, Noto_Sans } from "@next/font/google";
 
 export const Colors = {
   darkGreen: "#024c45",
