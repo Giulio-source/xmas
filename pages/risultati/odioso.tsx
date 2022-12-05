@@ -1,4 +1,6 @@
+import { useEffect, useState } from "react";
 import { Colors, Container } from "../../components/commons/Theme";
+import { getRandomNames } from "../../components/commons/utils";
 import { HintoIcon } from "../../components/Icons/HintoIcon";
 import { Odioso } from "../../components/Odioso/Odioso";
 import { AltriHinto } from "../../components/Sezioni/AltriHinto/AltriHinto";
@@ -8,6 +10,13 @@ import { Trees } from "../../components/Trees/Trees";
 import { RisultatoPageWrapper } from "../../page-styles/risultato-page.style";
 
 export default function OdiosoPage() {
+  const [names, setNames] = useState<string[]>();
+
+  useEffect(() => {
+    const names = getRandomNames("odioso");
+    setNames(names);
+  }, []);
+
   return (
     <RisultatoPageWrapper>
       <HintoIcon theme="light" />
@@ -31,7 +40,7 @@ export default function OdiosoPage() {
         Elfo={Odioso}
       />
       <Container>
-        <AltriHinto persone={["ester-barbato", "irene-fano"]} />
+        <AltriHinto persone={names} />
         <Sciaugurati />
       </Container>
     </RisultatoPageWrapper>

@@ -1,0 +1,80 @@
+export const risultatiTestHandler = {
+  ansioso: ["fabiano-roberto", "tiziano-tremolada", "matteo-dario"],
+  scazzato: ["manuel-bosi", "antonio-bitonti"],
+  felice: [
+    "gabriella-gaetano",
+    "marco-legramandi",
+    "giulia-sciannamea",
+    "federica-del-pincio",
+    "alessandra-sarangelo",
+    "alessandra-castiglioni",
+    "serena-tassan",
+    "fabrizio-costantini",
+    "giulia-nappi",
+    "william-quattromani",
+    "cristina-turco",
+    "michele-menichelli",
+    "irene-fano",
+    "matteo-bartolacci",
+    "jessica-marangoni",
+    "noemi-sgavetti",
+    "michele-menichelli",
+    "gabriella-gaetano",
+  ],
+  odioso: [
+    "andrea-raggi",
+    "alessio-di-matteo",
+    "luigi-abbamonte",
+    "paolo-ferrante",
+  ],
+  indifferente: [
+    "davide-giacchino",
+    "valentina-ferrario",
+    "gabriele-di-leo",
+    "marian-benchea",
+    "simone-marchese",
+    "mattia-maurizio",
+    "pardeep-singh",
+    "domenico-lupo",
+    "alessio-maisano",
+    "anna-sgarbi",
+    "giovanni-noce",
+    "andrea-labarile",
+    "giulio-poggia",
+    "eros-campitelli",
+    "marco-faccio",
+    "lovanee-ramen",
+    "mariasilvia-barbero",
+    "michele-forti",
+    "matteo-dario",
+    "fabiana-pittalis",
+    "valentina-guerrera",
+    "simone-tallarita",
+    "matteo-spini",
+    "federico-stefani",
+    "davide-pastorello",
+    "roberta-antonini",
+  ],
+  esaltato: [
+    "marzia-turigliatto",
+    "ester-barbato",
+    "barbara-giuliani",
+    "alessandra-petromilli",
+  ],
+};
+
+export function getRandomNames(categoria: keyof typeof risultatiTestHandler) {
+  const lengthResult = risultatiTestHandler[categoria].length;
+  const randomNumberOne = Math.floor(Math.random() * lengthResult);
+  let randomNumberTwo = Math.floor(Math.random() * lengthResult);
+
+  while (randomNumberOne === randomNumberTwo) {
+    randomNumberTwo = Math.floor(Math.random() * lengthResult);
+  }
+
+  return [
+    risultatiTestHandler[categoria][randomNumberOne],
+    risultatiTestHandler[categoria][randomNumberTwo],
+  ];
+
+}

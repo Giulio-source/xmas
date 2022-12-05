@@ -47,11 +47,6 @@ export default function Home() {
             </Link>
           </Card>
           <Card>
-            <Link href="/elfo">
-              <h2>Elfi Hinto 🙆🏻‍♂️🙆🏻‍♀️</h2>
-            </Link>
-          </Card>
-          <Card>
             <Link href="/mappa">
               <h2>Mappa 🌍</h2>
             </Link>

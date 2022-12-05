@@ -1,4 +1,6 @@
+import { useEffect, useState } from "react";
 import { Colors, Container } from "../../components/commons/Theme";
+import { getRandomNames } from "../../components/commons/utils";
 import { HintoIcon } from "../../components/Icons/HintoIcon";
 import { Indifferente } from "../../components/Indifferente/Indifferente";
 import { AltriHinto } from "../../components/Sezioni/AltriHinto/AltriHinto";
@@ -8,6 +10,13 @@ import { Trees } from "../../components/Trees/Trees";
 import { RisultatoPageWrapper } from "../../page-styles/risultato-page.style";
 
 export default function IndifferentePage() {
+  const [names, setNames] = useState<string[]>();
+
+  useEffect(() => {
+    const names = getRandomNames("indifferente");
+    setNames(names);
+  }, []);
+
   return (
     <RisultatoPageWrapper>
       <HintoIcon theme="light" />
@@ -32,7 +41,7 @@ export default function IndifferentePage() {
         Elfo={Indifferente}
       />
       <Container>
-        <AltriHinto persone={["ester-barbato", "irene-fano"]} />
+        <AltriHinto persone={names} />
         <Sciaugurati />
       </Container>
     </RisultatoPageWrapper>

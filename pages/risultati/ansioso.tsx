@@ -1,5 +1,7 @@
+import { useEffect, useState } from "react";
 import { Ansioso } from "../../components/Ansioso/Ansioso";
 import { Colors, Container } from "../../components/commons/Theme";
+import { getRandomNames } from "../../components/commons/utils";
 import { HintoIcon } from "../../components/Icons/HintoIcon";
 import { AltriHinto } from "../../components/Sezioni/AltriHinto/AltriHinto";
 import { Hero } from "../../components/Sezioni/Hero/Hero";
@@ -8,6 +10,13 @@ import { Trees } from "../../components/Trees/Trees";
 import { RisultatoPageWrapper } from "../../page-styles/risultato-page.style";
 
 export default function AnsiosoPage() {
+  const [names, setNames] = useState<string[]>();
+
+  useEffect(() => {
+    const names = getRandomNames("ansioso");
+    setNames(names);
+  }, []);
+
   return (
     <RisultatoPageWrapper>
       <HintoIcon theme="light" />
@@ -31,7 +40,7 @@ export default function AnsiosoPage() {
         Elfo={Ansioso}
       />
       <Container>
-        <AltriHinto persone={["ester-barbato", "irene-fano"]} />
+        <AltriHinto persone={names} />
         <Sciaugurati />
       </Container>
     </RisultatoPageWrapper>
