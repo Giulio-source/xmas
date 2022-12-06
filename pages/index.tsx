@@ -49,9 +49,9 @@ function goToStep(fromId: string | undefined, toId: string) {
         "#villaggio-elfo",
         {
           attr: {
-            viewBox: `${currentBBox.x - 64} ${currentBBox.y - 64} ${
-              currentBBox.width + 128
-            } ${currentBBox.height + 128}`,
+            viewBox: `${currentBBox.x - 32} ${currentBBox.y - 32} ${
+              currentBBox.width + 64
+            } ${currentBBox.height + 64}`,
           },
           duration: 0.5,
         },
@@ -70,9 +70,9 @@ function goToStep(fromId: string | undefined, toId: string) {
         "start+=0.5"
       )
       .fromTo(
-        `#${fromId}-${toId}`,
-        { stroke: "white" },
-        { drawSVG: "100%", autoAlpha: 1, duration: 1.5 },
+        `#${fromId}-${toId} polyline`,
+        { autoAlpha: 1 },
+        { drawSVG: "100%", autoAlpha: 1, duration: 1.5, stagger: 0.3 },
         "start+=0.5"
       );
   } else {
@@ -97,7 +97,7 @@ function goToStep(fromId: string | undefined, toId: string) {
 function showEntireMap() {
   gsap.to("#villaggio-elfo", {
     attr: {
-      viewBox: "0 0 1683.8 841.9",
+      viewBox: "0 0 595.28 297.64",
     },
     duration: 1,
   });

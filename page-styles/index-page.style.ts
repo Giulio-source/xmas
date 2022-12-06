@@ -8,7 +8,17 @@ export const MappaPageWrapper = styled.div`
 
   #righe polyline {
     visibility: hidden;
-    opacity: 1;
+    opacity: 0;
     mix-blend-mode: overlay;
+
+    &:nth-child(1) {
+      stroke: red;
+    }
+    &:nth-child(2) {
+      stroke: blue;
+    }
+    &:nth-child(3) {
+      stroke: yellow;
+    }
   }
 `;
