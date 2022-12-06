@@ -4,8 +4,9 @@ export const StyledRisultati = styled.div``;
 
 export const StyledElfi = styled.div`
   display: grid;
-  grid-template-columns: 115px 115px;
-  column-gap: 80px;
-  margin: 36px 0;
+  grid-template-columns: 1fr 1fr;
+  max-width: 400px;
+  column-gap: 16px;
+  margin: 36px auto;
   justify-content: center;
 `;

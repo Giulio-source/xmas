@@ -6,6 +6,9 @@ import {
   getRandomNames,
   handleOnCondividi,
 } from "../../components/commons/utils";
+import { EsaltatoHinto1 } from "../../components/ElfoHinto/Elfi/EsaltatoHinto1";
+import { EsaltatoHinto2 } from "../../components/ElfoHinto/Elfi/EsaltatoHinto2";
+import { ElfoHinto } from "../../components/ElfoHinto/ElfoHinto";
 import { Esaltato } from "../../components/Esaltato/Esaltato";
 import { HintoIcon } from "../../components/Icons/HintoIcon";
 import { Neve } from "../../components/Neve/Neve";
@@ -19,12 +22,16 @@ import {
 } from "../../page-styles/risultato-page.style";
 
 export default function EsaltatoPage() {
-  const [names, setNames] = useState<string[]>();
+  const [names, setNames] = useState<{ nome: string; cognome: string }[]>();
   const [showAnteprima, setShowAnteprima] = useState(false);
 
   useEffect(() => {
     const names = getRandomNames("esaltato");
-    setNames(names);
+    const fullNames = names.map((n) => {
+      const [nome, ...cognome] = n.split("-");
+      return { nome, cognome: cognome.join("-") };
+    });
+    setNames(fullNames);
   }, []);
 
   return (
@@ -79,7 +86,28 @@ export default function EsaltatoPage() {
             onShowAnteprima={() => setShowAnteprima(true)}
           />
           <Container>
-            <AltriHinto persone={names} />
+            {names && (
+              <AltriHinto>
+                <ElfoHinto
+                  Elfo={
+                    <EsaltatoHinto1
+                      imgUrl={`/xmas-facce/${names[0].nome}-${names[0].cognome}.png`}
+                    />
+                  }
+                  nome={names[0].nome}
+                  cognome={names[0].cognome.replace("-", " ")}
+                />
+                <ElfoHinto
+                  Elfo={
+                    <EsaltatoHinto2
+                      imgUrl={`/xmas-facce/${names[1].nome}-${names[1].cognome}.png`}
+                    />
+                  }
+                  nome={names[1].nome}
+                  cognome={names[1].cognome.replace("-", " ")}
+                />
+              </AltriHinto>
+            )}
             <Sciaugurati />
           </Container>
         </>

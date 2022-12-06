@@ -7,7 +7,10 @@ import {
   getRandomNames,
   handleOnCondividi,
 } from "../../components/commons/utils";
+import { AnsiosoHinto } from "../../components/ElfoHinto/Elfi/AnsiosoHinto";
+import { ElfoHinto } from "../../components/ElfoHinto/ElfoHinto";
 import { HintoIcon } from "../../components/Icons/HintoIcon";
+import { Neve } from "../../components/Neve/Neve";
 import { AltriHinto } from "../../components/Sezioni/AltriHinto/AltriHinto";
 import { Hero } from "../../components/Sezioni/Hero/Hero";
 import { Sciaugurati } from "../../components/Sezioni/Sciaugurati/Sciaugurati";
@@ -16,15 +19,18 @@ import {
   RisultatoPageWrapper,
   StyledCondividiCTA,
 } from "../../page-styles/risultato-page.style";
-import { Neve } from "../../components/Neve/Neve";
 
 export default function AnsiosoPage() {
-  const [names, setNames] = useState<string[]>();
+  const [names, setNames] = useState<{ nome: string; cognome: string }[]>();
   const [showAnteprima, setShowAnteprima] = useState(false);
 
   useEffect(() => {
     const names = getRandomNames("ansioso");
-    setNames(names);
+    const fullNames = names.map((n) => {
+      const [nome, ...cognome] = n.split("-");
+      return { nome, cognome: cognome.join("-") };
+    });
+    setNames(fullNames);
   }, []);
 
   return (
@@ -78,7 +84,28 @@ export default function AnsiosoPage() {
             onShowAnteprima={() => setShowAnteprima(true)}
           />
           <Container>
-            <AltriHinto persone={names} />
+            {names && (
+              <AltriHinto>
+                <ElfoHinto
+                  Elfo={
+                    <AnsiosoHinto
+                      imgUrl={`/xmas-facce/${names[0].nome}-${names[0].cognome}.png`}
+                    />
+                  }
+                  nome={names[0].nome}
+                  cognome={names[0].cognome.replace("-", " ")}
+                />
+                <ElfoHinto
+                  Elfo={
+                    <AnsiosoHinto
+                      imgUrl={`/xmas-facce/${names[1].nome}-${names[1].cognome}.png`}
+                    />
+                  }
+                  nome={names[1].nome}
+                  cognome={names[1].cognome.replace("-", " ")}
+                />
+              </AltriHinto>
+            )}
             <Sciaugurati />
           </Container>
         </>

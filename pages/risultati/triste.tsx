@@ -16,15 +16,22 @@ import {
   RisultatoPageWrapper,
   StyledCondividiCTA,
 } from "../../page-styles/risultato-page.style";
-import {Neve} from '../../components/Neve/Neve';
+import { Neve } from "../../components/Neve/Neve";
+import { ElfoHinto } from "../../components/ElfoHinto/ElfoHinto";
+import { Scazzato1 } from "../../components/ElfoHinto/Elfi/Scazzato1";
+import { Scazzato2 } from "../../components/ElfoHinto/Elfi/Scazzato2";
 
 export default function ScazzatoPage() {
-  const [names, setNames] = useState<string[]>();
+  const [names, setNames] = useState<{ nome: string; cognome: string }[]>();
   const [showAnteprima, setShowAnteprima] = useState(false);
 
   useEffect(() => {
     const names = getRandomNames("scazzato");
-    setNames(names);
+    const fullNames = names.map((n) => {
+      const [nome, ...cognome] = n.split("-");
+      return { nome, cognome: cognome.join("-") };
+    });
+    setNames(fullNames);
   }, []);
 
   return (
@@ -77,7 +84,28 @@ export default function ScazzatoPage() {
             onShowAnteprima={() => setShowAnteprima(true)}
           />
           <Container>
-            <AltriHinto persone={names} />
+            {names && (
+              <AltriHinto>
+                <ElfoHinto
+                  Elfo={
+                    <Scazzato1
+                      imgUrl={`/xmas-facce/${names[0].nome}-${names[0].cognome}.png`}
+                    />
+                  }
+                  nome={names[0].nome}
+                  cognome={names[0].cognome.replace("-", " ")}
+                />
+                <ElfoHinto
+                  Elfo={
+                    <Scazzato2
+                      imgUrl={`/xmas-facce/${names[1].nome}-${names[1].cognome}.png`}
+                    />
+                  }
+                  nome={names[1].nome}
+                  cognome={names[1].cognome.replace("-", " ")}
+                />
+              </AltriHinto>
+            )}
             <Sciaugurati />
           </Container>
         </>
