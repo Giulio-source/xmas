@@ -13,7 +13,7 @@ import {
   ResultsIds,
   villaggioData,
 } from "../components/Villaggio/villaggioData";
-import { MappaPageWrapper } from "../page-styles/mappa-page.style";
+import { MappaPageWrapper } from "../page-styles/index-page.style";
 import { useRouter } from "next/router";
 
 export function openModal() {

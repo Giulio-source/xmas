@@ -1,8 +1,14 @@
 import styled from "styled-components";
+import { Colors } from "../components/commons/Theme";
 
-export const IndexPageWrapper = styled.div`
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+export const MappaPageWrapper = styled.div`
+  height: 100vh;
+  overflow: hidden;
+  background: ${Colors.lightMint};
+
+  #righe polyline {
+    visibility: hidden;
+    opacity: 1;
+    mix-blend-mode: overlay;
+  }
 `;

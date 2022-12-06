@@ -231,7 +231,7 @@ export const villaggioData = {
 
 export const resultsHandler = {
   r1: "odioso",
-  r2: "scazzato",
+  r2: "triste",
   r3: "ansioso",
   r4: "indifferente",
   r5: "felice",

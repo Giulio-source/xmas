@@ -1,12 +1,6 @@
-import {
-  AnswerButton,
-  PurpleButton,
-  Row,
-  Testo,
-  Titolo,
-} from "../../commons/Theme";
+import { AnswerButton, PurpleButton, Testo, Titolo } from "../../commons/Theme";
+import { Credits } from "../../Credits/Credits";
 import { IllustrazioneElfo } from "../../Icons/ElfoModale";
-import { HintoFullIcon } from "../../Icons/HintoFullIcon";
 import {
   QuestionIds,
   QuestionType,
@@ -36,20 +30,13 @@ export const Modal = ({ id, question, onChange }: ModalProps) => {
       ) : (
         <StyledModalBody>
           <Titolo>Scopri l'elfo che c'è in te!</Titolo>
-          <Testo size={16}>
-            Fai il test e misura il tuo spirito natalizio.
-          </Testo>
+          <Testo size={16}>Fai il test e misura il tuo spirito natalizio</Testo>
           <PurpleButton onClick={() => onChange("q1")}>
             Inizia il test
           </PurpleButton>
           <IllustrazioneElfo />
-          <Testo size={14}>Una sorpresa ti aspetta alla fine del test.</Testo>
-          <Row>
-            <Testo size={11} italic>
-              Con amore da
-            </Testo>
-            <HintoFullIcon width={50} />
-          </Row>
+          <Testo size={14}>Una sorpresa ti aspetta alla fine del test</Testo>
+          <Credits />
         </StyledModalBody>
       )}
     </StyledModal>

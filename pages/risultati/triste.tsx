@@ -35,7 +35,7 @@ export default function ScazzatoPage() {
             <Button
               label="Condividi"
               color="white"
-              onClick={() => handleOnCondividi("cartolina/elfo-scazzato")}
+              onClick={() => handleOnCondividi("cartolina/elfo-triste")}
             />
           </StyledCondividiCTA>
           <Cartolina
