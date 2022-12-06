@@ -32,6 +32,7 @@ export const StyledLucine = styled.div`
     top: 0;
     left: 0;
     width: 100%;
+    height: 130px;
     z-index: 0;
 
     .luce-bianca {
