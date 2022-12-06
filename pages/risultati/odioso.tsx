@@ -6,7 +6,10 @@ import {
   getRandomNames,
   handleOnCondividi,
 } from "../../components/commons/utils";
+import { OdiosoHinto } from "../../components/ElfoHinto/Elfi/Odioso";
+import { ElfoHinto } from "../../components/ElfoHinto/ElfoHinto";
 import { HintoIcon } from "../../components/Icons/HintoIcon";
+import { Neve } from "../../components/Neve/Neve";
 import { Odioso } from "../../components/Odioso/Odioso";
 import { AltriHinto } from "../../components/Sezioni/AltriHinto/AltriHinto";
 import { Hero } from "../../components/Sezioni/Hero/Hero";
@@ -16,13 +19,11 @@ import {
   RisultatoPageWrapper,
   StyledCondividiCTA,
 } from "../../page-styles/risultato-page.style";
-import { Neve } from "../../components/Neve/Neve";
-import { ElfoHinto } from "../../components/ElfoHinto/ElfoHinto";
-import { OdiosoHinto } from "../../components/ElfoHinto/Elfi/Odioso";
 
 export default function OdiosoPage() {
   const [names, setNames] = useState<{ nome: string; cognome: string }[]>();
   const [showAnteprima, setShowAnteprima] = useState(false);
+  const [copiedSuccess, setCopiedSuccess] = useState(false);
 
   useEffect(() => {
     const names = getRandomNames("odioso");
@@ -39,9 +40,13 @@ export default function OdiosoPage() {
         <>
           <StyledCondividiCTA>
             <Button
-              label="Condividi"
+              label={copiedSuccess ? "Link copiato!" : "Condividi"}
               color="white"
-              onClick={() => handleOnCondividi("cartolina/elfo-odioso")}
+              onClick={() =>
+                handleOnCondividi("cartolina/elfo-odioso", () =>
+                  setCopiedSuccess(true)
+                )
+              }
             />
           </StyledCondividiCTA>
           <Cartolina

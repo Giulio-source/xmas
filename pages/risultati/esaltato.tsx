@@ -24,6 +24,7 @@ import {
 export default function EsaltatoPage() {
   const [names, setNames] = useState<{ nome: string; cognome: string }[]>();
   const [showAnteprima, setShowAnteprima] = useState(false);
+  const [copiedSuccess, setCopiedSuccess] = useState(false);
 
   useEffect(() => {
     const names = getRandomNames("esaltato");
@@ -40,9 +41,13 @@ export default function EsaltatoPage() {
         <>
           <StyledCondividiCTA>
             <Button
-              label="Condividi"
+              label={copiedSuccess ? "Link copiato!" : "Condividi"}
               color="white"
-              onClick={() => handleOnCondividi("cartolina/elfo-esaltato")}
+              onClick={() =>
+                handleOnCondividi("cartolina/elfo-esaltato", () =>
+                  setCopiedSuccess(true)
+                )
+              }
             />
           </StyledCondividiCTA>
           <Cartolina

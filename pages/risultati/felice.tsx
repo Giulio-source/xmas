@@ -6,8 +6,12 @@ import {
   getRandomNames,
   handleOnCondividi,
 } from "../../components/commons/utils";
+import { FeliceHinto1 } from "../../components/ElfoHinto/Elfi/FeliceHinto1";
+import { FeliceHinto2 } from "../../components/ElfoHinto/Elfi/FeliceHinto2";
+import { ElfoHinto } from "../../components/ElfoHinto/ElfoHinto";
 import { Felice } from "../../components/Felice/Felice";
 import { HintoIcon } from "../../components/Icons/HintoIcon";
+import { Neve } from "../../components/Neve/Neve";
 import { AltriHinto } from "../../components/Sezioni/AltriHinto/AltriHinto";
 import { Hero } from "../../components/Sezioni/Hero/Hero";
 import { Sciaugurati } from "../../components/Sezioni/Sciaugurati/Sciaugurati";
@@ -16,14 +20,11 @@ import {
   RisultatoPageWrapper,
   StyledCondividiCTA,
 } from "../../page-styles/risultato-page.style";
-import { Neve } from "../../components/Neve/Neve";
-import { ElfoHinto } from "../../components/ElfoHinto/ElfoHinto";
-import { FeliceHinto1 } from "../../components/ElfoHinto/Elfi/FeliceHinto1";
-import { FeliceHinto2 } from "../../components/ElfoHinto/Elfi/FeliceHinto2";
 
 export default function FelicePage() {
   const [names, setNames] = useState<{ nome: string; cognome: string }[]>();
   const [showAnteprima, setShowAnteprima] = useState(false);
+  const [copiedSuccess, setCopiedSuccess] = useState(false);
 
   useEffect(() => {
     const names = getRandomNames("felice");
@@ -40,9 +41,13 @@ export default function FelicePage() {
         <>
           <StyledCondividiCTA>
             <Button
-              label="Condividi"
+              label={copiedSuccess ? "Link copiato!" : "Condividi"}
               color="white"
-              onClick={() => handleOnCondividi("cartolina/elfo-felice")}
+              onClick={() =>
+                handleOnCondividi("cartolina/elfo-felice", () =>
+                  setCopiedSuccess(true)
+                )
+              }
             />
           </StyledCondividiCTA>
           <Cartolina

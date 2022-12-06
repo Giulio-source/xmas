@@ -39,7 +39,7 @@ export const Hero = ({
             </Testo>
             <StyledCtaWrapper>
               <Button
-                label="Condividi auguri personalizzati"
+                label="Condividi i tuoi auguri"
                 type="outline"
                 onClick={onShowAnteprima}
               />

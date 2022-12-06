@@ -6,7 +6,11 @@ import {
   getRandomNames,
   handleOnCondividi,
 } from "../../components/commons/utils";
+import { Scazzato1 } from "../../components/ElfoHinto/Elfi/Scazzato1";
+import { Scazzato2 } from "../../components/ElfoHinto/Elfi/Scazzato2";
+import { ElfoHinto } from "../../components/ElfoHinto/ElfoHinto";
 import { HintoIcon } from "../../components/Icons/HintoIcon";
+import { Neve } from "../../components/Neve/Neve";
 import { Scazzato } from "../../components/Scazzato/Scazzato";
 import { AltriHinto } from "../../components/Sezioni/AltriHinto/AltriHinto";
 import { Hero } from "../../components/Sezioni/Hero/Hero";
@@ -16,14 +20,11 @@ import {
   RisultatoPageWrapper,
   StyledCondividiCTA,
 } from "../../page-styles/risultato-page.style";
-import { Neve } from "../../components/Neve/Neve";
-import { ElfoHinto } from "../../components/ElfoHinto/ElfoHinto";
-import { Scazzato1 } from "../../components/ElfoHinto/Elfi/Scazzato1";
-import { Scazzato2 } from "../../components/ElfoHinto/Elfi/Scazzato2";
 
 export default function ScazzatoPage() {
   const [names, setNames] = useState<{ nome: string; cognome: string }[]>();
   const [showAnteprima, setShowAnteprima] = useState(false);
+  const [copiedSuccess, setCopiedSuccess] = useState(false);
 
   useEffect(() => {
     const names = getRandomNames("scazzato");
@@ -40,9 +41,13 @@ export default function ScazzatoPage() {
         <>
           <StyledCondividiCTA>
             <Button
-              label="Condividi"
+              label={copiedSuccess ? "Link copiato!" : "Condividi"}
               color="white"
-              onClick={() => handleOnCondividi("cartolina/elfo-triste")}
+              onClick={() =>
+                handleOnCondividi("cartolina/elfo-triste", () =>
+                  setCopiedSuccess(true)
+                )
+              }
             />
           </StyledCondividiCTA>
           <Cartolina

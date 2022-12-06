@@ -80,7 +80,7 @@ export function getRandomNames(categoria: keyof typeof risultatiTestHandler) {
   ];
 }
 
-export function handleOnCondividi(pageRoute: string) {
+export function handleOnCondividi(pageRoute: string, onCopied?: () => void) {
   if (navigator.share) {
     navigator
       .share({
@@ -95,8 +95,15 @@ export function handleOnCondividi(pageRoute: string) {
         console.log(err);
       });
   } else {
-    alert("Link copied to clipboard!");
-    navigator.clipboard.writeText(BASE_URL + pageRoute);
+    navigator.clipboard
+      .writeText(BASE_URL + pageRoute)
+      .then(() => {
+        console.log("copied to clipboard");
+        onCopied && onCopied()
+      })
+      .catch((err) => {
+        console.log("not copied to clipboard", err);
+      });
   }
 }
 

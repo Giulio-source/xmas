@@ -6,8 +6,11 @@ import {
   getRandomNames,
   handleOnCondividi,
 } from "../../components/commons/utils";
+import { IndifferenteHinto } from "../../components/ElfoHinto/Elfi/Indifferente";
+import { ElfoHinto } from "../../components/ElfoHinto/ElfoHinto";
 import { HintoIcon } from "../../components/Icons/HintoIcon";
 import { Indifferente } from "../../components/Indifferente/Indifferente";
+import { Neve } from "../../components/Neve/Neve";
 import { AltriHinto } from "../../components/Sezioni/AltriHinto/AltriHinto";
 import { Hero } from "../../components/Sezioni/Hero/Hero";
 import { Sciaugurati } from "../../components/Sezioni/Sciaugurati/Sciaugurati";
@@ -16,13 +19,11 @@ import {
   RisultatoPageWrapper,
   StyledCondividiCTA,
 } from "../../page-styles/risultato-page.style";
-import { Neve } from "../../components/Neve/Neve";
-import { ElfoHinto } from "../../components/ElfoHinto/ElfoHinto";
-import { IndifferenteHinto } from "../../components/ElfoHinto/Elfi/Indifferente";
 
 export default function IndifferentePage() {
   const [names, setNames] = useState<{ nome: string; cognome: string }[]>();
   const [showAnteprima, setShowAnteprima] = useState(false);
+  const [copiedSuccess, setCopiedSuccess] = useState(false);
 
   useEffect(() => {
     const names = getRandomNames("indifferente");
@@ -39,9 +40,13 @@ export default function IndifferentePage() {
         <>
           <StyledCondividiCTA>
             <Button
-              label="Condividi"
+              label={copiedSuccess ? "Link copiato!" : "Condividi"}
               color="white"
-              onClick={() => handleOnCondividi("cartolina/elfo-indifferente")}
+              onClick={() =>
+                handleOnCondividi("cartolina/elfo-indifferente", () =>
+                  setCopiedSuccess(true)
+                )
+              }
             />
           </StyledCondividiCTA>
           <Cartolina
