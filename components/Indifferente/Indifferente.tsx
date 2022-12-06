@@ -81,7 +81,7 @@ export const Indifferente = () => {
           />
         </g>
         <path
-          fill="#FDB9D1"
+          fill="#F8CEDE"
           d="M285.2 121c-10.2-5.2-9.9-11.5-9.9-11.5h-7.8s.4 6.3-10.5 11.5-18.2 9.7-17.8 19.4 10.5 13.8 19.5 17.2c9 3.4 12.7 13.2 12.7 13.2h.2s3.5-9.8 11.9-13.2 17.9-7.5 18.3-17.2-6.4-14.2-16.6-19.4z"
         />
         <g id="fiore_x5F_1_3_">
@@ -196,7 +196,7 @@ export const Indifferente = () => {
         <g id="faccia_cliccabile" onClick={handleOnClick}>
           <g id="orecchio_dex_3_">
             <path
-              fill="#FDB9D1"
+              fill="#F8CEDE"
               d="M244.3 402.5s2.4-26.8 12.3-40a85.5 85.5 0 0 1 17.3-18.9s2.7 18.3-9.3 37.2c-12 18.8-20.3 21.7-20.3 21.7z"
             />
             <path
@@ -211,7 +211,7 @@ export const Indifferente = () => {
           </g>
           <g id="orecchio_dex_2_">
             <path
-              fill="#FDB9D1"
+              fill="#F8CEDE"
               d="M102.5 363.7s12.6 4.4 21.9 21.4 9.3 16.6 12.6 28.1c0 0-19.1-9.4-27.2-24.8-8-15.2-7.3-24.7-7.3-24.7z"
             />
             <path
@@ -240,13 +240,13 @@ export const Indifferente = () => {
             />
           </g>
           <path
-            fill="#FDB9D1"
+            fill="#F8CEDE"
             d="M134.4 359.3c-.3 22-7.3 73.8 26.6 90.7 27.3 10.1 54.2 6.8 70.4-12.5 17.3-22.3 15.6-65.9 13.9-86.2-.7-3.3-39.7.3-55.4 1s-53.5 3.3-55.5 7z"
           />
 
           <g id="facce_1_">
             <path
-              fill="#FDB9D1"
+              fill="#F8CEDE"
               d="M156.5 416.4c5 0 9-4.2 9-9.3 0-5.1-4-9.3-9-9.3s-9 4.2-9 9.3a9 9 0 0 0 9 9.3zM220.9 416.4c5 0 9-4.2 9-9.3 0-5.1-4-9.3-9-9.3s-9 4.2-9 9.3a9 9 0 0 0 9 9.3z"
             />
             <path
@@ -333,7 +333,7 @@ export const Indifferente = () => {
             />
             <path
               id="palpebre"
-              fill="#F3BACF"
+              fill="#F8CEDE"
               d="M141.5 377.2h29.9v6.8h-29.9v-6.8zm68.4 0h29.9v6.8h-29.9v-6.8z"
             />
             <path
