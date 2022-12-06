@@ -74,5 +74,14 @@ export const StyledEsaltato = styled.div`
 
   @media screen and (min-width: 1024px) {
     margin-bottom: 60px;
+
+    .luce-bianca,
+    .luce-gialla,
+    #luci_1,
+    #luci_2 {
+      visibility: hidden;
+      opacity: 0;
+      animation: none;
+    }
   }
 `;

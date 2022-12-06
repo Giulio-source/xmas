@@ -11,6 +11,7 @@ import { EsaltatoHinto2 } from "../../components/ElfoHinto/Elfi/EsaltatoHinto2";
 import { ElfoHinto } from "../../components/ElfoHinto/ElfoHinto";
 import { Esaltato } from "../../components/Esaltato/Esaltato";
 import { HintoIcon } from "../../components/Icons/HintoIcon";
+import { Lucine } from "../../components/Lucine/Lucine";
 import { Neve } from "../../components/Neve/Neve";
 import { AltriHinto } from "../../components/Sezioni/AltriHinto/AltriHinto";
 import { Hero } from "../../components/Sezioni/Hero/Hero";
@@ -67,6 +68,7 @@ export default function EsaltatoPage() {
       ) : (
         <>
           <HintoIcon theme="light" />
+          <Lucine />
           <Trees />
           <Neve />
           <Hero
