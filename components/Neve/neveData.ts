@@ -11,6 +11,12 @@ export const neveOptions: ISourceOptions = {
       random: false,
       straight: false,
     },
+    number: {
+      density: {
+        area: 2000,
+        enable: true,
+      }
+    },
     opacity: {
       value: { min: 0.5, max: 1 },
     },
