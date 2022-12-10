@@ -9,16 +9,16 @@ export const MappaPageWrapper = styled.div`
   #righe polyline {
     visibility: hidden;
     opacity: 0;
-    /* mix-blend-mode: overlay; */
+    /* mix-blend-mode: screen; */
 
     &:nth-child(1) {
-      stroke: red;
+      stroke: ${Colors.red};
     }
     &:nth-child(2) {
-      stroke: blue;
+      stroke: ${Colors.mintGreen};
     }
     &:nth-child(3) {
-      stroke: yellow;
+      stroke: white;
     }
   }
 `;

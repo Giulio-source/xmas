@@ -21,6 +21,7 @@ export function openModal() {
   return gsap.to("#dialog-modal", {
     y: "0%",
     duration: 0.8,
+    ease: "elastic.out(0.6, 0.3)"
   });
 }
 
@@ -142,7 +143,7 @@ export default function Mappa() {
         setQuestion(villaggioData[questionId]);
         prevQuestion.current = questionId;
         openModal();
-      }, 1500);
+      }, 1200);
     }
   }, [questionId]);
 

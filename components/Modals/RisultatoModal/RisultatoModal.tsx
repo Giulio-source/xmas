@@ -1,3 +1,4 @@
+import Head from "next/head";
 import { MouseEvent, useRef, useState } from "react";
 import { Button } from "../../Button/Button";
 import { SmallDivider } from "../../commons/Divider";
@@ -41,6 +42,12 @@ export const RisultatoModal = ({
         !modalRef.current?.contains(target as Node) && resetDataAndClose()
       }
     >
+      <Head>
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1"
+        />
+      </Head>
       <StyledRisultatoModal open={open} ref={modalRef} tabIndex={open ? 0 : -1}>
         <StyledCloseIcon onClick={resetDataAndClose}>
           <CloseIcon />
