@@ -32,9 +32,9 @@ export const Villaggio = () => {
         id="righe"
         fill="none"
         stroke="#fff"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="1.13"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth="1.13"
       >
         <g id="q3-q7">
           <polyline points="211.94 186.95 197.77 195.15 146.82 165.81" />
@@ -175,9 +175,9 @@ export const Villaggio = () => {
           cy="159.18"
           fill="#c1d1d6"
           stroke="#c1d1d6"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width=".11"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth=".11"
           opacity=".5"
           rx="3.21"
           ry=".1"
@@ -186,16 +186,16 @@ export const Villaggio = () => {
           <path
             fill="none"
             stroke="#009289"
-            stroke-miterlimit="10"
-            stroke-width=".58"
+            strokeMiterlimit="10"
+            strokeWidth=".58"
             d="M283.68 149.86s2.84 1.18 2.61 5.97"
           />
           <path
             fill="none"
             stroke="#92f4ca"
-            stroke-dasharray="0 1.29"
-            stroke-miterlimit="10"
-            stroke-width=".58"
+            strokeDasharray="0 1.29"
+            strokeMiterlimit="10"
+            strokeWidth=".58"
             d="M283.68 149.85s2.84 1.18 2.61 5.97"
           />
           <path
@@ -208,16 +208,16 @@ export const Villaggio = () => {
           <path
             fill="none"
             stroke="#009289"
-            stroke-miterlimit="10"
-            stroke-width=".58"
+            strokeMiterlimit="10"
+            strokeWidth=".58"
             d="M275.45 147.1s1.56 4.02 4.18 3.85"
           />
           <path
             fill="none"
             stroke="#92f4ca"
-            stroke-dasharray="0 1.29"
-            stroke-miterlimit="10"
-            stroke-width=".58"
+            strokeDasharray="0 1.29"
+            strokeMiterlimit="10"
+            strokeWidth=".58"
             d="M275.45 147.12s1.56 4.02 4.18 3.85"
           />
           <path
@@ -225,7 +225,7 @@ export const Villaggio = () => {
             d="m275.73 147.02-.51.23s-.46-.51-.34-.56.32.21.32.21-.26-.45-.13-.5.33.38.33.38-.09-.28.07-.34.26.58.26.58Z"
           />
         </g>
-        <g id="gamba_dex" stroke-miterlimit="10">
+        <g id="gamba_dex" strokeMiterlimit="10">
           <line
             x1="279.96"
             x2="279.96"
@@ -233,7 +233,7 @@ export const Villaggio = () => {
             y2="158.01"
             fill="none"
             stroke="#009289"
-            stroke-width=".58"
+            strokeWidth=".58"
           />
           <line
             x1="279.95"
@@ -242,18 +242,18 @@ export const Villaggio = () => {
             y2="158"
             fill="none"
             stroke="#92f4ca"
-            stroke-dasharray="0 1.29"
-            stroke-width=".58"
+            strokeDasharray="0 1.29"
+            strokeWidth=".58"
           />
           <path
             id="Scarpa_dex"
             fill="#092860"
             stroke="#092860"
-            stroke-width=".12"
+            strokeWidth=".12"
             d="m280.15 158.01-.46-.03s-.07.61-.36.64-.43-.08-.51-.32-.06-.43-.2-.43c-.18 0-.18.31-.11.57s.32.57.71.57.61-.39.61-.39l.03.39h.29v-1Z"
           />
         </g>
-        <g id="gamba_six" stroke-miterlimit="10">
+        <g id="gamba_six" strokeMiterlimit="10">
           <line
             x1="283.66"
             x2="283.66"
@@ -261,7 +261,7 @@ export const Villaggio = () => {
             y2="158.12"
             fill="none"
             stroke="#009289"
-            stroke-width=".58"
+            strokeWidth=".58"
           />
           <line
             x1="283.66"
@@ -270,14 +270,14 @@ export const Villaggio = () => {
             y2="158.1"
             fill="none"
             stroke="#92f4ca"
-            stroke-dasharray="0 1.29"
-            stroke-width=".58"
+            strokeDasharray="0 1.29"
+            strokeWidth=".58"
           />
           <path
             id="Scarpa_six"
             fill="#092860"
             stroke="#092860"
-            stroke-width=".12"
+            strokeWidth=".12"
             d="m283.47 158.08.46-.03s.09.54.36.64c.23.09.41-.08.47-.32.08-.3.06-.46.2-.46.18 0 .22.34.14.61s-.32.57-.71.57-.61-.39-.61-.39l-.03.39h-.29v-1Z"
           />
         </g>
@@ -289,8 +289,8 @@ export const Villaggio = () => {
           <polygon
             fill="#092860"
             stroke="#092860"
-            stroke-miterlimit="10"
-            stroke-width=".06"
+            strokeMiterlimit="10"
+            strokeWidth=".06"
             points="284 153.59 284 154.23 279.62 154.35 279.6 153.73 284 153.59"
           />
           <path
@@ -328,9 +328,9 @@ export const Villaggio = () => {
             y2="146.09"
             fill="none"
             stroke="#d390b4"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width=".18"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth=".18"
           />
         </g>
         <g id="orecchio_dex-2">
@@ -345,27 +345,27 @@ export const Villaggio = () => {
             y2="146.9"
             fill="none"
             stroke="#d390b4"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width=".18"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth=".18"
           />
         </g>
         <g id="facce">
           <path
             fill="none"
             stroke="#111428"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width=".18"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth=".18"
             d="M283.46 145.82s.27.11.34.22M279.4 145.99s.26-.12.4-.1"
           />
           <path
             id="Bocca"
             fill="none"
             stroke="#111428"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width=".18"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth=".18"
             d="M281.17 148.8s.18.24.38.23.2-.31.2-.31"
           />
           <circle cx="279.63" cy="146.93" r=".53" fill="#fff" />
@@ -392,27 +392,27 @@ export const Villaggio = () => {
             id="Guancia"
             fill="#ff335a"
             stroke="#ff335a"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width=".12"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth=".12"
             d="M283.9 147.9c-.37-.08-.55.33-.51.43s.07.37.29.38.47-.13.47-.38-.02-.38-.25-.43Z"
           />
           <path
             id="Guancia-2"
             fill="#ff335a"
             stroke="#ff335a"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width=".12"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth=".12"
             d="M279.44 148.08c.14.02.35.06.28.45s-.24.3-.38.3-.24-.22-.26-.37.19-.4.36-.38Z"
           />
           <path
             id="Naso"
             fill="none"
             stroke="#111428"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width=".18"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth=".18"
             d="M281.27 147.41s.03.33.18.33.18-.33.18-.39"
           />
         </g>
@@ -425,9 +425,9 @@ export const Villaggio = () => {
           cy="125.68"
           fill="#c1d1d6"
           stroke="#c1d1d6"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width=".18"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth=".18"
           opacity=".5"
           rx="3.84"
           ry=".2"
@@ -437,16 +437,16 @@ export const Villaggio = () => {
             <path
               fill="none"
               stroke="#009488"
-              stroke-miterlimit="10"
-              stroke-width=".59"
+              strokeMiterlimit="10"
+              strokeWidth=".59"
               d="M347.99 122.19c.08-.63.16-2.1-.58-3.7-.6-1.3-1.46-2.1-1.96-2.49"
             />
             <path
               fill="none"
               stroke="#6cf7c6"
-              stroke-dasharray="0 1.29"
-              stroke-miterlimit="10"
-              stroke-width=".59"
+              strokeDasharray="0 1.29"
+              strokeMiterlimit="10"
+              strokeWidth=".59"
               d="M347.99 122.19c.08-.63.16-2.1-.58-3.7-.6-1.3-1.46-2.1-1.96-2.49"
             />
             <path
@@ -466,17 +466,17 @@ export const Villaggio = () => {
             <path
               fill="none"
               stroke="#009488"
-              stroke-miterlimit="10"
-              stroke-width=".59"
+              strokeMiterlimit="10"
+              strokeWidth=".59"
               d="M341.6 116.93s-2.42.72-2.25 5.31"
             />
             <path fill="none" d="M341.6 116.93s-2.42.72-2.25 5.31" />
             <path
               fill="none"
               stroke="#6cf7c6"
-              stroke-dasharray="0 1.29"
-              stroke-miterlimit="10"
-              stroke-width=".59"
+              strokeDasharray="0 1.29"
+              strokeMiterlimit="10"
+              strokeWidth=".59"
               d="M341.6 116.93s-2.42.72-2.25 5.31"
             />
             <path fill="none" d="M341.6 116.93s1.89 2.79-2.27 5.31" />
@@ -488,26 +488,26 @@ export const Villaggio = () => {
           <g
             id="gamba_dex-2"
             fill="none"
-            stroke-miterlimit="10"
-            stroke-width=".59"
+            strokeMiterlimit="10"
+            strokeWidth=".59"
           >
             <path stroke="#009488" d="M341.62 121.5v2.89" />
             <path
               stroke="#6cf7c6"
-              stroke-dasharray="0 1.29"
+              strokeDasharray="0 1.29"
               d="M341.61 121.48v2.89"
             />
           </g>
           <g
             id="gamba_six-2"
             fill="none"
-            stroke-miterlimit="10"
-            stroke-width=".59"
+            strokeMiterlimit="10"
+            strokeWidth=".59"
           >
             <path stroke="#009488" d="M345.34 121.6v2.9" />
             <path
               stroke="#6cf7c6"
-              stroke-dasharray="0 1.29"
+              strokeDasharray="0 1.29"
               d="M345.34 121.59v2.89"
             />
           </g>
@@ -519,8 +519,8 @@ export const Villaggio = () => {
             <path
               fill="#002764"
               stroke="#002764"
-              stroke-miterlimit="10"
-              stroke-width=".06"
+              strokeMiterlimit="10"
+              strokeWidth=".06"
               d="M345.68 119.94v.65l-4.4.12-.02-.63 4.42-.14Z"
             />
             <path
@@ -555,9 +555,9 @@ export const Villaggio = () => {
               <path
                 fill="none"
                 stroke="#de8bb5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width=".18"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth=".18"
                 d="m346.58 113.62.78-1.22"
               />
             </g>
@@ -569,9 +569,9 @@ export const Villaggio = () => {
               <path
                 fill="none"
                 stroke="#de8bb5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width=".18"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth=".18"
                 d="m339.95 114.22-1.08-1.01"
               />
             </g>
@@ -580,9 +580,9 @@ export const Villaggio = () => {
                 id="sopracciglia-2"
                 fill="none"
                 stroke="#111428"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width=".18"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth=".18"
               >
                 <path d="M341.06 112.3s.15-.22.4-.05M344.88 112.14s.24-.15.41.04" />
               </g>
@@ -590,9 +590,9 @@ export const Villaggio = () => {
                 id="bocca_2"
                 fill="none"
                 stroke="#11142a"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width=".18"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth=".18"
                 d="M343.06 114.83c-.21.04-.28.11-.28.19 0 .06.09.12.26.16-.26.08-.28.16-.27.23.02.06.08.07.33.05"
               />
               <path
@@ -603,45 +603,45 @@ export const Villaggio = () => {
                 id="Guancia-3"
                 fill="#f05"
                 stroke="#f05"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width=".12"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth=".12"
                 d="M345.59 114.21c-.37-.08-.55.33-.51.43s.07.38.29.38c.23 0 .47-.14.47-.38s-.02-.38-.25-.43Z"
               />
               <path
                 id="Guancia-4"
                 fill="#f05"
                 stroke="#f05"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width=".12"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth=".12"
                 d="M341.1 114.39c.14.02.35.06.28.45-.07.41-.24.3-.38.3s-.24-.22-.26-.37c-.02-.15.19-.41.36-.38h0Z"
               />
               <path
                 id="Naso-2"
                 fill="none"
                 stroke="#11142a"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width=".18"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth=".18"
                 d="M342.94 113.72s.03.33.18.33.18-.33.18-.39"
               />
               <path
                 id="occhio-dex-2"
                 fill="none"
                 stroke="#11142a"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width=".18"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth=".18"
                 d="M340.97 113.38s.32-.35.72 0"
               />
               <path
                 id="occhio-six-2"
                 fill="none"
                 stroke="#11142a"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width=".18"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth=".18"
                 d="M344.73 113.4s.32-.35.72 0"
               />
             </g>
@@ -651,14 +651,14 @@ export const Villaggio = () => {
           id="Scarpa_dex-2"
           fill="#002764"
           stroke="#002764"
-          stroke-width=".12"
+          strokeWidth=".12"
           d="m341.82 124.39-.46-.03s-.07.61-.36.65-.43-.08-.51-.32c-.08-.24-.06-.43-.21-.43-.18 0-.18.31-.11.58.07.25.32.58.72.58s.61-.39.61-.39l.03.39h.29v-1.02Z"
         />
         <path
           id="Scarpa_six-2"
           fill="#002764"
           stroke="#002764"
-          stroke-width=".12"
+          strokeWidth=".12"
           d="m345.15 124.46.46-.03s.09.54.36.65c.24.09.42-.08.48-.32.08-.31.06-.46.21-.46.18 0 .22.35.14.61-.07.25-.32.58-.72.58s-.61-.39-.61-.39l-.03.39h-.29v-1.02Z"
         />
         <path
@@ -676,25 +676,25 @@ export const Villaggio = () => {
         <circle cx="403.38" cy="84.46" r="9.23" fill="#befcdf" />
         <path fill="none" d="M384.82 70.85h38.25v44.65h-38.25V70.85Z" />
         <g id="elfo-intero">
-          <g id="gamba_dex-3" stroke-miterlimit="10">
+          <g id="gamba_dex-3" strokeMiterlimit="10">
             <path
               fill="none"
               stroke="#009488"
-              stroke-width=".57"
+              strokeWidth=".57"
               d="M401.1 90.27v2.81"
             />
             <path
               fill="none"
               stroke="#6cf7c6"
-              stroke-dasharray="0 1.21"
-              stroke-width=".55"
+              strokeDasharray="0 1.21"
+              strokeWidth=".55"
               d="M401.1 90.26v2.81"
             />
             <path
               id="Scarpa_dex-3"
               fill="#002764"
               stroke="#002764"
-              stroke-width=".11"
+              strokeWidth=".11"
               d="m401.3 93.09-.45-.03s-.07.59-.35.63-.42-.08-.5-.31c-.07-.23-.06-.42-.2-.42-.17 0-.18.3-.1.56.07.25.31.56.7.56s.59-.38.59-.38l.03.38h.29v-.99Z"
             />
           </g>
@@ -702,16 +702,16 @@ export const Villaggio = () => {
             <path
               fill="none"
               stroke="#009488"
-              stroke-miterlimit="10"
-              stroke-width=".57"
+              strokeMiterlimit="10"
+              strokeWidth=".57"
               d="M404.72 85.2s2.77 1.15 2.55 5.83"
             />
             <path
               fill="none"
               stroke="#6cf7c6"
-              stroke-dasharray="0 1.21"
-              stroke-miterlimit="10"
-              stroke-width=".55"
+              strokeDasharray="0 1.21"
+              strokeMiterlimit="10"
+              strokeWidth=".55"
               d="M404.71 85.19s2.77 1.15 2.55 5.83"
             />
             <path
@@ -724,16 +724,16 @@ export const Villaggio = () => {
             <path
               fill="none"
               stroke="#009488"
-              stroke-miterlimit="10"
-              stroke-width=".57"
+              strokeMiterlimit="10"
+              strokeWidth=".57"
               d="M398.87 90.79s-.25-4.21 2.16-5.12"
             />
             <path
               fill="none"
               stroke="#6cf7c6"
-              stroke-dasharray="0 1.21"
-              stroke-miterlimit="10"
-              stroke-width=".55"
+              strokeDasharray="0 1.21"
+              strokeMiterlimit="10"
+              strokeWidth=".55"
               d="M398.86 90.78s-.25-4.21 2.16-5.12"
             />
             <path
@@ -741,25 +741,25 @@ export const Villaggio = () => {
               d="M399.14 90.76h-.55s-.2.64-.07.64.2-.32.2-.32-.05.51.09.5.14-.47.14-.47.03.29.19.27c.16-.02 0-.62 0-.62Z"
             />
           </g>
-          <g id="gamba_six-3" stroke-miterlimit="10">
+          <g id="gamba_six-3" strokeMiterlimit="10">
             <path
               fill="none"
               stroke="#009488"
-              stroke-width=".57"
+              strokeWidth=".57"
               d="M404.73 90.38v2.81"
             />
             <path
               fill="none"
               stroke="#6cf7c6"
-              stroke-dasharray="0 1.21"
-              stroke-width=".55"
+              strokeDasharray="0 1.21"
+              strokeWidth=".55"
               d="M404.72 90.36v2.81"
             />
             <path
               id="Scarpa_six-3"
               fill="#002764"
               stroke="#002764"
-              stroke-width=".11"
+              strokeWidth=".11"
               d="m404.54 93.16.45-.03s.09.53.35.63c.23.09.41-.07.46-.31.07-.3.06-.45.2-.45.17 0 .21.34.14.59-.07.25-.31.56-.7.56s-.59-.38-.59-.38l-.03.38h-.29v-.99Z"
             />
           </g>
@@ -771,8 +771,8 @@ export const Villaggio = () => {
             <path
               fill="#002764"
               stroke="#002764"
-              stroke-miterlimit="10"
-              stroke-width=".06"
+              strokeMiterlimit="10"
+              strokeWidth=".06"
               d="M405.05 88.76v.63l-4.28.11-.02-.61 4.3-.14Z"
             />
             <path d="M402.87 87.82c-.26-.06-.38.23-.36.3.02.07.05.26.21.27.16 0 .33-.1.33-.27s-.01-.26-.18-.3Zm0-1.03c-.26-.06-.38.23-.36.3.02.07.05.26.21.27s.33-.1.33-.27-.01-.26-.18-.3Z" />
@@ -796,18 +796,18 @@ export const Villaggio = () => {
             id="sopracciglio-six-1"
             fill="none"
             stroke="#11142a"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width=".17"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth=".17"
             d="M404.22 80.77s.15-.2.39 0"
           />
           <path
             id="sopracciglio-dex-1"
             fill="none"
             stroke="#11142a"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width=".17"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth=".17"
             d="M401.03 80.83s-.22-.17-.39.03"
           />
           <g id="orecchio_dex-5">
@@ -818,9 +818,9 @@ export const Villaggio = () => {
             <path
               fill="none"
               stroke="#de8bb5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width=".17"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth=".17"
               d="m405.92 82.62.75-1.19"
             />
           </g>
@@ -832,9 +832,9 @@ export const Villaggio = () => {
             <path
               fill="none"
               stroke="#de8bb5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width=".17"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth=".17"
               d="m399.48 83.2-1.05-.98"
             />
           </g>
@@ -887,27 +887,27 @@ export const Villaggio = () => {
               id="Guancia-5"
               fill="#f05"
               stroke="#f05"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width=".11"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth=".11"
               d="M404.96 83.19c-.36-.08-.53.32-.5.42s.07.37.29.37c.22 0 .46-.13.46-.37s-.02-.37-.25-.42Z"
             />
             <path
               id="Guancia-6"
               fill="#f05"
               stroke="#f05"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width=".11"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth=".11"
               d="M400.6 83.38c.14.02.34.06.27.44-.07.39-.23.29-.37.29s-.23-.21-.25-.36c-.02-.15.19-.39.35-.37h0Z"
             />
             <path
               id="Naso-3"
               fill="none"
               stroke="#11142a"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width=".17"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth=".17"
               d="M402.39 82.72s.03.32.17.32.17-.32.17-.38"
             />
           </g>
@@ -915,9 +915,9 @@ export const Villaggio = () => {
             id="bocca"
             fill="none"
             stroke="#11142a"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width=".17"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth=".17"
             d="M402.78 83.99h-.27"
           />
         </g>
@@ -936,9 +936,9 @@ export const Villaggio = () => {
           cy="60.8"
           fill="#c1d1d6"
           stroke="#c1d1d6"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width=".18"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth=".18"
           opacity=".5"
           rx="3.84"
           ry=".2"
@@ -948,16 +948,16 @@ export const Villaggio = () => {
             <path
               fill="none"
               stroke="#009488"
-              stroke-miterlimit="10"
-              stroke-width=".59"
+              strokeMiterlimit="10"
+              strokeWidth=".59"
               d="M358.82 57.31c.08-.63.16-2.1-.58-3.7-.6-1.3-1.46-2.1-1.96-2.49"
             />
             <path
               fill="none"
               stroke="#6cf7c6"
-              stroke-dasharray="0 1.29"
-              stroke-miterlimit="10"
-              stroke-width=".59"
+              strokeDasharray="0 1.29"
+              strokeMiterlimit="10"
+              strokeWidth=".59"
               d="M358.82 57.31c.08-.63.16-2.1-.58-3.7-.6-1.3-1.46-2.1-1.96-2.49"
             />
             <path
@@ -973,17 +973,17 @@ export const Villaggio = () => {
             <path
               fill="none"
               stroke="#009488"
-              stroke-miterlimit="10"
-              stroke-width=".59"
+              strokeMiterlimit="10"
+              strokeWidth=".59"
               d="M352.42 52.06s-2.42.72-2.25 5.31"
             />
             <path fill="none" d="M352.42 52.06s-2.42.72-2.25 5.31" />
             <path
               fill="none"
               stroke="#6cf7c6"
-              stroke-dasharray="0 1.29"
-              stroke-miterlimit="10"
-              stroke-width=".59"
+              strokeDasharray="0 1.29"
+              strokeMiterlimit="10"
+              strokeWidth=".59"
               d="M352.42 52.06s-2.42.72-2.25 5.31"
             />
             <path fill="none" d="M352.42 52.06s1.89 2.79-2.27 5.31" />
@@ -995,26 +995,26 @@ export const Villaggio = () => {
           <g
             id="gamba_dex-4"
             fill="none"
-            stroke-miterlimit="10"
-            stroke-width=".59"
+            strokeMiterlimit="10"
+            strokeWidth=".59"
           >
             <path stroke="#009488" d="M352.44 56.63v2.89" />
             <path
               stroke="#6cf7c6"
-              stroke-dasharray="0 1.29"
+              strokeDasharray="0 1.29"
               d="M352.43 56.61v2.89"
             />
           </g>
           <g
             id="gamba_six-4"
             fill="none"
-            stroke-miterlimit="10"
-            stroke-width=".59"
+            strokeMiterlimit="10"
+            strokeWidth=".59"
           >
             <path stroke="#009488" d="M356.17 56.73v2.9" />
             <path
               stroke="#6cf7c6"
-              stroke-dasharray="0 1.29"
+              strokeDasharray="0 1.29"
               d="M356.16 56.71v2.89"
             />
           </g>
@@ -1026,8 +1026,8 @@ export const Villaggio = () => {
             <path
               fill="#002764"
               stroke="#002764"
-              stroke-miterlimit="10"
-              stroke-width=".06"
+              strokeMiterlimit="10"
+              strokeWidth=".06"
               d="M356.5 55.06v.65l-4.4.12-.02-.63 4.42-.14Z"
             />
             <path
@@ -1044,9 +1044,9 @@ export const Villaggio = () => {
               <path
                 fill="none"
                 stroke="#de8bb5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width=".17"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth=".17"
                 d="m357.39 48.61.77-1.21"
               />
             </g>
@@ -1058,9 +1058,9 @@ export const Villaggio = () => {
               <path
                 fill="none"
                 stroke="#de8bb5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width=".17"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth=".17"
                 d="m350.81 49.21-1.07-1"
               />
             </g>
@@ -1091,44 +1091,44 @@ export const Villaggio = () => {
                 id="Naso-4"
                 fill="none"
                 stroke="#11142a"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width=".17"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth=".17"
                 d="M353.78 48.72s.03.33.17.33.17-.33.17-.38"
               />
               <path
                 fill="none"
                 stroke="#11142a"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width=".17"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth=".17"
                 d="M351.82 48.37s.32-.35.72 0m3.01.01s.32-.35.72 0"
               />
               <path
                 id="guancia"
                 fill="#fd335a"
                 stroke="#fd335a"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width=".12"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth=".12"
                 d="M356.5 49.22c-.37-.08-.55.34-.52.44.03.1.07.38.3.38s.47-.14.47-.38-.02-.39-.25-.44h0Z"
               />
               <path
                 id="guancia-2"
                 fill="#fd335a"
                 stroke="#fd335a"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width=".12"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth=".12"
                 d="M351.95 49.4c.15.02.36.06.29.46-.07.41-.24.3-.39.3s-.24-.22-.26-.37c-.02-.16.2-.41.37-.39Z"
               />
               <path
                 id="bocca-2"
                 fill="none"
                 stroke="#111428"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width=".23"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth=".23"
                 d="M353.71 50.14s.18.24.39.23"
               />
               <circle cx="352.15" cy="48.24" r=".54" fill="#fff" />
@@ -1156,18 +1156,18 @@ export const Villaggio = () => {
                 id="sopracciglio_six"
                 fill="none"
                 stroke="#11142a"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width=".17"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth=".17"
                 d="M352.25 47.03s-.24-.24-.41.07"
               />
               <path
                 id="sopracciglio_dex"
                 fill="none"
                 stroke="#11142a"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width=".17"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth=".17"
                 d="M355.74 47.34s.24-.23.41.07"
               />
             </g>
@@ -1177,14 +1177,14 @@ export const Villaggio = () => {
           id="Scarpa_dex-4"
           fill="#002764"
           stroke="#002764"
-          stroke-width=".12"
+          strokeWidth=".12"
           d="m352.64 59.52-.46-.03s-.07.61-.36.65-.43-.08-.51-.32c-.08-.24-.06-.43-.21-.43-.18 0-.18.31-.11.58.07.25.32.58.72.58s.61-.39.61-.39l.03.39h.29v-1.02Z"
         />
         <path
           id="Scarpa_six-4"
           fill="#002764"
           stroke="#002764"
-          stroke-width=".12"
+          strokeWidth=".12"
           d="m355.97 59.59.46-.03s.09.54.36.65c.24.09.42-.08.48-.32.08-.31.06-.46.21-.46.18 0 .22.35.14.61-.07.25-.32.58-.72.58s-.61-.39-.61-.39l-.03.39h-.29V59.6Z"
         />
       </g>
@@ -1197,55 +1197,55 @@ export const Villaggio = () => {
           cy="29.26"
           fill="#c1d1d6"
           stroke="#c1d1d6"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width=".18"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth=".18"
           opacity=".5"
           rx="3.97"
           ry=".21"
         />
         <g id="elfo-intero-2">
-          <g id="gamba_dex-5" stroke-miterlimit="10">
+          <g id="gamba_dex-5" strokeMiterlimit="10">
             <path
               fill="none"
               stroke="#009488"
-              stroke-width=".61"
+              strokeWidth=".61"
               d="M277.54 25.13v3"
             />
             <path
               fill="none"
               stroke="#6cf7c6"
-              stroke-dasharray="0 1.29"
-              stroke-width=".59"
+              strokeDasharray="0 1.29"
+              strokeWidth=".59"
               d="M277.54 25.12v2.99"
             />
             <path
               id="Scarpa_dex-5"
               fill="#002764"
               stroke="#002764"
-              stroke-width=".12"
+              strokeWidth=".12"
               d="m277.75 28.13-.48-.03s-.07.63-.37.67-.45-.09-.53-.33c-.08-.24-.06-.44-.21-.44-.18 0-.19.32-.11.6.07.26.33.6.74.6s.63-.41.63-.41l.03.41h.3v-1.05Z"
             />
           </g>
-          <g id="gamba_six-5" stroke-miterlimit="10">
+          <g id="gamba_six-5" strokeMiterlimit="10">
             <path
               fill="none"
               stroke="#009488"
-              stroke-width=".61"
+              strokeWidth=".61"
               d="M281.4 25.24v2.99"
             />
             <path
               fill="none"
               stroke="#6cf7c6"
-              stroke-dasharray="0 1.29"
-              stroke-width=".59"
+              strokeDasharray="0 1.29"
+              strokeWidth=".59"
               d="M281.39 25.23v2.99"
             />
             <path
               id="Scarpa_six-5"
               fill="#002764"
               stroke="#002764"
-              stroke-width=".12"
+              strokeWidth=".12"
               d="m281.2 28.2.48-.03s.09.56.37.67c.24.09.43-.08.49-.33.08-.32.06-.48.21-.48.18 0 .22.36.15.63-.07.26-.33.6-.74.6s-.63-.41-.63-.41l-.03.41h-.3v-1.05Z"
             />
           </g>
@@ -1257,8 +1257,8 @@ export const Villaggio = () => {
             <path
               fill="#002764"
               stroke="#002764"
-              stroke-miterlimit="10"
-              stroke-width=".06"
+              strokeMiterlimit="10"
+              strokeWidth=".06"
               d="M281.75 23.52v.67l-4.55.12-.02-.64 4.58-.15Z"
             />
             <path d="M279.42 22.52c-.27-.06-.41.25-.38.32.02.08.05.28.22.29.17 0 .35-.1.35-.29s-.01-.28-.19-.32Zm0-1.1c-.27-.06-.41.25-.38.32.02.08.05.28.22.29s.35-.1.35-.29-.01-.28-.19-.32Z" />
@@ -1282,18 +1282,18 @@ export const Villaggio = () => {
             id="sopracciglio-dex-2"
             fill="none"
             stroke="#111428"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width=".18"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth=".18"
             d="M277.5 15.55s-.18.13-.41.04"
           />
           <path
             id="sopracciglio-six-1-2"
             fill="none"
             stroke="#11142a"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width=".18"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth=".18"
             d="M280.86 15.01s.16-.21.41 0"
           />
           <g id="orecchio_dex-9">
@@ -1304,9 +1304,9 @@ export const Villaggio = () => {
             <path
               fill="none"
               stroke="#de8bb5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width=".18"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth=".18"
               d="m282.68 16.98.8-1.26"
             />
           </g>
@@ -1318,9 +1318,9 @@ export const Villaggio = () => {
             <path
               fill="none"
               stroke="#de8bb5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width=".18"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth=".18"
               d="m275.82 17.6-1.12-1.05"
             />
           </g>
@@ -1373,27 +1373,27 @@ export const Villaggio = () => {
               id="Guancia-7"
               fill="#f05"
               stroke="#f05"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width=".12"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth=".12"
               d="M281.65 17.59c-.38-.09-.57.34-.53.45s.07.39.3.4c.24 0 .49-.14.49-.4s-.02-.4-.26-.45Z"
             />
             <path
               id="Guancia-8"
               fill="#f05"
               stroke="#f05"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width=".12"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth=".12"
               d="M277.01 17.79c.15.02.36.06.29.47-.07.42-.25.31-.4.31s-.25-.22-.27-.38c-.02-.16.2-.42.38-.4h0Z"
             />
             <path
               id="Naso-5"
               fill="none"
               stroke="#11142a"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width=".18"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth=".18"
               d="M278.91 17.09s.03.34.18.34.18-.34.18-.4"
             />
           </g>
@@ -1401,25 +1401,25 @@ export const Villaggio = () => {
             id="bocca-3"
             fill="none"
             stroke="#11142a"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width=".18"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth=".18"
             d="M279.33 18.44h-.29"
           />
           <g id="braccio-six-conserto">
             <path
               fill="none"
               stroke="#009488"
-              stroke-miterlimit="10"
-              stroke-width=".61"
+              strokeMiterlimit="10"
+              strokeWidth=".61"
               d="M277.73 22.7c3.19.27 4.46.16 4.92-.33.14-.15.21-.36.15-.57-.13-.42-.52-.71-.95-.71"
             />
             <path
               fill="none"
               stroke="#6cf7c6"
-              stroke-dasharray="0 1.29"
-              stroke-miterlimit="10"
-              stroke-width=".59"
+              strokeDasharray="0 1.29"
+              strokeMiterlimit="10"
+              strokeWidth=".59"
               d="M277.73 22.7c3.19.27 4.46.16 4.92-.33.14-.15.21-.36.15-.57-.13-.42-.52-.71-.95-.71"
             />
             <path
@@ -1432,16 +1432,16 @@ export const Villaggio = () => {
             <path
               fill="none"
               stroke="#009488"
-              stroke-miterlimit="10"
-              stroke-width=".61"
+              strokeMiterlimit="10"
+              strokeWidth=".61"
               d="M281.17 22.88c-3.19.27-4.46.16-4.92-.33-.15-.15-.2-.36-.15-.57.07-.24.28-.74 1.08-.74"
             />
             <path
               fill="none"
               stroke="#6cf7c6"
-              stroke-dasharray="0 1.29"
-              stroke-miterlimit="10"
-              stroke-width=".59"
+              strokeDasharray="0 1.29"
+              strokeMiterlimit="10"
+              strokeWidth=".59"
               d="M281.17 22.88c-3.19.27-4.46.16-4.92-.33-.15-.15-.2-.36-.15-.57.07-.24.28-.74 1.08-.74"
             />
             <path
@@ -1461,55 +1461,55 @@ export const Villaggio = () => {
           cy="60.93"
           fill="#c1d1d6"
           stroke="#c1d1d6"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width=".18"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth=".18"
           opacity=".5"
           rx="3.97"
           ry=".21"
         />
         <g id="elfo-intero-3">
-          <g id="gamba_dex-6" stroke-miterlimit="10">
+          <g id="gamba_dex-6" strokeMiterlimit="10">
             <path
               fill="none"
               stroke="#009488"
-              stroke-width=".61"
+              strokeWidth=".61"
               d="M450.76 56.8v3"
             />
             <path
               fill="none"
               stroke="#6cf7c6"
-              stroke-dasharray="0 1.29"
-              stroke-width=".59"
+              strokeDasharray="0 1.29"
+              strokeWidth=".59"
               d="M450.75 56.79v2.99"
             />
             <path
               id="Scarpa_dex-6"
               fill="#002764"
               stroke="#002764"
-              stroke-width=".12"
+              strokeWidth=".12"
               d="m450.96 59.8-.48-.03s-.07.63-.37.67-.45-.09-.53-.33c-.08-.24-.06-.44-.21-.44-.18 0-.19.32-.11.6.07.26.33.6.74.6s.63-.41.63-.41l.03.41h.3v-1.05Z"
             />
           </g>
-          <g id="gamba_six-6" stroke-miterlimit="10">
+          <g id="gamba_six-6" strokeMiterlimit="10">
             <path
               fill="none"
               stroke="#009488"
-              stroke-width=".61"
+              strokeWidth=".61"
               d="M454.62 56.91v2.99"
             />
             <path
               fill="none"
               stroke="#6cf7c6"
-              stroke-dasharray="0 1.29"
-              stroke-width=".59"
+              strokeDasharray="0 1.29"
+              strokeWidth=".59"
               d="M454.61 56.9v2.99"
             />
             <path
               id="Scarpa_six-6"
               fill="#002764"
               stroke="#002764"
-              stroke-width=".12"
+              strokeWidth=".12"
               d="m454.41 59.87.48-.03s.09.56.37.67c.24.09.43-.08.49-.33.08-.32.06-.48.21-.48.18 0 .22.36.15.63-.07.26-.33.6-.74.6s-.63-.41-.63-.41l-.03.41h-.3v-1.05Z"
             />
           </g>
@@ -1521,8 +1521,8 @@ export const Villaggio = () => {
             <path
               fill="#002764"
               stroke="#002764"
-              stroke-miterlimit="10"
-              stroke-width=".06"
+              strokeMiterlimit="10"
+              strokeWidth=".06"
               d="M454.96 55.19v.67l-4.55.12-.02-.64 4.58-.15Z"
             />
             <path d="M452.64 54.19c-.27-.06-.41.25-.38.32.02.08.05.28.22.29.17 0 .35-.1.35-.29s-.01-.28-.19-.32Zm0-1.1c-.27-.06-.41.25-.38.32.02.08.05.28.22.29s.35-.1.35-.29-.01-.28-.19-.32Z" />
@@ -1546,18 +1546,18 @@ export const Villaggio = () => {
             id="sopracciglio-dex-2-2"
             fill="none"
             stroke="#111428"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width=".18"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth=".18"
             d="M450.71 47.22s-.18.13-.41.04"
           />
           <path
             id="sopracciglio-six-1-3"
             fill="none"
             stroke="#11142a"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width=".18"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth=".18"
             d="M454.07 46.68s.16-.21.41 0"
           />
           <g id="orecchio_dex-11">
@@ -1568,9 +1568,9 @@ export const Villaggio = () => {
             <path
               fill="none"
               stroke="#de8bb5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width=".18"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth=".18"
               d="m455.89 48.65.8-1.26"
             />
           </g>
@@ -1582,9 +1582,9 @@ export const Villaggio = () => {
             <path
               fill="none"
               stroke="#de8bb5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width=".18"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth=".18"
               d="m449.03 49.27-1.12-1.05"
             />
           </g>
@@ -1637,27 +1637,27 @@ export const Villaggio = () => {
               id="Guancia-9"
               fill="#f05"
               stroke="#f05"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width=".12"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth=".12"
               d="M454.87 49.26c-.38-.09-.57.34-.53.45s.07.39.3.4c.24 0 .49-.14.49-.4s-.02-.4-.26-.45Z"
             />
             <path
               id="Guancia-10"
               fill="#f05"
               stroke="#f05"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width=".12"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth=".12"
               d="M450.22 49.45c.15.02.36.06.29.47-.07.42-.25.31-.4.31s-.25-.22-.27-.38c-.02-.16.2-.42.38-.4h0Z"
             />
             <path
               id="Naso-6"
               fill="none"
               stroke="#11142a"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width=".18"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth=".18"
               d="M452.12 48.76s.03.34.18.34.18-.34.18-.4"
             />
           </g>
@@ -1665,25 +1665,25 @@ export const Villaggio = () => {
             id="bocca-4"
             fill="none"
             stroke="#11142a"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width=".18"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth=".18"
             d="M452.54 50.1h-.29"
           />
           <g id="braccio-six-conserto-2">
             <path
               fill="none"
               stroke="#009488"
-              stroke-miterlimit="10"
-              stroke-width=".61"
+              strokeMiterlimit="10"
+              strokeWidth=".61"
               d="M450.95 54.37c3.19.27 4.46.16 4.92-.33.14-.15.21-.36.15-.57-.13-.42-.52-.71-.95-.71"
             />
             <path
               fill="none"
               stroke="#6cf7c6"
-              stroke-dasharray="0 1.29"
-              stroke-miterlimit="10"
-              stroke-width=".59"
+              strokeDasharray="0 1.29"
+              strokeMiterlimit="10"
+              strokeWidth=".59"
               d="M450.95 54.37c3.19.27 4.46.16 4.92-.33.14-.15.21-.36.15-.57-.13-.42-.52-.71-.95-.71"
             />
             <path
@@ -1696,16 +1696,16 @@ export const Villaggio = () => {
             <path
               fill="none"
               stroke="#009488"
-              stroke-miterlimit="10"
-              stroke-width=".61"
+              strokeMiterlimit="10"
+              strokeWidth=".61"
               d="M454.38 54.55c-3.19.27-4.46.16-4.92-.33-.15-.15-.2-.36-.15-.57.07-.24.28-.74 1.08-.74"
             />
             <path
               fill="none"
               stroke="#6cf7c6"
-              stroke-dasharray="0 1.29"
-              stroke-miterlimit="10"
-              stroke-width=".59"
+              strokeDasharray="0 1.29"
+              strokeMiterlimit="10"
+              strokeWidth=".59"
               d="M454.38 54.55c-3.19.27-4.46.16-4.92-.33-.15-.15-.2-.36-.15-.57.07-.24.28-.74 1.08-.74"
             />
             <path
@@ -1720,47 +1720,47 @@ export const Villaggio = () => {
         <circle cx="537.01" cy="20.47" r="9.23" fill="#befcdf" />
         <path fill="none" d="M518.45 6.86h38.25v44.65h-38.25V6.86Z" />
         <g id="elfo-intero-4">
-          <g id="gamba_dex-7" stroke-miterlimit="10">
+          <g id="gamba_dex-7" strokeMiterlimit="10">
             <path
               fill="none"
               stroke="#009488"
-              stroke-width=".61"
+              strokeWidth=".61"
               d="M534.77 26.61v3"
             />
             <path
               fill="none"
               stroke="#6cf7c6"
-              stroke-dasharray="0 1.29"
-              stroke-width=".59"
+              strokeDasharray="0 1.29"
+              strokeWidth=".59"
               d="M534.76 26.6v2.99"
             />
             <path
               id="Scarpa_dex-7"
               fill="#002764"
               stroke="#002764"
-              stroke-width=".12"
+              strokeWidth=".12"
               d="m534.97 29.61-.48-.03s-.07.63-.37.67-.45-.09-.53-.33c-.08-.24-.06-.44-.21-.44-.18 0-.19.32-.11.6.07.26.33.6.74.6s.63-.41.63-.41l.03.41h.3v-1.05Z"
             />
           </g>
-          <g id="gamba_six-7" stroke-miterlimit="10">
+          <g id="gamba_six-7" strokeMiterlimit="10">
             <path
               fill="none"
               stroke="#009488"
-              stroke-width=".61"
+              strokeWidth=".61"
               d="M538.63 26.72v2.99"
             />
             <path
               fill="none"
               stroke="#6cf7c6"
-              stroke-dasharray="0 1.29"
-              stroke-width=".59"
+              strokeDasharray="0 1.29"
+              strokeWidth=".59"
               d="M538.62 26.71v2.99"
             />
             <path
               id="Scarpa_six-7"
               fill="#002764"
               stroke="#002764"
-              stroke-width=".12"
+              strokeWidth=".12"
               d="m538.42 29.68.48-.03s.09.56.37.67c.24.09.43-.08.49-.33.08-.32.06-.48.21-.48.18 0 .22.36.15.63-.07.26-.33.6-.74.6s-.63-.41-.63-.41l-.03.41h-.3v-1.05Z"
             />
           </g>
@@ -1772,8 +1772,8 @@ export const Villaggio = () => {
             <path
               fill="#002764"
               stroke="#002764"
-              stroke-miterlimit="10"
-              stroke-width=".06"
+              strokeMiterlimit="10"
+              strokeWidth=".06"
               d="M538.97 25v.67l-4.55.12-.02-.64 4.58-.15Z"
             />
             <path d="M536.65 24c-.27-.06-.41.25-.38.32.02.08.05.28.22.29.17 0 .35-.1.35-.29s-.01-.28-.19-.32Zm0-1.1c-.27-.06-.41.25-.38.32.02.08.05.28.22.29s.35-.1.35-.29-.01-.28-.19-.32Z" />
@@ -1782,16 +1782,16 @@ export const Villaggio = () => {
             <path
               fill="none"
               stroke="#009488"
-              stroke-miterlimit="10"
-              stroke-width=".61"
+              strokeMiterlimit="10"
+              strokeWidth=".61"
               d="M534.96 24.18c3.19.27 4.46.16 4.92-.33.14-.15.21-.36.15-.57-.13-.42-.52-.71-.95-.71"
             />
             <path
               fill="none"
               stroke="#6cf7c6"
-              stroke-dasharray="0 1.29"
-              stroke-miterlimit="10"
-              stroke-width=".59"
+              strokeDasharray="0 1.29"
+              strokeMiterlimit="10"
+              strokeWidth=".59"
               d="M534.96 24.18c3.19.27 4.46.16 4.92-.33.14-.15.21-.36.15-.57-.13-.42-.52-.71-.95-.71"
             />
             <path
@@ -1804,16 +1804,16 @@ export const Villaggio = () => {
             <path
               fill="none"
               stroke="#009488"
-              stroke-miterlimit="10"
-              stroke-width=".61"
+              strokeMiterlimit="10"
+              strokeWidth=".61"
               d="M538.39 24.36c-3.19.27-4.46.16-4.92-.33-.15-.15-.2-.36-.15-.57.07-.24.28-.74 1.08-.74"
             />
             <path
               fill="none"
               stroke="#6cf7c6"
-              stroke-dasharray="0 1.29"
-              stroke-miterlimit="10"
-              stroke-width=".59"
+              strokeDasharray="0 1.29"
+              strokeMiterlimit="10"
+              strokeWidth=".59"
               d="M538.39 24.36c-3.19.27-4.46.16-4.92-.33-.15-.15-.2-.36-.15-.57.07-.24.28-.74 1.08-.74"
             />
             <path
@@ -1848,9 +1848,9 @@ export const Villaggio = () => {
             <path
               fill="none"
               stroke="#de8bb5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width=".17"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth=".17"
               d="m539.91 19.04.76-1.2"
             />
           </g>
@@ -1862,9 +1862,9 @@ export const Villaggio = () => {
             <path
               fill="none"
               stroke="#de8bb5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width=".17"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth=".17"
               d="m533.42 19.63-1.06-.99"
             />
           </g>
@@ -1893,36 +1893,36 @@ export const Villaggio = () => {
               id="Guancia-11"
               fill="#f05"
               stroke="#f05"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width=".12"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth=".12"
               d="M538.94 19.62c-.36-.08-.54.32-.5.43s.07.37.29.37c.22 0 .46-.13.46-.37s-.02-.37-.25-.43Z"
             />
             <path
               id="Guancia-12"
               fill="#f05"
               stroke="#f05"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width=".12"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth=".12"
               d="M534.55 19.8c.14.02.34.06.27.44-.07.4-.24.29-.37.29s-.24-.21-.25-.36c-.02-.15.19-.4.36-.37h0Z"
             />
             <path
               id="Naso-7"
               fill="none"
               stroke="#11142a"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width=".17"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth=".17"
               d="M536.35 19.15s.03.32.17.32.17-.32.17-.38"
             />
             <path
               id="bocca-5"
               fill="none"
               stroke="#11142a"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width=".17"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth=".17"
               d="M536.64 20.57s-.28-.08-.43.05"
             />
             <path
@@ -1934,18 +1934,18 @@ export const Villaggio = () => {
               id="sopracciglia-six"
               fill="none"
               stroke="#11142a"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width=".17"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth=".17"
               d="M538.18 17.81s.42-.02.39 0"
             />
             <path
               id="sopracciglia-dex"
               fill="none"
               stroke="#11142a"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width=".17"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth=".17"
               d="M534.98 17.99s-.39 0-.39.03"
             />
           </g>
@@ -1959,9 +1959,9 @@ export const Villaggio = () => {
           cy="123.5"
           fill="#c1d1d6"
           stroke="#c1d1d6"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width=".18"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth=".18"
           opacity=".5"
           rx="3.84"
           ry=".2"
@@ -1971,16 +1971,16 @@ export const Villaggio = () => {
             <path
               fill="none"
               stroke="#009488"
-              stroke-miterlimit="10"
-              stroke-width=".59"
+              strokeMiterlimit="10"
+              strokeWidth=".59"
               d="M542.94 120.01c.08-.63.16-2.1-.58-3.7-.6-1.3-1.46-2.1-1.96-2.49"
             />
             <path
               fill="none"
               stroke="#6cf7c6"
-              stroke-dasharray="0 1.29"
-              stroke-miterlimit="10"
-              stroke-width=".59"
+              strokeDasharray="0 1.29"
+              strokeMiterlimit="10"
+              strokeWidth=".59"
               d="M542.94 120.01c.08-.63.16-2.1-.58-3.7-.6-1.3-1.46-2.1-1.96-2.49"
             />
             <path
@@ -2000,17 +2000,17 @@ export const Villaggio = () => {
             <path
               fill="none"
               stroke="#009488"
-              stroke-miterlimit="10"
-              stroke-width=".59"
+              strokeMiterlimit="10"
+              strokeWidth=".59"
               d="M536.55 114.75s-2.42.72-2.25 5.31"
             />
             <path fill="none" d="M536.55 114.75s-2.42.72-2.25 5.31" />
             <path
               fill="none"
               stroke="#6cf7c6"
-              stroke-dasharray="0 1.29"
-              stroke-miterlimit="10"
-              stroke-width=".59"
+              strokeDasharray="0 1.29"
+              strokeMiterlimit="10"
+              strokeWidth=".59"
               d="M536.55 114.75s-2.42.72-2.25 5.31"
             />
             <path fill="none" d="M536.55 114.75s1.89 2.79-2.27 5.31" />
@@ -2022,26 +2022,26 @@ export const Villaggio = () => {
           <g
             id="gamba_dex-8"
             fill="none"
-            stroke-miterlimit="10"
-            stroke-width=".59"
+            strokeMiterlimit="10"
+            strokeWidth=".59"
           >
             <path stroke="#009488" d="M536.57 119.32v2.89" />
             <path
               stroke="#6cf7c6"
-              stroke-dasharray="0 1.29"
+              strokeDasharray="0 1.29"
               d="M536.56 119.3v2.89"
             />
           </g>
           <g
             id="gamba_six-8"
             fill="none"
-            stroke-miterlimit="10"
-            stroke-width=".59"
+            strokeMiterlimit="10"
+            strokeWidth=".59"
           >
             <path stroke="#009488" d="M540.29 119.42v2.9" />
             <path
               stroke="#6cf7c6"
-              stroke-dasharray="0 1.29"
+              strokeDasharray="0 1.29"
               d="M540.29 119.41v2.89"
             />
           </g>
@@ -2053,8 +2053,8 @@ export const Villaggio = () => {
             <path
               fill="#002764"
               stroke="#002764"
-              stroke-miterlimit="10"
-              stroke-width=".06"
+              strokeMiterlimit="10"
+              strokeWidth=".06"
               d="M540.63 117.75v.65l-4.4.12-.02-.63 4.42-.14Z"
             />
             <path
@@ -2071,9 +2071,9 @@ export const Villaggio = () => {
               <path
                 fill="none"
                 stroke="#de8bb5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width=".17"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth=".17"
                 d="m541.51 111.3.77-1.21"
               />
             </g>
@@ -2085,9 +2085,9 @@ export const Villaggio = () => {
               <path
                 fill="none"
                 stroke="#de8bb5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width=".17"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth=".17"
                 d="m534.93 111.9-1.07-1"
               />
             </g>
@@ -2118,44 +2118,44 @@ export const Villaggio = () => {
                 id="Naso-8"
                 fill="none"
                 stroke="#11142a"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width=".17"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth=".17"
                 d="M537.9 111.41s.03.33.17.33.17-.33.17-.38"
               />
               <path
                 fill="none"
                 stroke="#11142a"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width=".17"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth=".17"
                 d="M535.95 111.07s.32-.35.72 0m3.01.01s.32-.35.72 0"
               />
               <path
                 id="guancia-2"
                 fill="#fd335a"
                 stroke="#fd335a"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width=".12"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth=".12"
                 d="M540.63 111.92c-.37-.08-.55.34-.52.44.03.1.07.38.3.38s.47-.14.47-.38-.02-.39-.25-.44h0Z"
               />
               <path
                 id="guancia-2-2"
                 fill="#fd335a"
                 stroke="#fd335a"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width=".12"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth=".12"
                 d="M536.08 112.1c.15.02.36.06.29.46-.07.41-.24.3-.39.3s-.24-.22-.26-.37c-.02-.16.2-.41.37-.39Z"
               />
               <path
                 id="bocca-6"
                 fill="none"
                 stroke="#111428"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width=".23"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth=".23"
                 d="M537.83 112.83s.18.24.39.23"
               />
               <circle cx="536.27" cy="110.94" r=".54" fill="#fff" />
@@ -2183,18 +2183,18 @@ export const Villaggio = () => {
                 id="sopracciglio_six-2"
                 fill="none"
                 stroke="#11142a"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width=".17"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth=".17"
                 d="M536.37 109.72s-.24-.24-.41.07"
               />
               <path
                 id="sopracciglio_dex-2"
                 fill="none"
                 stroke="#11142a"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width=".17"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth=".17"
                 d="M539.87 110.03s.24-.23.41.07"
               />
             </g>
@@ -2204,14 +2204,14 @@ export const Villaggio = () => {
           id="Scarpa_dex-8"
           fill="#002764"
           stroke="#002764"
-          stroke-width=".12"
+          strokeWidth=".12"
           d="m536.77 122.21-.46-.03s-.07.61-.36.65-.43-.08-.51-.32c-.08-.24-.06-.43-.21-.43-.18 0-.18.31-.11.58.07.25.32.58.72.58s.61-.39.61-.39l.03.39h.29v-1.02Z"
         />
         <path
           id="Scarpa_six-8"
           fill="#002764"
           stroke="#002764"
-          stroke-width=".12"
+          strokeWidth=".12"
           d="m540.1 122.28.46-.03s.09.54.36.65c.24.09.42-.08.48-.32.08-.31.06-.46.21-.46.18 0 .22.35.14.61-.07.25-.32.58-.72.58s-.61-.39-.61-.39l-.03.39h-.29v-1.02Z"
         />
       </g>
@@ -2223,9 +2223,9 @@ export const Villaggio = () => {
           cy="155.1"
           fill="#c1d1d6"
           stroke="#c1d1d6"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width=".18"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth=".18"
           opacity=".5"
           rx="3.84"
           ry=".2"
@@ -2235,16 +2235,16 @@ export const Villaggio = () => {
             <path
               fill="none"
               stroke="#009488"
-              stroke-miterlimit="10"
-              stroke-width=".59"
+              strokeMiterlimit="10"
+              strokeWidth=".59"
               d="M411.01 151.61c.08-.63.16-2.1-.58-3.7-.6-1.3-1.46-2.1-1.96-2.49"
             />
             <path
               fill="none"
               stroke="#6cf7c6"
-              stroke-dasharray="0 1.29"
-              stroke-miterlimit="10"
-              stroke-width=".59"
+              strokeDasharray="0 1.29"
+              strokeMiterlimit="10"
+              strokeWidth=".59"
               d="M411.01 151.61c.08-.63.16-2.1-.58-3.7-.6-1.3-1.46-2.1-1.96-2.49"
             />
             <path
@@ -2264,17 +2264,17 @@ export const Villaggio = () => {
             <path
               fill="none"
               stroke="#009488"
-              stroke-miterlimit="10"
-              stroke-width=".59"
+              strokeMiterlimit="10"
+              strokeWidth=".59"
               d="M404.61 146.35s-2.42.72-2.25 5.31"
             />
             <path fill="none" d="M404.61 146.35s-2.42.72-2.25 5.31" />
             <path
               fill="none"
               stroke="#6cf7c6"
-              stroke-dasharray="0 1.29"
-              stroke-miterlimit="10"
-              stroke-width=".59"
+              strokeDasharray="0 1.29"
+              strokeMiterlimit="10"
+              strokeWidth=".59"
               d="M404.61 146.35s-2.42.72-2.25 5.31"
             />
             <path fill="none" d="M404.61 146.35s1.89 2.79-2.27 5.31" />
@@ -2286,26 +2286,26 @@ export const Villaggio = () => {
           <g
             id="gamba_dex-9"
             fill="none"
-            stroke-miterlimit="10"
-            stroke-width=".59"
+            strokeMiterlimit="10"
+            strokeWidth=".59"
           >
             <path stroke="#009488" d="M404.63 150.92v2.89" />
             <path
               stroke="#6cf7c6"
-              stroke-dasharray="0 1.29"
+              strokeDasharray="0 1.29"
               d="M404.62 150.9v2.89"
             />
           </g>
           <g
             id="gamba_six-9"
             fill="none"
-            stroke-miterlimit="10"
-            stroke-width=".59"
+            strokeMiterlimit="10"
+            strokeWidth=".59"
           >
             <path stroke="#009488" d="M408.36 151.02v2.9" />
             <path
               stroke="#6cf7c6"
-              stroke-dasharray="0 1.29"
+              strokeDasharray="0 1.29"
               d="M408.35 151.01v2.89"
             />
           </g>
@@ -2317,8 +2317,8 @@ export const Villaggio = () => {
             <path
               fill="#002764"
               stroke="#002764"
-              stroke-miterlimit="10"
-              stroke-width=".06"
+              strokeMiterlimit="10"
+              strokeWidth=".06"
               d="M408.69 149.36v.65l-4.4.12-.02-.63 4.42-.14Z"
             />
             <path
@@ -2353,9 +2353,9 @@ export const Villaggio = () => {
               <path
                 fill="none"
                 stroke="#de8bb5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width=".18"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth=".18"
                 d="m409.59 143.04.78-1.22"
               />
             </g>
@@ -2367,9 +2367,9 @@ export const Villaggio = () => {
               <path
                 fill="none"
                 stroke="#de8bb5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width=".18"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth=".18"
                 d="m402.96 143.64-1.08-1.01"
               />
             </g>
@@ -2378,9 +2378,9 @@ export const Villaggio = () => {
                 id="sopracciglia-2-2"
                 fill="none"
                 stroke="#111428"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width=".18"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth=".18"
               >
                 <path d="M404.07 141.72s.15-.22.4-.05M407.89 141.56s.24-.15.41.04" />
               </g>
@@ -2388,9 +2388,9 @@ export const Villaggio = () => {
                 id="sopracciglia"
                 fill="none"
                 stroke="#11142a"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width=".18"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth=".18"
               >
                 <path d="M408.16 141.55s.27.11.35.22M404.07 141.71s.26-.12.4-.11" />
               </g>
@@ -2398,9 +2398,9 @@ export const Villaggio = () => {
                 id="bocca-7"
                 fill="none"
                 stroke="#11142a"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width=".18"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth=".18"
                 d="M406.43 144.46s0 .29-.2.31-.38-.23-.38-.23"
               />
               <circle cx="404.3" cy="142.66" r=".54" fill="#fff" />
@@ -2427,27 +2427,27 @@ export const Villaggio = () => {
                 id="Guancia-13"
                 fill="#f05"
                 stroke="#f05"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width=".12"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth=".12"
                 d="M408.6 143.63c-.37-.08-.55.33-.51.43s.07.38.29.38c.23 0 .47-.14.47-.38s-.02-.38-.25-.43Z"
               />
               <path
                 id="Guancia-14"
                 fill="#f05"
                 stroke="#f05"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width=".12"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth=".12"
                 d="M404.11 143.81c.14.02.35.06.28.45-.07.41-.24.3-.38.3s-.24-.22-.26-.37c-.02-.15.19-.41.36-.38h0Z"
               />
               <path
                 id="Naso-9"
                 fill="none"
                 stroke="#11142a"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width=".18"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth=".18"
                 d="M405.95 143.14s.03.33.18.33.18-.33.18-.39"
               />
             </g>
@@ -2457,60 +2457,60 @@ export const Villaggio = () => {
           id="Scarpa_dex-9"
           fill="#002764"
           stroke="#002764"
-          stroke-width=".12"
+          strokeWidth=".12"
           d="m404.83 153.81-.46-.03s-.07.61-.36.65-.43-.08-.51-.32c-.08-.24-.06-.43-.21-.43-.18 0-.18.31-.11.58.07.25.32.58.72.58s.61-.39.61-.39l.03.39h.29v-1.02Z"
         />
         <path
           id="Scarpa_six-9"
           fill="#002764"
           stroke="#002764"
-          stroke-width=".12"
+          strokeWidth=".12"
           d="m408.16 153.88.46-.03s.09.54.36.65c.24.09.42-.08.48-.32.08-.31.06-.46.21-.46.18 0 .22.35.14.61-.07.25-.32.58-.72.58s-.61-.39-.61-.39l-.03.39h-.29v-1.02Z"
         />
       </g>
       <g id="q10">
         <circle cx="474.37" cy="158.38" r="9.23" fill="#befcdf" />
-        <g id="gamba_dex-10" stroke-miterlimit="10">
+        <g id="gamba_dex-10" strokeMiterlimit="10">
           <path
             fill="none"
             stroke="#009488"
-            stroke-width=".61"
+            strokeWidth=".61"
             d="M472 164.54v3"
           />
           <path
             fill="none"
             stroke="#6cf7c6"
-            stroke-dasharray="0 1.29"
-            stroke-width=".59"
+            strokeDasharray="0 1.29"
+            strokeWidth=".59"
             d="M472 164.53v2.99"
           />
           <path
             id="Scarpa_dex-10"
             fill="#002764"
             stroke="#002764"
-            stroke-width=".12"
+            strokeWidth=".12"
             d="m472.21 167.54-.48-.03s-.07.63-.37.67-.45-.09-.53-.33c-.08-.24-.06-.44-.21-.44-.18 0-.19.32-.11.6.07.26.33.6.74.6s.63-.41.63-.41l.03.41h.3v-1.05Z"
           />
         </g>
-        <g id="gamba_six-10" stroke-miterlimit="10">
+        <g id="gamba_six-10" strokeMiterlimit="10">
           <path
             fill="none"
             stroke="#009488"
-            stroke-width=".61"
+            strokeWidth=".61"
             d="M475.86 164.65v2.99"
           />
           <path
             fill="none"
             stroke="#6cf7c6"
-            stroke-dasharray="0 1.29"
-            stroke-width=".59"
+            strokeDasharray="0 1.29"
+            strokeWidth=".59"
             d="M475.85 164.64v2.99"
           />
           <path
             id="Scarpa_six-10"
             fill="#002764"
             stroke="#002764"
-            stroke-width=".12"
+            strokeWidth=".12"
             d="m475.66 167.61.48-.03s.09.56.37.67c.24.09.43-.08.49-.33.08-.32.06-.48.21-.48.18 0 .22.36.15.63-.07.26-.33.6-.74.6s-.63-.41-.63-.41l-.03.41h-.3v-1.05Z"
           />
         </g>
@@ -2522,8 +2522,8 @@ export const Villaggio = () => {
           <path
             fill="#002764"
             stroke="#002764"
-            stroke-miterlimit="10"
-            stroke-width=".06"
+            strokeMiterlimit="10"
+            strokeWidth=".06"
             d="M476.21 162.93v.67l-4.55.12-.02-.64 4.58-.15Z"
           />
           <path d="M473.88 161.93c-.27-.06-.41.25-.38.32.02.08.05.28.22.29.17 0 .35-.1.35-.29s-.01-.28-.19-.32Zm0-1.1c-.27-.06-.41.25-.38.32.02.08.05.28.22.29s.35-.1.35-.29-.01-.28-.19-.32Z" />
@@ -2532,16 +2532,16 @@ export const Villaggio = () => {
           <path
             fill="none"
             stroke="#009488"
-            stroke-miterlimit="10"
-            stroke-width=".61"
+            strokeMiterlimit="10"
+            strokeWidth=".61"
             d="M472.19 162.12c3.19.27 4.46.16 4.92-.33.14-.15.21-.36.15-.57-.13-.42-.52-.71-.95-.71"
           />
           <path
             fill="none"
             stroke="#6cf7c6"
-            stroke-dasharray="0 1.29"
-            stroke-miterlimit="10"
-            stroke-width=".59"
+            strokeDasharray="0 1.29"
+            strokeMiterlimit="10"
+            strokeWidth=".59"
             d="M472.19 162.12c3.19.27 4.46.16 4.92-.33.14-.15.21-.36.15-.57-.13-.42-.52-.71-.95-.71"
           />
           <path
@@ -2554,16 +2554,16 @@ export const Villaggio = () => {
           <path
             fill="none"
             stroke="#009488"
-            stroke-miterlimit="10"
-            stroke-width=".61"
+            strokeMiterlimit="10"
+            strokeWidth=".61"
             d="M475.63 162.29c-3.19.27-4.46.16-4.92-.33-.15-.15-.2-.36-.15-.57.07-.24.28-.74 1.08-.74"
           />
           <path
             fill="none"
             stroke="#6cf7c6"
-            stroke-dasharray="0 1.29"
-            stroke-miterlimit="10"
-            stroke-width=".59"
+            strokeDasharray="0 1.29"
+            strokeMiterlimit="10"
+            strokeWidth=".59"
             d="M475.63 162.29c-3.19.27-4.46.16-4.92-.33-.15-.15-.2-.36-.15-.57.07-.24.28-.74 1.08-.74"
           />
           <path
@@ -2583,9 +2583,9 @@ export const Villaggio = () => {
               <path
                 fill="none"
                 stroke="#de8bb5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width=".17"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth=".17"
                 d="m477.06 156.52.77-1.21"
               />
             </g>
@@ -2597,9 +2597,9 @@ export const Villaggio = () => {
               <path
                 fill="none"
                 stroke="#de8bb5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width=".17"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth=".17"
                 d="m470.48 157.12-1.07-1"
               />
             </g>
@@ -2630,44 +2630,44 @@ export const Villaggio = () => {
                 id="Naso-10"
                 fill="none"
                 stroke="#11142a"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width=".17"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth=".17"
                 d="M473.46 156.63s.03.33.17.33.17-.33.17-.38"
               />
               <path
                 fill="none"
                 stroke="#11142a"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width=".17"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth=".17"
                 d="M471.5 156.28s.32-.35.72 0m3.01.01s.32-.35.72 0"
               />
               <path
                 id="guancia-3"
                 fill="#fd335a"
                 stroke="#fd335a"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width=".12"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth=".12"
                 d="M476.18 157.13c-.37-.08-.55.34-.52.44.03.1.07.38.3.38s.47-.14.47-.38-.02-.39-.25-.44h0Z"
               />
               <path
                 id="guancia-2-3"
                 fill="#fd335a"
                 stroke="#fd335a"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width=".12"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth=".12"
                 d="M471.63 157.31c.15.02.36.06.29.46-.07.41-.24.3-.39.3s-.24-.22-.26-.37c-.02-.16.2-.41.37-.39Z"
               />
               <path
                 id="bocca-8"
                 fill="none"
                 stroke="#111428"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width=".23"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth=".23"
                 d="M473.39 158.05s.18.24.39.23"
               />
               <circle cx="471.82" cy="156.15" r=".54" fill="#fff" />
@@ -2695,18 +2695,18 @@ export const Villaggio = () => {
                 id="sopracciglio_six-3"
                 fill="none"
                 stroke="#11142a"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width=".17"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth=".17"
                 d="M471.92 154.94s-.24-.24-.41.07"
               />
               <path
                 id="sopracciglio_dex-3"
                 fill="none"
                 stroke="#11142a"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width=".17"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth=".17"
                 d="M475.42 155.25s.24-.23.41.07"
               />
             </g>
@@ -2721,9 +2721,9 @@ export const Villaggio = () => {
           cy="187.99"
           fill="#c1d1d6"
           stroke="#c1d1d6"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width=".18"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth=".18"
           opacity=".5"
           rx="3.84"
           ry=".2"
@@ -2733,16 +2733,16 @@ export const Villaggio = () => {
             <path
               fill="none"
               stroke="#009488"
-              stroke-miterlimit="10"
-              stroke-width=".59"
+              strokeMiterlimit="10"
+              strokeWidth=".59"
               d="M381.2 184.5c.08-.63.16-2.1-.58-3.7-.6-1.3-1.46-2.1-1.96-2.49"
             />
             <path
               fill="none"
               stroke="#6cf7c6"
-              stroke-dasharray="0 1.29"
-              stroke-miterlimit="10"
-              stroke-width=".59"
+              strokeDasharray="0 1.29"
+              strokeMiterlimit="10"
+              strokeWidth=".59"
               d="M381.2 184.5c.08-.63.16-2.1-.58-3.7-.6-1.3-1.46-2.1-1.96-2.49"
             />
             <path
@@ -2762,17 +2762,17 @@ export const Villaggio = () => {
             <path
               fill="none"
               stroke="#009488"
-              stroke-miterlimit="10"
-              stroke-width=".59"
+              strokeMiterlimit="10"
+              strokeWidth=".59"
               d="M374.81 179.25s-2.42.72-2.25 5.31"
             />
             <path fill="none" d="M374.81 179.25s-2.42.72-2.25 5.31" />
             <path
               fill="none"
               stroke="#6cf7c6"
-              stroke-dasharray="0 1.29"
-              stroke-miterlimit="10"
-              stroke-width=".59"
+              strokeDasharray="0 1.29"
+              strokeMiterlimit="10"
+              strokeWidth=".59"
               d="M374.81 179.25s-2.42.72-2.25 5.31"
             />
             <path fill="none" d="M374.81 179.25s1.89 2.79-2.27 5.31" />
@@ -2784,26 +2784,26 @@ export const Villaggio = () => {
           <g
             id="gamba_dex-11"
             fill="none"
-            stroke-miterlimit="10"
-            stroke-width=".59"
+            strokeMiterlimit="10"
+            strokeWidth=".59"
           >
             <path stroke="#009488" d="M374.83 183.82v2.89" />
             <path
               stroke="#6cf7c6"
-              stroke-dasharray="0 1.29"
+              strokeDasharray="0 1.29"
               d="M374.82 183.8v2.89"
             />
           </g>
           <g
             id="gamba_six-11"
             fill="none"
-            stroke-miterlimit="10"
-            stroke-width=".59"
+            strokeMiterlimit="10"
+            strokeWidth=".59"
           >
             <path stroke="#009488" d="M378.55 183.92v2.9" />
             <path
               stroke="#6cf7c6"
-              stroke-dasharray="0 1.29"
+              strokeDasharray="0 1.29"
               d="M378.55 183.9v2.89"
             />
           </g>
@@ -2815,8 +2815,8 @@ export const Villaggio = () => {
             <path
               fill="#002764"
               stroke="#002764"
-              stroke-miterlimit="10"
-              stroke-width=".06"
+              strokeMiterlimit="10"
+              strokeWidth=".06"
               d="M378.89 182.25v.65l-4.4.12-.02-.63 4.42-.14Z"
             />
             <path
@@ -2847,9 +2847,9 @@ export const Villaggio = () => {
             <path
               fill="none"
               stroke="#de8bb5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width=".17"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth=".17"
               d="m373.49 176.39-1.34-.55"
             />
           </g>
@@ -2861,9 +2861,9 @@ export const Villaggio = () => {
             <path
               fill="none"
               stroke="#de8bb5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width=".17"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth=".17"
               d="m379.56 176.27 1.22-.72"
             />
           </g>
@@ -2877,9 +2877,9 @@ export const Villaggio = () => {
               id="naso"
               fill="none"
               stroke="#11142a"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width=".17"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth=".17"
               d="M376.25 176.02s.03.33.17.33.17-.33.17-.39"
             />
             <path
@@ -2941,45 +2941,45 @@ export const Villaggio = () => {
               id="guancia_2"
               fill="#f05"
               stroke="#f05"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width=".12"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth=".12"
               d="M378.84 176.36c-.35-.08-.53.34-.49.44.03.1.07.38.28.38.23 0 .46-.14.46-.38s-.02-.38-.25-.44h0Z"
             />
             <path
               id="guancia_1"
               fill="#f05"
               stroke="#f05"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width=".12"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth=".12"
               d="M374.46 176.55c.13.02.34.06.27.46s-.24.3-.37.3-.24-.22-.26-.37c-.02-.15.18-.41.35-.38Z"
             />
             <path
               id="bocca-9"
               fill="none"
               stroke="#11142a"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width=".17"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth=".17"
               d="M375.86 177s.32.45.68.42.68-.56.68-.56"
             />
             <path
               id="sopracciglio_2"
               fill="none"
               stroke="#11142a"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width=".17"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth=".17"
               d="M378.2 174.51s.24-.24.4.07"
             />
             <path
               id="sopracciglio_1"
               fill="none"
               stroke="#11142a"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width=".17"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth=".17"
               d="M374.83 174.66s-.24-.23-.4.07"
             />
           </g>
@@ -2988,14 +2988,14 @@ export const Villaggio = () => {
           id="Scarpa_dex-11"
           fill="#002764"
           stroke="#002764"
-          stroke-width=".12"
+          strokeWidth=".12"
           d="m375.03 186.71-.46-.03s-.07.61-.36.65-.43-.08-.51-.32c-.08-.24-.06-.43-.21-.43-.18 0-.18.31-.11.58.07.25.32.58.72.58s.61-.39.61-.39l.03.39h.29v-1.02Z"
         />
         <path
           id="Scarpa_six-11"
           fill="#002764"
           stroke="#002764"
-          stroke-width=".12"
+          strokeWidth=".12"
           d="m378.36 186.78.46-.03s.09.54.36.65c.24.09.42-.08.48-.32.08-.31.06-.46.21-.46.18 0 .22.35.14.61-.07.25-.32.58-.72.58s-.61-.39-.61-.39l-.03.39h-.29v-1.02Z"
         />
       </g>
@@ -3007,9 +3007,9 @@ export const Villaggio = () => {
           cy="245.36"
           fill="#c1d1d6"
           stroke="#c1d1d6"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width=".18"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth=".18"
           opacity=".5"
           rx="3.84"
           ry=".2"
@@ -3019,16 +3019,16 @@ export const Villaggio = () => {
             <path
               fill="none"
               stroke="#009488"
-              stroke-miterlimit="10"
-              stroke-width=".59"
+              strokeMiterlimit="10"
+              strokeWidth=".59"
               d="M335.18 241.87c.08-.63.16-2.1-.58-3.7-.6-1.3-1.46-2.1-1.96-2.49"
             />
             <path
               fill="none"
               stroke="#6cf7c6"
-              stroke-dasharray="0 1.29"
-              stroke-miterlimit="10"
-              stroke-width=".59"
+              strokeDasharray="0 1.29"
+              strokeMiterlimit="10"
+              strokeWidth=".59"
               d="M335.18 241.87c.08-.63.16-2.1-.58-3.7-.6-1.3-1.46-2.1-1.96-2.49"
             />
             <path
@@ -3048,17 +3048,17 @@ export const Villaggio = () => {
             <path
               fill="none"
               stroke="#009488"
-              stroke-miterlimit="10"
-              stroke-width=".59"
+              strokeMiterlimit="10"
+              strokeWidth=".59"
               d="M328.78 236.62s-2.42.72-2.25 5.31"
             />
             <path fill="none" d="M328.78 236.62s-2.42.72-2.25 5.31" />
             <path
               fill="none"
               stroke="#6cf7c6"
-              stroke-dasharray="0 1.29"
-              stroke-miterlimit="10"
-              stroke-width=".59"
+              strokeDasharray="0 1.29"
+              strokeMiterlimit="10"
+              strokeWidth=".59"
               d="M328.78 236.62s-2.42.72-2.25 5.31"
             />
             <path fill="none" d="M328.78 236.62s1.89 2.79-2.27 5.31" />
@@ -3070,26 +3070,26 @@ export const Villaggio = () => {
           <g
             id="gamba_dex-12"
             fill="none"
-            stroke-miterlimit="10"
-            stroke-width=".59"
+            strokeMiterlimit="10"
+            strokeWidth=".59"
           >
             <path stroke="#009488" d="M328.8 241.18v2.89" />
             <path
               stroke="#6cf7c6"
-              stroke-dasharray="0 1.29"
+              strokeDasharray="0 1.29"
               d="M328.79 241.17v2.89"
             />
           </g>
           <g
             id="gamba_six-12"
             fill="none"
-            stroke-miterlimit="10"
-            stroke-width=".59"
+            strokeMiterlimit="10"
+            strokeWidth=".59"
           >
             <path stroke="#009488" d="M332.53 241.28v2.9" />
             <path
               stroke="#6cf7c6"
-              stroke-dasharray="0 1.29"
+              strokeDasharray="0 1.29"
               d="M332.52 241.27v2.89"
             />
           </g>
@@ -3101,8 +3101,8 @@ export const Villaggio = () => {
             <path
               fill="#002764"
               stroke="#002764"
-              stroke-miterlimit="10"
-              stroke-width=".06"
+              strokeMiterlimit="10"
+              strokeWidth=".06"
               d="M332.86 239.62v.65l-4.4.12-.02-.63 4.42-.14Z"
             />
             <path
@@ -3133,9 +3133,9 @@ export const Villaggio = () => {
             <path
               fill="none"
               stroke="#de8bb5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width=".17"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth=".17"
               d="m327.46 233.76-1.34-.55"
             />
           </g>
@@ -3147,9 +3147,9 @@ export const Villaggio = () => {
             <path
               fill="none"
               stroke="#de8bb5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width=".17"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth=".17"
               d="m333.53 233.64 1.22-.72"
             />
           </g>
@@ -3163,9 +3163,9 @@ export const Villaggio = () => {
               id="naso-2"
               fill="none"
               stroke="#11142a"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width=".17"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth=".17"
               d="M330.22 233.39s.03.33.17.33.17-.33.17-.39"
             />
             <path
@@ -3227,45 +3227,45 @@ export const Villaggio = () => {
               id="guancia_2-2"
               fill="#f05"
               stroke="#f05"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width=".12"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth=".12"
               d="M332.81 233.73c-.35-.08-.53.34-.49.44.03.1.07.38.28.38.23 0 .46-.14.46-.38s-.02-.38-.25-.44h0Z"
             />
             <path
               id="guancia_1-2"
               fill="#f05"
               stroke="#f05"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width=".12"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth=".12"
               d="M328.43 233.91c.13.02.34.06.27.46s-.24.3-.37.3-.24-.22-.26-.37c-.02-.15.18-.41.35-.38Z"
             />
             <path
               id="bocca-wide"
               fill="none"
               stroke="#11142c"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width=".17"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth=".17"
               d="M329.25 234.27s.4.58 1.13.56c1.1-.02 1.53-1 1.53-1"
             />
             <path
               id="sopracciglio_2-2"
               fill="none"
               stroke="#11142a"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width=".17"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth=".17"
               d="M332.18 231.88s.24-.24.4.07"
             />
             <path
               id="sopracciglio_1-2"
               fill="none"
               stroke="#11142a"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width=".17"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth=".17"
               d="M328.8 232.03s-.24-.23-.4.07"
             />
           </g>
@@ -3274,14 +3274,14 @@ export const Villaggio = () => {
           id="Scarpa_dex-12"
           fill="#002764"
           stroke="#002764"
-          stroke-width=".12"
+          strokeWidth=".12"
           d="m329 244.08-.46-.03s-.07.61-.36.65-.43-.08-.51-.32c-.08-.24-.06-.43-.21-.43-.18 0-.18.31-.11.58.07.25.32.58.72.58s.61-.39.61-.39l.03.39h.29v-1.02Z"
         />
         <path
           id="Scarpa_six-12"
           fill="#002764"
           stroke="#002764"
-          stroke-width=".12"
+          strokeWidth=".12"
           d="m332.33 244.15.46-.03s.09.54.36.65c.24.09.42-.08.48-.32.08-.31.06-.46.21-.46.18 0 .22.35.14.61-.07.25-.32.58-.72.58s-.61-.39-.61-.39l-.03.39h-.29v-1.02Z"
         />
       </g>
@@ -3293,9 +3293,9 @@ export const Villaggio = () => {
           cy="234.78"
           fill="#c1d1d6"
           stroke="#c1d1d6"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width=".18"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth=".18"
           opacity=".5"
           rx="3.84"
           ry=".2"
@@ -3305,16 +3305,16 @@ export const Villaggio = () => {
             <path
               fill="none"
               stroke="#009488"
-              stroke-miterlimit="10"
-              stroke-width=".59"
+              strokeMiterlimit="10"
+              strokeWidth=".59"
               d="M479.84 231.29c.08-.63.16-2.1-.58-3.7-.6-1.3-1.46-2.1-1.96-2.49"
             />
             <path
               fill="none"
               stroke="#6cf7c6"
-              stroke-dasharray="0 1.29"
-              stroke-miterlimit="10"
-              stroke-width=".59"
+              strokeDasharray="0 1.29"
+              strokeMiterlimit="10"
+              strokeWidth=".59"
               d="M479.84 231.29c.08-.63.16-2.1-.58-3.7-.6-1.3-1.46-2.1-1.96-2.49"
             />
             <path
@@ -3334,17 +3334,17 @@ export const Villaggio = () => {
             <path
               fill="none"
               stroke="#009488"
-              stroke-miterlimit="10"
-              stroke-width=".59"
+              strokeMiterlimit="10"
+              strokeWidth=".59"
               d="M473.45 226.03s-2.42.72-2.25 5.31"
             />
             <path fill="none" d="M473.45 226.03s-2.42.72-2.25 5.31" />
             <path
               fill="none"
               stroke="#6cf7c6"
-              stroke-dasharray="0 1.29"
-              stroke-miterlimit="10"
-              stroke-width=".59"
+              strokeDasharray="0 1.29"
+              strokeMiterlimit="10"
+              strokeWidth=".59"
               d="M473.45 226.03s-2.42.72-2.25 5.31"
             />
             <path fill="none" d="M473.45 226.03s1.89 2.79-2.27 5.31" />
@@ -3356,26 +3356,26 @@ export const Villaggio = () => {
           <g
             id="gamba_dex-13"
             fill="none"
-            stroke-miterlimit="10"
-            stroke-width=".59"
+            strokeMiterlimit="10"
+            strokeWidth=".59"
           >
             <path stroke="#009488" d="M473.47 230.6v2.89" />
             <path
               stroke="#6cf7c6"
-              stroke-dasharray="0 1.29"
+              strokeDasharray="0 1.29"
               d="M473.45 230.58v2.89"
             />
           </g>
           <g
             id="gamba_six-13"
             fill="none"
-            stroke-miterlimit="10"
-            stroke-width=".59"
+            strokeMiterlimit="10"
+            strokeWidth=".59"
           >
             <path stroke="#009488" d="M477.19 230.7v2.9" />
             <path
               stroke="#6cf7c6"
-              stroke-dasharray="0 1.29"
+              strokeDasharray="0 1.29"
               d="M477.19 230.69v2.89"
             />
           </g>
@@ -3387,8 +3387,8 @@ export const Villaggio = () => {
             <path
               fill="#002764"
               stroke="#002764"
-              stroke-miterlimit="10"
-              stroke-width=".06"
+              strokeMiterlimit="10"
+              strokeWidth=".06"
               d="M477.53 229.03v.65l-4.4.12-.02-.63 4.42-.14Z"
             />
             <path
@@ -3419,9 +3419,9 @@ export const Villaggio = () => {
             <path
               fill="none"
               stroke="#de8bb5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width=".17"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth=".17"
               d="m472.13 223.17-1.34-.55"
             />
           </g>
@@ -3433,9 +3433,9 @@ export const Villaggio = () => {
             <path
               fill="none"
               stroke="#de8bb5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width=".17"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth=".17"
               d="m478.19 223.05 1.22-.72"
             />
           </g>
@@ -3449,9 +3449,9 @@ export const Villaggio = () => {
               id="naso-3"
               fill="none"
               stroke="#11142a"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width=".17"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth=".17"
               d="M474.89 222.81s.03.33.17.33.17-.33.17-.39"
             />
             <path
@@ -3513,45 +3513,45 @@ export const Villaggio = () => {
               id="guancia_2-3"
               fill="#f05"
               stroke="#f05"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width=".12"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth=".12"
               d="M477.47 223.14c-.35-.08-.53.34-.49.44.03.1.07.38.28.38.23 0 .46-.14.46-.38s-.02-.38-.25-.44h0Z"
             />
             <path
               id="guancia_1-3"
               fill="#f05"
               stroke="#f05"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width=".12"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth=".12"
               d="M473.1 223.33c.13.02.34.06.27.46s-.24.3-.37.3-.24-.22-.26-.37c-.02-.15.18-.41.35-.38Z"
             />
             <path
               id="bocca-wide-2"
               fill="none"
               stroke="#11142c"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width=".17"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth=".17"
               d="M473.91 223.68s.4.58 1.13.56c1.1-.02 1.53-1 1.53-1"
             />
             <path
               id="sopracciglio_2-3"
               fill="none"
               stroke="#11142a"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width=".17"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth=".17"
               d="M476.84 221.29s.24-.24.4.07"
             />
             <path
               id="sopracciglio_1-3"
               fill="none"
               stroke="#11142a"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width=".17"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth=".17"
               d="M473.46 221.45s-.24-.23-.4.07"
             />
           </g>
@@ -3560,14 +3560,14 @@ export const Villaggio = () => {
           id="Scarpa_dex-13"
           fill="#002764"
           stroke="#002764"
-          stroke-width=".12"
+          strokeWidth=".12"
           d="m473.67 233.49-.46-.03s-.07.61-.36.65-.43-.08-.51-.32c-.08-.24-.06-.43-.21-.43-.18 0-.18.31-.11.58.07.25.32.58.72.58s.61-.39.61-.39l.03.39h.29v-1.02Z"
         />
         <path
           id="Scarpa_six-13"
           fill="#002764"
           stroke="#002764"
-          stroke-width=".12"
+          strokeWidth=".12"
           d="m477 233.56.46-.03s.09.54.36.65c.24.09.42-.08.48-.32.08-.31.06-.46.21-.46.18 0 .22.35.14.61-.07.25-.32.58-.72.58s-.61-.39-.61-.39l-.03.39H477v-1.02Z"
         />
       </g>
@@ -3579,9 +3579,9 @@ export const Villaggio = () => {
           cy="259.81"
           fill="#c1d1d6"
           stroke="#c1d1d6"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width=".18"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth=".18"
           opacity=".5"
           rx="3.84"
           ry=".2"
@@ -3591,16 +3591,16 @@ export const Villaggio = () => {
             <path
               fill="none"
               stroke="#009488"
-              stroke-miterlimit="10"
-              stroke-width=".59"
+              strokeMiterlimit="10"
+              strokeWidth=".59"
               d="M119.56 256.32c.08-.63.16-2.1-.58-3.7-.6-1.3-1.46-2.1-1.96-2.49"
             />
             <path
               fill="none"
               stroke="#6cf7c6"
-              stroke-dasharray="0 1.29"
-              stroke-miterlimit="10"
-              stroke-width=".59"
+              strokeDasharray="0 1.29"
+              strokeMiterlimit="10"
+              strokeWidth=".59"
               d="M119.56 256.32c.08-.63.16-2.1-.58-3.7-.6-1.3-1.46-2.1-1.96-2.49"
             />
             <path
@@ -3616,17 +3616,17 @@ export const Villaggio = () => {
             <path
               fill="none"
               stroke="#009488"
-              stroke-miterlimit="10"
-              stroke-width=".59"
+              strokeMiterlimit="10"
+              strokeWidth=".59"
               d="M113.16 251.06s-2.42.72-2.25 5.31"
             />
             <path fill="none" d="M113.16 251.06s-2.42.72-2.25 5.31" />
             <path
               fill="none"
               stroke="#6cf7c6"
-              stroke-dasharray="0 1.29"
-              stroke-miterlimit="10"
-              stroke-width=".59"
+              strokeDasharray="0 1.29"
+              strokeMiterlimit="10"
+              strokeWidth=".59"
               d="M113.16 251.06s-2.42.72-2.25 5.31"
             />
             <path fill="none" d="M113.16 251.06s1.89 2.79-2.27 5.31" />
@@ -3638,26 +3638,26 @@ export const Villaggio = () => {
           <g
             id="gamba_dex-14"
             fill="none"
-            stroke-miterlimit="10"
-            stroke-width=".59"
+            strokeMiterlimit="10"
+            strokeWidth=".59"
           >
             <path stroke="#009488" d="M113.18 255.63v2.89" />
             <path
               stroke="#6cf7c6"
-              stroke-dasharray="0 1.29"
+              strokeDasharray="0 1.29"
               d="M113.17 255.61v2.89"
             />
           </g>
           <g
             id="gamba_six-14"
             fill="none"
-            stroke-miterlimit="10"
-            stroke-width=".59"
+            strokeMiterlimit="10"
+            strokeWidth=".59"
           >
             <path stroke="#009488" d="M116.9 255.73v2.9" />
             <path
               stroke="#6cf7c6"
-              stroke-dasharray="0 1.29"
+              strokeDasharray="0 1.29"
               d="M116.9 255.72v2.89"
             />
           </g>
@@ -3669,8 +3669,8 @@ export const Villaggio = () => {
             <path
               fill="#002764"
               stroke="#002764"
-              stroke-miterlimit="10"
-              stroke-width=".06"
+              strokeMiterlimit="10"
+              strokeWidth=".06"
               d="M117.24 254.07v.65l-4.4.12-.02-.63 4.42-.14Z"
             />
             <path
@@ -3687,9 +3687,9 @@ export const Villaggio = () => {
               <path
                 fill="none"
                 stroke="#de8bb5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width=".17"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth=".17"
                 d="m118.12 247.61.77-1.21"
               />
             </g>
@@ -3701,9 +3701,9 @@ export const Villaggio = () => {
               <path
                 fill="none"
                 stroke="#de8bb5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width=".17"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth=".17"
                 d="m111.54 248.21-1.07-1"
               />
             </g>
@@ -3734,44 +3734,44 @@ export const Villaggio = () => {
                 id="Naso-11"
                 fill="none"
                 stroke="#11142a"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width=".17"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth=".17"
                 d="M114.52 247.72s.03.33.17.33.17-.33.17-.38"
               />
               <path
                 fill="none"
                 stroke="#11142a"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width=".17"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth=".17"
                 d="M112.56 247.38s.32-.35.72 0m3.01.01s.32-.35.72 0"
               />
               <path
                 id="guancia-4"
                 fill="#fd335a"
                 stroke="#fd335a"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width=".12"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth=".12"
                 d="M117.24 248.23c-.37-.08-.55.34-.52.44.03.1.07.38.3.38s.47-.14.47-.38-.02-.39-.25-.44h0Z"
               />
               <path
                 id="guancia-2-4"
                 fill="#fd335a"
                 stroke="#fd335a"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width=".12"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth=".12"
                 d="M112.69 248.41c.15.02.36.06.29.46-.07.41-.24.3-.39.3s-.24-.22-.26-.37c-.02-.16.2-.41.37-.39Z"
               />
               <path
                 id="bocca-smile"
                 fill="none"
                 stroke="#11142a"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width=".17"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth=".17"
                 d="M114.69 249.13s.18.24.39.23c.21-.01.2-.31.2-.31"
               />
               <circle cx="112.88" cy="247.25" r=".54" fill="#fff" />
@@ -3799,18 +3799,18 @@ export const Villaggio = () => {
                 id="sopracciglio_six-4"
                 fill="none"
                 stroke="#11142a"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width=".17"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth=".17"
                 d="M112.98 246.03s-.24-.24-.41.07"
               />
               <path
                 id="sopracciglio_dex-4"
                 fill="none"
                 stroke="#11142a"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width=".17"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth=".17"
                 d="M116.48 246.34s.24-.23.41.07"
               />
             </g>
@@ -3820,14 +3820,14 @@ export const Villaggio = () => {
           id="Scarpa_dex-14"
           fill="#002764"
           stroke="#002764"
-          stroke-width=".12"
+          strokeWidth=".12"
           d="m113.38 258.52-.46-.03s-.07.61-.36.65-.43-.08-.51-.32c-.08-.24-.06-.43-.21-.43-.18 0-.18.31-.11.58.07.25.32.58.72.58s.61-.39.61-.39l.03.39h.29v-1.02Z"
         />
         <path
           id="Scarpa_six-14"
           fill="#002764"
           stroke="#002764"
-          stroke-width=".12"
+          strokeWidth=".12"
           d="m116.71 258.59.46-.03s.09.54.36.65c.24.09.42-.08.48-.32.08-.31.06-.46.21-.46.18 0 .22.35.14.61-.07.25-.32.58-.72.58s-.61-.39-.61-.39l-.03.39h-.29v-1.02Z"
         />
       </g>
@@ -3840,55 +3840,55 @@ export const Villaggio = () => {
           cy="225.57"
           fill="#c1d1d6"
           stroke="#c1d1d6"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width=".18"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth=".18"
           opacity=".5"
           rx="3.97"
           ry=".21"
         />
         <g id="elfo-intero-5">
-          <g id="gamba_dex-15" stroke-miterlimit="10">
+          <g id="gamba_dex-15" strokeMiterlimit="10">
             <path
               fill="none"
               stroke="#009488"
-              stroke-width=".61"
+              strokeWidth=".61"
               d="M154.59 221.43v3"
             />
             <path
               fill="none"
               stroke="#6cf7c6"
-              stroke-dasharray="0 1.29"
-              stroke-width=".59"
+              strokeDasharray="0 1.29"
+              strokeWidth=".59"
               d="M154.58 221.42v2.99"
             />
             <path
               id="Scarpa_dex-15"
               fill="#002764"
               stroke="#002764"
-              stroke-width=".12"
+              strokeWidth=".12"
               d="m154.79 224.43-.48-.03s-.07.63-.37.67-.45-.09-.53-.33c-.08-.24-.06-.44-.21-.44-.18 0-.19.32-.11.6.07.26.33.6.74.6s.63-.41.63-.41l.03.41h.3v-1.05Z"
             />
           </g>
-          <g id="gamba_six-15" stroke-miterlimit="10">
+          <g id="gamba_six-15" strokeMiterlimit="10">
             <path
               fill="none"
               stroke="#009488"
-              stroke-width=".61"
+              strokeWidth=".61"
               d="M158.45 221.54v2.99"
             />
             <path
               fill="none"
               stroke="#6cf7c6"
-              stroke-dasharray="0 1.29"
-              stroke-width=".59"
+              strokeDasharray="0 1.29"
+              strokeWidth=".59"
               d="M158.44 221.53v2.99"
             />
             <path
               id="Scarpa_six-15"
               fill="#002764"
               stroke="#002764"
-              stroke-width=".12"
+              strokeWidth=".12"
               d="m158.24 224.5.48-.03s.09.56.37.67c.24.09.43-.08.49-.33.08-.32.06-.48.21-.48.18 0 .22.36.15.63-.07.26-.33.6-.74.6s-.63-.41-.63-.41l-.03.41h-.3v-1.05Z"
             />
           </g>
@@ -3900,8 +3900,8 @@ export const Villaggio = () => {
             <path
               fill="#002764"
               stroke="#002764"
-              stroke-miterlimit="10"
-              stroke-width=".06"
+              strokeMiterlimit="10"
+              strokeWidth=".06"
               d="M158.79 219.82v.67l-4.55.12-.02-.64 4.58-.15Z"
             />
             <path d="M156.47 218.82c-.27-.06-.41.25-.38.32.02.08.05.28.22.29.17 0 .35-.1.35-.29s-.01-.28-.19-.32Zm0-1.1c-.27-.06-.41.25-.38.32.02.08.05.28.22.29s.35-.1.35-.29-.01-.28-.19-.32Z" />
@@ -3925,18 +3925,18 @@ export const Villaggio = () => {
             id="sopracciglio-six-1-4"
             fill="none"
             stroke="#11142a"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width=".18"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth=".18"
             d="M158.04 212.2s.16-.21.41 0"
           />
           <path
             id="sopracciglio-dex-1-2"
             fill="none"
             stroke="#11142a"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width=".18"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth=".18"
             d="M154.65 212.27s-.23-.18-.41.04"
           />
           <g id="orecchio_dex-24">
@@ -3947,9 +3947,9 @@ export const Villaggio = () => {
             <path
               fill="none"
               stroke="#de8bb5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width=".18"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth=".18"
               d="m159.84 213.74.8-1.26"
             />
           </g>
@@ -3961,9 +3961,9 @@ export const Villaggio = () => {
             <path
               fill="none"
               stroke="#de8bb5"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width=".18"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth=".18"
               d="m152.98 214.36-1.12-1.05"
             />
           </g>
@@ -4016,27 +4016,27 @@ export const Villaggio = () => {
               id="Guancia-15"
               fill="#f05"
               stroke="#f05"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width=".12"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth=".12"
               d="M158.82 214.35c-.38-.09-.57.34-.53.45s.07.39.3.4c.24 0 .49-.14.49-.4s-.02-.4-.26-.45Z"
             />
             <path
               id="Guancia-16"
               fill="#f05"
               stroke="#f05"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width=".12"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth=".12"
               d="M154.17 214.55c.15.02.36.06.29.47-.07.42-.25.31-.4.31s-.25-.22-.27-.38c-.02-.16.2-.42.38-.4h0Z"
             />
             <path
               id="Naso-12"
               fill="none"
               stroke="#11142a"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width=".18"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth=".18"
               d="M156.08 213.85s.03.34.18.34.18-.34.18-.4"
             />
           </g>
@@ -4044,16 +4044,16 @@ export const Villaggio = () => {
             <path
               fill="none"
               stroke="#009488"
-              stroke-miterlimit="10"
-              stroke-width=".61"
+              strokeMiterlimit="10"
+              strokeWidth=".61"
               d="M154.78 219.01c3.19.27 4.46.16 4.92-.33.14-.15.21-.36.15-.57-.13-.42-.52-.71-.95-.71"
             />
             <path
               fill="none"
               stroke="#6cf7c6"
-              stroke-dasharray="0 1.29"
-              stroke-miterlimit="10"
-              stroke-width=".59"
+              strokeDasharray="0 1.29"
+              strokeMiterlimit="10"
+              strokeWidth=".59"
               d="M154.78 219.01c3.19.27 4.46.16 4.92-.33.14-.15.21-.36.15-.57-.13-.42-.52-.71-.95-.71"
             />
             <path
@@ -4066,16 +4066,16 @@ export const Villaggio = () => {
             <path
               fill="none"
               stroke="#009488"
-              stroke-miterlimit="10"
-              stroke-width=".61"
+              strokeMiterlimit="10"
+              strokeWidth=".61"
               d="M158.21 219.18c-3.19.27-4.46.16-4.92-.33-.15-.15-.2-.36-.15-.57.07-.24.28-.74 1.08-.74"
             />
             <path
               fill="none"
               stroke="#6cf7c6"
-              stroke-dasharray="0 1.29"
-              stroke-miterlimit="10"
-              stroke-width=".59"
+              strokeDasharray="0 1.29"
+              strokeMiterlimit="10"
+              strokeWidth=".59"
               d="M158.21 219.18c-3.19.27-4.46.16-4.92-.33-.15-.15-.2-.36-.15-.57.07-.24.28-.74 1.08-.74"
             />
             <path
@@ -4087,9 +4087,9 @@ export const Villaggio = () => {
           <path
             fill="none"
             stroke="#11142a"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width=".18"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth=".18"
             d="M156.2 215.24s.12.09.29 0"
           />
         </g>
@@ -4100,9 +4100,9 @@ export const Villaggio = () => {
           cy="210.24"
           fill="#c1d1d6"
           stroke="#c1d1d6"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width=".11"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth=".11"
           opacity=".5"
           rx="3.25"
           ry=".11"
@@ -4115,47 +4115,47 @@ export const Villaggio = () => {
           transform="rotate(-88.09 51.19748259 200.77263667)"
         />
         <path fill="none" d="M32.63 187.3h38.25v44.65H32.63V187.3Z" />
-        <g id="gamba_dex-16" stroke-miterlimit="10">
+        <g id="gamba_dex-16" strokeMiterlimit="10">
           <path
             fill="none"
             stroke="#009488"
-            stroke-width=".61"
+            strokeWidth=".61"
             d="M49.23 206.1v3"
           />
           <path
             fill="none"
             stroke="#6cf7c6"
-            stroke-dasharray="0 1.29"
-            stroke-width=".59"
+            strokeDasharray="0 1.29"
+            strokeWidth=".59"
             d="M49.22 206.09v2.99"
           />
           <path
             id="Scarpa_dex-16"
             fill="#002764"
             stroke="#002764"
-            stroke-width=".12"
+            strokeWidth=".12"
             d="m49.44 209.1-.48-.03s-.07.63-.37.67-.45-.09-.53-.33c-.08-.24-.06-.44-.21-.44-.18 0-.19.32-.11.6.07.26.33.6.74.6s.63-.41.63-.41l.03.41h.3v-1.05Z"
           />
         </g>
-        <g id="gamba_six-16" stroke-miterlimit="10">
+        <g id="gamba_six-16" strokeMiterlimit="10">
           <path
             fill="none"
             stroke="#009488"
-            stroke-width=".61"
+            strokeWidth=".61"
             d="M53.09 206.21v2.99"
           />
           <path
             fill="none"
             stroke="#6cf7c6"
-            stroke-dasharray="0 1.29"
-            stroke-width=".59"
+            strokeDasharray="0 1.29"
+            strokeWidth=".59"
             d="M53.08 206.2v2.99"
           />
           <path
             id="Scarpa_six-16"
             fill="#002764"
             stroke="#002764"
-            stroke-width=".12"
+            strokeWidth=".12"
             d="m52.88 209.17.48-.03s.09.56.37.67c.24.09.43-.08.49-.33.08-.32.06-.48.21-.48.18 0 .22.36.15.63-.07.26-.33.6-.74.6s-.63-.41-.63-.41l-.03.41h-.3v-1.05Z"
           />
         </g>
@@ -4167,8 +4167,8 @@ export const Villaggio = () => {
           <path
             fill="#002764"
             stroke="#002764"
-            stroke-miterlimit="10"
-            stroke-width=".06"
+            strokeMiterlimit="10"
+            strokeWidth=".06"
             d="M53.44 204.49v.67l-4.55.12-.02-.64 4.58-.15Z"
           />
           <path d="M51.11 203.49c-.27-.06-.41.25-.38.32.02.08.05.28.22.29.17 0 .35-.1.35-.29s-.01-.28-.19-.32Zm0-1.1c-.27-.06-.41.25-.38.32.02.08.05.28.22.29s.35-.1.35-.29-.01-.28-.19-.32Z" />
@@ -4177,16 +4177,16 @@ export const Villaggio = () => {
           <path
             fill="none"
             stroke="#009488"
-            stroke-miterlimit="10"
-            stroke-width=".61"
+            strokeMiterlimit="10"
+            strokeWidth=".61"
             d="M49.42 203.67c3.19.27 4.46.16 4.92-.33.14-.15.21-.36.15-.57-.13-.42-.52-.71-.95-.71"
           />
           <path
             fill="none"
             stroke="#6cf7c6"
-            stroke-dasharray="0 1.29"
-            stroke-miterlimit="10"
-            stroke-width=".59"
+            strokeDasharray="0 1.29"
+            strokeMiterlimit="10"
+            strokeWidth=".59"
             d="M49.42 203.67c3.19.27 4.46.16 4.92-.33.14-.15.21-.36.15-.57-.13-.42-.52-.71-.95-.71"
           />
           <path
@@ -4199,16 +4199,16 @@ export const Villaggio = () => {
           <path
             fill="none"
             stroke="#009488"
-            stroke-miterlimit="10"
-            stroke-width=".61"
+            strokeMiterlimit="10"
+            strokeWidth=".61"
             d="M52.85 203.85c-3.19.27-4.46.16-4.92-.33-.15-.15-.2-.36-.15-.57.07-.24.28-.74 1.08-.74"
           />
           <path
             fill="none"
             stroke="#6cf7c6"
-            stroke-dasharray="0 1.29"
-            stroke-miterlimit="10"
-            stroke-width=".59"
+            strokeDasharray="0 1.29"
+            strokeMiterlimit="10"
+            strokeWidth=".59"
             d="M52.85 203.85c-3.19.27-4.46.16-4.92-.33-.15-.15-.2-.36-.15-.57.07-.24.28-.74 1.08-.74"
           />
           <path
@@ -4227,9 +4227,9 @@ export const Villaggio = () => {
               <path
                 fill="none"
                 stroke="#de8bb5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width=".17"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth=".17"
                 d="m54.29 198.08.77-1.21"
               />
             </g>
@@ -4241,9 +4241,9 @@ export const Villaggio = () => {
               <path
                 fill="none"
                 stroke="#de8bb5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width=".17"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth=".17"
                 d="m47.71 198.67-1.07-1"
               />
             </g>
@@ -4274,44 +4274,44 @@ export const Villaggio = () => {
                 id="Naso-13"
                 fill="none"
                 stroke="#11142a"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width=".17"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth=".17"
                 d="M50.68 198.18s.03.33.17.33.17-.33.17-.38"
               />
               <path
                 fill="none"
                 stroke="#11142a"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width=".17"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth=".17"
                 d="M48.72 197.84s.32-.35.72 0m3.01.01s.32-.35.72 0"
               />
               <path
                 id="guancia-5"
                 fill="#fd335a"
                 stroke="#fd335a"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width=".12"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth=".12"
                 d="M53.4 198.69c-.37-.08-.55.34-.52.44.03.1.07.38.3.38s.47-.14.47-.38-.02-.39-.25-.44h0Z"
               />
               <path
                 id="guancia-2-5"
                 fill="#fd335a"
                 stroke="#fd335a"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width=".12"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth=".12"
                 d="M48.86 198.87c.15.02.36.06.29.46-.07.41-.24.3-.39.3s-.24-.22-.26-.37c-.02-.16.2-.41.37-.39Z"
               />
               <path
                 id="bocca-10"
                 fill="none"
                 stroke="#111428"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width=".23"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth=".23"
                 d="M50.61 199.61s.18.24.39.23"
               />
               <circle cx="49.05" cy="197.71" r=".54" fill="#fff" />
@@ -4339,18 +4339,18 @@ export const Villaggio = () => {
                 id="sopracciglio_six-5"
                 fill="none"
                 stroke="#11142a"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width=".17"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth=".17"
                 d="M49.15 196.49s-.24-.24-.41.07"
               />
               <path
                 id="sopracciglio_dex-5"
                 fill="none"
                 stroke="#11142a"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width=".17"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth=".17"
                 d="M52.65 196.81s.24-.23.41.07"
               />
             </g>
@@ -4365,9 +4365,9 @@ export const Villaggio = () => {
           cy="191.66"
           fill="#c1d1d6"
           stroke="#c1d1d6"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width=".18"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth=".18"
           opacity=".5"
           rx="3.84"
           ry=".2"
@@ -4377,16 +4377,16 @@ export const Villaggio = () => {
             <path
               fill="none"
               stroke="#009488"
-              stroke-miterlimit="10"
-              stroke-width=".59"
+              strokeMiterlimit="10"
+              strokeWidth=".59"
               d="M220.14 188.17c.08-.63.16-2.1-.58-3.7-.6-1.3-1.46-2.1-1.96-2.49"
             />
             <path
               fill="none"
               stroke="#6cf7c6"
-              stroke-dasharray="0 1.29"
-              stroke-miterlimit="10"
-              stroke-width=".59"
+              strokeDasharray="0 1.29"
+              strokeMiterlimit="10"
+              strokeWidth=".59"
               d="M220.14 188.17c.08-.63.16-2.1-.58-3.7-.6-1.3-1.46-2.1-1.96-2.49"
             />
             <path
@@ -4406,17 +4406,17 @@ export const Villaggio = () => {
             <path
               fill="none"
               stroke="#009488"
-              stroke-miterlimit="10"
-              stroke-width=".59"
+              strokeMiterlimit="10"
+              strokeWidth=".59"
               d="M213.74 182.92s-2.42.72-2.25 5.31"
             />
             <path fill="none" d="M213.74 182.92s-2.42.72-2.25 5.31" />
             <path
               fill="none"
               stroke="#6cf7c6"
-              stroke-dasharray="0 1.29"
-              stroke-miterlimit="10"
-              stroke-width=".59"
+              strokeDasharray="0 1.29"
+              strokeMiterlimit="10"
+              strokeWidth=".59"
               d="M213.74 182.92s-2.42.72-2.25 5.31"
             />
             <path fill="none" d="M213.74 182.92s1.89 2.79-2.27 5.31" />
@@ -4428,26 +4428,26 @@ export const Villaggio = () => {
           <g
             id="gamba_dex-17"
             fill="none"
-            stroke-miterlimit="10"
-            stroke-width=".59"
+            strokeMiterlimit="10"
+            strokeWidth=".59"
           >
             <path stroke="#009488" d="M213.76 187.49v2.89" />
             <path
               stroke="#6cf7c6"
-              stroke-dasharray="0 1.29"
+              strokeDasharray="0 1.29"
               d="M213.75 187.47v2.89"
             />
           </g>
           <g
             id="gamba_six-17"
             fill="none"
-            stroke-miterlimit="10"
-            stroke-width=".59"
+            strokeMiterlimit="10"
+            strokeWidth=".59"
           >
             <path stroke="#009488" d="M217.49 187.59v2.9" />
             <path
               stroke="#6cf7c6"
-              stroke-dasharray="0 1.29"
+              strokeDasharray="0 1.29"
               d="M217.48 187.57v2.89"
             />
           </g>
@@ -4459,8 +4459,8 @@ export const Villaggio = () => {
             <path
               fill="#002764"
               stroke="#002764"
-              stroke-miterlimit="10"
-              stroke-width=".06"
+              strokeMiterlimit="10"
+              strokeWidth=".06"
               d="M217.82 185.92v.65l-4.4.12-.02-.63 4.42-.14Z"
             />
             <path
@@ -4495,9 +4495,9 @@ export const Villaggio = () => {
               <path
                 fill="none"
                 stroke="#de8bb5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width=".18"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth=".18"
                 d="m218.72 179.61.78-1.22"
               />
             </g>
@@ -4509,9 +4509,9 @@ export const Villaggio = () => {
               <path
                 fill="none"
                 stroke="#de8bb5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width=".18"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth=".18"
                 d="m212.09 180.2-1.08-1.01"
               />
             </g>
@@ -4520,9 +4520,9 @@ export const Villaggio = () => {
                 id="sopracciglia-2-3"
                 fill="none"
                 stroke="#111428"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width=".18"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth=".18"
               >
                 <path d="M213.2 178.28s.15-.22.4-.05M217.02 178.12s.24-.15.41.04" />
               </g>
@@ -4530,9 +4530,9 @@ export const Villaggio = () => {
                 id="sopracciglia-2"
                 fill="none"
                 stroke="#11142a"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width=".18"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth=".18"
               >
                 <path d="M217.29 178.11s.27.11.35.22M213.2 178.28s.26-.12.4-.11" />
               </g>
@@ -4540,9 +4540,9 @@ export const Villaggio = () => {
                 id="bocca-11"
                 fill="none"
                 stroke="#11142a"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width=".18"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth=".18"
                 d="M215.56 181.03s0 .29-.2.31-.38-.23-.38-.23"
               />
               <circle cx="213.43" cy="179.23" r=".54" fill="#fff" />
@@ -4569,27 +4569,27 @@ export const Villaggio = () => {
                 id="Guancia-17"
                 fill="#f05"
                 stroke="#f05"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width=".12"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth=".12"
                 d="M217.73 180.2c-.37-.08-.55.33-.51.43s.07.38.29.38c.23 0 .47-.14.47-.38s-.02-.38-.25-.43Z"
               />
               <path
                 id="Guancia-18"
                 fill="#f05"
                 stroke="#f05"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width=".12"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth=".12"
                 d="M213.24 180.38c.14.02.35.06.28.45-.07.41-.24.3-.38.3s-.24-.22-.26-.37c-.02-.15.19-.41.36-.38h0Z"
               />
               <path
                 id="Naso-14"
                 fill="none"
                 stroke="#11142a"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width=".18"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth=".18"
                 d="M215.08 179.71s.03.33.18.33.18-.33.18-.39"
               />
             </g>
@@ -4599,14 +4599,14 @@ export const Villaggio = () => {
           id="Scarpa_dex-17"
           fill="#002764"
           stroke="#002764"
-          stroke-width=".12"
+          strokeWidth=".12"
           d="m213.96 190.38-.46-.03s-.07.61-.36.65-.43-.08-.51-.32c-.08-.24-.06-.43-.21-.43-.18 0-.18.31-.11.58.07.25.32.58.72.58s.61-.39.61-.39l.03.39h.29v-1.02Z"
         />
         <path
           id="Scarpa_six-17"
           fill="#002764"
           stroke="#002764"
-          stroke-width=".12"
+          strokeWidth=".12"
           d="m217.29 190.45.46-.03s.09.54.36.65c.24.09.42-.08.48-.32.08-.31.06-.46.21-.46.18 0 .22.35.14.61-.07.25-.32.58-.72.58s-.61-.39-.61-.39l-.03.39h-.29v-1.02Z"
         />
       </g>
@@ -4618,9 +4618,9 @@ export const Villaggio = () => {
           cy="171.87"
           fill="#c1d1d6"
           stroke="#c1d1d6"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width=".18"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth=".18"
           opacity=".5"
           rx="3.84"
           ry=".2"
@@ -4630,16 +4630,16 @@ export const Villaggio = () => {
             <path
               fill="none"
               stroke="#009488"
-              stroke-miterlimit="10"
-              stroke-width=".59"
+              strokeMiterlimit="10"
+              strokeWidth=".59"
               d="M151.51 168.37c.08-.63.16-2.1-.58-3.7-.6-1.3-1.46-2.1-1.96-2.49"
             />
             <path
               fill="none"
               stroke="#6cf7c6"
-              stroke-dasharray="0 1.29"
-              stroke-miterlimit="10"
-              stroke-width=".59"
+              strokeDasharray="0 1.29"
+              strokeMiterlimit="10"
+              strokeWidth=".59"
               d="M151.51 168.37c.08-.63.16-2.1-.58-3.7-.6-1.3-1.46-2.1-1.96-2.49"
             />
             <path
@@ -4659,17 +4659,17 @@ export const Villaggio = () => {
             <path
               fill="none"
               stroke="#009488"
-              stroke-miterlimit="10"
-              stroke-width=".59"
+              strokeMiterlimit="10"
+              strokeWidth=".59"
               d="M145.12 163.12s-2.42.72-2.25 5.31"
             />
             <path fill="none" d="M145.12 163.12s-2.42.72-2.25 5.31" />
             <path
               fill="none"
               stroke="#6cf7c6"
-              stroke-dasharray="0 1.29"
-              stroke-miterlimit="10"
-              stroke-width=".59"
+              strokeDasharray="0 1.29"
+              strokeMiterlimit="10"
+              strokeWidth=".59"
               d="M145.12 163.12s-2.42.72-2.25 5.31"
             />
             <path fill="none" d="M145.12 163.12s1.89 2.79-2.27 5.31" />
@@ -4681,26 +4681,26 @@ export const Villaggio = () => {
           <g
             id="gamba_dex-18"
             fill="none"
-            stroke-miterlimit="10"
-            stroke-width=".59"
+            strokeMiterlimit="10"
+            strokeWidth=".59"
           >
             <path stroke="#009488" d="M145.14 167.69v2.89" />
             <path
               stroke="#6cf7c6"
-              stroke-dasharray="0 1.29"
+              strokeDasharray="0 1.29"
               d="M145.13 167.67v2.89"
             />
           </g>
           <g
             id="gamba_six-18"
             fill="none"
-            stroke-miterlimit="10"
-            stroke-width=".59"
+            strokeMiterlimit="10"
+            strokeWidth=".59"
           >
             <path stroke="#009488" d="M148.86 167.79v2.9" />
             <path
               stroke="#6cf7c6"
-              stroke-dasharray="0 1.29"
+              strokeDasharray="0 1.29"
               d="M148.86 167.78v2.89"
             />
           </g>
@@ -4712,8 +4712,8 @@ export const Villaggio = () => {
             <path
               fill="#002764"
               stroke="#002764"
-              stroke-miterlimit="10"
-              stroke-width=".06"
+              strokeMiterlimit="10"
+              strokeWidth=".06"
               d="M149.2 166.12v.65l-4.4.12-.02-.63 4.42-.14Z"
             />
             <path
@@ -4748,9 +4748,9 @@ export const Villaggio = () => {
               <path
                 fill="none"
                 stroke="#de8bb5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width=".18"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth=".18"
                 d="m150.1 159.81.78-1.22"
               />
             </g>
@@ -4762,9 +4762,9 @@ export const Villaggio = () => {
               <path
                 fill="none"
                 stroke="#de8bb5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width=".18"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth=".18"
                 d="m143.47 160.41-1.08-1.01"
               />
             </g>
@@ -4773,9 +4773,9 @@ export const Villaggio = () => {
                 id="sopracciglia-2-4"
                 fill="none"
                 stroke="#111428"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width=".18"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth=".18"
               >
                 <path d="M144.58 158.48s.15-.22.4-.05M148.4 158.33s.24-.15.41.04" />
               </g>
@@ -4783,9 +4783,9 @@ export const Villaggio = () => {
                 id="sopracciglia-3"
                 fill="none"
                 stroke="#11142a"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width=".18"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth=".18"
               >
                 <path d="M148.66 158.31s.27.11.35.22M144.58 158.48s.26-.12.4-.11" />
               </g>
@@ -4793,9 +4793,9 @@ export const Villaggio = () => {
                 id="bocca-12"
                 fill="none"
                 stroke="#11142a"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width=".18"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth=".18"
                 d="M146.94 161.23s0 .29-.2.31-.38-.23-.38-.23"
               />
               <circle cx="144.81" cy="159.43" r=".54" fill="#fff" />
@@ -4822,27 +4822,27 @@ export const Villaggio = () => {
                 id="Guancia-19"
                 fill="#f05"
                 stroke="#f05"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width=".12"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth=".12"
                 d="M149.11 160.4c-.37-.08-.55.33-.51.43s.07.38.29.38c.23 0 .47-.14.47-.38s-.02-.38-.25-.43Z"
               />
               <path
                 id="Guancia-20"
                 fill="#f05"
                 stroke="#f05"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width=".12"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth=".12"
                 d="M144.62 160.58c.14.02.35.06.28.45-.07.41-.24.3-.38.3s-.24-.22-.26-.37c-.02-.15.19-.41.36-.38h0Z"
               />
               <path
                 id="Naso-15"
                 fill="none"
                 stroke="#11142a"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width=".18"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth=".18"
                 d="M146.46 159.91s.03.33.18.33.18-.33.18-.39"
               />
             </g>
@@ -4852,14 +4852,14 @@ export const Villaggio = () => {
           id="Scarpa_dex-18"
           fill="#002764"
           stroke="#002764"
-          stroke-width=".12"
+          strokeWidth=".12"
           d="m145.34 170.58-.46-.03s-.07.61-.36.65-.43-.08-.51-.32c-.08-.24-.06-.43-.21-.43-.18 0-.18.31-.11.58.07.25.32.58.72.58s.61-.39.61-.39l.03.39h.29v-1.02Z"
         />
         <path
           id="Scarpa_six-18"
           fill="#002764"
           stroke="#002764"
-          stroke-width=".12"
+          strokeWidth=".12"
           d="m148.67 170.65.46-.03s.09.54.36.65c.24.09.42-.08.48-.32.08-.31.06-.46.21-.46.18 0 .22.35.14.61-.07.25-.32.58-.72.58s-.61-.39-.61-.39l-.03.39h-.29v-1.02Z"
         />
       </g>
@@ -4871,9 +4871,9 @@ export const Villaggio = () => {
           cy="137.66"
           fill="#c1d1d6"
           stroke="#c1d1d6"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width=".18"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth=".18"
           opacity=".5"
           rx="3.84"
           ry=".2"
@@ -4883,16 +4883,16 @@ export const Villaggio = () => {
             <path
               fill="none"
               stroke="#009488"
-              stroke-miterlimit="10"
-              stroke-width=".59"
+              strokeMiterlimit="10"
+              strokeWidth=".59"
               d="M174.67 134.17c.08-.63.16-2.1-.58-3.7-.6-1.3-1.46-2.1-1.96-2.49"
             />
             <path
               fill="none"
               stroke="#6cf7c6"
-              stroke-dasharray="0 1.29"
-              stroke-miterlimit="10"
-              stroke-width=".59"
+              strokeDasharray="0 1.29"
+              strokeMiterlimit="10"
+              strokeWidth=".59"
               d="M174.67 134.17c.08-.63.16-2.1-.58-3.7-.6-1.3-1.46-2.1-1.96-2.49"
             />
             <path
@@ -4912,17 +4912,17 @@ export const Villaggio = () => {
             <path
               fill="none"
               stroke="#009488"
-              stroke-miterlimit="10"
-              stroke-width=".59"
+              strokeMiterlimit="10"
+              strokeWidth=".59"
               d="M168.28 128.92s-2.42.72-2.25 5.31"
             />
             <path fill="none" d="M168.28 128.92s-2.42.72-2.25 5.31" />
             <path
               fill="none"
               stroke="#6cf7c6"
-              stroke-dasharray="0 1.29"
-              stroke-miterlimit="10"
-              stroke-width=".59"
+              strokeDasharray="0 1.29"
+              strokeMiterlimit="10"
+              strokeWidth=".59"
               d="M168.28 128.92s-2.42.72-2.25 5.31"
             />
             <path fill="none" d="M168.28 128.92s1.89 2.79-2.27 5.31" />
@@ -4934,26 +4934,26 @@ export const Villaggio = () => {
           <g
             id="gamba_dex-19"
             fill="none"
-            stroke-miterlimit="10"
-            stroke-width=".59"
+            strokeMiterlimit="10"
+            strokeWidth=".59"
           >
             <path stroke="#009488" d="M168.29 133.48v2.89" />
             <path
               stroke="#6cf7c6"
-              stroke-dasharray="0 1.29"
+              strokeDasharray="0 1.29"
               d="M168.28 133.47v2.89"
             />
           </g>
           <g
             id="gamba_six-19"
             fill="none"
-            stroke-miterlimit="10"
-            stroke-width=".59"
+            strokeMiterlimit="10"
+            strokeWidth=".59"
           >
             <path stroke="#009488" d="M172.02 133.58v2.9" />
             <path
               stroke="#6cf7c6"
-              stroke-dasharray="0 1.29"
+              strokeDasharray="0 1.29"
               d="M172.01 133.57v2.89"
             />
           </g>
@@ -4965,8 +4965,8 @@ export const Villaggio = () => {
             <path
               fill="#002764"
               stroke="#002764"
-              stroke-miterlimit="10"
-              stroke-width=".06"
+              strokeMiterlimit="10"
+              strokeWidth=".06"
               d="M172.36 131.92v.65l-4.4.12-.02-.63 4.42-.14Z"
             />
             <path
@@ -4983,9 +4983,9 @@ export const Villaggio = () => {
               <path
                 fill="none"
                 stroke="#de8bb5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width=".17"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth=".17"
                 d="m173.24 125.47.77-1.21"
               />
             </g>
@@ -4997,9 +4997,9 @@ export const Villaggio = () => {
               <path
                 fill="none"
                 stroke="#de8bb5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width=".17"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth=".17"
                 d="m166.66 126.07-1.07-1"
               />
             </g>
@@ -5030,44 +5030,44 @@ export const Villaggio = () => {
                 id="Naso-16"
                 fill="none"
                 stroke="#11142a"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width=".17"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth=".17"
                 d="M169.63 125.58s.03.33.17.33.17-.33.17-.38"
               />
               <path
                 fill="none"
                 stroke="#11142a"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width=".17"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth=".17"
                 d="M167.67 125.23s.32-.35.72 0m3.01.01s.32-.35.72 0"
               />
               <path
                 id="guancia-6"
                 fill="#fd335a"
                 stroke="#fd335a"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width=".12"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth=".12"
                 d="M172.35 126.08c-.37-.08-.55.34-.52.44.03.1.07.38.3.38s.47-.14.47-.38-.02-.39-.25-.44h0Z"
               />
               <path
                 id="guancia-2-6"
                 fill="#fd335a"
                 stroke="#fd335a"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width=".12"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth=".12"
                 d="M167.81 126.26c.15.02.36.06.29.46-.07.41-.24.3-.39.3s-.24-.22-.26-.37c-.02-.16.2-.41.37-.39Z"
               />
               <path
                 id="bocca-smile-2"
                 fill="none"
                 stroke="#11142a"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width=".17"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth=".17"
                 d="M169.81 126.99s.18.24.39.23c.21-.01.2-.31.2-.31"
               />
               <circle cx="168" cy="125.1" r=".54" fill="#fff" />
@@ -5095,18 +5095,18 @@ export const Villaggio = () => {
                 id="sopracciglio_six-6"
                 fill="none"
                 stroke="#11142a"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width=".17"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth=".17"
                 d="M168.1 123.88s-.24-.24-.41.07"
               />
               <path
                 id="sopracciglio_dex-6"
                 fill="none"
                 stroke="#11142a"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width=".17"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth=".17"
                 d="M171.6 124.2s.24-.23.41.07"
               />
             </g>
@@ -5116,62 +5116,62 @@ export const Villaggio = () => {
           id="Scarpa_dex-19"
           fill="#002764"
           stroke="#002764"
-          stroke-width=".12"
+          strokeWidth=".12"
           d="m168.49 136.38-.46-.03s-.07.61-.36.65-.43-.08-.51-.32c-.08-.24-.06-.43-.21-.43-.18 0-.18.31-.11.58.07.25.32.58.72.58s.61-.39.61-.39l.03.39h.29v-1.02Z"
         />
         <path
           id="Scarpa_six-19"
           fill="#002764"
           stroke="#002764"
-          stroke-width=".12"
+          strokeWidth=".12"
           d="m171.83 136.45.46-.03s.09.54.36.65c.24.09.42-.08.48-.32.08-.31.06-.46.21-.46.18 0 .22.35.14.61-.07.25-.32.58-.72.58s-.61-.39-.61-.39l-.03.39h-.29v-1.02Z"
         />
       </g>
-      <g fill="none" stroke="#009488" stroke-width="1.13">
+      <g fill="none" stroke="#009488" strokeWidth="1.13">
         <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           d="m533.76 158.49 4.38-5.3 4.17 5.3m-9.12 10.92 4.74-6.75 4.95 5.83"
         />
-        <path stroke-miterlimit="11.24" d="m538.14 153.22-.11 25.98" />
+        <path strokeMiterlimit="11.24" d="m538.14 153.22-.11 25.98" />
       </g>
-      <g fill="none" stroke="#009488" stroke-width="1.13">
+      <g fill="none" stroke="#009488" strokeWidth="1.13">
         <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           d="m550.73 167.61 3.61-5.16 3.15 5.06m-6.75 7.53 3.61-5.06 3.15 4.95m-6.75 7.18 3.61-5.16 3.15 5.06"
         />
-        <path stroke-miterlimit="11.24" d="M554.34 162.41V192" />
+        <path strokeMiterlimit="11.24" d="M554.34 162.41V192" />
       </g>
-      <g fill="none" stroke="#009488" stroke-width="1.13">
+      <g fill="none" stroke="#009488" strokeWidth="1.13">
         <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           d="m367.39 239.94 4.28-5.3 4.17 5.3m-9.12 10.89 4.84-6.75 4.95 5.83"
         />
-        <path stroke-miterlimit="11.24" d="m371.67 234.64-.11 25.98" />
+        <path strokeMiterlimit="11.24" d="m371.67 234.64-.11 25.98" />
       </g>
-      <g fill="none" stroke="#009488" stroke-width="1.13">
+      <g fill="none" stroke="#009488" strokeWidth="1.13">
         <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           d="m384.39 249.03 3.5-5.06 3.25 4.95m-6.75 7.67 3.5-5.16 3.25 5.06m-6.75 7.07 3.5-5.06 3.25 4.95"
         />
-        <path stroke-miterlimit="11.24" d="M387.86 243.97v29.48" />
+        <path strokeMiterlimit="11.24" d="M387.86 243.97v29.48" />
       </g>
-      <g fill="none" stroke="#009488" stroke-width="1.3">
+      <g fill="none" stroke="#009488" strokeWidth="1.3">
         <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           d="m53.81 76.58 3.67-6.26 3.41 6.11m-7.07 9.22 3.67-6.26 3.41 6.11m-7.07 8.74 3.67-6.26 3.41 6"
         />
-        <path stroke-miterlimit="31.82" d="M57.44 70.33v35.92" />
+        <path strokeMiterlimit="31.82" d="M57.44 70.33v35.92" />
         <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           d="M35.52 92.95 40 86.47l4.37 6.48m-9.55 13.18 5.07-8.15 5.18 7.07"
         />
-        <path stroke-miterlimit="31.82" d="m40 86.47-.11 31.59" />
+        <path strokeMiterlimit="31.82" d="m40 86.47-.11 31.59" />
       </g>
       <g opacity=".48">
         <path
@@ -5181,9 +5181,9 @@ export const Villaggio = () => {
         <path
           fill="none"
           stroke="#c1d1d6"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width=".27"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth=".27"
           d="M113.67 87.53c14.48 0 26.18-.3 26.18-.63 0-.37-11.74-.63-26.18-.63s-26.18.3-26.18.63 11.7.63 26.18.63Z"
         />
       </g>
@@ -5225,25 +5225,25 @@ export const Villaggio = () => {
       <path
         fill="#3c5a3d"
         stroke="#3c5a3d"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width=".09"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth=".09"
         d="M102.6 77.27s-.48 4.7.41 7.37c0 0-1.33.33-2.67-.96-1.33 1.3-2.67.96-2.67.96.89-2.67.41-7.37.41-7.37h4.52Z"
       />
       <path
         fill="none"
         stroke="#fffad8"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width=".09"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth=".09"
         d="M101.71 83.53c-.22-.11-.48-.26-.74-.52l-.67-.67-.67.67c-.26.26-.52.41-.74.52.3-1.85.26-3.52.19-6.26h2.44c-.07 2.78-.11 4.41.19 6.26h0Z"
       />
       <path
         fill="#462b0d"
         stroke="#462b0d"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width=".09"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth=".09"
         d="M100.3 80.19c2.52 0 4.52-2.04 4.52-4.52s-2.04-4.52-4.52-4.52-4.52 2.04-4.52 4.52 2.04 4.52 4.52 4.52Z"
       />
       <path
@@ -5253,9 +5253,9 @@ export const Villaggio = () => {
       <path
         fill="none"
         stroke="#462b0d"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width=".09"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth=".09"
         d="M100.3 72.01v7.33M96.64 75.68h7.37"
       />
       <path
@@ -5265,25 +5265,25 @@ export const Villaggio = () => {
       <path
         fill="#3c5a3d"
         stroke="#3c5a3d"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width=".09"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth=".09"
         d="M125.74 77.27s.48 4.7-.41 7.37c0 0 1.33.33 2.67-.96 1.33 1.3 2.67.96 2.67.96-.89-2.67-.41-7.37-.41-7.37h-4.52Z"
       />
       <path
         fill="none"
         stroke="#fffad8"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width=".09"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth=".09"
         d="M126.6 83.53c.22-.11.48-.26.74-.52l.67-.67.67.67c.26.26.52.41.74.52-.3-1.85-.26-3.52-.19-6.26h-2.44c.07 2.78.15 4.41-.19 6.26h0Z"
       />
       <path
         fill="#462b0d"
         stroke="#462b0d"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width=".09"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth=".09"
         d="M128 80.19c2.52 0 4.52-2.04 4.52-4.52s-2.04-4.52-4.52-4.52-4.52 2.04-4.52 4.52 2.04 4.52 4.52 4.52Z"
       />
       <path
@@ -5293,9 +5293,9 @@ export const Villaggio = () => {
       <path
         fill="none"
         stroke="#462b0d"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width=".09"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth=".09"
         d="M128 72.01v7.33M131.67 75.68h-7.37"
       />
       <path
@@ -5305,9 +5305,9 @@ export const Villaggio = () => {
       <path
         fill="#3c5a3d"
         stroke="#3c5a3d"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width=".09"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth=".09"
         d="M121.19 86.53h-14.04V71.49c0-2 1.07-3.85 2.85-4.81l4.18-2.3 4.18 2.3c1.74.96 2.85 2.81 2.85 4.81l-.04 15.04h0Z"
       />
       <path
@@ -5338,9 +5338,9 @@ export const Villaggio = () => {
         <path
           fill="none"
           stroke="#c1d1d6"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width=".27"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth=".27"
           d="M180.35 62.77c14.48 0 26.18-.3 26.18-.63s-11.74-.63-26.18-.63-26.18.3-26.18.63 11.74.63 26.18.63Z"
         />
       </g>
@@ -5399,26 +5399,26 @@ export const Villaggio = () => {
       <path
         fill="#462b0d"
         stroke="#462b0d"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width=".08"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth=".08"
         d="M185.39 37.29h-9.37v6.85h9.37v-6.85Z"
       />
       <path fill="#f5feff" d="M184.42 38.18h-7.44v5.07h7.44v-5.07Z" />
       <path
         fill="none"
         stroke="#462b0d"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width=".08"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth=".08"
         d="M180.79 38.18v5.07M177.02 40.74h7.44"
       />
       <path
         fill="#462b0d"
         stroke="#462b0d"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width=".08"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth=".08"
         d="M187.94 61.66c.3-.3.44-.7.44-1.15 0-.63-.37-1.22-.93-1.48.56-.26.93-.81.93-1.48s-.37-1.22-.93-1.48c.56-.26.93-.81.93-1.48s-.37-1.22-.93-1.48c.56-.26.93-.81.93-1.48 0-.74-.48-1.37-1.15-1.56.44-.3.74-.81.74-1.37 0-.89-.74-1.67-1.67-1.67-.48 0-.93.22-1.26.56-.22-.67-.85-1.19-1.59-1.19-.59 0-1.11.33-1.41.78-.3-.48-.81-.78-1.41-.78s-1.11.33-1.41.78c-.3-.48-.81-.78-1.41-.78-.74 0-1.37.48-1.59 1.19-.3-.33-.74-.56-1.26-.56-.93 0-1.67.74-1.67 1.67 0 .59.3 1.07.74 1.37-.67.22-1.15.85-1.15 1.56 0 .63.37 1.22.93 1.48-.56.26-.93.81-.93 1.48s.37 1.22.93 1.48c-.56.26-.93.81-.93 1.48s.37 1.22.93 1.48c-.56.26-.93.81-.93 1.48 0 .44.19.85.44 1.15h14.59Z"
       />
       <path
@@ -5438,68 +5438,68 @@ export const Villaggio = () => {
         <path
           fill="none"
           stroke="#c1d1d6"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width=".07"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth=".07"
           d="M90.4 119.69c2.67 0 4.81-.07 4.81-.22 0-.11-2.15-.22-4.81-.22s-4.81.07-4.81.22c0 .11 2.15.22 4.81.22Z"
         />
       </g>
       <path
         fill="#f19e53"
         stroke="#f19e53"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width=".07"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth=".07"
         d="M93.62 118.69c-.26.04-1.26-.04-3.37-1.89-.67.96-1.89 2.56-2.81 2.67-.22.04-.44-.04-.59-.15-.81-.56-.78-3.59-.59-6.3-.81 0-1.96-.11-2.3-.78-.07-.15-.11-.37-.04-.63.19-.59 1.15-1.19 1.89-1.59-.59-.67-1-1.52-1.11-2.41-.3-2.41 1.41-4.59 3.81-4.89 2.41-.3 4.59 1.41 4.89 3.81.11.93-.07 1.81-.48 2.59.81.22 1.89.59 2.22 1.07.15.26.15.48.11.59-.15.74-1.22 1.11-2.04 1.3.85 2.56 1.63 5.52.96 6.26-.15.22-.37.3-.56.33h0Z"
       />
       <path
         fill="none"
         stroke="#fffad8"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width=".07"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth=".07"
         d="M92.88 112.95s-1.15-.89-1.52-.67c-.41.22-.41 1.63-.41 1.63s-.59-1.3-1.26-1.22-.93 1.52-.93 1.52-.37-1.37-.81-1.48c-.41-.11-1.3 1.04-1.3 1.04M86.66 116.39s.59-.52.89-.56c.3-.04.15 1.33.15 1.33s.78-1.19 1.07-1.07c.26.07.15 1.63.15 1.63M93.62 115.5s-.7-.37-1-.33.15 1.33.15 1.33-1.04-.93-1.3-.78.26 1.59.26 1.59M89.47 110.58s-.81.52-1.11.56-.52-1.19-.22-1.41c.3-.22 1.26.33 1.26.33s.81-.78 1.15-.63c.37.15.41 1.41.11 1.44-.26 0-1.19-.3-1.19-.3h0Z"
       />
       <path
         fill="#f19e53"
         stroke="#fffad8"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width=".07"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth=".07"
         d="M88.95 110.32c.04.26.26.44.56.41.26-.04.44-.26.41-.56-.04-.26-.26-.44-.56-.41-.26.04-.44.3-.41.56Z"
       />
       <path
         fill="#462b0d"
         stroke="#462b0d"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width=".03"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth=".03"
         d="M86.95 106.84c.04.11.11.19.22.19s.15-.07.15-.19c-.04-.11-.11-.19-.22-.19s-.19.07-.15.19ZM90.92 106.47c0 .07-.07.19-.15.19s-.19-.04-.19-.15c0-.07.07-.19.15-.19.11 0 .19.04.19.15Z"
       />
       <path
         fill="none"
         stroke="#462b0d"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width=".07"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth=".07"
         d="M89.92 107.5s-.22.81-.59.89c-.41.04-.81-.7-.81-.7"
       />
       <path
         fill="none"
         stroke="#462b0d"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width=".07"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth=".07"
         d="M90.14 115.99s3 2.78 3.63 2.07c.67-.74-1.26-6.3-1.26-6.3s2.07-.33 2.22-1.04-2.63-1.26-2.63-1.26h-.04c.63-.78.96-1.81.81-2.89-.26-2.11-2.18-3.63-4.3-3.37-2.11.26-3.63 2.18-3.37 4.3.15 1.07.7 2 1.52 2.59h-.04s-2.56 1.22-2.26 1.89c.3.63 2.41.44 2.41.44s-.52 5.85.3 6.41c.78.63 3-2.81 3-2.85h0Z"
         opacity=".31"
       />
-      <g fill="none" stroke="#009488" stroke-width="1.3">
+      <g fill="none" stroke="#009488" strokeWidth="1.3">
         <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           d="m110.64 115.51 4.48-6.48 4.37 6.48m-9.55 13.18 5.07-8.15 5.18 7.07"
         />
-        <path stroke-miterlimit="31.82" d="m115.12 109.03-.11 31.59" />
+        <path strokeMiterlimit="31.82" d="m115.12 109.03-.11 31.59" />
       </g>
       <g opacity=".48">
         <path
@@ -5509,18 +5509,18 @@ export const Villaggio = () => {
         <path
           fill="none"
           stroke="#c1d1d6"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width=".27"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth=".27"
           d="M243.02 122.1c13.59 0 24.57-.32 24.57-.67 0-.4-11.02-.67-24.57-.67s-24.57.32-24.57.67 10.98.67 24.57.67Z"
         />
       </g>
       <path
         fill="#462b0d"
         stroke="#462b0d"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width=".09"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth=".09"
         d="M263.33 74.53h-10.98v15.76h10.98V74.53Z"
       />
       <path
@@ -5534,17 +5534,17 @@ export const Villaggio = () => {
       <path
         fill="#f19e53"
         stroke="#f19e53"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width=".09"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth=".09"
         d="M249.58 98.19c0 .36-.59.63-.67.99s.4.83.28 1.15-.79.4-.95.71c-.16.28.08.91-.12 1.19-.24.28-.87.12-1.15.32-.28.24-.24.87-.51 1.07-.28.16-.83-.2-1.19-.08-.32.12-.51.75-.83.83s-.71-.47-1.07-.47-.75.55-1.07.47c-.36-.08-.51-.71-.83-.83-.32-.12-.87.24-1.19.08-.28-.16-.28-.83-.51-1.07-.28-.24-.91-.08-1.15-.32-.24-.28.04-.87-.12-1.19-.16-.28-.83-.36-.95-.71-.12-.32.36-.79.28-1.15-.08-.32-.67-.63-.67-.99s.59-.63.67-.99-.4-.83-.28-1.15c.12-.32.79-.4.95-.71.16-.28-.08-.91.12-1.19.24-.28.87-.12 1.15-.32.28-.24.24-.87.51-1.07.28-.16.83.2 1.19.08.32-.12.51-.75.83-.83.32-.08.71.47 1.07.47s.75-.55 1.07-.47c.36.08.51.71.83.83s.87-.24 1.19-.08c.28.16.28.83.51 1.07.28.24.91.08 1.15.32.24.28-.04.87.12 1.19.16.28.83.36.95.71.12.32-.36.79-.28 1.15.08.32.67.63.67.99Z"
       />
       <path
         fill="#462b0d"
         stroke="#462b0d"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width=".09"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth=".09"
         d="M249.58 98.19c0 .36-.59.63-.67.99s.4.83.28 1.15-.79.4-.95.71c-.16.28.08.91-.12 1.19-.24.28-.87.12-1.15.32-.28.24-.24.87-.51 1.07-.28.16-.83-.2-1.19-.08-.32.12-.51.75-.83.83s-.71-.47-1.07-.47-.75.55-1.07.47c-.36-.08-.51-.71-.83-.83-.32-.12-.87.24-1.19.08-.28-.16-.28-.83-.51-1.07-.28-.24-.91-.08-1.15-.32-.24-.28.04-.87-.12-1.19-.16-.28-.83-.36-.95-.71-.12-.32.36-.79.28-1.15-.08-.32-.67-.63-.67-.99s.59-.63.67-.99-.4-.83-.28-1.15c.12-.32.79-.4.95-.71.16-.28-.08-.91.12-1.19.24-.28.87-.12 1.15-.32.28-.24.24-.87.51-1.07.28-.16.83.2 1.19.08.32-.12.51-.75.83-.83.32-.08.71.47 1.07.47s.75-.55 1.07-.47c.36.08.51.71.83.83s.87-.24 1.19-.08c.28.16.28.83.51 1.07.28.24.91.08 1.15.32.24.28-.04.87.12 1.19.16.28.83.36.95.71.12.32-.36.79-.28 1.15.08.32.67.63.67.99Z"
       />
       <path
@@ -5554,9 +5554,9 @@ export const Villaggio = () => {
       <path
         fill="none"
         stroke="#462b0d"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width=".4"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth=".4"
         d="M243.38 93.71v8.96M238.95 98.19h8.81"
       />
       <path
@@ -5566,9 +5566,9 @@ export const Villaggio = () => {
       <path
         fill="#462b0d"
         stroke="#462b0d"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width=".09"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth=".09"
         d="M240.18 109.97c.24 0 .43-.2.43-.43s-.2-.43-.43-.43-.43.2-.43.43.2.43.43.43ZM246.19 109.57c0 .24.2.43.43.43s.43-.2.43-.43-.2-.43-.43-.43-.43.2-.43.43ZM238.4 112.34c0 .24-.2.43-.43.43s-.43-.2-.43-.43.2-.43.43-.43c.24.04.43.2.43.43ZM237.37 115.77c0 .24-.2.43-.43.43s-.43-.2-.43-.43.2-.43.43-.43c.24 0 .43.2.43.43ZM237.02 119.17c0 .24-.2.43-.43.43s-.43-.2-.43-.43.2-.43.43-.43.43.2.43.43ZM248.4 112.34c0 .24.2.43.43.43s.43-.2.43-.43-.2-.43-.43-.43c-.28.04-.43.2-.43.43ZM249.42 115.77c0 .24.2.43.43.43s.43-.2.43-.43-.2-.43-.43-.43c-.24 0-.43.2-.43.43ZM249.74 119.17c0 .24.2.43.43.43s.43-.2.43-.43-.2-.43-.43-.43-.43.2-.43.43ZM243.81 108.66c0 .24-.2.43-.43.43s-.43-.2-.43-.43.2-.43.43-.43c.24.04.43.2.43.43ZM248.4 120.87c.28-10.86-5.02-10.23-5.02-10.23s-5.29-.63-5.02 10.23h10.04Z"
       />
       <path fill="#f5feff" d="M225.17 120.87h5.1V96.1h-5.1v24.77Z" />
@@ -5584,22 +5584,22 @@ export const Villaggio = () => {
       <path
         fill="#462b0d"
         stroke="#462b0d"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width=".08"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth=".08"
         d="M268.9 96.85c.75-.63.71-1.62-.04-2.21-1.86-1.46-5.29-4.15-9.01-6.84-11.22-8.22-14.1-8.89-16.48-8.89s-5.25.67-16.48 8.89c-3.71 2.73-7.15 5.41-9.01 6.84-.75.59-.79 1.62-.04 2.21l5.81 4.98c7.11-5.73 16.12-12.25 19.68-14.1 3.6 1.86 12.56 8.38 19.68 14.1l5.89-4.98h0Z"
       />
       <path
         fill="#f5feff"
         d="M217.74 96.85c-.95-.47-1.07-1.58-.28-2.21 1.9-1.5 5.37-4.19 9.13-6.95 11.46-8.38 14.42-9.09 16.83-9.09s5.37.67 16.83 9.09c3.75 2.73 7.19 5.41 9.13 6.95.79.63.67 1.7-.28 2.21-2.21 1.11-5.77 2.45-6.44-.08-.36-1.66.43-3.36-.71-3.99-1.22-.67-3 .95-4.94.08-1.94-.83-.59-4.66-2.25-5.81-1.46-1.03-4.62 1.58-6.44.63-1.82-.91-2.49-4.7-4.86-4.7s-3.04 3.79-4.86 4.7c-1.82.91-4.98-1.66-6.44-.63-1.7 1.15-.36 4.98-2.25 5.81-1.94.83-3.67-.79-4.94-.08-1.15.63-.4 2.33-.71 3.99-.67 2.53-4.23 1.19-6.44.08h-.08Z"
       />
-      <g fill="none" stroke="#009488" stroke-width="1.38">
+      <g fill="none" stroke="#009488" strokeWidth="1.38">
         <path
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeLinecap="round"
+          strokeLinejoin="round"
           d="m285.5 92.19 3.91-6.68 3.52 6.52m-7.43 9.84 3.91-6.68 3.52 6.52m-7.43 9.21 3.91-6.68 3.52 6.52"
         />
-        <path stroke-miterlimit="31.82" d="M289.41 85.55v38.21" />
+        <path strokeMiterlimit="31.82" d="M289.41 85.55v38.21" />
       </g>
       <g opacity=".48">
         <path
@@ -5609,9 +5609,9 @@ export const Villaggio = () => {
         <path
           fill="none"
           stroke="#c1d1d6"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width=".27"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth=".27"
           d="M427.1 275.06c14.53 0 26.34-.28 26.34-.63s-11.81-.63-26.34-.63-26.34.28-26.34.63 11.81.63 26.34.63Z"
         />
       </g>
@@ -5674,26 +5674,26 @@ export const Villaggio = () => {
       <path
         fill="#462b0d"
         stroke="#462b0d"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width=".08"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth=".08"
         d="M432.15 249.48h-9.4v6.87h9.4v-6.87Z"
       />
       <path fill="#f5feff" d="M431.2 250.34h-7.46v5.13h7.46v-5.13Z" />
       <path
         fill="none"
         stroke="#462b0d"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width=".08"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth=".08"
         d="M427.53 250.34v5.13M423.74 252.91h7.46"
       />
       <path
         fill="#462b0d"
         stroke="#462b0d"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width=".08"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth=".08"
         d="M434.76 273.96c.28-.28.47-.71.47-1.15 0-.63-.39-1.22-.91-1.5.55-.28.91-.83.91-1.5 0-.63-.39-1.22-.91-1.5.55-.28.91-.83.91-1.5 0-.63-.39-1.22-.91-1.5.55-.28.91-.83.91-1.5 0-.75-.47-1.38-1.15-1.58.43-.28.75-.79.75-1.38 0-.91-.75-1.66-1.66-1.66-.47 0-.95.24-1.22.55-.2-.67-.83-1.18-1.58-1.18-.59 0-1.15.32-1.42.79-.28-.47-.83-.79-1.42-.79s-1.15.32-1.42.79c-.28-.47-.83-.79-1.42-.79-.75 0-1.38.51-1.58 1.18-.32-.36-.75-.55-1.22-.55-.91 0-1.66.75-1.66 1.66 0 .59.28 1.11.75 1.38-.67.2-1.15.83-1.15 1.58 0 .63.39 1.22.91 1.5-.55.28-.91.83-.91 1.5 0 .63.39 1.22.91 1.5-.55.28-.91.83-.91 1.5 0 .63.39 1.22.91 1.5-.55.28-.91.83-.91 1.5 0 .43.16.87.47 1.15h14.45Z"
       />
       <path
@@ -5972,9 +5972,9 @@ export const Villaggio = () => {
         <path
           fill="none"
           stroke="#c1d1d6"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width=".31"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth=".31"
           d="M537.41 251.73c19.99 0 36.18-.28 36.18-.59 0-.35-16.2-.59-36.18-.59s-36.18.28-36.18.59c-.03.31 16.2.59 36.18.59Z"
         />
       </g>

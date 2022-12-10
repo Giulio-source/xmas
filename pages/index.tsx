@@ -20,8 +20,9 @@ export function openModal() {
   console.log("Open modal");
   return gsap.to("#dialog-modal", {
     y: "0%",
-    duration: 0.8,
-    ease: "elastic.out(0.6, 0.3)"
+    duration: 0.5,
+    // ease: "elastic.out(0.6, 0.3)"
+    ease: "back.out(1.1)"
   });
 }
 
