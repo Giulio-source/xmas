@@ -49,7 +49,7 @@ export const StyledModalBody = styled.div<any>`
 
 export const StyledIllustrazioneElfo = styled.div`
   width: 100%;
-  max-width: 175px;
+  max-width: 200px;
 `;
 
 export const StyledAnswerButtons = styled.div`
