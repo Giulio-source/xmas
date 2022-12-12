@@ -81,7 +81,7 @@ export const StyledOutlineButton = styled(StyledButton)`
 
   &:hover {
     background-color: ${Colors.lightViolet};
-    border-color: inherit;
+    border-color: ${Colors.lightViolet};
   }
 
   ${({ color }) =>

@@ -1,6 +1,11 @@
 import styled from "styled-components";
 import { StyledTitolo } from "../commons/Theme";
 import { StyledCredits } from "../Credits/Credits.style";
+import { StyledBackground } from "../Sezioni/Hero/Hero.style";
+
+export const StyledElfoWrapper = styled.div`
+  position: relative;
+`;
 
 export const StyledCartolina = styled.div`
   @media screen and (min-width: 1024px) {
@@ -10,10 +15,6 @@ export const StyledCartolina = styled.div`
     justify-content: center;
     align-items: flex-end;
     margin-bottom: 40px;
-
-    div:has(svg) {
-      margin: 0;
-    }
   }
 `;
 
@@ -70,4 +71,8 @@ export const StyledGoBackButton = styled.div`
     grid-column: 1 / -1;
     margin-top: 32px;
   }
+`;
+
+export const StyledCartolinaBackground = styled(StyledBackground)`
+  bottom: 200px;
 `;

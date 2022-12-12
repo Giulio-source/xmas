@@ -10,9 +10,11 @@ import { StyledBackground, StyledSnowHill } from "../Sezioni/Hero/Hero.style";
 import { Trees } from "../Trees/Trees";
 import {
   StyledCartolina,
+  StyledCartolinaBackground,
   StyledCartolinaContent,
   StyledCartolinaDesktop,
   StyledCartolinaFooterDesktop,
+  StyledElfoWrapper,
   StyledGoBackButton,
 } from "./Cartolina.style";
 
@@ -30,10 +32,10 @@ export const Cartolina = ({
       <HintoIcon theme="light" />
       <Neve />
       <Trees />
-      <div style={{ position: "relative" }}>
+      <StyledElfoWrapper>
         <Elfo />
         <StyledBackground color={backgroundColor} />
-      </div>
+      </StyledElfoWrapper>
       <StyledCartolinaContent>
         <Titolo>{message}</Titolo>
         {CTA ? (
@@ -60,7 +62,7 @@ export const Cartolina = ({
             </StyledGoBackButton>
           )}
           <StyledCartolinaDesktop>
-            <StyledBackground color={backgroundColor} />
+            <StyledCartolinaBackground color={backgroundColor} />
             <StyledSnowHill />
           </StyledCartolinaDesktop>
           <StyledCartolinaFooterDesktop>
