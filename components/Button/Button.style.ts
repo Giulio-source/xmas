@@ -15,6 +15,11 @@ export const StyledButton = styled.div<any>`
   align-items: center;
   text-align: center;
   letter-spacing: 0.02em;
+  transition: all 0.3s;
+
+  &:hover {
+    background: ${Colors.darkViolet};
+  }
 
   ${({ disabled }) =>
     disabled &&
@@ -31,6 +36,11 @@ export const StyledButton = styled.div<any>`
       background-color: rgba(197, 210, 214, 0.35);
       border-color: rgba(197, 210, 214, 0.35);
       font-weight: 400;
+      &:hover {
+        background: ${Colors.lightViolet};
+        border-color: ${Colors.lightViolet};
+        color: ${Colors.darkViolet};
+      }
     `}
 
     ${({ color }) =>
@@ -41,6 +51,12 @@ export const StyledButton = styled.div<any>`
       border-color: white;
       font-weight: 700;
       padding: 12px 36px;
+
+      &:hover {
+        background: ${Colors.lightViolet};
+        border-color: ${Colors.lightViolet};
+        color: ${Colors.darkViolet};
+      }
     `}
 
   ${({ fullWidth }) =>
@@ -54,6 +70,11 @@ export const StyledOutlineButton = styled(StyledButton)`
   color: ${Colors.violet};
   background: white;
   border: 2px solid ${Colors.violet};
+
+  &:hover {
+    color: ${Colors.darkViolet};
+    background-color: ${Colors.lightViolet};
+  }
 
   ${({ color }) =>
     color === "grey" &&
@@ -72,4 +93,8 @@ export const StyledGhostButton = styled.div`
   color: ${Colors.violet};
   cursor: pointer;
   width: fit-content;
+
+  &:hover {
+    color: ${Colors.darkViolet};
+  }
 `;

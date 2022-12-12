@@ -99,7 +99,7 @@ export function handleOnCondividi(pageRoute: string, onCopied?: () => void) {
       .writeText(BASE_URL + pageRoute)
       .then(() => {
         console.log("copied to clipboard");
-        onCopied && onCopied()
+        onCopied && onCopied();
       })
       .catch((err) => {
         console.log("not copied to clipboard", err);

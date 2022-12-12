@@ -5,7 +5,9 @@ export const Colors = {
   deepBlue: "#0c45ca",
   mintGreen: "#43EFBB",
   darkBlue: "#002764",
+  lightViolet: "#dfdfff",
   violet: "#4E50FF",
+  darkViolet: "#2e30a4",
   red: "#FF0055",
   darkRed: "#DB1D41",
   pink: "#F8CEDE",
@@ -87,6 +89,11 @@ export const PurpleButton = styled.div`
   line-height: 14px;
   text-transform: uppercase;
   letter-spacing: 0.02em;
+  transition: all 0.3s;
+
+  &:hover {
+    background: ${Colors.darkViolet};
+  }
 `;
 
 export const AnswerButton = styled.div`
@@ -108,8 +115,10 @@ export const AnswerButton = styled.div`
 
   transition: all 0.3s;
 
-  &:hover {
-    background: rgba(255, 255, 255, 0.45);
+  @media (hover: hover) and (pointer: fine) {
+    &:hover {
+      background: rgba(255, 255, 255, 0.45);
+    }
   }
 `;
 
