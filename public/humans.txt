@@ -1,0 +1,36 @@
+/* TEAM */
+Title:      Ester Barbato
+Position:   Art Director & Illustrator
+LinkedIn:   https://www.linkedin.com/in/barbato-ester
+Instagram:  https://www.instagram.com/ester.land
+Location:   Paullo, Milano, Italy
+
+Title: Giulio Poggia
+Position:   Frontend Developer
+LinkedIn:   https://www.linkedin.com/in/giulio-poggia
+Codepen: https://codepen.io/TheGiulio
+Location:   Padova, Italy
+
+Title:      Irene Fano
+Position:   CMO
+LinkedIn:   https://www.linkedin.com/in/irene-fano/
+Location:   La Spezia, Italy
+
+Title:      Jessica Marangoni
+Position:   Graphic Designer
+LinkedIn:   https://www.linkedin.com/in/jessica-marangoni-b15047a6
+Instagram:  https://www.instagram.com/_je.m_
+Location:   Torino, Italy
+
+Title:      Matteo Spini
+Position:   Copywriter
+LinkedIn:   https://www.linkedin.com/in/matteo-spini-seo-specialist
+Facebook:   https://www.facebook.com/matteo.spini2
+Instagram:  https://www.instagram.com/spinzer90
+Location:   Arconate, Milano, Italy
+
+/* SITE */
+Language:    Italian (IT)
+Standards:   NextJS
+Components:  gsap, styled-components, tsparticles
+Software:    VSCode
