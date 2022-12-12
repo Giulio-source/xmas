@@ -112,6 +112,10 @@ export default function FelicePage() {
                 L'albero addobbato illumina le tue giornate, donando a questo
                 periodo un senso di pace in grado di rigenerarti per l'anno
                 nuovo.
+                <br />
+                <strong>
+                  Accarezza l'elfo per sprigionare la sua felicità!
+                </strong>
               </>
             }
             Elfo={Felice}

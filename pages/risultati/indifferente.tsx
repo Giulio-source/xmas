@@ -112,6 +112,8 @@ export default function IndifferentePage() {
                 magari provando a stupire solo gli affetti più cari.
                 <br />
                 Insomma, niente facili entusiasmi!
+                <br />
+                <strong>Prova a pungolare l'elfo, chissà se gli interesserà!</strong>
               </>
             }
             Elfo={Indifferente}

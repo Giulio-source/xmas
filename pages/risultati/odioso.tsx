@@ -111,6 +111,8 @@ export default function OdiosoPage() {
                 Se cerchi una gioia, potresti trovarla in un po' di riposo o in
                 qualche abbuffata, altrimenti difficile trovare troppi aspetti
                 positivi per questo periodo dell'anno.
+                <br />
+                <strong>Se ami il rischio, tocca l'elfo e vediamo che succede!</strong>
               </>
             }
             Elfo={Odioso}

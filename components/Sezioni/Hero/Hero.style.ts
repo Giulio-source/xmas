@@ -106,7 +106,7 @@ export const StyledSnowHill = styled.div<any>`
   @media screen and (min-width: 1024px) {
     display: initial;
     background: white;
-    height: 300px;
+    height: 320px;
     width: 100%;
     z-index: -1;
     position: absolute;

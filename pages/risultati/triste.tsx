@@ -103,15 +103,18 @@ export default function ScazzatoPage() {
             background={Colors.violet}
             testo={
               <>
-                Natale per te significa festa, compagnia e tradizione.
+                Per te Natale porta con sé una vena di malinconia o un prurito
+                di fastidio.
                 <br />
-                L'idea di condividere momenti indimenticabili con gli affetti
-                più cari ti riempie il cuore e pensare ai regali è sempre una
-                gioia.
+                Non riesci proprio a comprendere quelli che ascoltano a
+                ripetizione per settimane la playlist di Mariah Carey e Michael
+                Bublé.
                 <br />
-                L'albero addobbato illumina le tue giornate, donando a questo
-                periodo un senso di pace in grado di rigenerarti per l'anno
-                nuovo.
+                Condividere tutta questa atmosfera di festa esasperata è proprio
+                difficile. La parola d'ordine per te è moderazione. Okay il
+                Natale, ma poi passa e torna tutto come prima.
+                <br />
+                <strong>Tocca l'elfo per provare a infastidirlo un po'!</strong>
               </>
             }
             Elfo={Scazzato}

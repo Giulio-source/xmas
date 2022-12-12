@@ -112,6 +112,10 @@ export default function AnsiosoPage() {
                 <br />
                 Pranzi e cene in compagnia? Le domande inopportune sono dietro
                 l'angolo e questo ti preoccupa assai!
+                <br />
+                <strong>
+                  Clicca l'elfo e vediamo se cambia idea sul Natale!
+                </strong>
               </>
             }
             Elfo={Ansioso}

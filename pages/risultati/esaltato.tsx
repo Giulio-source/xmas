@@ -117,6 +117,8 @@ export default function EsaltatoPage() {
                 Quell'atmosfera con strade addobbate, la gioia dell'attesa e la
                 neve rendono tutto magico, tanto che ti dispiace tutto questo
                 debba finire.
+                <br />
+                <strong>Tocca l'elfo per farlo saltare di gioia!</strong>
               </>
             }
             Elfo={Esaltato}
