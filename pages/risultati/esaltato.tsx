@@ -19,6 +19,7 @@ import { AltriHinto } from "../../components/Sezioni/AltriHinto/AltriHinto";
 import { Hero } from "../../components/Sezioni/Hero/Hero";
 import { Sciaugurati } from "../../components/Sezioni/Sciaugurati/Sciaugurati";
 import { Trees } from "../../components/Trees/Trees";
+import { useWindowMedia } from "../../hooks/useWindowMedia";
 import {
   RisultatoPageWrapper,
   StyledCondividiCTA,
@@ -36,6 +37,8 @@ export default function EsaltatoPage() {
   const [showAnteprima, setShowAnteprima] = useState(false);
   const [copiedSuccess, setCopiedSuccess] = useState(false);
 
+  const isMobile = useWindowMedia();
+
   useEffect(() => {
     const names = getRandomNames("esaltato");
     const fullNames = names.map((n) => {
@@ -49,30 +52,46 @@ export default function EsaltatoPage() {
     <RisultatoPageWrapper>
       {showAnteprima ? (
         <>
-          <StyledCondividiCTA>
-            <Button
-              label={copiedSuccess ? "Link copiato!" : "Condividi"}
-              color="white"
-              onClick={() =>
-                handleOnCondividi("cartolina/elfo-esaltato", () =>
-                  setCopiedSuccess(true)
-                )
-              }
-            />
-          </StyledCondividiCTA>
+          <Lucine />
+          {isMobile && (
+            <StyledCondividiCTA>
+              <Button
+                label={copiedSuccess ? "Link copiato!" : "Condividi"}
+                color="white"
+                onClick={() =>
+                  handleOnCondividi("cartolina/elfo-esaltato", () =>
+                    setCopiedSuccess(true)
+                  )
+                }
+              />
+            </StyledCondividiCTA>
+          )}
           <Cartolina
             message="Ti auguro un Natale splendente e un meraviglioso anno nuovo ricco di gioia!"
             backgroundColor={Colors.darkGreen}
             Elfo={Esaltato}
+            goBack={() => showLoaderAnimation(() => setShowAnteprima(false))}
             CTA={
-              <Button
-                label="Torna indietro"
-                type="ghost"
-                onClick={() =>
-                  showLoaderAnimation(() => setShowAnteprima(false))
-                }
-                style={{ margin: "16px auto" }}
-              />
+              isMobile ? (
+                <Button
+                  label="Torna al risultato del test"
+                  type="ghost"
+                  onClick={() =>
+                    showLoaderAnimation(() => setShowAnteprima(false))
+                  }
+                  style={{ margin: "16px auto" }}
+                />
+              ) : (
+                <Button
+                  label={copiedSuccess ? "Link copiato!" : "Condividi"}
+                  onClick={() =>
+                    handleOnCondividi("cartolina/elfo-esaltato", () =>
+                      setCopiedSuccess(true)
+                    )
+                  }
+                  fit
+                />
+              )
             }
           />
         </>

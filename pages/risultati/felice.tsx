@@ -22,6 +22,7 @@ import {
   StyledCondividiCTA,
 } from "../../page-styles/risultato-page.style";
 import { showLoaderAnimation } from "../../components/Loader/Loader";
+import { useWindowMedia } from "../../hooks/useWindowMedia";
 
 export async function getServerSideProps() {
   await wait(2);
@@ -34,6 +35,8 @@ export default function FelicePage() {
   const [names, setNames] = useState<{ nome: string; cognome: string }[]>();
   const [showAnteprima, setShowAnteprima] = useState(false);
   const [copiedSuccess, setCopiedSuccess] = useState(false);
+
+  const isMobile = useWindowMedia();
 
   useEffect(() => {
     const names = getRandomNames("felice");
@@ -48,30 +51,44 @@ export default function FelicePage() {
     <RisultatoPageWrapper>
       {showAnteprima ? (
         <>
-          <StyledCondividiCTA>
-            <Button
-              label={copiedSuccess ? "Link copiato!" : "Condividi"}
-              color="white"
-              onClick={() =>
-                handleOnCondividi("cartolina/elfo-felice", () =>
-                  setCopiedSuccess(true)
-                )
-              }
-            />
-          </StyledCondividiCTA>
+          {isMobile && (
+            <StyledCondividiCTA>
+              <Button
+                label={copiedSuccess ? "Link copiato!" : "Condividi"}
+                color="white"
+                onClick={() =>
+                  handleOnCondividi("cartolina/elfo-felice", () =>
+                    setCopiedSuccess(true)
+                  )
+                }
+              />
+            </StyledCondividiCTA>
+          )}
           <Cartolina
             message="Ti auguro gioia, serenità e uno splendido Natale in compagnia!"
             backgroundColor={Colors.deepBlue}
             Elfo={Felice}
             CTA={
-              <Button
-                label="Torna indietro"
-                type="ghost"
-                onClick={() =>
-                  showLoaderAnimation(() => setShowAnteprima(false))
-                }
-                style={{ margin: "16px auto" }}
-              />
+              isMobile ? (
+                <Button
+                  label="Torna al risultato del test"
+                  type="ghost"
+                  onClick={() =>
+                    showLoaderAnimation(() => setShowAnteprima(false))
+                  }
+                  style={{ margin: "16px auto" }}
+                />
+              ) : (
+                <Button
+                  label={copiedSuccess ? "Link copiato!" : "Condividi"}
+                  onClick={() =>
+                    handleOnCondividi("cartolina/elfo-felice", () =>
+                      setCopiedSuccess(true)
+                    )
+                  }
+                  fit
+                />
+              )
             }
           />
         </>

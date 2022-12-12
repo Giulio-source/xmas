@@ -19,6 +19,7 @@ export const StyledButton = styled.div<any>`
 
   &:hover {
     background: ${Colors.darkViolet};
+    border-color: ${Colors.darkViolet};
   }
 
   ${({ disabled }) =>
@@ -64,6 +65,13 @@ export const StyledButton = styled.div<any>`
     css`
       flex: 1;
     `}
+
+    ${({ fit }) =>
+    fit &&
+    css`
+      width: fit-content;
+      margin: auto;
+    `}
 `;
 
 export const StyledOutlineButton = styled(StyledButton)`
@@ -72,8 +80,8 @@ export const StyledOutlineButton = styled(StyledButton)`
   border: 2px solid ${Colors.violet};
 
   &:hover {
-    color: ${Colors.darkViolet};
     background-color: ${Colors.lightViolet};
+    border-color: inherit;
   }
 
   ${({ color }) =>

@@ -1,21 +1,7 @@
-import { useEffect, useState } from "react";
+import { useWindowMedia } from "../../hooks/useWindowMedia";
 
 export const Villaggio = () => {
-  const [isMobile, setIsMobile] = useState<boolean>();
-
-  useEffect(() => {
-    const isMobileMedia = window.matchMedia("(max-width: 1023px)");
-
-    function handleOnResize() {
-      setIsMobile(isMobileMedia.matches);
-    }
-
-    handleOnResize();
-
-    isMobileMedia.addEventListener("change", handleOnResize);
-
-    return () => isMobileMedia.removeEventListener("change", handleOnResize);
-  }, []);
+  const isMobile = useWindowMedia();
 
   return (
     <svg

@@ -22,6 +22,7 @@ import {
   StyledCondividiCTA,
 } from "../../page-styles/risultato-page.style";
 import { showLoaderAnimation } from "../../components/Loader/Loader";
+import { useWindowMedia } from "../../hooks/useWindowMedia";
 
 export async function getServerSideProps() {
   await wait(2);
@@ -34,6 +35,8 @@ export default function ScazzatoPage() {
   const [names, setNames] = useState<{ nome: string; cognome: string }[]>();
   const [showAnteprima, setShowAnteprima] = useState(false);
   const [copiedSuccess, setCopiedSuccess] = useState(false);
+
+  const isMobile = useWindowMedia();
 
   useEffect(() => {
     const names = getRandomNames("scazzato");
@@ -48,30 +51,44 @@ export default function ScazzatoPage() {
     <RisultatoPageWrapper>
       {showAnteprima ? (
         <>
-          <StyledCondividiCTA>
-            <Button
-              label={copiedSuccess ? "Link copiato!" : "Condividi"}
-              color="white"
-              onClick={() =>
-                handleOnCondividi("cartolina/elfo-triste", () =>
-                  setCopiedSuccess(true)
-                )
-              }
-            />
-          </StyledCondividiCTA>
+          {isMobile && (
+            <StyledCondividiCTA>
+              <Button
+                label={copiedSuccess ? "Link copiato!" : "Condividi"}
+                color="white"
+                onClick={() =>
+                  handleOnCondividi("cartolina/elfo-triste", () =>
+                    setCopiedSuccess(true)
+                  )
+                }
+              />
+            </StyledCondividiCTA>
+          )}
           <Cartolina
             message="Anche a te e famiglia!"
             backgroundColor={Colors.violet}
             Elfo={Scazzato}
             CTA={
-              <Button
-                label="Torna indietro"
-                type="ghost"
-                onClick={() =>
-                  showLoaderAnimation(() => setShowAnteprima(false))
-                }
-                style={{ margin: "16px auto" }}
-              />
+              isMobile ? (
+                <Button
+                  label="Torna al risultato del test"
+                  type="ghost"
+                  onClick={() =>
+                    showLoaderAnimation(() => setShowAnteprima(false))
+                  }
+                  style={{ margin: "16px auto" }}
+                />
+              ) : (
+                <Button
+                  label={copiedSuccess ? "Link copiato!" : "Condividi"}
+                  onClick={() =>
+                    handleOnCondividi("cartolina/elfo-triste", () =>
+                      setCopiedSuccess(true)
+                    )
+                  }
+                  fit
+                />
+              )
             }
           />
         </>

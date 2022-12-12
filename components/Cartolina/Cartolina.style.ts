@@ -1,11 +1,18 @@
 import styled from "styled-components";
+import { StyledTitolo } from "../commons/Theme";
+import { StyledCredits } from "../Credits/Credits.style";
 
 export const StyledCartolina = styled.div`
   @media screen and (min-width: 1024px) {
     display: grid;
     grid-template-columns: 500px 450px;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
+    margin-bottom: 40px;
+
+    div:has(svg) {
+      margin: 0;
+    }
   }
 `;
 
@@ -19,8 +26,21 @@ export const StyledCartolinaContent = styled.div`
   gap: 28px;
 
   @media screen and (min-width: 1024px) {
-    padding: 32px;
-    border-radius: 8px;
+    padding: 0;
+    background: transparent;
+
+    ${StyledTitolo} {
+      color: white;
+      margin-bottom: 200px;
+    }
+    ${StyledCredits} {
+      display: none;
+    }
+
+    a {
+      display: flex;
+      justify-content: center;
+    }
   }
 `;
 
@@ -29,5 +49,24 @@ export const StyledCartolinaDesktop = styled.div`
 
   @media screen and (min-width: 1024px) {
     display: initial;
+  }
+`;
+
+export const StyledCartolinaFooterDesktop = styled.div`
+  display: none;
+
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    grid-column: 1 / -1;
+    margin-bottom: 80px;
+  }
+`;
+
+export const StyledGoBackButton = styled.div`
+  @media screen and (min-width: 1024px) {
+    grid-column: 1 / -1;
+    margin-top: 32px;
   }
 `;

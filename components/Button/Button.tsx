@@ -8,6 +8,7 @@ export const Button = ({
   label,
   type = "full",
   fill = false,
+  fit = false,
   color = "purple",
   disabled = false,
   onClick,
@@ -17,6 +18,7 @@ export const Button = ({
   type?: "outline" | "full" | "ghost";
   color?: "purple" | "grey" | "white";
   fill?: boolean;
+  fit?: boolean;
   onClick?: () => void;
   style?: any;
   disabled?: boolean;
@@ -42,6 +44,7 @@ export const Button = ({
   }
   return (
     <StyledButton
+      fit={fit}
       fullWidth={fill}
       color={color}
       onClick={onClick}

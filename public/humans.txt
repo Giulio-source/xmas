@@ -5,11 +5,16 @@ LinkedIn:   https://www.linkedin.com/in/barbato-ester
 Instagram:  https://www.instagram.com/ester.land
 Location:   Paullo, Milano, Italy
 
-Title: Giulio Poggia
+Title:      Giulia Nappi
+Position:   Graphic Designer & Junior UI Designer
+LinkedIn:   https://www.linkedin.com/in/giulianappi/
+Location:   Milan, Italy
+
+Title:      Giulio Poggia
 Position:   Frontend Developer
 LinkedIn:   https://www.linkedin.com/in/giulio-poggia
-Codepen: https://codepen.io/TheGiulio
-Location:   Padova, Italy
+Codepen:    https://codepen.io/TheGiulio
+Location:   Padua, Italy
 
 Title:      Irene Fano
 Position:   CMO
@@ -17,10 +22,9 @@ LinkedIn:   https://www.linkedin.com/in/irene-fano/
 Location:   La Spezia, Italy
 
 Title:      Jessica Marangoni
-Position:   Graphic Designer
-LinkedIn:   https://www.linkedin.com/in/jessica-marangoni-b15047a6
-Instagram:  https://www.instagram.com/_je.m_
-Location:   Torino, Italy
+Position:   Art Director
+LinkedIn:   https://www.linkedin.com/in/jessica-marangoni-b15047a6/
+Location:   Turin, Italy
 
 Title:      Matteo Spini
 Position:   Copywriter

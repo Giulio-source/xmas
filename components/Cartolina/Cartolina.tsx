@@ -1,5 +1,7 @@
 import Link from "next/link";
+import { useWindowMedia } from "../../hooks/useWindowMedia";
 import { Button } from "../Button/Button";
+import { Divider } from "../commons/Divider";
 import { Titolo } from "../commons/Theme";
 import { Credits } from "../Credits/Credits";
 import { HintoIcon } from "../Icons/HintoIcon";
@@ -10,6 +12,8 @@ import {
   StyledCartolina,
   StyledCartolinaContent,
   StyledCartolinaDesktop,
+  StyledCartolinaFooterDesktop,
+  StyledGoBackButton,
 } from "./Cartolina.style";
 
 export const Cartolina = ({
@@ -17,7 +21,10 @@ export const Cartolina = ({
   backgroundColor,
   Elfo,
   CTA,
+  goBack,
 }: CartolinaProps) => {
+  const isMobile = useWindowMedia();
+
   return (
     <StyledCartolina>
       <HintoIcon theme="light" />
@@ -39,12 +46,29 @@ export const Cartolina = ({
             />
           </Link>
         )}
-        <Credits />
+        {isMobile && <Credits />}
       </StyledCartolinaContent>
-      <StyledCartolinaDesktop>
-        <StyledBackground color={backgroundColor} />
-        <StyledSnowHill />
-      </StyledCartolinaDesktop>
+      {!isMobile && (
+        <>
+          {goBack && (
+            <StyledGoBackButton>
+              <Button
+                label="Torna al risultato del test"
+                type="ghost"
+                onClick={goBack}
+              />
+            </StyledGoBackButton>
+          )}
+          <StyledCartolinaDesktop>
+            <StyledBackground color={backgroundColor} />
+            <StyledSnowHill />
+          </StyledCartolinaDesktop>
+          <StyledCartolinaFooterDesktop>
+            <Divider />
+            <Credits />
+          </StyledCartolinaFooterDesktop>
+        </>
+      )}
     </StyledCartolina>
   );
 };
@@ -54,4 +78,5 @@ type CartolinaProps = {
   backgroundColor: string;
   Elfo: React.FC;
   CTA?: React.ReactNode;
+  goBack?: () => void;
 };
