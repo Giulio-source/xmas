@@ -5,6 +5,7 @@ import { Colors, Container } from "../../components/commons/Theme";
 import {
   getRandomNames,
   handleOnCondividi,
+  wait,
 } from "../../components/commons/utils";
 import { Scazzato1 } from "../../components/ElfoHinto/Elfi/Scazzato1";
 import { Scazzato2 } from "../../components/ElfoHinto/Elfi/Scazzato2";
@@ -20,6 +21,14 @@ import {
   RisultatoPageWrapper,
   StyledCondividiCTA,
 } from "../../page-styles/risultato-page.style";
+import { showLoaderAnimation } from "../../components/Loader/Loader";
+
+export async function getServerSideProps() {
+  await wait(2);
+  return {
+    props: {},
+  };
+}
 
 export default function ScazzatoPage() {
   const [names, setNames] = useState<{ nome: string; cognome: string }[]>();
@@ -58,7 +67,9 @@ export default function ScazzatoPage() {
               <Button
                 label="Torna indietro"
                 type="ghost"
-                onClick={() => setShowAnteprima(false)}
+                onClick={() =>
+                  showLoaderAnimation(() => setShowAnteprima(false))
+                }
                 style={{ margin: "16px auto" }}
               />
             }

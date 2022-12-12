@@ -5,6 +5,7 @@ import { Colors, Container } from "../../components/commons/Theme";
 import {
   getRandomNames,
   handleOnCondividi,
+  wait,
 } from "../../components/commons/utils";
 import { OdiosoHinto } from "../../components/ElfoHinto/Elfi/Odioso";
 import { ElfoHinto } from "../../components/ElfoHinto/ElfoHinto";
@@ -19,6 +20,14 @@ import {
   RisultatoPageWrapper,
   StyledCondividiCTA,
 } from "../../page-styles/risultato-page.style";
+import { showLoaderAnimation } from "../../components/Loader/Loader";
+
+export async function getServerSideProps() {
+  await wait(2);
+  return {
+    props: {},
+  };
+}
 
 export default function OdiosoPage() {
   const [names, setNames] = useState<{ nome: string; cognome: string }[]>();
@@ -57,7 +66,9 @@ export default function OdiosoPage() {
               <Button
                 label="Torna indietro"
                 type="ghost"
-                onClick={() => setShowAnteprima(false)}
+                onClick={() =>
+                  showLoaderAnimation(() => setShowAnteprima(false))
+                }
                 style={{ margin: "16px auto" }}
               />
             }

@@ -22,7 +22,7 @@ export function openModal() {
     y: "0%",
     duration: 0.5,
     // ease: "elastic.out(0.6, 0.3)"
-    ease: "back.out(1.1)"
+    ease: "back.out(1.1)",
   });
 }
 
@@ -119,10 +119,8 @@ export default function Mappa() {
     } else {
       closeModal();
       showEntireMap();
-      setTimeout(() => {
-        //@ts-ignore
-        router.push(`/risultati/${resultsHandler[id]}`);
-      }, 1500);
+      //@ts-ignore
+      router.push(`/risultati/${resultsHandler[id]}`);
     }
   }
 

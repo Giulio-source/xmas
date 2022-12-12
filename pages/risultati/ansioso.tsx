@@ -6,10 +6,12 @@ import { Colors, Container } from "../../components/commons/Theme";
 import {
   getRandomNames,
   handleOnCondividi,
+  wait,
 } from "../../components/commons/utils";
 import { AnsiosoHinto } from "../../components/ElfoHinto/Elfi/AnsiosoHinto";
 import { ElfoHinto } from "../../components/ElfoHinto/ElfoHinto";
 import { HintoIcon } from "../../components/Icons/HintoIcon";
+import { showLoaderAnimation } from "../../components/Loader/Loader";
 import { Neve } from "../../components/Neve/Neve";
 import { AltriHinto } from "../../components/Sezioni/AltriHinto/AltriHinto";
 import { Hero } from "../../components/Sezioni/Hero/Hero";
@@ -19,6 +21,13 @@ import {
   RisultatoPageWrapper,
   StyledCondividiCTA,
 } from "../../page-styles/risultato-page.style";
+
+export async function getServerSideProps() {
+  await wait(2);
+  return {
+    props: {},
+  };
+}
 
 export default function AnsiosoPage() {
   const [names, setNames] = useState<{ nome: string; cognome: string }[]>();
@@ -57,7 +66,9 @@ export default function AnsiosoPage() {
               <Button
                 label="Torna indietro"
                 type="ghost"
-                onClick={() => setShowAnteprima(false)}
+                onClick={() =>
+                  showLoaderAnimation(() => setShowAnteprima(false))
+                }
                 style={{ margin: "16px auto" }}
               />
             }

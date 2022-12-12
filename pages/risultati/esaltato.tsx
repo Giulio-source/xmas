@@ -5,12 +5,14 @@ import { Colors, Container } from "../../components/commons/Theme";
 import {
   getRandomNames,
   handleOnCondividi,
+  wait,
 } from "../../components/commons/utils";
 import { EsaltatoHinto1 } from "../../components/ElfoHinto/Elfi/EsaltatoHinto1";
 import { EsaltatoHinto2 } from "../../components/ElfoHinto/Elfi/EsaltatoHinto2";
 import { ElfoHinto } from "../../components/ElfoHinto/ElfoHinto";
 import { Esaltato } from "../../components/Esaltato/Esaltato";
 import { HintoIcon } from "../../components/Icons/HintoIcon";
+import { showLoaderAnimation } from "../../components/Loader/Loader";
 import { Lucine } from "../../components/Lucine/Lucine";
 import { Neve } from "../../components/Neve/Neve";
 import { AltriHinto } from "../../components/Sezioni/AltriHinto/AltriHinto";
@@ -21,6 +23,13 @@ import {
   RisultatoPageWrapper,
   StyledCondividiCTA,
 } from "../../page-styles/risultato-page.style";
+
+export async function getServerSideProps() {
+  await wait(2);
+  return {
+    props: {},
+  };
+}
 
 export default function EsaltatoPage() {
   const [names, setNames] = useState<{ nome: string; cognome: string }[]>();
@@ -59,7 +68,9 @@ export default function EsaltatoPage() {
               <Button
                 label="Torna indietro"
                 type="ghost"
-                onClick={() => setShowAnteprima(false)}
+                onClick={() =>
+                  showLoaderAnimation(() => setShowAnteprima(false))
+                }
                 style={{ margin: "16px auto" }}
               />
             }

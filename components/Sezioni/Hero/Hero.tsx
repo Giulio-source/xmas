@@ -14,6 +14,7 @@ import {
   StyledSection,
   StyledSnowHill,
 } from "./Hero.style";
+import { showLoaderAnimation } from "../../Loader/Loader";
 
 export const Hero = ({
   title,
@@ -41,7 +42,9 @@ export const Hero = ({
               <Button
                 label="Condividi i tuoi auguri"
                 type="outline"
-                onClick={onShowAnteprima}
+                onClick={() => {
+                  showLoaderAnimation(onShowAnteprima);
+                }}
               />
               <Button
                 label="Scarta il tuo regalo"
