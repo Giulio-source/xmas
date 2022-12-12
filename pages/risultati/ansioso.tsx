@@ -67,6 +67,7 @@ export default function AnsiosoPage() {
             message="Buone feste a tutti!"
             backgroundColor={Colors.mintGreen}
             Elfo={Ansioso}
+            goBack={() => showLoaderAnimation(() => setShowAnteprima(false))}
             CTA={
               isMobile ? (
                 <Button

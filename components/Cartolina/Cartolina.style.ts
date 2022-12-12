@@ -4,6 +4,7 @@ import { StyledCredits } from "../Credits/Credits.style";
 
 export const StyledCartolina = styled.div`
   @media screen and (min-width: 1024px) {
+    position: relative;
     display: grid;
     grid-template-columns: 500px 450px;
     justify-content: center;

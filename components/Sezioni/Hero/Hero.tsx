@@ -58,7 +58,7 @@ export const Hero = ({
         </StyledContent>
       </HeroWrapper>
       <StyledBackground color={background} />
-      <StyledSnowHill />
+      <StyledSnowHill insideHero/>
       <RisultatoModal open={open} onClose={() => setOpen(false)} />
     </StyledSection>
   );

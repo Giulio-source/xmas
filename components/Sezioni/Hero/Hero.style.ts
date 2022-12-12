@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { keyframes } from "styled-components";
 export const HeroWrapper = styled.div`
   display: grid;
@@ -100,7 +100,7 @@ export const StyledBackground = styled.div<any>`
   z-index: -2;
 `;
 
-export const StyledSnowHill = styled.div`
+export const StyledSnowHill = styled.div<any>`
   display: none;
 
   @media screen and (min-width: 1024px) {
@@ -110,8 +110,15 @@ export const StyledSnowHill = styled.div`
     width: 100%;
     z-index: -1;
     position: absolute;
-    bottom: 0%;
+    top: 640px;
     left: 0;
     clip-path: ellipse(85% 100% at 60% 100%);
+
+    ${({ insideHero }) =>
+      insideHero &&
+      css`
+        bottom: 0;
+        top: unset;
+      `}
   }
 `;

@@ -68,6 +68,7 @@ export default function ScazzatoPage() {
             message="Anche a te e famiglia!"
             backgroundColor={Colors.violet}
             Elfo={Scazzato}
+            goBack={() => showLoaderAnimation(() => setShowAnteprima(false))}
             CTA={
               isMobile ? (
                 <Button

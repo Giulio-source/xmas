@@ -67,6 +67,7 @@ export default function OdiosoPage() {
             message="E anche sto Natale..."
             backgroundColor={Colors.darkBlue}
             Elfo={Odioso}
+            goBack={() => showLoaderAnimation(() => setShowAnteprima(false))}
             CTA={
               isMobile ? (
                 <Button

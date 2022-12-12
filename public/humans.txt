@@ -1,9 +1,9 @@
 /* TEAM */
 Title:      Ester Barbato
-Position:   Art Director & Illustrator
-LinkedIn:   https://www.linkedin.com/in/barbato-ester
-Instagram:  https://www.instagram.com/ester.land
-Location:   Paullo, Milano, Italy
+Position:   Art director & illustration
+LinkedIn:   https://www.linkedin.com/in/barbato-ester/
+Instagram:  Ester Barbato (@ester.land) 
+Location:   Milan, Italy
 
 Title:      Giulia Nappi
 Position:   Graphic Designer & Junior UI Designer
@@ -27,11 +27,9 @@ LinkedIn:   https://www.linkedin.com/in/jessica-marangoni-b15047a6/
 Location:   Turin, Italy
 
 Title:      Matteo Spini
-Position:   Copywriter
-LinkedIn:   https://www.linkedin.com/in/matteo-spini-seo-specialist
-Facebook:   https://www.facebook.com/matteo.spini2
-Instagram:  https://www.instagram.com/spinzer90
-Location:   Arconate, Milano, Italy
+Position:   SEO & Web Marketing Specialist
+LinkedIn:   https://www.linkedin.com/in/matteo-spini-seo-specialist/
+Location:   Milan, Italy
 
 /* SITE */
 Language:    Italian (IT)

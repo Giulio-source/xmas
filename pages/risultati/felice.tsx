@@ -68,6 +68,7 @@ export default function FelicePage() {
             message="Ti auguro gioia, serenità e uno splendido Natale in compagnia!"
             backgroundColor={Colors.deepBlue}
             Elfo={Felice}
+            goBack={() => showLoaderAnimation(() => setShowAnteprima(false))}
             CTA={
               isMobile ? (
                 <Button

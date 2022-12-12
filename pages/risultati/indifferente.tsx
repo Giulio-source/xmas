@@ -67,6 +67,7 @@ export default function IndifferentePage() {
             message="Buon Natale e felice anno nuovo!"
             backgroundColor={Colors.mintGreen}
             Elfo={Indifferente}
+            goBack={() => showLoaderAnimation(() => setShowAnteprima(false))}
             CTA={
               isMobile ? (
                 <Button
