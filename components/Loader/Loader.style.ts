@@ -9,21 +9,21 @@ export const StyledLoader = styled.div<any>`
 
   & div:nth-child(1) {
     width: 25%;
-    background: #eef1ff;
+    background: #616dff;
   }
 
   & div:nth-child(2) {
     width: 25%;
-    background: #d2daff;
+    background: #4e50ff;
   }
 
   & div:nth-child(3) {
     width: 25%;
-    background: #aac4ff;
+    background: #204bcf;
   }
 
   & div:nth-child(4) {
     width: 25%;
-    background: #b1b2ff;
+    background: #092860;
   }
 `;

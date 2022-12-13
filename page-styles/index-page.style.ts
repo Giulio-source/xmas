@@ -12,10 +12,10 @@ export const MappaPageWrapper = styled.div`
     /* mix-blend-mode: screen; */
 
     &:nth-child(1) {
-      stroke: ${Colors.red};
+      stroke: white;
     }
     &:nth-child(2) {
-      stroke: ${Colors.mintGreen};
+      stroke: ${Colors.red};
     }
     &:nth-child(3) {
       stroke: white;
