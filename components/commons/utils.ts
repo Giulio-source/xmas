@@ -108,7 +108,7 @@ export function handleOnCondividi(pageRoute: string, onCopied?: () => void) {
 }
 
 export function isValidEmail(value: string) {
-  return /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(value);
+  return /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,6})+$/.test(value);
 }
 
 export function wait(sec: number) {
