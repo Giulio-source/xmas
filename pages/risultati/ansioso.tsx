@@ -23,13 +23,6 @@ import {
 } from "../../page-styles/risultato-page.style";
 import { useWindowMedia } from "../../hooks/useWindowMedia";
 
-export async function getServerSideProps() {
-  await wait(2);
-  return {
-    props: {},
-  };
-}
-
 export default function AnsiosoPage() {
   const [names, setNames] = useState<{ nome: string; cognome: string }[]>();
   const [showAnteprima, setShowAnteprima] = useState(false);
