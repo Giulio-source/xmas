@@ -1,68 +1,40 @@
+import gsap from "gsap";
+import DrawSVGPlugin from "gsap/dist/DrawSVGPlugin";
+import MorphSVGPlugin from "gsap/dist/MorphSVGPlugin";
 import { useEffect, useRef } from "react";
 import {
   esaltatoDefault,
   esaltatoDoubleClick,
   esaltatoResetFace,
-  esaltatoSingleClick,
 } from "./esaltato.animations";
 import { StyledEsaltato } from "./Esaltato.style";
-import gsap from "gsap";
-import MorphSVGPlugin from "gsap/dist/MorphSVGPlugin";
-import DrawSVGPlugin from "gsap/dist/DrawSVGPlugin";
 
 export const Esaltato = () => {
   const svgRef = useRef(null);
   const tl = useRef<any>({});
-  const singleClick = useRef(true);
 
-  function handleOnClick(e: any) {
-    if (e.detail === 1) {
-      singleClick.current = true;
-      setTimeout(() => {
-        if (singleClick.current) {
-          tl.current.defaultAnim.pause();
-          tl.current.doubleClickAnim.pause();
-          tl.current.singleClickAnim
+  function handleOnClick() {
+    tl.current.defaultAnim.pause();
+    tl.current.doubleClickAnim.pause();
+    tl.current.doubleClickAnim
+      .invalidate()
+      .restart()
+      .then(() => {
+        setTimeout(() => {
+          tl.current.resetFaceAnim
             .invalidate()
             .restart()
             .then(() => {
-              setTimeout(() => {
-                tl.current.resetFaceAnim
-                  .invalidate()
-                  .restart()
-                  .then(() => {
-                    tl.current.defaultAnim.invalidate().restart();
-                  });
-              }, 2000);
+              tl.current.defaultAnim.invalidate().restart();
             });
-        }
-      }, 300);
-    }
-    if (e.detail === 2) {
-      singleClick.current = false;
-      tl.current.defaultAnim.pause();
-      tl.current.singleClickAnim.pause();
-      tl.current.doubleClickAnim
-        .invalidate()
-        .restart()
-        .then(() => {
-          setTimeout(() => {
-            tl.current.resetFaceAnim
-              .invalidate()
-              .restart()
-              .then(() => {
-                tl.current.defaultAnim.invalidate().restart();
-              });
-          }, 500);
-        });
-    }
+        }, 600);
+      });
   }
 
   useEffect(() => {
     gsap.registerPlugin(MorphSVGPlugin, DrawSVGPlugin);
 
     tl.current.defaultAnim = esaltatoDefault();
-    tl.current.singleClickAnim = esaltatoSingleClick();
     tl.current.doubleClickAnim = esaltatoDoubleClick();
     tl.current.resetFaceAnim = esaltatoResetFace();
     tl.current.defaultAnim.play();

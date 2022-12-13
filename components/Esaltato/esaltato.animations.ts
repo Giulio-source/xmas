@@ -355,7 +355,7 @@ export const esaltatoDoubleClick = () =>
         drawSVG: "0 100%",
         duration: 0.5,
       },
-      "middle+=1"
+      "middle+=0.5"
     )
     .to(
       "#esaltato #coriandoli .linea",
@@ -366,4 +366,4 @@ export const esaltatoDoubleClick = () =>
       },
       "-=0.25"
     )
-    .add(esaltatoStelle, "middle+=1");
+    .add(esaltatoStelle, "middle+=0.5");
