@@ -1,7 +1,17 @@
+import gsap from "gsap";
+import DrawSVGPlugin from "gsap/dist/DrawSVGPlugin";
+import { useEffect } from "react";
 import { useWindowMedia } from "../../hooks/useWindowMedia";
+import { animateCharacters } from "./villaggio.animations";
 
 export const Villaggio = () => {
   const isMobile = useWindowMedia();
+
+  useEffect(() => {
+    gsap.registerPlugin(DrawSVGPlugin);
+
+    animateCharacters();
+  }, []);
 
   return (
     <svg
@@ -190,7 +200,7 @@ export const Villaggio = () => {
             d="M285.99 155.77h.56s.21.65.07.65-.2-.33-.2-.33.05.52-.09.51-.14-.48-.14-.48-.03.3-.2.28 0-.63 0-.63Z"
           />
         </g>
-        <g id="braccio_dex_2">
+        <g id="braccio_dex_2" className="wave-arm">
           <path
             fill="none"
             stroke="#009289"
@@ -302,7 +312,7 @@ export const Villaggio = () => {
           fill="#f2d1de"
           d="M278.39 145.3c-.02 1.29-.42 4.31 1.55 5.3 1.59.59 3.17.4 4.11-.73 1.01-1.3.91-3.85.81-5.04-.04-.19-2.32.02-3.23.06s-3.13.19-3.25.41Z"
         />
-        <g id="orecchio_dex">
+        <g id="orecchio_six">
           <path
             fill="#f2d1de"
             d="M284.81 147.82s.14-1.56.72-2.34.89-1.03 1.01-1.1c0 0 .16 1.07-.54 2.17s-1.19 1.27-1.19 1.27Z"
@@ -574,6 +584,7 @@ export const Villaggio = () => {
               </g>
               <path
                 id="bocca_2"
+                className="kiss"
                 fill="none"
                 stroke="#11142a"
                 strokeLinecap="round"
@@ -649,11 +660,13 @@ export const Villaggio = () => {
         />
         <path
           id="cuore2"
+          className="float"
           fill="#f05"
           d="m351.57 114.49.05-.08c.08-.11.19-.18.32-.19.16-.02.29.04.4.15.08.09.12.19.12.32 0 .15-.05.28-.13.41-.06.1-.14.19-.23.26-.18.16-.36.31-.55.45l-.46-.39c-.09-.08-.18-.16-.25-.26-.08-.11-.14-.23-.16-.36-.02-.12-.01-.25.05-.36.08-.14.21-.22.36-.23.16-.01.28.05.39.16.05.04.07.07.09.11Z"
         />
         <path
           id="cuore1"
+          className="float"
           fill="#f05"
           d="m336.92 109.41.05-.08c.08-.11.19-.18.32-.19.16-.02.29.04.4.15.08.09.12.19.12.32 0 .15-.05.28-.13.41-.06.1-.14.19-.23.26-.18.16-.36.31-.55.45l-.46-.39c-.09-.08-.18-.16-.25-.26-.08-.11-.14-.23-.16-.36-.02-.12-.01-.25.05-.36.08-.14.21-.22.36-.23.16-.01.28.05.39.16.05.03.07.07.09.11Z"
         />
@@ -796,7 +809,7 @@ export const Villaggio = () => {
             strokeWidth=".17"
             d="M401.03 80.83s-.22-.17-.39.03"
           />
-          <g id="orecchio_dex-5">
+          <g className="wiggle-left">
             <path
               fill="#f8cede"
               d="M405.84 83.12s.14-1.53.7-2.28.87-1 .99-1.08c0 0 .15 1.04-.53 2.12s-1.16 1.24-1.16 1.24Z"
@@ -810,7 +823,7 @@ export const Villaggio = () => {
               d="m405.92 82.62.75-1.19"
             />
           </g>
-          <g id="orecchio_dex-6">
+          <g className="wiggle-right">
             <path
               fill="#f8cede"
               d="M397.75 80.91s.72.25 1.25 1.22.53.95.72 1.6c0 0-1.09-.54-1.55-1.42-.45-.87-.42-1.41-.42-1.41Z"
@@ -1022,7 +1035,7 @@ export const Villaggio = () => {
             />
           </g>
           <g id="faccia_cliccabile">
-            <g id="orecchio_dex-7">
+            <g className="wiggle-left">
               <path
                 fill="#f8cede"
                 d="M357.31 49.12s.14-1.56.72-2.33c.28-.41.62-.79 1.01-1.1 0 0 .16 1.07-.54 2.17-.7 1.1-1.18 1.27-1.18 1.27Z"
@@ -1036,7 +1049,7 @@ export const Villaggio = () => {
                 d="m357.39 48.61.77-1.21"
               />
             </g>
-            <g id="orecchio_dex-8">
+            <g className="wiggle-right">
               <path
                 fill="#f8cede"
                 d="M349.04 46.86s.73.26 1.28 1.25c.54.99.54.97.73 1.64 0 0-1.11-.55-1.59-1.45-.47-.89-.43-1.44-.43-1.44Z"
@@ -1275,6 +1288,7 @@ export const Villaggio = () => {
           />
           <path
             id="sopracciglio-six-1-2"
+            className="up-down"
             fill="none"
             stroke="#11142a"
             strokeLinecap="round"
@@ -1296,7 +1310,7 @@ export const Villaggio = () => {
               d="m282.68 16.98.8-1.26"
             />
           </g>
-          <g id="orecchio_dex-10">
+          <g id="orecchio_dex-10" className="wiggle-right">
             <path
               fill="#f8cede"
               d="M273.97 15.16s.77.27 1.33 1.3.57 1.01.77 1.71c0 0-1.16-.57-1.65-1.51-.48-.93-.44-1.5-.44-1.5Z"
@@ -1539,6 +1553,7 @@ export const Villaggio = () => {
           />
           <path
             id="sopracciglio-six-1-3"
+            className="up-down"
             fill="none"
             stroke="#11142a"
             strokeLinecap="round"
@@ -1560,7 +1575,7 @@ export const Villaggio = () => {
               d="m455.89 48.65.8-1.26"
             />
           </g>
-          <g id="orecchio_dex-12">
+          <g id="orecchio_dex-12" className="wiggle-right">
             <path
               fill="#f8cede"
               d="M447.18 46.83s.77.27 1.33 1.3.57 1.01.77 1.71c0 0-1.16-.57-1.65-1.51-.48-.93-.44-1.5-.44-1.5Z"
@@ -1918,6 +1933,7 @@ export const Villaggio = () => {
             />
             <path
               id="sopracciglia-six"
+              className="down-up"
               fill="none"
               stroke="#11142a"
               strokeLinecap="round"
@@ -2148,6 +2164,7 @@ export const Villaggio = () => {
               <circle cx="540.06" cy="110.94" r=".54" fill="#fff" />
               <circle
                 id="occhio_dex-2"
+                className="side-right"
                 cx="536.04"
                 cy="110.81"
                 r=".15"
@@ -2155,6 +2172,7 @@ export const Villaggio = () => {
               />
               <circle
                 id="occhio_six-2"
+                className="side-right"
                 cx="539.84"
                 cy="110.81"
                 r=".15"
@@ -2361,17 +2379,8 @@ export const Villaggio = () => {
             </g>
             <g id="facce-8">
               <g
-                id="sopracciglia-2-2"
-                fill="none"
-                stroke="#111428"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth=".18"
-              >
-                <path d="M404.07 141.72s.15-.22.4-.05M407.89 141.56s.24-.15.41.04" />
-              </g>
-              <g
                 id="sopracciglia"
+                className="bounce2"
                 fill="none"
                 stroke="#11142a"
                 strokeLinecap="round"
@@ -2660,6 +2669,7 @@ export const Villaggio = () => {
               <circle cx="475.61" cy="156.15" r=".54" fill="#fff" />
               <circle
                 id="occhio_dex-3"
+                className="side-right"
                 cx="471.6"
                 cy="156.03"
                 r=".15"
@@ -2667,6 +2677,7 @@ export const Villaggio = () => {
               />
               <circle
                 id="occhio_six-3"
+                className="side-right"
                 cx="475.39"
                 cy="156.03"
                 r=".15"
@@ -2825,7 +2836,7 @@ export const Villaggio = () => {
               d="M383.39 172.65c-.65-.14-.97.55-.91.73.06.17.13.63.52.64.4 0 .83-.23.83-.64s-.02-.65-.44-.73Z"
             />
           </g>
-          <g id="orecchio_dex-19">
+          <g id="orecchio_dex-19" className="wiggle-right">
             <path
               fill="#f8cede"
               d="M371.03 174.83s.77-.02 1.62.7c.85.74.84.72 1.26 1.28 0 0-1.22-.11-1.96-.78-.76-.67-.91-1.2-.91-1.2Z"
@@ -2839,7 +2850,7 @@ export const Villaggio = () => {
               d="m373.49 176.39-1.34-.55"
             />
           </g>
-          <g id="orecchio_six">
+          <g id="orecchio_six" className="wiggle-left">
             <path
               fill="#f8cede"
               d="M379.25 176.69s.83-1.34 1.69-1.75c.43-.24.89-.41 1.38-.51 0 0-.35 1.03-1.46 1.69-1.1.66-1.6.57-1.6.58Z"
@@ -2943,6 +2954,7 @@ export const Villaggio = () => {
             />
             <path
               id="bocca-9"
+              className="draw-middle"
               fill="none"
               stroke="#11142a"
               strokeLinecap="round"
@@ -3111,7 +3123,7 @@ export const Villaggio = () => {
               d="M337.36 230.02c-.65-.14-.97.55-.91.73.06.17.13.63.52.64.4 0 .83-.23.83-.64s-.02-.65-.44-.73Z"
             />
           </g>
-          <g id="orecchio_dex-20">
+          <g id="orecchio_dex-20" className="wiggle-right">
             <path
               fill="#f8cede"
               d="M325 232.2s.77-.02 1.62.7c.85.74.84.72 1.26 1.28 0 0-1.22-.11-1.96-.78-.76-.67-.91-1.2-.91-1.2Z"
@@ -3125,7 +3137,7 @@ export const Villaggio = () => {
               d="m327.46 233.76-1.34-.55"
             />
           </g>
-          <g id="orecchio_six-2">
+          <g id="orecchio_six-2" className="wiggle-left">
             <path
               fill="#f8cede"
               d="M333.22 234.06s.83-1.34 1.69-1.75c.43-.24.89-.41 1.38-.51 0 0-.35 1.03-1.46 1.69-1.1.66-1.6.57-1.6.58Z"
@@ -3229,6 +3241,7 @@ export const Villaggio = () => {
             />
             <path
               id="bocca-wide"
+              className="draw-middle"
               fill="none"
               stroke="#11142c"
               strokeLinecap="round"
@@ -3397,7 +3410,7 @@ export const Villaggio = () => {
               d="M482.02 219.43c-.65-.14-.97.55-.91.73.06.17.13.63.52.64.4 0 .83-.23.83-.64s-.02-.65-.44-.73Z"
             />
           </g>
-          <g id="orecchio_dex-21">
+          <g id="orecchio_dex-21" className="wiggle-right">
             <path
               fill="#f8cede"
               d="M469.67 221.61s.77-.02 1.62.7c.85.74.84.72 1.26 1.28 0 0-1.22-.11-1.96-.78-.76-.67-.91-1.2-.91-1.2Z"
@@ -3411,7 +3424,7 @@ export const Villaggio = () => {
               d="m472.13 223.17-1.34-.55"
             />
           </g>
-          <g id="orecchio_six-3">
+          <g id="orecchio_six-3" className="wiggle-left">
             <path
               fill="#f8cede"
               d="M477.89 223.47s.83-1.34 1.69-1.75c.43-.24.89-.41 1.38-.51 0 0-.35 1.03-1.46 1.69-1.1.66-1.6.57-1.6.58Z"
@@ -3515,6 +3528,7 @@ export const Villaggio = () => {
             />
             <path
               id="bocca-wide-2"
+              className="draw-middle"
               fill="none"
               stroke="#11142c"
               strokeLinecap="round"
@@ -3781,24 +3795,26 @@ export const Villaggio = () => {
                 fill="#f8cede"
                 d="M112.05 246.65h1.74v.4h-1.74v-.4Zm3.99 0h1.74v.4h-1.74v-.4Z"
               />
-              <path
-                id="sopracciglio_six-4"
-                fill="none"
-                stroke="#11142a"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth=".17"
-                d="M112.98 246.03s-.24-.24-.41.07"
-              />
-              <path
-                id="sopracciglio_dex-4"
-                fill="none"
-                stroke="#11142a"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth=".17"
-                d="M116.48 246.34s.24-.23.41.07"
-              />
+              <g className="bounce2">
+                <path
+                  id="sopracciglio_six-4"
+                  fill="none"
+                  stroke="#11142a"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth=".17"
+                  d="M112.98 246.03s-.24-.24-.41.07"
+                />
+                <path
+                  id="sopracciglio_dex-4"
+                  fill="none"
+                  stroke="#11142a"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth=".17"
+                  d="M116.48 246.34s.24-.23.41.07"
+                />
+              </g>
             </g>
           </g>
         </g>
@@ -3907,25 +3923,27 @@ export const Villaggio = () => {
             fill="#f8cede"
             d="M153.07 211.66c-.02 1.34-.44 4.49 1.62 5.51 1.66.61 3.3.41 4.28-.76 1.05-1.36.95-4.01.85-5.24-.04-.2-2.41.02-3.37.06-.95.04-3.25.19-3.37.43Z"
           />
-          <path
-            id="sopracciglio-six-1-4"
-            fill="none"
-            stroke="#11142a"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth=".18"
-            d="M158.04 212.2s.16-.21.41 0"
-          />
-          <path
-            id="sopracciglio-dex-1-2"
-            fill="none"
-            stroke="#11142a"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth=".18"
-            d="M154.65 212.27s-.23-.18-.41.04"
-          />
-          <g id="orecchio_dex-24">
+          <g>
+            <path
+              id="sopracciglio-six-1-4"
+              fill="none"
+              stroke="#11142a"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth=".18"
+              d="M158.04 212.2s.16-.21.41 0"
+            />
+            <path
+              id="sopracciglio-dex-1-2"
+              fill="none"
+              stroke="#11142a"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth=".18"
+              d="M154.65 212.27s-.23-.18-.41.04"
+            />
+          </g>
+          <g className="wiggle-left">
             <path
               fill="#f8cede"
               d="M159.76 214.28s.15-1.63.75-2.43.93-1.07 1.05-1.15c0 0 .16 1.11-.57 2.26s-1.23 1.32-1.23 1.32Z"
@@ -3939,7 +3957,7 @@ export const Villaggio = () => {
               d="m159.84 213.74.8-1.26"
             />
           </g>
-          <g id="orecchio_dex-25">
+          <g className="wiggle-right">
             <path
               fill="#f8cede"
               d="M151.13 211.93s.77.27 1.33 1.3.57 1.01.77 1.71c0 0-1.16-.57-1.65-1.51-.48-.93-.44-1.5-.44-1.5Z"
@@ -4304,6 +4322,7 @@ export const Villaggio = () => {
               <circle cx="52.84" cy="197.71" r=".54" fill="#fff" />
               <circle
                 id="occhio_dex-5"
+                className="side-right"
                 cx="48.82"
                 cy="197.59"
                 r=".15"
@@ -4311,6 +4330,7 @@ export const Villaggio = () => {
               />
               <circle
                 id="occhio_six-5"
+                className="side-right"
                 cx="52.62"
                 cy="197.59"
                 r=".15"
@@ -4503,6 +4523,7 @@ export const Villaggio = () => {
             </g>
             <g id="facce-13">
               <g
+                className="bounce2"
                 id="sopracciglia-2-3"
                 fill="none"
                 stroke="#111428"
@@ -4511,16 +4532,6 @@ export const Villaggio = () => {
                 strokeWidth=".18"
               >
                 <path d="M213.2 178.28s.15-.22.4-.05M217.02 178.12s.24-.15.41.04" />
-              </g>
-              <g
-                id="sopracciglia-2"
-                fill="none"
-                stroke="#11142a"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth=".18"
-              >
-                <path d="M217.29 178.11s.27.11.35.22M213.2 178.28s.26-.12.4-.11" />
               </g>
               <path
                 id="bocca-11"
@@ -4611,8 +4622,8 @@ export const Villaggio = () => {
           rx="3.84"
           ry=".2"
         />
-        <g id="gruppo-12">
-          <g id="braccio-six-basso-10">
+        <g>
+          <g>
             <path
               fill="none"
               stroke="#009488"
@@ -4641,7 +4652,7 @@ export const Villaggio = () => {
               d="M151.2 168.32h.56s.21.66.07.66-.21-.33-.21-.33.05.52-.09.51-.14-.48-.14-.48-.04.3-.2.28c-.16-.02 0-.64 0-.64Z"
             />
           </g>
-          <g id="braccio-dex-basso-10">
+          <g>
             <path
               fill="none"
               stroke="#009488"
@@ -4726,7 +4737,7 @@ export const Villaggio = () => {
               fill="#f8cede"
               d="M143.56 157.79c-.02 1.29-.43 4.34 1.56 5.33 1.6.59 3.19.4 4.14-.73 1.02-1.31.92-3.87.82-5.07-.04-.19-2.33.02-3.26.06-.92.04-3.14.19-3.26.41Z"
             />
-            <g id="orecchio_dex-30">
+            <g className="wiggle-left">
               <path
                 fill="#f8cede"
                 d="M150.02 160.32s.14-1.57.72-2.35c.28-.42.62-.79 1.02-1.11 0 0 .16 1.08-.55 2.19s-1.19 1.28-1.19 1.28Z"
@@ -4740,7 +4751,7 @@ export const Villaggio = () => {
                 d="m150.1 159.81.78-1.22"
               />
             </g>
-            <g id="orecchio_dex-31">
+            <g className="wiggle-right">
               <path
                 fill="#f8cede"
                 d="M141.68 158.05s.74.26 1.29 1.26.55.98.74 1.65c0 0-1.12-.55-1.6-1.46-.46-.89-.43-1.45-.43-1.45Z"
@@ -4755,16 +4766,6 @@ export const Villaggio = () => {
               />
             </g>
             <g id="facce-14">
-              <g
-                id="sopracciglia-2-4"
-                fill="none"
-                stroke="#111428"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth=".18"
-              >
-                <path d="M144.58 158.48s.15-.22.4-.05M148.4 158.33s.24-.15.41.04" />
-              </g>
               <g
                 id="sopracciglia-3"
                 fill="none"
@@ -5077,24 +5078,24 @@ export const Villaggio = () => {
                 fill="#f8cede"
                 d="M167.16 124.51h1.74v.4h-1.74v-.4Zm3.99 0h1.74v.4h-1.74v-.4Z"
               />
-              <path
-                id="sopracciglio_six-6"
-                fill="none"
-                stroke="#11142a"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth=".17"
-                d="M168.1 123.88s-.24-.24-.41.07"
-              />
-              <path
-                id="sopracciglio_dex-6"
-                fill="none"
-                stroke="#11142a"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth=".17"
-                d="M171.6 124.2s.24-.23.41.07"
-              />
+              <g className="bounce2">
+                <path
+                  fill="none"
+                  stroke="#11142a"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth=".17"
+                  d="M168.1 123.88s-.24-.24-.41.07"
+                />
+                <path
+                  fill="none"
+                  stroke="#11142a"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth=".17"
+                  d="M171.6 124.2s.24-.23.41.07"
+                />
+              </g>
             </g>
           </g>
         </g>

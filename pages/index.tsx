@@ -1,8 +1,10 @@
 import gsap from "gsap";
 import DrawSVGPlugin from "gsap/dist/DrawSVGPlugin";
 import MorphSVGPlugin from "gsap/dist/MorphSVGPlugin";
+import { useRouter } from "next/router";
 import { useEffect, useRef, useState } from "react";
 import { HintoIcon } from "../components/Icons/HintoIcon";
+import { showLoader } from "../components/Loader/Loader";
 import { Modal } from "../components/Modals/MappaModal/Modal";
 import { Neve } from "../components/Neve/Neve";
 import { Villaggio } from "../components/Villaggio/Villaggio";
@@ -14,7 +16,6 @@ import {
   villaggioData,
 } from "../components/Villaggio/villaggioData";
 import { MappaPageWrapper } from "../page-styles/index-page.style";
-import { useRouter } from "next/router";
 
 export function openModal() {
   console.log("Open modal");
@@ -119,8 +120,13 @@ export default function Mappa() {
     } else {
       closeModal();
       showEntireMap();
-      //@ts-ignore
-      router.push(`/risultati/${resultsHandler[id]}`);
+      setTimeout(() => {
+        showLoader();
+        setTimeout(() => {
+          //@ts-ignore
+          router.push(`/risultati/${resultsHandler[id]}`);
+        }, 800);
+      }, 1000);
     }
   }
 

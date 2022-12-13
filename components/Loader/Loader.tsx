@@ -18,35 +18,37 @@ export function showLoaderAnimation(callback: () => void) {
         stagger: 0.1,
       }
     )
-    .to("#loader div", {
-      y: "200%",
+    .to(
+      "#loader div",
+      {
+        y: "200%",
+        duration: 0.8,
+        ease: "Expo.easeInOut",
+        stagger: 0.1,
+        onStart: callback,
+      },
+      "+=0.5"
+    );
+}
+
+export function showLoader() {
+  gsap.fromTo(
+    "#loader div",
+    {
+      y: "0%",
+    },
+    {
+      y: "100%",
       duration: 0.8,
       ease: "Expo.easeInOut",
       stagger: 0.1,
-      onStart: callback
-    }, '+=0.5');
+    }
+  );
 }
 
 export const Loader = () => {
   const router = useRouter();
   const loaderTimeout = useRef<ReturnType<typeof setTimeout>>();
-
-  function aniStart() {
-    loaderTimeout.current = setTimeout(() => {
-      gsap.fromTo(
-        "#loader div",
-        {
-          y: "0%",
-        },
-        {
-          y: "100%",
-          duration: 0.8,
-          ease: "Expo.easeInOut",
-          stagger: 0.1,
-        }
-      );
-    }, 300);
-  }
 
   const aniEnd = () => {
     clearTimeout(loaderTimeout.current);
@@ -56,6 +58,7 @@ export const Loader = () => {
       {
         y: "200%",
         duration: 0.8,
+        delay: 0.5,
         ease: "Expo.easeInOut",
         stagger: 0.1,
       }
@@ -63,12 +66,10 @@ export const Loader = () => {
   };
 
   useEffect(() => {
-    router.events.on("routeChangeStart", aniStart);
     router.events.on("routeChangeComplete", aniEnd);
     router.events.on("routeChangeError", aniEnd);
 
     return () => {
-      router.events.off("routeChangeStart", aniStart);
       router.events.off("routeChangeComplete", aniEnd);
       router.events.off("routeChangeError", aniEnd);
     };
