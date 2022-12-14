@@ -17,7 +17,7 @@ export const HeadRisultato = () => {
         property="og:description"
         content="Misura il tuo spirito natalizio: fai il test, scopri il risultato e condividi i tuoi auguri! Un regalo da scartare ti aspetta nel villaggio di Natale."
       />
-      <meta property="og:image" content="/xmas-condivisione-elfo.png" />
+      <meta property="og:image" content="https://xmas.hinto.com/xmas-condivisione-elfo.png" />
     </Head>
   );
 };
