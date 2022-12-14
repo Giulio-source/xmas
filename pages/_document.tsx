@@ -9,6 +9,14 @@ export default function Document() {
           rel="stylesheet"
         ></link>
         <script
+          id="Cookiebot"
+          src="https://consent.cookiebot.com/uc.js"
+          data-cbid="32391e2a-c29e-4431-a825-e35205101896"
+          data-blockingmode="auto"
+          type="text/javascript"
+          async
+        />
+        <script
           dangerouslySetInnerHTML={{
             __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
