@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
 export const StyledCartolinaPage = styled.div`
-  min-height: 100vh;
+  max-height: calc(var(--appHeight));
+  overflow-y: scroll;
 `;
-

@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const RisultatoPageWrapper = styled.div`
-  min-height: 100vh;
+  max-height: calc(var(--appHeight));
+  overflow-y: scroll;
 `;
 
 export const StyledCondividiCTA = styled.div`
