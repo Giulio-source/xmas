@@ -10,6 +10,7 @@ export function showLoaderAnimation(callback: () => void) {
       "#loader div",
       {
         y: "0%",
+        autoAlpha: 1,
       },
       {
         y: "100%",
@@ -28,7 +29,10 @@ export function showLoaderAnimation(callback: () => void) {
         onStart: callback,
       },
       "+=0.5"
-    );
+    )
+    .to("#loader div", {
+      autoAlpha: 0,
+    });
 }
 
 export function showLoader() {
@@ -36,6 +40,7 @@ export function showLoader() {
     "#loader div",
     {
       y: "0%",
+      autoAlpha: 1,
     },
     {
       y: "100%",
@@ -52,17 +57,22 @@ export const Loader = () => {
 
   const aniEnd = () => {
     clearTimeout(loaderTimeout.current);
-    gsap.fromTo(
-      "#loader div",
-      { y: "100%" },
-      {
-        y: "200%",
-        duration: 0.8,
-        delay: 0.5,
-        ease: "Expo.easeInOut",
-        stagger: 0.1,
-      }
-    );
+    gsap
+      .timeline()
+      .fromTo(
+        "#loader div",
+        { y: "100%" },
+        {
+          y: "200%",
+          duration: 0.8,
+          delay: 0.5,
+          ease: "Expo.easeInOut",
+          stagger: 0.1,
+        }
+      )
+      .to("#loader div", {
+        autoAlpha: 0,
+      });
   };
 
   useEffect(() => {

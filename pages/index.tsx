@@ -3,6 +3,7 @@ import DrawSVGPlugin from "gsap/dist/DrawSVGPlugin";
 import MorphSVGPlugin from "gsap/dist/MorphSVGPlugin";
 import { useRouter } from "next/router";
 import { useEffect, useRef, useState } from "react";
+import { setAppHeight } from "../components/commons/utils";
 import { HeadHome } from "../components/Head/HeadHome";
 import { HintoIcon } from "../components/Icons/HintoIcon";
 import { showLoader } from "../components/Loader/Loader";
@@ -134,6 +135,13 @@ export default function Mappa() {
   useEffect(() => {
     gsap.registerPlugin(MorphSVGPlugin, DrawSVGPlugin);
     gsap.set("#righe polyline", { drawSVG: 0 });
+
+    window.addEventListener("resize", setAppHeight);
+    setAppHeight();
+
+    return () => {
+      window.removeEventListener("resize", setAppHeight);
+    };
   }, []);
 
   useEffect(() => {
