@@ -3,6 +3,8 @@ import styled, { css } from "styled-components";
 export const StyledModal = styled.div<any>`
   width: calc(100% - 32px);
   max-width: 416px;
+  max-height: calc(100% - 84px);
+  overflow-y: auto;
   position: fixed;
   top: 72px;
   left: 50%;
