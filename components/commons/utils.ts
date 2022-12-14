@@ -114,3 +114,10 @@ export function isValidEmail(value: string) {
 export function wait(sec: number) {
   return new Promise((resolve) => setTimeout(resolve, sec * 1000));
 }
+
+export function setAppHeight() {
+  document.documentElement.style.setProperty(
+    '--appHeight',
+    `${window.innerHeight}px`
+  )
+}
