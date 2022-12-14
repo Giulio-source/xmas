@@ -17,7 +17,7 @@ export const HeadCartolina = () => {
         property="og:description"
         content="Scopri i miei speciali auguri e fai anche tu il test per misurare il tuo spirito natalizio: non mancano le sorprese nel villaggio di Natale!"
       />
-      <meta property="og:image" content="link a immagine anteprima" />
+      <meta property="og:image" content="/xmas-condivisione-elfo.png" />
     </Head>
   );
 };
