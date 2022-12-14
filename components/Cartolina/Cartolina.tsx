@@ -29,7 +29,7 @@ export const Cartolina = ({
   const isMobile = useWindowMedia();
 
   return (
-    <StyledCartolina>
+    <StyledCartolina isPageCartolina={isPageCartolina}>
       <HintoIcon theme="light" />
       <Neve />
       <Trees />
@@ -63,7 +63,7 @@ export const Cartolina = ({
           )}
           <StyledCartolinaDesktop>
             <StyledCartolinaBackground color={backgroundColor} fillPage={isPageCartolina}/>
-            <StyledSnowHill/>
+            <StyledSnowHill inCartolina={isPageCartolina}/>
           </StyledCartolinaDesktop>
         </>
       )}

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { StyledTitolo } from "../commons/Theme";
 import { StyledCredits } from "../Credits/Credits.style";
 import { StyledBackground } from "../Sezioni/Hero/Hero.style";
@@ -7,7 +7,7 @@ export const StyledElfoWrapper = styled.div`
   position: relative;
 `;
 
-export const StyledCartolina = styled.div`
+export const StyledCartolina = styled.div<any>`
   margin-bottom: 24px;
 
   @media screen and (min-width: 1024px) {
@@ -16,6 +16,15 @@ export const StyledCartolina = styled.div`
     grid-template-columns: 500px 450px;
     justify-content: center;
     align-items: flex-end;
+
+    ${({ isPageCartolina }) =>
+      isPageCartolina &&
+      css`
+        .base-bianca {
+          visibility: hidden;
+          opacity: 0;
+        }
+      `}
   }
 `;
 
