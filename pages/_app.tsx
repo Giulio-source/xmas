@@ -9,17 +9,17 @@ export default function App({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <link rel="shortcut icon" href="/favicon-hinto.gif" />
+        <script
+          id="Cookiebot"
+          src="https://consent.cookiebot.com/uc.js"
+          data-cbid="32391e2a-c29e-4431-a825-e35205101896"
+          data-blockingmode="auto"
+          type="text/javascript"
+        />
       </Head>
       <GlobalStyle />
       <Component {...pageProps} />
       <Loader />
-      <Script
-        id="Cookiebot"
-        src="https://consent.cookiebot.com/uc.js"
-        data-cbid="32391e2a-c29e-4431-a825-e35205101896"
-        data-blockingmode="auto"
-        type="text/javascript"
-      ></Script>
     </>
   );
 }
