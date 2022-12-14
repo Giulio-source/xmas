@@ -11,6 +11,7 @@ export default function CartolinaIndifferente() {
         message="Buon Natale e felice anno nuovo!"
         backgroundColor={Colors.mintGreen}
         Elfo={Indifferente}
+        isPageCartolina
       />
     </>
   );

@@ -24,6 +24,7 @@ export const Cartolina = ({
   Elfo,
   CTA,
   goBack,
+  isPageCartolina = false,
 }: CartolinaProps) => {
   const isMobile = useWindowMedia();
 
@@ -61,13 +62,13 @@ export const Cartolina = ({
             </StyledGoBackButton>
           )}
           <StyledCartolinaDesktop>
-            <StyledCartolinaBackground color={backgroundColor} />
-            <StyledSnowHill />
+            <StyledCartolinaBackground color={backgroundColor} fillPage={isPageCartolina}/>
+            <StyledSnowHill/>
           </StyledCartolinaDesktop>
         </>
       )}
       <StyledCartolinaFooter>
-        <Divider noMargin/>
+        <Divider noMargin />
         <Credits />
       </StyledCartolinaFooter>
     </StyledCartolina>
@@ -80,4 +81,5 @@ type CartolinaProps = {
   Elfo: React.FC;
   CTA?: React.ReactNode;
   goBack?: () => void;
+  isPageCartolina?: boolean;
 };

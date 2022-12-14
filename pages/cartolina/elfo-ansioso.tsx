@@ -11,6 +11,7 @@ export default function CartolinaAnsioso() {
         message="Buone feste a tutti!"
         backgroundColor={Colors.mintGreen}
         Elfo={Ansioso}
+        isPageCartolina
       />
     </>
   );

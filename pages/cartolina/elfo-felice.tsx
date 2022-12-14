@@ -11,6 +11,7 @@ export default function CartolinaFelice() {
         message="Ti auguro gioia, serenità e uno splendido Natale in compagnia!"
         backgroundColor={Colors.deepBlue}
         Elfo={Felice}
+        isPageCartolina
       />
     </>
   );

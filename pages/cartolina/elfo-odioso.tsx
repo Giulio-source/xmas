@@ -11,6 +11,7 @@ export default function CartolinaOdioso() {
         message="E anche sto Natale..."
         backgroundColor={Colors.darkBlue}
         Elfo={Odioso}
+        isPageCartolina
       />
     </>
   );

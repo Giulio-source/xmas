@@ -13,6 +13,7 @@ export default function CartolinaEsaltato() {
         message="Ti auguro un Natale splendente e un meraviglioso anno nuovo ricco di gioia!"
         backgroundColor={Colors.darkGreen}
         Elfo={Esaltato}
+        isPageCartolina
       />
     </>
   );

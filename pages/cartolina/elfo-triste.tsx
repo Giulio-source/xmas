@@ -11,6 +11,7 @@ export default function CartolinaScazzato() {
         message="Anche a te e famiglia!"
         backgroundColor={Colors.violet}
         Elfo={Scazzato}
+        isPageCartolina
       />
     </>
   );

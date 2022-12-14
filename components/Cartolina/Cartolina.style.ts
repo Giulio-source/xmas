@@ -75,5 +75,5 @@ export const StyledGoBackButton = styled.div`
 `;
 
 export const StyledCartolinaBackground = styled(StyledBackground)`
-  bottom: 200px;
+  bottom: ${({ fillPage }) => (fillPage ? "0" : "200px")};
 `;
