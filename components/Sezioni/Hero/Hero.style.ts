@@ -28,16 +28,12 @@ export const pointDown = keyframes`
 `;
 
 export const StyledChevronDown = styled.div`
-  display: flex;
-  justify-content: center;
-  margin: 50px 0;
+  position: absolute;
+  bottom: 28px;
+  left: 28px;
 
   svg {
     animation: ${pointDown} 1s ease infinite;
-  }
-
-  @media screen and (min-width: 1024px) {
-    display: none;
   }
 `;
 
@@ -61,6 +57,7 @@ export const StyledContentTitolo = styled.div`
   text-align: center;
   color: black;
   text-align: center;
+  margin: 16px 0 32px;
 
   @media screen and (min-width: 1024px) {
     color: white;

@@ -141,6 +141,10 @@ export const Container = styled.div`
   padding: 0 16px;
 `;
 
+export const Relative = styled.div`
+  position: relative;
+`;
+
 type TitoloProps = {
   children: React.ReactNode;
   color?: string;

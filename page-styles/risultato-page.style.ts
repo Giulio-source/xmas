@@ -1,9 +1,6 @@
 import styled from "styled-components";
 
-export const RisultatoPageWrapper = styled.div`
-  max-height: calc(var(--appHeight));
-  overflow-y: scroll;
-`;
+export const RisultatoPageWrapper = styled.div``;
 
 export const StyledCondividiCTA = styled.div`
   position: absolute;
