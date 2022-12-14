@@ -7,7 +7,7 @@ export const StyledElfoWrapper = styled.div`
   position: relative;
 `;
 
-export const StyledCartolina = styled.div<any>`
+export const StyledCartolina = styled.div`
   margin-bottom: 24px;
 
   @media screen and (min-width: 1024px) {
@@ -17,14 +17,10 @@ export const StyledCartolina = styled.div<any>`
     justify-content: center;
     align-items: flex-end;
 
-    ${({ isPageCartolina }) =>
-      isPageCartolina &&
-      css`
-        .base-bianca {
-          visibility: hidden;
-          opacity: 0;
-        }
-      `}
+    .base-bianca {
+      visibility: hidden;
+      opacity: 0;
+    }
   }
 `;
 

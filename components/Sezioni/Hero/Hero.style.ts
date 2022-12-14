@@ -119,3 +119,10 @@ export const StyledSnowHill = styled.div<any>`
       `}
   }
 `;
+
+export const StyledSnowHillCartolina = styled(StyledSnowHill)`
+  @media screen and (min-width: 1024px) {
+    height: 295px;
+    top: 615px;
+  }
+`;

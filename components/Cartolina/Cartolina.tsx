@@ -6,7 +6,10 @@ import { Titolo } from "../commons/Theme";
 import { Credits } from "../Credits/Credits";
 import { HintoIcon } from "../Icons/HintoIcon";
 import { Neve } from "../Neve/Neve";
-import { StyledBackground, StyledSnowHill } from "../Sezioni/Hero/Hero.style";
+import {
+  StyledBackground,
+  StyledSnowHillCartolina,
+} from "../Sezioni/Hero/Hero.style";
 import { Trees } from "../Trees/Trees";
 import {
   StyledCartolina,
@@ -29,7 +32,7 @@ export const Cartolina = ({
   const isMobile = useWindowMedia();
 
   return (
-    <StyledCartolina isPageCartolina={isPageCartolina}>
+    <StyledCartolina>
       <HintoIcon theme="light" />
       <Neve />
       <Trees />
@@ -62,8 +65,11 @@ export const Cartolina = ({
             </StyledGoBackButton>
           )}
           <StyledCartolinaDesktop>
-            <StyledCartolinaBackground color={backgroundColor} fillPage={isPageCartolina}/>
-            <StyledSnowHill inCartolina={isPageCartolina}/>
+            <StyledCartolinaBackground
+              color={backgroundColor}
+              fillPage={isPageCartolina}
+            />
+            <StyledSnowHillCartolina />
           </StyledCartolinaDesktop>
         </>
       )}
