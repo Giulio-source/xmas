@@ -48,3 +48,13 @@ export const StyledSciauguratiImage = styled.div`
     width: 359px;
   }
 `;
+
+export const StyledBackButton = styled.div`
+  display: flex;
+  justify-content: center;
+  margin: 16px 0 32px;
+
+  @media screen and (min-width: 1024px) {
+    justify-content: flex-start;
+  }
+`;
