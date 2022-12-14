@@ -3,6 +3,7 @@ import DrawSVGPlugin from "gsap/dist/DrawSVGPlugin";
 import MorphSVGPlugin from "gsap/dist/MorphSVGPlugin";
 import { useRouter } from "next/router";
 import { useEffect, useRef, useState } from "react";
+import { HeadHome } from "../components/Head/HeadHome";
 import { HintoIcon } from "../components/Icons/HintoIcon";
 import { showLoader } from "../components/Loader/Loader";
 import { Modal } from "../components/Modals/MappaModal/Modal";
@@ -154,6 +155,7 @@ export default function Mappa() {
 
   return (
     <MappaPageWrapper>
+      <HeadHome />
       <HintoIcon />
       <Villaggio />
       <Neve />

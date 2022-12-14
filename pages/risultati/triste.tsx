@@ -23,6 +23,7 @@ import {
 } from "../../page-styles/risultato-page.style";
 import { showLoaderAnimation } from "../../components/Loader/Loader";
 import { useWindowMedia } from "../../hooks/useWindowMedia";
+import { HeadRisultato } from "../../components/Head/HeadRisultato";
 
 export default function ScazzatoPage() {
   const [names, setNames] = useState<{ nome: string; cognome: string }[]>();
@@ -42,6 +43,7 @@ export default function ScazzatoPage() {
 
   return (
     <RisultatoPageWrapper>
+      <HeadRisultato />
       {showAnteprima ? (
         <>
           {isMobile && (

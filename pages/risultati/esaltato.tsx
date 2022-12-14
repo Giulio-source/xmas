@@ -11,6 +11,7 @@ import { EsaltatoHinto1 } from "../../components/ElfoHinto/Elfi/EsaltatoHinto1";
 import { EsaltatoHinto2 } from "../../components/ElfoHinto/Elfi/EsaltatoHinto2";
 import { ElfoHinto } from "../../components/ElfoHinto/ElfoHinto";
 import { Esaltato } from "../../components/Esaltato/Esaltato";
+import { HeadRisultato } from "../../components/Head/HeadRisultato";
 import { HintoIcon } from "../../components/Icons/HintoIcon";
 import { showLoaderAnimation } from "../../components/Loader/Loader";
 import { Lucine } from "../../components/Lucine/Lucine";
@@ -43,6 +44,7 @@ export default function EsaltatoPage() {
 
   return (
     <RisultatoPageWrapper>
+      <HeadRisultato />
       {showAnteprima ? (
         <>
           <Lucine />

@@ -22,6 +22,7 @@ import {
   StyledCondividiCTA,
 } from "../../page-styles/risultato-page.style";
 import { useWindowMedia } from "../../hooks/useWindowMedia";
+import { HeadRisultato } from "../../components/Head/HeadRisultato";
 
 export default function AnsiosoPage() {
   const [names, setNames] = useState<{ nome: string; cognome: string }[]>();
@@ -41,6 +42,7 @@ export default function AnsiosoPage() {
 
   return (
     <RisultatoPageWrapper>
+      <HeadRisultato />
       {showAnteprima ? (
         <>
           {isMobile && (
