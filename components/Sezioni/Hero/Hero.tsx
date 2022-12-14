@@ -41,7 +41,7 @@ export const Hero = ({
         <StyledContent>
           <StyledContentTitolo>{title}</StyledContentTitolo>
           <StyledCopyCta>
-            <Testo size={14} align="left">
+            <Testo size={16} align="left">
               {testo}
             </Testo>
             <StyledCtaWrapper>
