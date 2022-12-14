@@ -5,24 +5,23 @@ import { Colors, Container } from "../../components/commons/Theme";
 import {
   getRandomNames,
   handleOnCondividi,
-  wait,
 } from "../../components/commons/utils";
 import { OdiosoHinto } from "../../components/ElfoHinto/Elfi/Odioso";
 import { ElfoHinto } from "../../components/ElfoHinto/ElfoHinto";
+import { HeadRisultato } from "../../components/Head/HeadRisultato";
 import { HintoIcon } from "../../components/Icons/HintoIcon";
+import { showLoaderAnimation } from "../../components/Loader/Loader";
 import { Neve } from "../../components/Neve/Neve";
 import { Odioso } from "../../components/Odioso/Odioso";
 import { AltriHinto } from "../../components/Sezioni/AltriHinto/AltriHinto";
 import { Hero } from "../../components/Sezioni/Hero/Hero";
 import { Sciaugurati } from "../../components/Sezioni/Sciaugurati/Sciaugurati";
 import { Trees } from "../../components/Trees/Trees";
+import { useWindowMedia } from "../../hooks/useWindowMedia";
 import {
   RisultatoPageWrapper,
-  StyledCondividiCTA,
+  StyledCTAWrapper,
 } from "../../page-styles/risultato-page.style";
-import { showLoaderAnimation } from "../../components/Loader/Loader";
-import { useWindowMedia } from "../../hooks/useWindowMedia";
-import { HeadRisultato } from "../../components/Head/HeadRisultato";
 
 export default function OdiosoPage() {
   const [names, setNames] = useState<{ nome: string; cognome: string }[]>();
@@ -40,24 +39,15 @@ export default function OdiosoPage() {
     setNames(fullNames);
   }, []);
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [showAnteprima]);
+
   return (
     <RisultatoPageWrapper>
       <HeadRisultato />
       {showAnteprima ? (
         <>
-          {isMobile && (
-            <StyledCondividiCTA>
-              <Button
-                label={copiedSuccess ? "Link copiato!" : "Condividi"}
-                color="white"
-                onClick={() =>
-                  handleOnCondividi("cartolina/elfo-odioso", () =>
-                    setCopiedSuccess(true)
-                  )
-                }
-              />
-            </StyledCondividiCTA>
-          )}
           <Cartolina
             message="E anche sto Natale..."
             backgroundColor={Colors.darkBlue}
@@ -65,14 +55,24 @@ export default function OdiosoPage() {
             goBack={() => showLoaderAnimation(() => setShowAnteprima(false))}
             CTA={
               isMobile ? (
-                <Button
-                  label="Torna al risultato del test"
-                  type="ghost"
-                  onClick={() =>
-                    showLoaderAnimation(() => setShowAnteprima(false))
-                  }
-                  style={{ margin: "16px auto" }}
-                />
+                <StyledCTAWrapper>
+                  <Button
+                    label={copiedSuccess ? "Link copiato!" : "Condividi"}
+                    onClick={() =>
+                      handleOnCondividi("cartolina/elfo-odioso", () =>
+                        setCopiedSuccess(true)
+                      )
+                    }
+                  />
+                  <Button
+                    label="Torna al risultato del test"
+                    type="ghost"
+                    onClick={() =>
+                      showLoaderAnimation(() => setShowAnteprima(false))
+                    }
+                    style={{ margin: "16px auto" }}
+                  />
+                </StyledCTAWrapper>
               ) : (
                 <Button
                   label={copiedSuccess ? "Link copiato!" : "Condividi"}
@@ -107,7 +107,9 @@ export default function OdiosoPage() {
                 qualche abbuffata, altrimenti difficile trovare troppi aspetti
                 positivi per questo periodo dell'anno.
                 <br />
-                <strong>Se ami il rischio, tocca l'elfo e vediamo che succede!</strong>
+                <strong>
+                  Se ami il rischio, tocca l'elfo e vediamo che succede!
+                </strong>
               </>
             }
             Elfo={Odioso}

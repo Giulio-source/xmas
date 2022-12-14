@@ -5,24 +5,23 @@ import { Colors, Container } from "../../components/commons/Theme";
 import {
   getRandomNames,
   handleOnCondividi,
-  wait,
 } from "../../components/commons/utils";
 import { IndifferenteHinto } from "../../components/ElfoHinto/Elfi/Indifferente";
 import { ElfoHinto } from "../../components/ElfoHinto/ElfoHinto";
+import { HeadRisultato } from "../../components/Head/HeadRisultato";
 import { HintoIcon } from "../../components/Icons/HintoIcon";
 import { Indifferente } from "../../components/Indifferente/Indifferente";
+import { showLoaderAnimation } from "../../components/Loader/Loader";
 import { Neve } from "../../components/Neve/Neve";
 import { AltriHinto } from "../../components/Sezioni/AltriHinto/AltriHinto";
 import { Hero } from "../../components/Sezioni/Hero/Hero";
 import { Sciaugurati } from "../../components/Sezioni/Sciaugurati/Sciaugurati";
 import { Trees } from "../../components/Trees/Trees";
+import { useWindowMedia } from "../../hooks/useWindowMedia";
 import {
   RisultatoPageWrapper,
-  StyledCondividiCTA,
+  StyledCTAWrapper,
 } from "../../page-styles/risultato-page.style";
-import { showLoaderAnimation } from "../../components/Loader/Loader";
-import { useWindowMedia } from "../../hooks/useWindowMedia";
-import { HeadRisultato } from "../../components/Head/HeadRisultato";
 
 export default function IndifferentePage() {
   const [names, setNames] = useState<{ nome: string; cognome: string }[]>();
@@ -40,24 +39,15 @@ export default function IndifferentePage() {
     setNames(fullNames);
   }, []);
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [showAnteprima]);
+
   return (
     <RisultatoPageWrapper>
       <HeadRisultato />
       {showAnteprima ? (
         <>
-          {isMobile && (
-            <StyledCondividiCTA>
-              <Button
-                label={copiedSuccess ? "Link copiato!" : "Condividi"}
-                color="white"
-                onClick={() =>
-                  handleOnCondividi("cartolina/elfo-indifferente", () =>
-                    setCopiedSuccess(true)
-                  )
-                }
-              />
-            </StyledCondividiCTA>
-          )}
           <Cartolina
             message="Buon Natale e felice anno nuovo!"
             backgroundColor={Colors.mintGreen}
@@ -65,14 +55,24 @@ export default function IndifferentePage() {
             goBack={() => showLoaderAnimation(() => setShowAnteprima(false))}
             CTA={
               isMobile ? (
-                <Button
-                  label="Torna al risultato del test"
-                  type="ghost"
-                  onClick={() =>
-                    showLoaderAnimation(() => setShowAnteprima(false))
-                  }
-                  style={{ margin: "16px auto" }}
-                />
+                <StyledCTAWrapper>
+                  <Button
+                    label={copiedSuccess ? "Link copiato!" : "Condividi"}
+                    onClick={() =>
+                      handleOnCondividi("cartolina/elfo-indifferente", () =>
+                        setCopiedSuccess(true)
+                      )
+                    }
+                  />
+                  <Button
+                    label="Torna al risultato del test"
+                    type="ghost"
+                    onClick={() =>
+                      showLoaderAnimation(() => setShowAnteprima(false))
+                    }
+                    style={{ margin: "16px auto" }}
+                  />
+                </StyledCTAWrapper>
               ) : (
                 <Button
                   label={copiedSuccess ? "Link copiato!" : "Condividi"}
@@ -108,7 +108,9 @@ export default function IndifferentePage() {
                 <br />
                 Insomma, niente facili entusiasmi!
                 <br />
-                <strong>Prova a pungolare l'elfo, chissà se gli interesserà!</strong>
+                <strong>
+                  Prova a pungolare l'elfo, chissà se gli interesserà!
+                </strong>
               </>
             }
             Elfo={Indifferente}

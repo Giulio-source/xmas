@@ -8,3 +8,9 @@ export const StyledCondividiCTA = styled.div`
   left: 16px;
   z-index: 1;
 `;
+
+export const StyledCTAWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+`

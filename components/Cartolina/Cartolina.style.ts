@@ -8,13 +8,14 @@ export const StyledElfoWrapper = styled.div`
 `;
 
 export const StyledCartolina = styled.div`
+  margin-bottom: 24px;
+
   @media screen and (min-width: 1024px) {
     position: relative;
     display: grid;
     grid-template-columns: 500px 450px;
     justify-content: center;
     align-items: flex-end;
-    margin-bottom: 40px;
   }
 `;
 
@@ -54,15 +55,15 @@ export const StyledCartolinaDesktop = styled.div`
   }
 `;
 
-export const StyledCartolinaFooterDesktop = styled.div`
-  display: none;
+export const StyledCartolinaFooter = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  grid-column: 1 / -1;
+  margin: 0 16px 0px;
 
   @media screen and (min-width: 1024px) {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    grid-column: 1 / -1;
-    margin-bottom: 80px;
+    margin: 16px 16px 0px;
   }
 `;
 

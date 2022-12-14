@@ -5,7 +5,6 @@ import { Colors, Container } from "../../components/commons/Theme";
 import {
   getRandomNames,
   handleOnCondividi,
-  wait,
 } from "../../components/commons/utils";
 import { EsaltatoHinto1 } from "../../components/ElfoHinto/Elfi/EsaltatoHinto1";
 import { EsaltatoHinto2 } from "../../components/ElfoHinto/Elfi/EsaltatoHinto2";
@@ -23,7 +22,7 @@ import { Trees } from "../../components/Trees/Trees";
 import { useWindowMedia } from "../../hooks/useWindowMedia";
 import {
   RisultatoPageWrapper,
-  StyledCondividiCTA,
+  StyledCTAWrapper,
 } from "../../page-styles/risultato-page.style";
 
 export default function EsaltatoPage() {
@@ -42,25 +41,16 @@ export default function EsaltatoPage() {
     setNames(fullNames);
   }, []);
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [showAnteprima]);
+
   return (
     <RisultatoPageWrapper>
       <HeadRisultato />
       {showAnteprima ? (
         <>
           <Lucine />
-          {isMobile && (
-            <StyledCondividiCTA>
-              <Button
-                label={copiedSuccess ? "Link copiato!" : "Condividi"}
-                color="white"
-                onClick={() =>
-                  handleOnCondividi("cartolina/elfo-esaltato", () =>
-                    setCopiedSuccess(true)
-                  )
-                }
-              />
-            </StyledCondividiCTA>
-          )}
           <Cartolina
             message="Ti auguro un Natale splendente e un meraviglioso anno nuovo ricco di gioia!"
             backgroundColor={Colors.darkGreen}
@@ -68,14 +58,24 @@ export default function EsaltatoPage() {
             goBack={() => showLoaderAnimation(() => setShowAnteprima(false))}
             CTA={
               isMobile ? (
-                <Button
-                  label="Torna al risultato del test"
-                  type="ghost"
-                  onClick={() =>
-                    showLoaderAnimation(() => setShowAnteprima(false))
-                  }
-                  style={{ margin: "16px auto" }}
-                />
+                <StyledCTAWrapper>
+                  <Button
+                    label={copiedSuccess ? "Link copiato!" : "Condividi"}
+                    onClick={() =>
+                      handleOnCondividi("cartolina/elfo-esaltato", () =>
+                        setCopiedSuccess(true)
+                      )
+                    }
+                  />
+                  <Button
+                    label="Torna al risultato del test"
+                    type="ghost"
+                    onClick={() =>
+                      showLoaderAnimation(() => setShowAnteprima(false))
+                    }
+                    style={{ margin: "16px auto" }}
+                  />
+                </StyledCTAWrapper>
               ) : (
                 <Button
                   label={copiedSuccess ? "Link copiato!" : "Condividi"}
@@ -101,6 +101,7 @@ export default function EsaltatoPage() {
             background={Colors.darkGreen}
             testo={
               <>
+                <br/>
                 Per te il countdown a Natale comincia quando mancano 100 giorni.
                 <br />
                 I regali? Lista già pronta con largo anticipo e non capita mai

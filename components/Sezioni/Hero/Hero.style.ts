@@ -7,7 +7,7 @@ export const HeroWrapper = styled.div`
   margin: auto;
 
   @media screen and (min-width: 1024px) {
-    max-width: 950px;
+    max-width: 960px;
     grid-template-columns: 400px 1fr;
   }
 `;
@@ -103,13 +103,13 @@ export const StyledSnowHill = styled.div<any>`
   @media screen and (min-width: 1024px) {
     display: initial;
     background: white;
-    height: 320px;
+    height: 345px;
     width: 100%;
     z-index: -1;
     position: absolute;
-    top: 640px;
+    top: 570px;
     left: 0;
-    clip-path: ellipse(85% 100% at 60% 100%);
+    clip-path: ellipse(85% 100% at 70% 100%);
 
     ${({ insideHero }) =>
       insideHero &&

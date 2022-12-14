@@ -13,7 +13,7 @@ import {
   StyledCartolinaBackground,
   StyledCartolinaContent,
   StyledCartolinaDesktop,
-  StyledCartolinaFooterDesktop,
+  StyledCartolinaFooter,
   StyledElfoWrapper,
   StyledGoBackButton,
 } from "./Cartolina.style";
@@ -48,7 +48,6 @@ export const Cartolina = ({
             />
           </Link>
         )}
-        {isMobile && <Credits />}
       </StyledCartolinaContent>
       {!isMobile && (
         <>
@@ -65,12 +64,12 @@ export const Cartolina = ({
             <StyledCartolinaBackground color={backgroundColor} />
             <StyledSnowHill />
           </StyledCartolinaDesktop>
-          <StyledCartolinaFooterDesktop>
-            <Divider />
-            <Credits />
-          </StyledCartolinaFooterDesktop>
         </>
       )}
+      <StyledCartolinaFooter>
+        <Divider noMargin/>
+        <Credits />
+      </StyledCartolinaFooter>
     </StyledCartolina>
   );
 };
