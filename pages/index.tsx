@@ -40,6 +40,7 @@ export function closeModal() {
 function goToStep(fromId: string | undefined, toId: string) {
   const svg: any = document.getElementById("villaggio-elfo");
   const el = document.getElementById(toId) as SVGGraphicsElement | null;
+  const isMobile = window && window.matchMedia("(max-width: 1023px)").matches;
 
   if (!el) return;
 
@@ -66,9 +67,9 @@ function goToStep(fromId: string | undefined, toId: string) {
         "#villaggio-elfo",
         {
           attr: {
-            viewBox: `${BBox.x - 16} ${BBox.y - 8} ${BBox.width + 32} ${
-              BBox.height + 16
-            }`,
+            viewBox: `${BBox.x - 16} ${isMobile ? BBox.y : BBox.y - 8} ${
+              BBox.width + 32
+            } ${BBox.height + 16}`,
           },
           duration: 1.5,
         },
@@ -88,9 +89,9 @@ function goToStep(fromId: string | undefined, toId: string) {
         "#villaggio-elfo",
         {
           attr: {
-            viewBox: `${BBox.x - 16} ${BBox.y - 8} ${BBox.width + 32} ${
-              BBox.height + 16
-            }`,
+            viewBox: `${BBox.x - 16} ${isMobile ? BBox.y : BBox.y - 8} ${
+              BBox.width + 32
+            } ${BBox.height + 16}`,
           },
           duration: 1,
         },
