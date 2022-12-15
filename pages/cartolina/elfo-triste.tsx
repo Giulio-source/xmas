@@ -9,6 +9,7 @@ export default function CartolinaScazzato() {
       <HeadCartolina />
       <Cartolina
         message="Anche a te e famiglia!"
+        interactionMessage="Tocca l'elfo per provare a infastidirlo un po'!"
         backgroundColor={Colors.violet}
         Elfo={Scazzato}
         isPageCartolina

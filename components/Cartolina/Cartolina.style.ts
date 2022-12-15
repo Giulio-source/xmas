@@ -82,3 +82,9 @@ export const StyledGoBackButton = styled.div`
 export const StyledCartolinaBackground = styled(StyledBackground)`
   bottom: ${({ fillPage }) => (fillPage ? "0" : "200px")};
 `;
+
+export const StyledMessage = styled.div`
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+`

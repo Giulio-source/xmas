@@ -9,6 +9,7 @@ export default function CartolinaAnsioso() {
       <HeadCartolina />
       <Cartolina
         message="Buone feste a tutti!"
+        interactionMessage="Clicca l'elfo e vediamo se cambia idea sul Natale!"
         backgroundColor={Colors.mintGreen}
         Elfo={Ansioso}
         isPageCartolina

@@ -8,7 +8,7 @@ import { HintoIcon } from "../Icons/HintoIcon";
 import { Neve } from "../Neve/Neve";
 import {
   StyledBackground,
-  StyledSnowHillCartolina,
+  StyledSnowHillCartolina
 } from "../Sezioni/Hero/Hero.style";
 import { Trees } from "../Trees/Trees";
 import {
@@ -19,6 +19,7 @@ import {
   StyledCartolinaFooter,
   StyledElfoWrapper,
   StyledGoBackButton,
+  StyledMessage
 } from "./Cartolina.style";
 
 export const Cartolina = ({
@@ -28,6 +29,7 @@ export const Cartolina = ({
   CTA,
   goBack,
   isPageCartolina = false,
+  interactionMessage,
 }: CartolinaProps) => {
   const isMobile = useWindowMedia();
 
@@ -42,6 +44,9 @@ export const Cartolina = ({
       </StyledElfoWrapper>
       <StyledCartolinaContent>
         <Titolo>{message}</Titolo>
+        {interactionMessage && (
+          <StyledMessage>{interactionMessage}</StyledMessage>
+        )}
         {CTA ? (
           CTA
         ) : (
@@ -88,4 +93,5 @@ type CartolinaProps = {
   CTA?: React.ReactNode;
   goBack?: () => void;
   isPageCartolina?: boolean;
+  interactionMessage?: string;
 };

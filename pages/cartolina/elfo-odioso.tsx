@@ -9,6 +9,7 @@ export default function CartolinaOdioso() {
       <HeadCartolina />
       <Cartolina
         message="E anche sto Natale..."
+        interactionMessage="Se ami il rischio, tocca l'elfo e vediamo che succede!"
         backgroundColor={Colors.darkBlue}
         Elfo={Odioso}
         isPageCartolina

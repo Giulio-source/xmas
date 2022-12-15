@@ -47,7 +47,7 @@ export const Hero = ({
             </Testo>
             <StyledCtaWrapper>
               <Button
-                label="Condividi i tuoi auguri"
+                label="Scopri i tuoi auguri"
                 type="outline"
                 onClick={() => {
                   showLoaderAnimation(onShowAnteprima);

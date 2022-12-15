@@ -50,6 +50,7 @@ export default function AnsiosoPage() {
         <>
           <Cartolina
             message="Buone feste a tutti!"
+            interactionMessage="Clicca l'elfo e vediamo se cambia idea sul Natale!"
             backgroundColor={Colors.mintGreen}
             Elfo={Ansioso}
             goBack={() => showLoaderAnimation(() => setShowAnteprima(false))}
@@ -57,7 +58,11 @@ export default function AnsiosoPage() {
               isMobile ? (
                 <StyledCTAWrapper>
                   <Button
-                    label={copiedSuccess ? "Link copiato!" : "Condividi"}
+                    label={
+                      copiedSuccess
+                        ? "Link copiato!"
+                        : "Condividi i tuoi auguri"
+                    }
                     onClick={() =>
                       handleOnCondividi("cartolina/elfo-ansioso", () =>
                         setCopiedSuccess(true)
@@ -75,7 +80,9 @@ export default function AnsiosoPage() {
                 </StyledCTAWrapper>
               ) : (
                 <Button
-                  label={copiedSuccess ? "Link copiato!" : "Condividi"}
+                  label={
+                    copiedSuccess ? "Link copiato!" : "Condividi i tuoi auguri"
+                  }
                   onClick={() =>
                     handleOnCondividi("cartolina/elfo-ansioso", () =>
                       setCopiedSuccess(true)

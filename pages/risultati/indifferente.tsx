@@ -50,6 +50,7 @@ export default function IndifferentePage() {
         <>
           <Cartolina
             message="Buon Natale e felice anno nuovo!"
+            interactionMessage="Prova a pungolare l'elfo, chissà se gli interesserà!"
             backgroundColor={Colors.mintGreen}
             Elfo={Indifferente}
             goBack={() => showLoaderAnimation(() => setShowAnteprima(false))}
@@ -57,7 +58,11 @@ export default function IndifferentePage() {
               isMobile ? (
                 <StyledCTAWrapper>
                   <Button
-                    label={copiedSuccess ? "Link copiato!" : "Condividi"}
+                    label={
+                      copiedSuccess
+                        ? "Link copiato!"
+                        : "Condividi i tuoi auguri"
+                    }
                     onClick={() =>
                       handleOnCondividi("cartolina/elfo-indifferente", () =>
                         setCopiedSuccess(true)
@@ -75,7 +80,9 @@ export default function IndifferentePage() {
                 </StyledCTAWrapper>
               ) : (
                 <Button
-                  label={copiedSuccess ? "Link copiato!" : "Condividi"}
+                  label={
+                    copiedSuccess ? "Link copiato!" : "Condividi i tuoi auguri"
+                  }
                   onClick={() =>
                     handleOnCondividi("cartolina/elfo-indifferente", () =>
                       setCopiedSuccess(true)
@@ -116,7 +123,6 @@ export default function IndifferentePage() {
             Elfo={Indifferente}
             onShowAnteprima={() => setShowAnteprima(true)}
             snowHeight={360}
-
           />
           <Container>
             {names && (

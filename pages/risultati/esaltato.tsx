@@ -53,6 +53,7 @@ export default function EsaltatoPage() {
           <Lucine />
           <Cartolina
             message="Ti auguro un Natale splendente e un meraviglioso anno nuovo ricco di gioia!"
+            interactionMessage="Tocca l'elfo per farlo saltare di gioia!"
             backgroundColor={Colors.darkGreen}
             Elfo={Esaltato}
             goBack={() => showLoaderAnimation(() => setShowAnteprima(false))}
@@ -60,7 +61,11 @@ export default function EsaltatoPage() {
               isMobile ? (
                 <StyledCTAWrapper>
                   <Button
-                    label={copiedSuccess ? "Link copiato!" : "Condividi"}
+                    label={
+                      copiedSuccess
+                        ? "Link copiato!"
+                        : "Condividi i tuoi auguri"
+                    }
                     onClick={() =>
                       handleOnCondividi("cartolina/elfo-esaltato", () =>
                         setCopiedSuccess(true)
@@ -78,7 +83,9 @@ export default function EsaltatoPage() {
                 </StyledCTAWrapper>
               ) : (
                 <Button
-                  label={copiedSuccess ? "Link copiato!" : "Condividi"}
+                  label={
+                    copiedSuccess ? "Link copiato!" : "Condividi i tuoi auguri"
+                  }
                   onClick={() =>
                     handleOnCondividi("cartolina/elfo-esaltato", () =>
                       setCopiedSuccess(true)
@@ -101,7 +108,7 @@ export default function EsaltatoPage() {
             background={Colors.darkGreen}
             testo={
               <>
-                <br/>
+                <br />
                 Per te il countdown a Natale comincia quando mancano 100 giorni.
                 <br />
                 I regali? Lista già pronta con largo anticipo e non capita mai
@@ -120,7 +127,6 @@ export default function EsaltatoPage() {
             Elfo={Esaltato}
             onShowAnteprima={() => setShowAnteprima(true)}
             snowHeight={390}
-
           />
           <Container>
             {names && (

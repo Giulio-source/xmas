@@ -50,6 +50,7 @@ export default function OdiosoPage() {
         <>
           <Cartolina
             message="E anche sto Natale..."
+            interactionMessage="Se ami il rischio, tocca l'elfo e vediamo che succede!"
             backgroundColor={Colors.darkBlue}
             Elfo={Odioso}
             goBack={() => showLoaderAnimation(() => setShowAnteprima(false))}
@@ -57,7 +58,11 @@ export default function OdiosoPage() {
               isMobile ? (
                 <StyledCTAWrapper>
                   <Button
-                    label={copiedSuccess ? "Link copiato!" : "Condividi"}
+                    label={
+                      copiedSuccess
+                        ? "Link copiato!"
+                        : "Condividi i tuoi auguri"
+                    }
                     onClick={() =>
                       handleOnCondividi("cartolina/elfo-odioso", () =>
                         setCopiedSuccess(true)
@@ -75,7 +80,9 @@ export default function OdiosoPage() {
                 </StyledCTAWrapper>
               ) : (
                 <Button
-                  label={copiedSuccess ? "Link copiato!" : "Condividi"}
+                  label={
+                    copiedSuccess ? "Link copiato!" : "Condividi i tuoi auguri"
+                  }
                   onClick={() =>
                     handleOnCondividi("cartolina/elfo-odioso", () =>
                       setCopiedSuccess(true)

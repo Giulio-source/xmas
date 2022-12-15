@@ -51,6 +51,7 @@ export default function ScazzatoPage() {
         <>
           <Cartolina
             message="Anche a te e famiglia!"
+            interactionMessage="Tocca l'elfo per provare a infastidirlo un po'!"
             backgroundColor={Colors.violet}
             Elfo={Scazzato}
             goBack={() => showLoaderAnimation(() => setShowAnteprima(false))}
@@ -58,7 +59,11 @@ export default function ScazzatoPage() {
               isMobile ? (
                 <StyledCTAWrapper>
                   <Button
-                    label={copiedSuccess ? "Link copiato!" : "Condividi"}
+                    label={
+                      copiedSuccess
+                        ? "Link copiato!"
+                        : "Condividi i tuoi auguri"
+                    }
                     onClick={() =>
                       handleOnCondividi("cartolina/elfo-triste", () =>
                         setCopiedSuccess(true)
@@ -76,7 +81,9 @@ export default function ScazzatoPage() {
                 </StyledCTAWrapper>
               ) : (
                 <Button
-                  label={copiedSuccess ? "Link copiato!" : "Condividi"}
+                  label={
+                    copiedSuccess ? "Link copiato!" : "Condividi i tuoi auguri"
+                  }
                   onClick={() =>
                     handleOnCondividi("cartolina/elfo-triste", () =>
                       setCopiedSuccess(true)
@@ -94,7 +101,7 @@ export default function ScazzatoPage() {
           <Trees />
           <Neve />
           <Hero
-            title="Saresti un ottimo aiutante di Babbo Natale!"
+            title="Ogni anno ci provi, ma alla fine non ci riesci!"
             background={Colors.violet}
             testo={
               <>

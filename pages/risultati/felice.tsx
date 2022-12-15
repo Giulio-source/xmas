@@ -52,6 +52,7 @@ export default function FelicePage() {
         <>
           <Cartolina
             message="Ti auguro gioia, serenità e uno splendido Natale in compagnia!"
+            interactionMessage="Accarezza l'elfo per sprigionare la sua felicità!"
             backgroundColor={Colors.deepBlue}
             Elfo={Felice}
             goBack={() => showLoaderAnimation(() => setShowAnteprima(false))}
@@ -59,7 +60,11 @@ export default function FelicePage() {
               isMobile ? (
                 <StyledCTAWrapper>
                   <Button
-                    label={copiedSuccess ? "Link copiato!" : "Condividi"}
+                    label={
+                      copiedSuccess
+                        ? "Link copiato!"
+                        : "Condividi i tuoi auguri"
+                    }
                     onClick={() =>
                       handleOnCondividi("cartolina/elfo-felice", () =>
                         setCopiedSuccess(true)
@@ -77,7 +82,9 @@ export default function FelicePage() {
                 </StyledCTAWrapper>
               ) : (
                 <Button
-                  label={copiedSuccess ? "Link copiato!" : "Condividi"}
+                  label={
+                    copiedSuccess ? "Link copiato!" : "Condividi i tuoi auguri"
+                  }
                   onClick={() =>
                     handleOnCondividi("cartolina/elfo-felice", () =>
                       setCopiedSuccess(true)

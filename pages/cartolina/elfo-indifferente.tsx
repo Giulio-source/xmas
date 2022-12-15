@@ -9,6 +9,7 @@ export default function CartolinaIndifferente() {
       <HeadCartolina />
       <Cartolina
         message="Buon Natale e felice anno nuovo!"
+        interactionMessage="Prova a pungolare l'elfo, chissà se gli interesserà!"
         backgroundColor={Colors.mintGreen}
         Elfo={Indifferente}
         isPageCartolina
