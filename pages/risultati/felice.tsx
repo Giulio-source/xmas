@@ -116,6 +116,7 @@ export default function FelicePage() {
             }
             Elfo={Felice}
             onShowAnteprima={() => setShowAnteprima(true)}
+            snowHeight={320}
           />
           <Container>
             {names && (

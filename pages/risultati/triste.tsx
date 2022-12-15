@@ -114,6 +114,7 @@ export default function ScazzatoPage() {
             }
             Elfo={Scazzato}
             onShowAnteprima={() => setShowAnteprima(true)}
+            snowHeight={360}
           />
           <Container>
             {names && (

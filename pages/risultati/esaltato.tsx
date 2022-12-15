@@ -119,6 +119,8 @@ export default function EsaltatoPage() {
             }
             Elfo={Esaltato}
             onShowAnteprima={() => setShowAnteprima(true)}
+            snowHeight={390}
+
           />
           <Container>
             {names && (

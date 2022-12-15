@@ -115,6 +115,7 @@ export default function AnsiosoPage() {
             }
             Elfo={Ansioso}
             onShowAnteprima={() => setShowAnteprima(true)}
+            snowHeight={380}
           />
           <Container>
             {names && (

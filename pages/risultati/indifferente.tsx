@@ -115,6 +115,8 @@ export default function IndifferentePage() {
             }
             Elfo={Indifferente}
             onShowAnteprima={() => setShowAnteprima(true)}
+            snowHeight={360}
+
           />
           <Container>
             {names && (

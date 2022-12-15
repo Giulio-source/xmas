@@ -22,6 +22,7 @@ export const Hero = ({
   background,
   testo,
   Elfo,
+  snowHeight,
   onShowAnteprima,
 }: HeroProps) => {
   const [open, setOpen] = useState(false);
@@ -64,7 +65,7 @@ export const Hero = ({
         </StyledContent>
       </HeroWrapper>
       <StyledBackground color={background} />
-      <StyledSnowHill insideHero />
+      <StyledSnowHill snowHeight={snowHeight}/>
       <RisultatoModal open={open} onClose={() => setOpen(false)} />
     </StyledSection>
   );
@@ -76,4 +77,5 @@ type HeroProps = {
   testo: React.ReactNode;
   Elfo: React.FC;
   onShowAnteprima: () => void;
+  snowHeight?: number;
 };

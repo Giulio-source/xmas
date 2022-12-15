@@ -103,20 +103,13 @@ export const StyledSnowHill = styled.div<any>`
   @media screen and (min-width: 1024px) {
     display: initial;
     background: white;
-    height: ${({ inCartolina }) => (inCartolina ? "295px" : "345px")};
+    height: ${({ snowHeight }) => (snowHeight ? snowHeight : 345)}px;
     width: 100%;
     z-index: -1;
     position: absolute;
-    top: ${({ inCartolina }) => (inCartolina ? "615px" : "570px")};
     left: 0;
     clip-path: ellipse(85% 100% at 70% 100%);
-
-    ${({ insideHero }) =>
-      insideHero &&
-      css`
-        bottom: 0;
-        top: unset;
-      `}
+    bottom: 0;
   }
 `;
 
