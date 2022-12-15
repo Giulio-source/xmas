@@ -28,10 +28,10 @@ function tremaCorpo() {
   return gsap
     .timeline({ repeat: 3, defaults: { duration: 0.1, ease: "linear" } })
     .add("start")
-    .to("#elfo-intero", { x: -2, y: -2 })
-    .to("#elfo-intero", { x: 2, y: -2 })
-    .to("#elfo-intero", { x: -2, y: 2 })
-    .to("#elfo-intero", { x: 2, y: 2 })
+    .to("#elfo-intero", { x: -3, y: -2 })
+    .to("#elfo-intero", { x: 3, y: -2 })
+    .to("#elfo-intero", { x: -3, y: 2 })
+    .to("#elfo-intero", { x: 3, y: 2 })
     .to("#elfo-intero", { x: 0, y: 0 })
     .timeScale(1.4);
 }
@@ -66,7 +66,7 @@ export const ansiosoSingleClick = () =>
       },
       "start"
     )
-    .add(tremaCorpo(), "start+=1");
+    .add(tremaCorpo(), "start");
 
 export const resetAnsioso = () =>
   gsap
