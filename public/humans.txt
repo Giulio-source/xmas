@@ -26,10 +26,20 @@ Position:   Art Director
 LinkedIn:   https://www.linkedin.com/in/jessica-marangoni-b15047a6/
 Location:   Turin, Italy
 
+Title:      Marco Dell’Orto
+Position:   Managing Director Operations @ Hinto.Cloud
+Linkedin:   https://www.linkedin.com/in/marco-dellorto/
+Location:   Milan, Italy
+
 Title:      Matteo Spini
 Position:   SEO & Web Marketing Specialist
 LinkedIn:   https://www.linkedin.com/in/matteo-spini-seo-specialist/
 Location:   Milan, Italy
+
+Title:      Michele Menichelli
+Position:   Cloud Native Engineer & Tech Lead @ Hinto.Cloud
+Linkedin:   https://www.linkedin.com/in/michelemenichelli/
+Location:   Macerata, Italy
 
 /* SITE */
 Language:    Italian (IT)
